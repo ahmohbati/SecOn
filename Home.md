@@ -1,5 +1,5 @@
 ## Getting Started ##
-  * [Introduction](IntroductionToSecurityOnion.md)
+  * [Introduction](IntroductionToSecurityOnion)
   * [Hardware Requirements](Hardware.md)
   * [Download/Install](Installation.md)
   * [Booting Issues](TroubleBooting.md)
