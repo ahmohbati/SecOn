@@ -1,9 +1,9 @@
 # Having problems?  Try the suggestions below. #
 
-  * Are you running the [latest version of Security Onion](Upgrade.md)?
-  * Check the [FAQ](FAQ.md).
-  * Search the [Security Onion Mailing Lists](MailingLists.md).
-  * Search the documentation and mailing lists of the tools contained within Security Onion: [Tools](Tools.md)
+  * Are you running the [latest version of Security Onion](Upgrade)?
+  * Check the [FAQ](FAQ).
+  * Search the [Security Onion Mailing Lists](MailingLists).
+  * Search the documentation and mailing lists of the tools contained within Security Onion: [Tools](Tools)
   * Run "sostat" for some diagnostics:
 ```
 sudo sostat | less
@@ -22,6 +22,6 @@ pgrep -lf autossh
 pgrep -lf delayed_job
 ```
   * Are you able to duplicate the problem on a fresh Security Onion installation?
-  * Check the [Roadmap](Roadmap.md) to see if this is a known issue that we are working on.
-  * If all else fails, please send an email to our [security-onion mailing list](MailingLists.md).
+  * Check the [Roadmap](Roadmap) to see if this is a known issue that we are working on.
+  * If all else fails, please send an email to our [security-onion mailing list](MailingLists).
   * Need training or commercial support?  http://www.securityonionsolutions.com

@@ -1,4 +1,4 @@
-**NOTE!** We're no longer in Beta/RC.  Please see the [Installation page](Installation.md).
+**NOTE!** We're no longer in Beta/RC.  Please see the [Installation page](Installation).
 
 # Introduction #
 

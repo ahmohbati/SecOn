@@ -75,7 +75,7 @@ sudo ufw allow proto tcp from a.b.c.d to any port 22,7736
 
 -OR-
 
-If you're running [Salt](Salt.md), then sensors need to connect to ports 4505/tcp and 4506/tcp:
+If you're running [Salt](Salt), then sensors need to connect to ports 4505/tcp and 4506/tcp:
 ```
 sudo ufw allow proto tcp from a.b.c.d to any port 22,4505,4506,7736
 ```

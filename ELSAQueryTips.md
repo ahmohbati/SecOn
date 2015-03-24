@@ -76,7 +76,7 @@ So now we're checking any remote host (as in not on the home network) involved i
 
 You can use the command-line version of ELSA by navigating to /opt/elsa/web/ (I think that's the right directory on SO) and using the "cli.pl" script.  The "-q" parameter is for query, so it would look like perl cli.pl -q "example.com" and you can use "-f" to change the result format from TSV to JSON.
 
-# 4/16/2013 - [ELSA](ELSA.md) What is the best way to query for a list of all internal RFC1918 hosts sending / receiving traffic outside the US? #
+# 4/16/2013 - [ELSA](ELSA) What is the best way to query for a list of all internal RFC1918 hosts sending / receiving traffic outside the US? #
 
 Great question!
 

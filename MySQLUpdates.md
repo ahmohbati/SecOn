@@ -1,6 +1,6 @@
 # Use Soup #
 
-It's no longer necessary to perform the steps listed here as long as you use "soup" to perform updates.  For more information, please see the [Updating](Upgrade.md) page.
+It's no longer necessary to perform the steps listed here as long as you use "soup" to perform updates.  For more information, please see the [Updating](Upgrade) page.
 
 # Introduction #
 

@@ -1,9 +1,9 @@
 # Check Wiki First #
 Before sending an email to our mailing list, check to see if your question has already been answered by one of the following:
 
-[Help](Help.md)
+[Help](Help)
 
-[FAQ](FAQ.md)
+[FAQ](FAQ)
 
 <a href='http://code.google.com/p/security-onion/w/list'>Wiki</a>
 

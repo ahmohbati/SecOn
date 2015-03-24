@@ -49,7 +49,7 @@ https://code.google.com/p/security-onion/wiki/Salt#Using_Salt_to_Install_Updates
 
 The "soup" command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
 
-  * MySQL - if you've already run Setup, please see the [recommended procedure for updating the MySQL packages](MySQLUpdates.md).
+  * MySQL - if you've already run Setup, please see the [recommended procedure for updating the MySQL packages](MySQLUpdates).
 
   * PF\_RING and new kernel packages
 You may be prompted to update your kernel packages and PF\_RING at the same time.  If you do so, the PF\_RING kernel module may get built for your current kernel and not for the newly installed kernel and upon reboot services will fail.  To avoid this, you should install just the PF\_RING kernel module by itself and then install the kernel and any other remaining package updates.  Here's a one-liner that will do that:

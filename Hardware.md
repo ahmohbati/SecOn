@@ -28,7 +28,7 @@ Sensors that have full packet capture (and/or ELSA) enabled need LOTS of storage
 You'll need at least two network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  I've had good experiences with Intel.
 
 # Packets #
-You need some way of getting packets into your sensor interface(s).  If you're just evaluating Security Onion, you can replay [pcaps](Pcaps.md).  For a production deployment, you'll need a tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
+You need some way of getting packets into your sensor interface(s).  If you're just evaluating Security Onion, you can replay [pcaps](Pcaps).  For a production deployment, you'll need a tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
 
 Shear simplicity and portability (USB-powered):<br>
 <a href='http://www.dual-comm.com/port-mirroring-LAN_switch.htm'>http://www.dual-comm.com/port-mirroring-LAN_switch.htm</a><br>

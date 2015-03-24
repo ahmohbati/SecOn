@@ -10,7 +10,7 @@ Here are some Ubuntu instructions for verifying checksums:
 https://help.ubuntu.com/community/HowToMD5SUM
 
 # Hardware #
-If you haven't already, please review the [Hardware](Hardware.md) page.
+If you haven't already, please review the [Hardware](Hardware) page.
 
 # UEFI #
 If you have a new machine with UEFI, please see:
@@ -22,10 +22,10 @@ We have different Installation Guides to cover various use cases.  Please choose
 ## Quickly Evaluating Security Onion ##
 If you just want to **quickly evaluate** Security Onion, choose one of the following.  If you're a first time user, please choose the first option.
 
-  * [Download our Security Onion ISO image and Quickly Evaluate](QuickISOImage.md)
+  * [Download our Security Onion ISO image and Quickly Evaluate](QuickISOImage)
 OR
-  * [Quickly Evaluating Security Onion using \*your preferred flavor of Ubuntu 12.04\*](InstallingOnUbuntu.md)
+  * [Quickly Evaluating Security Onion using \*your preferred flavor of Ubuntu 12.04\*](InstallingOnUbuntu)
 
 ## Production Deployment ##
 If you're deploying Security Onion in **production**, please see:
-  * [Production Deployment](ProductionDeployment.md)
+  * [Production Deployment](ProductionDeployment)

@@ -1,6 +1,6 @@
 # Please read the following before downloading! #
 
-This page is for the old Security Onion based on Ubuntu 10.04.  You shouldn't be using this old version anymore.  Please use the new Security Onion 12.04.  See the [Installation page](Installation.md).
+This page is for the old Security Onion based on Ubuntu 10.04.  You shouldn't be using this old version anymore.  Please use the new Security Onion 12.04.  See the [Installation page](Installation).
 
 # What's the recommended procedure for installing Security Onion? #
 

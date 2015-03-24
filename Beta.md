@@ -1,6 +1,6 @@
 # Introduction #
 
-**NOTE!** We're no longer in Beta.  Please see the [Installation page](Installation.md).
+**NOTE!** We're no longer in Beta.  Please see the [Installation page](Installation).
 
 All of our packages are in an Ubuntu Launchpad PPA.  That means you can start with your preferred flavor of Ubuntu 12.04, add our PPA and packages, and be up and running in just a few minutes!
 
