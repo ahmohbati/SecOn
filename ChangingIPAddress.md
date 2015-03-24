@@ -36,32 +36,32 @@ sudo nsm_sensor_ps-restart --only-bro
 
 ## Changing Server IP ##
 
-  * /etc/nsm/[HOSTNAME](HOSTNAME.md)-[IFNAME](IFNAME.md)/http\_agent.conf:
+  * /etc/nsm/HOSTNAME-INTERFACE/http\_agent.conf:
 ```
 set SERVER_HOST [SERVER-IP]
 ```
 
-  * /etc/nsm/[HOSTNAME](HOSTNAME.md)-[IFNAME](IFNAME.md)/pads\_agent.conf:
+  * /etc/nsm/HOSTNAME-INTERFACE/pads\_agent.conf:
 ```
 set SERVER_HOST [SERVER-IP]
 ```
 
-  * /etc/nsm/[HOSTNAME](HOSTNAME.md)-[IFNAME](IFNAME.md)/pcap\_agent.conf:
+  * /etc/nsm/HOSTNAME-INTERFACE/pcap\_agent.conf:
 ```
 set SERVER_HOST [SERVER-IP]
 ```
 
-  * /etc/nsm/[HOSTNAME](HOSTNAME.md)-[IFNAME](IFNAME.md)/sancp\_agent.conf:
+  * /etc/nsm/HOSTNAME-INTERFACE/sancp\_agent.conf:
 ```
 set SERVER_HOST [SERVER-IP]
 ```
 
-  * /etc/nsm/[HOSTNAME](HOSTNAME.md)-[IFNAME](IFNAME.md)/sensor.conf:
+  * /etc/nsm/HOSTNAME-INTERFACE/sensor.conf:
 ```
 SENSOR_SERVER_HOST="[SERVER-IP]"
 ```
 
-  * /etc/nsm/[HOSTNAME](HOSTNAME.md)-[IFNAME](IFNAME.md)/snort\_agent-[N](N.md).conf:
+  * /etc/nsm/HOSTNAME-INTERFACE/snort\_agent-N.conf:
 ```
 set SERVER_HOST [SERVER-IP]
 ```
