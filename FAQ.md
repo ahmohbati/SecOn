@@ -1,76 +1,76 @@
 # NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. #
 
 # Why won't the ISO image boot on my machine? #
-[TroubleBooting](TroubleBooting.md)
+[TroubleBooting](TroubleBooting)
 
 # What's the recommended procedure for installing Security Onion? #
-[Installation Procedure](Installation.md)
+[Installation Procedure](Installation)
 
 # How do I install Security Onion updates? #
-[Upgrade Procedure](Upgrade.md)
+[Upgrade Procedure](Upgrade)
 
 # Why do I get Snorby/Suricata/Bro errors after upgrading the kernel and pfring packages? #
-[Updating](Upgrade.md)
+[Updating](Upgrade)
 
 # What do I need to do if I'm behind a proxy? #
-[Proxy Configuration](Proxy.md)
+[Proxy Configuration](Proxy)
 
 # What is the password for root/mysql/Sguil/Squert/Snorby/ELSA? #
-[Passwords](Passwords.md)
+[Passwords](Passwords)
 
 # I've forgotten my Snorby password.  How do I reset it? #
-[Passwords](Passwords.md)
+[Passwords](Passwords)
 
 # How do I configure email for alerting and reporting? #
-[Email](Email.md)
+[Email](Email)
 
 # Where can I read more about the tools contained within Security Onion? #
-[Tools](Tools.md)
+[Tools](Tools)
 
 # How do I configure a BPF for Snort/Suricata/Bro? #
-[BPF](BPF.md)
+[BPF](BPF)
 
 # Where can I find interesting pcaps to replay? #
-[Pcaps](Pcaps.md)
+[Pcaps](Pcaps)
 
 # What are the default firewall settings and how do I change them? #
-[Firewall](Firewall.md)
+[Firewall](Firewall)
 
 # How can I add and test local rules? #
-[Adding local rules and testing them with scapy](AddingLocalRules.md)
+[Adding local rules and testing them with scapy](AddingLocalRules)
 
 # Can I be alerted when an interface stops receiving traffic? #
-[Interface stops receiving traffic](SensorStopsSeeingTraffic.md)
+[Interface stops receiving traffic](SensorStopsSeeingTraffic)
 
 # What do I need to modify in order to have the log files stored on a different mount point? #
-[Adding a New Disk for /nsm](NewDisk.md)
+[Adding a New Disk for /nsm](NewDisk)
 
 # How do I disable the graphical Network Manager and configuring networking from the command line? #
-[Network Configuration](NetworkConfiguration.md)
+[Network Configuration](NetworkConfiguration)
 
 # Where do I send questions/problems/suggestions? #
-[security-onion Google Group](MailingLists.md)
+[security-onion Google Group](MailingLists)
 
 # I submitted a message to the security-onion Google Group.  Why isn't it showing up? #
 https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 
 # What's the directory structure of /nsm? #
-[/nsm Directory Structure](DirectoryStructure.md)
+[/nsm Directory Structure](DirectoryStructure)
 
 # Why does Security Onion use UTC? #
-[UTC and Time Zones](TimeZones.md)
+[UTC and Time Zones](TimeZones)
 
 # Why are the timestamps in ELSA not in UTC? #
-[UTC and Time Zones](TimeZones.md)
+[UTC and Time Zones](TimeZones)
 
 # How do I enable/disable processes? #
-[Disabling Processes](DisablingProcesses.md)
+[Disabling Processes](DisablingProcesses)
 
 # Where do I put my custom ELSA parsers? #
-[CustomELSAParsers](CustomELSAParsers.md)
+[CustomELSAParsers](CustomELSAParsers)
 
 # How do I wipe the Snorby database? #
-[Wiping Snorby database](WipingSnorby.md)
+[Wiping Snorby database](WipingSnorby)
 
 # I disabled some Sguil agents but they still appear in Sguil's "Agent Status" tab. #
 https://code.google.com/p/security-onion/wiki/DisablingProcesses#Sguil_Agent
