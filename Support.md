@@ -8,4 +8,4 @@ http://securityonionsolutions.com
 
 If you need free support, please use our public mailing list:
 
-https://code.google.com/p/security-onion/wiki/MailingLists
+[MailingLists](MailingLists)
