@@ -27,7 +27,7 @@ timestamps in ELSA match your timestamps in Sguil/Squert/Snorby):<br>
 <img src='images/elsa/elsa_prefs.png' /><br>
 2. Select Actions -> Add New Preference:<br>
 <br>
-<img src='images/elsa/elsa_prefs_add.png' />
+<img src='images/elsa/elsa_prefs_add.png' /><br>
 3. Enter the following into the new Preference:<br>
 <pre><code>Type = default_settings<br>
 Name = use_utc<br>
