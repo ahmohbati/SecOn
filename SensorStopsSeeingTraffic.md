@@ -4,7 +4,7 @@ Here are a few options:<br>
 <br>
 <h1>OSSEC</h1>
 OSSEC checks your sniffing interfaces every 10 minutes.  If no packets have been received within that 10 minute window, then OSSEC will generate an alert.  This alert can be found in Sguil, Squert, and ELSA.  If you'd like OSSEC to email you, then configure it for email as shown here:<br>
-<a href='https://code.google.com/p/security-onion/wiki/Email#How_do_I_configure_OSSEC_to_send_emails?'>https://code.google.com/p/security-onion/wiki/Email#How_do_I_configure_OSSEC_to_send_emails?</a>
+[https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-ossec-to-send-emails](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-ossec-to-send-emails)
 
 <h1>Bro</h1>
 Bro will automatically email you when it stops seeing traffic on an interface.  All you have to do is configure Bro per the [Email](Email) page:<br>
