@@ -20,7 +20,7 @@
 </li><li>Please note that any IDS/NSM system needs to be tuned for the network it’s monitoring. Please see [ManagingAlerts](ManagingAlerts). You should only run the signatures you really care about.<br>
 </li><li>Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day. Even if you don’t use the Sguil console for your primary analysis, you need to log into it periodically and F8 old events to keep the real time queue from getting too big. Neglecting to do so will result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis. Please see the <a href='http://nsmwiki.org/Sguil_Client'>Sguil client page on NSMwiki</a>.<br>
 </li><li>On the server running the Sguil database, set the DAYSTOKEEP variable in /etc/nsm/securityonion.conf to however many days you want to keep in your archive. The default is 365, but you may need to adjust it based on your organization’s detection/response policy and your available disk space.<br>
-</li><li>You should also tune <a href='http://code.google.com/p/security-onion/wiki/http_agent'>http_agent</a>.  If you're running ELSA, you already have all the Bro HTTP logs available there, so you might want to disable http_agent to avoid duplicating those logs in the Sguil database:<br>
+</li><li>You should also tune [http_agent](http_agent).  If you're running ELSA, you already have all the Bro HTTP logs available there, so you might want to disable http_agent to avoid duplicating those logs in the Sguil database:<br>
 <pre><code># Terminate the running http_agent<br>
 sudo nsm_sensor_ps-stop --only-http-agent<br>
 # Disable http_agent<br>
@@ -28,7 +28,7 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 </code></pre>
 </li><li><a href='DisablingProcesses.md'>Disable any unneeded sensor processes</a>.<br>
 </li><li>Tune the number of PF_RING instances for Snort/Suricata and Bro: <a href='PF_RING.md'>PF_RING</a>
-</li><li>Optional: exclude unnecessary traffic from your monitoring using <a href='http://code.google.com/p/security-onion/wiki/BPF'>BPF</a>.<br>
+</li><li>Optional: exclude unnecessary traffic from your monitoring using [BPF](BPF).<br>
 </li><li>Optional: add new Sguil user accounts with the following:<br>
 <pre><code>sudo nsm_server_user-add<br>
 </code></pre>
@@ -36,5 +36,5 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 </li><li>Optional, but highly recommended: place /etc under version control.  If your organization doesn't already have a standard version control tool, you can use <a href='https://help.ubuntu.com/12.04/serverguide/etckeeper.html'>etckeeper</a>:<br>
 <pre><code>sudo apt-get install etckeeper bzr<br>
 </code></pre>
-</li><li>Optional: need “remote desktop” access to your Security Onion sensor or server?  We recommend SSH X-Forwarding as shown above, but if you want something more rdp-like, you can install <a href='http://www.xrdp.org/'>xrdp</a> (sudo apt-get install xrdp) or <a href='http://code.google.com/p/security-onion/wiki/FreeNX'>FreeNX</a>.  Please note that we do not support xrdp or FreeNX.<br>
-</li><li>Read more about the tools contained in Security Onion: <a href='http://code.google.com/p/security-onion/wiki/Tools'>Tools</a>
+</li><li>Optional: need “remote desktop” access to your Security Onion sensor or server?  We recommend SSH X-Forwarding as shown above, but if you want something more rdp-like, you can install <a href='http://www.xrdp.org/'>xrdp</a> (sudo apt-get install xrdp) or [FreeNX](FreeNX).  Please note that we do not support xrdp or FreeNX.<br>
+</li><li>Read more about the tools contained in Security Onion: [Tools]
