@@ -200,31 +200,29 @@ As mentioned before, take care in disabling signatures as it can be likely that 
 ## Rewrite the signature ##
 Sometimes a signature is simply written too broadly for the particular use on a sensor.  In this case, a small rewrite to the signature can make it so we can weed out.
 In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rules
-* Edit the /etc/nsm/rules/local.rules file
+* Edit the /etc/nsm/rules/local.rules file:
 ```
      sudo vi /etc/nsm/rules/local.rules
 ```
-* Snort configuration files are in the following format
-> > Snort rules are incredibly flexible, this is a bird's eye view of the rule format
+* Snort rules are incredibly flexible, this is a bird's eye view of the rule format:
 ```
      Action Protocol SrcIP SrcPort Direction DestIP DestPort (rule options)
 ```
-> > Here is the rule that has been generating so many alerts on our sensor(s)
+* Here is the rule that has been generating so many alerts on our sensor(s)
 ```
      macphisto@SecOnion-Dev:~$ grep -i "GPL SNMP public access udp" /etc/nsm/rules/downloaded.rules 
   alert udp $EXTERNAL_NET any -> $HOME_NET 161 (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:2101411; rev:11;)
 ```
-> > We can rewrite the rule so it's a little less active. We will rewrite the rule to ignore this kind of alert if the destination is any of the hosts we've identified.
-> > For starters let's create some variables in /etc/nsm/rules/local.rules to define the traffic.
-> > First we're going to define a variable for our called overactive hosts called OVERACTIVE
+* We can rewrite the rule so it's a little less active. We will rewrite the rule to ignore this kind of alert if the destination is any of the hosts we've identified.
+* For starters let's create some variables in /etc/nsm/rules/local.rules to define the traffic.  First we're going to define a variable for our called overactive hosts called OVERACTIVE
 ```
      var OVERACTIVE [192.168.0.31,192.168.0.33,192.168.0.5,192.168.0.51]
 ```
-> > We can plug this information into our snort rule format,
+* We can plug this information into our snort rule format,
 ```
      alert udp $HOME_NET any -> !$OVERACTIVE any (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:9001411; rev:1;)
 ```
-> > We also gave the alert a unique signature id (sid) by bumping it into the 90,000,000 range and set the revision to 1.
+* We also gave the alert a unique signature id (sid) by bumping it into the 90,000,000 range and set the revision to 1.
 * Now that we have a signature that will generate alerts a little more selectively, we need to disable the original signature.  Like above, we edit the disablesid.conf file and add:
 ```
    1:2101411
