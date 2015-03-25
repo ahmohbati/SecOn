@@ -4,21 +4,21 @@ Adding local rules in Security Onion is a rather straightforward process.  Howev
 
 # Steps #
 
-  1. Open the /etc/nsm/rules/local.rules file using your favorite text editor.
-  1. Let's add a simple rule that will alert on the detection of a string in a tcp session.
+* Open the /etc/nsm/rules/local.rules file using your favorite text editor.
+* Let's add a simple rule that will alert on the detection of a string in a tcp session.
 ```
 alert tcp any any -> $HOME_NET 7789 (msg: "Vote for Security Onion Toolsmith Tool of 2011!"; reference: url,http://holisticinfosec.blogspot.com/2011/12/choose-2011-toolsmith-tool-of-year.html; content: "toolsmith"; flow:to_server; nocase; sid:9000547; rev:1)     
 ```
-  1. Update sid-msg.map and restart snort/suricata and barnyard:
+* Update sid-msg.map and restart snort/suricata and barnyard:
 ```
 sudo rule-update
 ```
-  1. If you built the rule correctly, then snort should be back up and running.
-  1. Generate some traffic to trigger the alert.  To generate traffic we are going to use the python library scapy to craft packets with specific information to ensure we trigger the alert with the information we want.
+* If you built the rule correctly, then snort should be back up and running.
+* Generate some traffic to trigger the alert.  To generate traffic we are going to use the python library scapy to craft packets with specific information to ensure we trigger the alert with the information we want.
 ```
 sudo scapy
 ```
-  1. Enter the following sample in a line at a time.  Any line beginning with "#" can be ignored as it is a comment.
+* Enter the following sample in a line at a time.  Any line beginning with "#" can be ignored as it is a comment.
 ```
 # Craft the layer 2 information.
 # The ip addresses can be random, but I would suggest sticking to RFC1918
@@ -38,18 +38,18 @@ payload = "Toolsmith"
 # Use the / operator to compose our packet and transfer it with the send() method.
 send(ip/tcp/payload)
 ```
-  1. Check sguil for the corresponding alert
+* Check sguil for the corresponding alert
 > > <a href='images/local-rules/sguil-window_verify-alert.png'>
 <blockquote><img src='images/local-rules/thumbs/thumb_sguil-window_verify-alert.png'></img>
 </blockquote><blockquote></a></blockquote>
 
 
-> You can see that we have an alert with the IP addresses we specified and the TCP ports we specified.
-> If you right click on the **Alert ID** column you can select "Transcript" and verify the payload we sent.
-> <a href='images/local-rules/sguil-transcript_check-payload.png'>
+You can see that we have an alert with the IP addresses we specified and the TCP ports we specified.
+If you right click on the **Alert ID** column you can select "Transcript" and verify the payload we sent.
+<a href='images/local-rules/sguil-transcript_check-payload.png'>
 <blockquote><img src='images/local-rules/thumbs/thumb_sguil-transcript_check-payload.png'></img>
 </blockquote><blockquote></a></blockquote>
 
-  * You can learn more about snort and writing snort signatures from the [Snort Manual](http://manual.snort.org/node26.html)
-  * You can learn more about scapy at [secdev.org](http://www.secdev.org/projects/scapy/) and [itgeekchronicles.co.uk](http://itgeekchronicles.co.uk/2012/05/31/scapy-guide-the-release/).
+* You can learn more about snort and writing snort signatures from the [Snort Manual](http://manual.snort.org/node26.html)
+* You can learn more about scapy at [secdev.org](http://www.secdev.org/projects/scapy/) and [itgeekchronicles.co.uk](http://itgeekchronicles.co.uk/2012/05/31/scapy-guide-the-release/).
 
