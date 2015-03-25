@@ -13,7 +13,7 @@
 </li><li>Be aware that Snorby uses highcharts. Read the <a href='http://shop.highsoft.com/highcharts.html'>highcharts</a> <a href='http://shop.highsoft.com/faq/non-commercial#what-is-non-commercial'>license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, you can <a href='http://code.google.com/p/security-onion/wiki/FAQ#How_do_I_disable_Snorby?'>disable/remove Snorby altogether</a> or de-activate HighCharts (the charts on the bottom half of the Snorby Dashboard will be blank, but nothing else in Snorby should be affected):<br>
 <pre><code>sudo mv /opt/snorby/public/javascripts/highcharts.js /opt/snorby/public/javascripts/highcharts.js.DISABLED<br>
 </code></pre>
-</li><li>Harden your server and sensors by disabling any unneeded services and <a href='http://code.google.com/p/security-onion/wiki/Firewall'>firewalling</a> off any unused ports.<br>
+</li><li>Harden your server and sensors by disabling any unneeded services and [firewalling](Firewall) off any unused ports.<br>
 </li><li>Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
 <pre><code>sudo sostat | less<br>
 </code></pre>
