@@ -24,15 +24,15 @@ timestamps in ELSA match your timestamps in Sguil/Squert/Snorby):<br>
 <br>
 1. Navigate to ELSA -> Preferences:<br>
 <br>
-<img src='http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs.png' />
+<img src='images/elsa/elsa_prefs.png' />
 
 2. Select Actions -> Add New Preference:<br>
 <br>
-<img src='http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_add.png' />
+<img src='images/elsa/elsa_prefs_add.png' />
 
 3. Enter the following into the new Preference:<br>
 <pre><code>Type = default_settings<br>
 Name = use_utc<br>
 Value = 1<br>
 </code></pre>
-<img src='http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_utc.png' />
+<img src='images/elsa/elsa_prefs_utc.png' />

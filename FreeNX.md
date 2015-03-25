@@ -20,9 +20,9 @@ Here's a quick writeup for how to get FreeNX installed and playing nicely with S
   See http://www.tcltk.com/iwidgets/ for more info.
 ```
   1. The second is once FreeNX is installed and you open a remote session to the server you'll notice the icons and user interface look different from logging in at the console. What you'll see are the standard XFCE icons rather than the Xubuntu ones.
-![![](http://security-onion.googlecode.com/svn/wiki/images/freenx/thumbs/thumb_XFCE.png)](http://security-onion.googlecode.com/svn/wiki/images/freenx/XFCE.png)
+![![](images/freenx/thumbs/thumb_XFCE.png)](images/freenx/XFCE.png)
 
-![![](http://security-onion.googlecode.com/svn/wiki/images/freenx/thumbs/thumb_Xubuntu.png)](http://security-onion.googlecode.com/svn/wiki/images/freenx/Xubuntu.png)
+![![](images/freenx/thumbs/thumb_Xubuntu.png)](images/freenx/Xubuntu.png)
 
 # FreeNX Server installation and fix for the first issue #
 
@@ -72,9 +72,9 @@ At this point the Security Onion server is ready to go with FreeNX but your desk
   1. Click Next on the intro page
   1. Provide a name for the session and the DNS name or IP address in the Host field. If you have changed the port SSH listener port on your Security Onion installation then modify the port field accordingly and click Next.
   1. On the Desktop wizard screen change the KDE entry to Custom and click the Settings button.
-![![](http://security-onion.googlecode.com/svn/wiki/images/freenx/thumbs/thumb_NXClient01.png)](http://security-onion.googlecode.com/svn/wiki/images/freenx/NXClient01.png)
+![![](images/freenx/thumbs/thumb_NXClient01.png)](images/freenx/NXClient01.png)
   1. On the Custom - Settings screen modify as shown in the picture below (we will create the /opt/xstart.sh script below) and click Next.
-![![](http://security-onion.googlecode.com/svn/wiki/images/freenx/thumbs/thumb_NXClient02.png)](http://security-onion.googlecode.com/svn/wiki/images/freenx/NXClient02.png)
+![![](images/freenx/thumbs/thumb_NXClient02.png)](images/freenx/NXClient02.png)
   1. On the Configuration completed screen check the box for Show the Advanced Configuration dialog and click Finish.
   1. Here is where you will provide the custom RSA key that was generated during the server install. Click the Key… button, delete the existing key data and paste in your custom key (from step 10 above). Click Save and then OK.
   1. You'll now be at a NoMachine login dialog.
@@ -109,4 +109,4 @@ sudo chown root:root /opt/xstart.sh
 ```
   1. Now you can move back to the open NoMachine login window, provide your Security Onion username and password in the dialog boxes and click the Login button. If all goes well the client will connect to the server and you'll have a full desktop session to the Security Onion server.
   1. Lauch the Sguil icon on the desktop and if our fix from the first part of this tutorial was successfully the Sguil client should launch.
-![![](http://security-onion.googlecode.com/svn/wiki/images/freenx/thumbs/thumb_Done.png)](http://security-onion.googlecode.com/svn/wiki/images/freenx/Done.png)
+![![](images/freenx/thumbs/thumb_Done.png)](images/freenx/Done.png)

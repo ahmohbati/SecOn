@@ -57,7 +57,7 @@ Here, I have logged into the sguil interface and clicked on the "CNT" column to 
 
 ![images/managing-rules/securityonion-sguil-01.png](images/managing-rules/securityonion-sguil-01.png)
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-sguil-02.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-sguil-02.png)
+![images/managing-rules/securityonion-sguil-02.png](images/managing-rules/securityonion-sguil-02.png)
 
 ## From the Command Line ##
 If there are a large number of uncategorized events in the securityonion\_db database, sguil can have a hard time of managing the vast amount of data it needs to process to present a comprehensive overview of the alerts.
