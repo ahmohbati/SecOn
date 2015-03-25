@@ -41,7 +41,7 @@ send(ip/tcp/payload)
 * Check sguil for the corresponding alert
 <img src='images/local-rules/sguil-window_verify-alert.png'>
 
-You can see that we have an alert with the IP addresses we specified and the TCP ports we specified.
+* You can see that we have an alert with the IP addresses we specified and the TCP ports we specified.
 If you right click on the **Alert ID** column you can select "Transcript" and verify the payload we sent.
 <img src='images/local-rules/sguil-transcript_check-payload.png'>
 
