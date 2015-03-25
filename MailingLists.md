@@ -5,8 +5,6 @@ Before sending an email to our mailing list, check to see if your question has a
 
 [FAQ](FAQ)
 
-<a href='http://code.google.com/p/security-onion/w/list'>Wiki</a>
-
 # Moderation #
 Please keep in mind that our Google Groups are moderated, so your email will have to be approved before it is published to the list.  If at first you don't see your email appear in the mailing list, there is no need to re-send your email.  It has been queued and will be approved if appropriate.
 
