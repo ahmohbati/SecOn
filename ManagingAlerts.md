@@ -15,7 +15,7 @@ You can access the Snorby interface from a web browser using the URL https://IP_
 
 The following screenshots are from a test network where I have left the sensors untuned.  I've selected "This Year" to show all events in the last year and each screenshot below shows the output when Signatures, Sources, and Destinations are selected.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-01.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-01.png)
+![/images/managing-rules/securityonion-snorby-01.png](images/managing-rules/securityonion-snorby-01.png)
 
 ![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-02.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-02.png)
 
