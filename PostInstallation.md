@@ -26,8 +26,8 @@ sudo nsm_sensor_ps-stop --only-http-agent<br>
 # Disable http_agent<br>
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf<br>
 </code></pre>
-</li><li><a href='DisablingProcesses.md'>Disable any unneeded sensor processes</a>.<br>
-</li><li>Tune the number of PF_RING instances for Snort/Suricata and Bro: <a href='PF_RING.md'>PF_RING</a>
+</li><li>[Disable any unneeded sensor processes](DisablingProcesses)<br>
+</li><li>Tune the number of PF_RING instances for Snort/Suricata and Bro: [PF_RING](PF_RING)
 </li><li>Optional: exclude unnecessary traffic from your monitoring using [BPF](BPF).<br>
 </li><li>Optional: add new Sguil user accounts with the following:<br>
 <pre><code>sudo nsm_server_user-add<br>
