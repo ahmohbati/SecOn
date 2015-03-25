@@ -39,7 +39,7 @@ payload = "Toolsmith"
 send(ip/tcp/payload)
 ```
 * Check sguil for the corresponding alert
-> > <a href='images/local-rules/sguil-window_verify-alert.png'>
+<a href='images/local-rules/sguil-window_verify-alert.png'>
 <blockquote><img src='images/local-rules/thumbs/thumb_sguil-window_verify-alert.png'></img>
 </blockquote><blockquote></a></blockquote>
 
