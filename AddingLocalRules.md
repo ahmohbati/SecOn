@@ -39,11 +39,11 @@ payload = "Toolsmith"
 send(ip/tcp/payload)
 ```
 * Check sguil for the corresponding alert
-<a href='images/local-rules/sguil-window_verify-alert.png'>
+<img src='images/local-rules/sguil-window_verify-alert.png'>
 
 You can see that we have an alert with the IP addresses we specified and the TCP ports we specified.
 If you right click on the **Alert ID** column you can select "Transcript" and verify the payload we sent.
-<a href='images/local-rules/sguil-transcript_check-payload.png'>
+<img src='images/local-rules/sguil-transcript_check-payload.png'>
 
 * You can learn more about snort and writing snort signatures from the [Snort Manual](http://manual.snort.org/node26.html)
 * You can learn more about scapy at [secdev.org](http://www.secdev.org/projects/scapy/) and [itgeekchronicles.co.uk](http://itgeekchronicles.co.uk/2012/05/31/scapy-guide-the-release/).
