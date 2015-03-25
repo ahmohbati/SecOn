@@ -7,7 +7,7 @@ OSSEC checks your sniffing interfaces every 10 minutes.  If no packets have been
 <a href='https://code.google.com/p/security-onion/wiki/Email#How_do_I_configure_OSSEC_to_send_emails?'>https://code.google.com/p/security-onion/wiki/Email#How_do_I_configure_OSSEC_to_send_emails?</a>
 
 <h1>Bro</h1>
-Bro will automatically email you when it stops seeing traffic on an interface.  All you have to do is configure Bro per the <a href='Email.md'>Email</a> page:<br>
+Bro will automatically email you when it stops seeing traffic on an interface.  All you have to do is configure Bro per the [Email](Email) page:<br>
 <a href='https://code.google.com/p/security-onion/wiki/Email#How_do_I_configure_Bro_to_send_emails?'>https://code.google.com/p/security-onion/wiki/Email#How_do_I_configure_Bro_to_send_emails?</a>
 
 <h1>Script to check for lack of IDS alerts</h1>
