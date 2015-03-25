@@ -24,7 +24,7 @@ timestamps in ELSA match your timestamps in Sguil/Squert/Snorby):<br>
 <br>
 1. Navigate to ELSA -> Preferences:<br>
 <br>
-<img src='images/elsa/elsa_prefs.png' />
+<img src='images/elsa/elsa_prefs.png' /><br>
 2. Select Actions -> Add New Preference:<br>
 <br>
 <img src='images/elsa/elsa_prefs_add.png' />
