@@ -1,6 +1,6 @@
 Please note that this is all subject to change!
   * January 2015
-    * ~~[Issue 655](..../issues/655): Suricata 2.0.5~~
+    * ~~[Issue 655](../issues/655): Suricata 2.0.5~~
     * ~~[Issue 658](../issues/658): NSM: fix umask on Snort unified2 output~~
     * ~~[Issue 548](../issues/548): NSM: run barnyard2 as non-root user~~
     * ~~[Issue 649](../issues/649): nsm\_all\_del\_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read~~
