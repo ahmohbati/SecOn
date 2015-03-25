@@ -96,4 +96,4 @@ Also see:<br>
 <a href='http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/007185.html'>http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/007185.html</a>
 
 <h1>How can I get an email alert when my sensor stops seeing traffic?</h1>
-If you configured OSSEC or Bro as shown above, they should automatically do this for you.  Another option can be found on the <a href='SensorStopsSeeingTraffic.md'>SensorStopsSeeingTraffic</a> page.
+If you configured OSSEC or Bro as shown above, they should automatically do this for you.  Another option can be found on the [SensorStopsSeeingTraffic](SensorStopsSeeingTraffic) page.
