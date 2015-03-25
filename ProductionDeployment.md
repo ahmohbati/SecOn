@@ -9,7 +9,7 @@
 </li><li>Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more). For larger volumes you might also consider using XFS for the /nsm partition.<br>
 </li></ul></li><li>When installation completes, reboot into your new installation and login with the credentials you specified during installation.<br>
 </li><li>If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
-</li><li>Verify that you have Internet connectivity. If necessary, configure your <a href='Proxy.md'>proxy settings</a>.<br>
+</li><li>Verify that you have Internet connectivity. If necessary, configure your [proxy](Proxy) settings</a>.<br>
 </li><li>If you installed from the Security Onion Live 12.04 Distribution ISO, run "sudo soup", reboot if prompted, and then skip to the "Setup wizard" step below.<br>
 </li><li>If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href='https://help.ubuntu.com/community/EnablingPAE'>install the PAE kernel</a>.<br>
 </li><li>Install all Ubuntu updates and reboot.<br>
@@ -32,7 +32,7 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li><li>Update:<br>
 <pre><code>sudo apt-get update<br>
 </code></pre>
-</li><li>Install the securityonion-all metapackage (or one of the more focused <a href='MetaPackages.md'>metapackages</a>). This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
+</li><li>Install the securityonion-all metapackage (or one of the more focused [metapackages](MetaPackages)). This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
 <pre><code>sudo apt-get -y install securityonion-all<br>
 </code></pre>
 </li><li>OPTIONAL: If you want to use Salt to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup. <a href='https://code.google.com/p/security-onion/wiki/Salt'>https://code.google.com/p/security-onion/wiki/Salt</a><br>
@@ -90,4 +90,4 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li><li>You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).<br>
 </li></ul></li><li>You’ll be asked whether you want to enable ELSA. (ELSA is a distributed log archiving platform, so each sensor’s events stored in ELSA will be stored locally at each sensor and queried from the server which acts as a central interface.)</li></ul></li></ul></li></ol>
 
-Proceed to <a href='PostInstallation.md'>Post Installation</a>.
+Proceed to [PostInstallation](PostInstallation).

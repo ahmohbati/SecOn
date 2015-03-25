@@ -37,4 +37,4 @@ For Bro, you would do the following:<br>
 </code></pre></li></ul>
 
 <h1>Updating</h1>
-Please see the <a href='Upgrade.md'>Update</a> page for notes on updating the PF_RING kernel module.
+Please see the [Upgrade](Upgrade) page for notes on updating the PF_RING kernel module.

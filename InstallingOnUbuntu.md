@@ -6,7 +6,7 @@
 </li><li>When asked about automatic updates, DO NOT enable automatic updates.<br>
 </li></ul></li><li>Reboot into your new installation.<br>
 </li><li>Login using the username/password you specified during installation.<br>
-</li><li>Verify that you have Internet connectivity.  If necessary, configure your <a href='Proxy.md'>proxy settings</a>.<br>
+</li><li>Verify that you have Internet connectivity.  If necessary, configure your [proxy](Proxy) settings</a>.<br>
 </li><li>Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
 </li><li>Configure MySQL not to prompt for root password:<br>
 <pre><code>echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections<br>
@@ -24,6 +24,6 @@ sudo apt-get update<br>
 </code></pre>
 </li><li>Follow the prompts.<br>
 </li><li>Analyze alerts using the Sguil client, or open a browser to <a href='https://localhost'>https://localhost</a> where you can access Squert, Snorby, and ELSA.<br>
-</li><li>Follow the <a href='Upgrade.md'>Upgrade</a> process.</li></ol>
+</li><li>Follow the [upgrade](Upgrade) process.</li></ol>
 
-Please review the <a href='PostInstallation.md'>Post Installation</a> page.
+Please review the [PostInstallation](PostInstallation) page.

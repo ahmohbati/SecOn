@@ -274,7 +274,7 @@ First, stop sguil and mysql:<br>
 <pre><code>sudo nsm_server_ps-stop<br>
 sudo service mysql stop<br>
 </code></pre>
-Next, edit /etc/mysql/my.cnf and add the following in the <a href='mysqld.md'>mysqld</a> section (please use hyphens not underscores):<br>
+Next, edit /etc/mysql/my.cnf and add the following in the mysqld section (please use hyphens not underscores):<br>
 <pre><code>open-files-limit        = 90000<br>
 </code></pre>
 Finally, start mysql and sguil:<br>
@@ -288,7 +288,7 @@ For more information, please see:<br>
 A few options:<br>
 <ul><li>"ssh -X" - any program started in the SSH session will be displayed on your local desktop (requires a local X server)<br>
 </li><li><a href='http://www.xrdp.org/'>xrdp</a> - sudo apt-get install xrdp - requires an rdp client<br>
-</li><li>You can use <a href='FreeNX.md'>FreeNX</a> but we don't recommend or support it</li></ul>
+</li><li>You can use [FreeNX](FreeNX) but we don't recommend or support it</li></ul>
 
 <h1>Why does the Snorby dashboard show all zeroes?</h1>
 Please do the following:<br>
@@ -409,7 +409,7 @@ Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<b
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
 
 <h1>Why do apt-get and the Update Manager show tcl8.5 as held back?</h1>
-<a href='tcl.md'>tcl notes</a>
+[tcl](tcl)
 
 <h1>Why do I get the following error when starting Sguil?</h1>
 <pre><code>Application initialization failed: no display name and no $DISPLAY environment variable<br>
@@ -418,7 +418,7 @@ The iwidgets package is part of the incr tcl extension and is<br>
 available as a port/package most systems.<br>
 See http://www.tcltk.com/iwidgets/ for more info.<br>
 </code></pre>
-This is related to the previous question.  See <a href='tcl.md'>tcl notes</a>.<br>
+This is related to the previous question.  See [tcl](tcl).<br>
 <br>
 <h1>Why do I get segfaults when booting on VMware ESX?</h1>
 This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>

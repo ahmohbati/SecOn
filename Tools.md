@@ -42,7 +42,7 @@ Please note that this is a combined list of tools for Security Onion 10.04 and S
 <br>
 <h2>Dumbpig</h2>
 <a href='http://leonward.wordpress.com/dumbpig/'><a href='http://leonward.wordpress.com/dumbpig/'>http://leonward.wordpress.com/dumbpig/</a></a><br>
-"Dumbpig is an automated bad-grammar<a href='sik.md'>sik</a> detector for snort rules. It parses each rule in a file and reports on badly formatted entries, incorrect usage, and alerts to possible performance issues. It should be considered as work in progress and all users should only work with the latest code available."<br>
+"Dumbpig is an automated bad-grammar detector for snort rules. It parses each rule in a file and reports on badly formatted entries, incorrect usage, and alerts to possible performance issues. It should be considered as work in progress and all users should only work with the latest code available."<br>
 <br>
 <h2>ELSA</h2>
 <a href='http://code.google.com/p/enterprise-log-search-and-archive/'>http://code.google.com/p/enterprise-log-search-and-archive/</a><br>
