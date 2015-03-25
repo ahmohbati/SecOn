@@ -183,16 +183,16 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      sudo vi /etc/nsm/pulledpork/disablesid.conf
 ```
 
-  1. Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
+  2. Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
 ```
      # Disable the GPL SNMP public access udp signature
      1:2101411
 ```
-  1. Run the rule update on the server:
+  3. Run the rule update on the master server:
 ```
      sudo /usr/bin/rule-update
 ```
-  1. Run the rule update on the slave machines:
+  4. Run the rule update on the slave machines:
 ```
      sudo /usr/bin/rule-update
 ```
