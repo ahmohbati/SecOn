@@ -275,12 +275,12 @@ This solution only applies to Sguil.  If you use Snorby, it would be best to inv
 The sguild server can be set to autocategorize events as it processes them.  This is a great way to have sguil process the events for us as it sees them, saving us from any laborious categorization.
 Our current Sguil packages have an AutoCat builder in the Sguil client and in the Squert web interface.  For older versions of Sguil, edit /etc/nsm/securityonion/autocat.conf on the sguild server.
 
-  1. edit /etc/nsm/securityonion/autocat.conf
+* edit /etc/nsm/securityonion/autocat.conf
 > > The autocat.conf file requires that you use the following format to identify events that you want categorized automatically.
 ```
    <erase time>||<sensorName>||<src_ip>||<src_port>||<dst_ip>||<dst_port>||<proto>||<sig msg>||<cat value>
 ```
-> > The final value in the rule is the categorization value.  Here is the table of categories.
+* The final value in the rule is the categorization value.  Here is the table of categories.
 ```
     status_id   description                  long_desc                                   
    -----------+----------------------------+--------------------------------------------
@@ -295,19 +295,19 @@ Our current Sguil packages have an AutoCat builder in the Sguil client and in th
            16   Category VI                  Reconnaissance/Probes/Scans                 
            17   Category VII                 Virus Infection                             
 ```
-> > A sample entry that would autocategorize all events matching "GPL SNMP public access udp" as type 1 (No Further Action Necessary) would like the following.
+* A sample entry that would autocategorize all events matching "GPL SNMP public access udp" as type 1 (No Further Action Necessary) would like the following.
 ```
    none||ANY||172.16.1.245||ANY||ANY||ANY||17||GPL SNMP public access udp||1
 ```
-> > However, it's if we were to put a little more work into it we could use autocategorization and retain use of that signature.
-> > If we were interested in having only these end point conversations autocategorized we would have to create an entry for each pair of src\_ip and dst\_ip conversations.
+* However, it's if we were to put a little more work into it we could use autocategorization and retain use of that signature.
+* If we were interested in having only these end point conversations autocategorized we would have to create an entry for each pair of src\_ip and dst\_ip conversations.
 ```
    none||ANY||172.16.42.109||ANY||192.168.0.33||ANY||1||GPL SNMP public access udp||1
    none||ANY||172.16.42.250||ANY||192.168.0.31||ANY||1||GPL SNMP public access udp||1
    none||ANY||172.16.42.137||ANY||192.168.0.5||ANY||1||GPL SNMP public access udp||1
    none||ANY||172.16.42.137||ANY||192.168.0.51||ANY||1||GPL SNMP public access udp||1
 ```
-  1. restart the sguil server
+* restart the sguil server
 ```
    sudo /usr/sbin/nsm_server_ps-restart
 ```
