@@ -19,43 +19,43 @@ The following screenshots are from a test network where I have left the sensors 
 
 ![images/managing-rules/securityonion-snorby-02.png](images/managing-rules/securityonion-snorby-02.png)
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-03.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-03.png)
+![images/managing-rules/securityonion-snorby-03.png](images/managing-rules/securityonion-snorby-03.png)
 
 We can clearly see that one signature is generating too much traffic and we can see in the corresponding Sources and Destinations graphs that the IPs 172.16.42.109 and 192.168.0.33 are the source and responder respectively in each case.
 
 Going into events, it's easy to see that the offending alert is a vast majority of the page.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-04.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-04.png)
+![images/managing-rules/securityonion-snorby-04.png](images/managing-rules/securityonion-snorby-04.png)
 
 Clicking on "View Rule" we get a window displaying the exact rule that generated the alert.  Fields to note in the alert are:  classtype: sid: and msg:.  Knowing these fields will help us when it comes time to make decisions on how to address this noisy alert.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-05.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-snorby-05.png)
+![images/managing-rules/securityonion-snorby-05.png](images/managing-rules/securityonion-snorby-05.png)
 
 ## From Squert ##
 You can access the Squert interface from a web browser using the URL:  https://IP_ADDRESS/squert/.  You will need to log in using the username and password you set for Sguil.
 
 The following screenshots are from the same test network with an untuned sensor.  In Squert, the information we need is provided on the first page.  We can see the top signatures, top sources, and top destinations.  Again we see that we have one signature generating too many alerts and the same pair of IP Addresses.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-01a.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-01a.png)
+![images/managing-rules/securityonion-squert-01a.png](images/managing-rules/securityonion-squert-01a.png)
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-02.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-02.png)
+![images/managing-rules/securityonion-squert-02.png](images/managing-rules/securityonion-squert-02.png)
 
 Under the "Query Tab" we can take the information we've gathered and build a simple query.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-03.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-03.png)
+![images/managing-rules/securityonion-squert-03.png](images/managing-rules/securityonion-squert-03.png)
 
 The resulting page give us a run down of how often the event was seen broken down by hour and day.  Clicking the "visuals" button, we get some nice charts, the most handy being a bar chart of number of alerts per hour.  Since we searched over a very long period, our X and Y labels are a bit cramped.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-04.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-04.png)
+![images/managing-rules/securityonion-squert-04.png](images/managing-rules/securityonion-squert-04.png)
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-05.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-05.png)
+![images/managing-rules/securityonion-squert-05.png](images/managing-rules/securityonion-squert-05.png)
 
 ## From Sguil ##
 Sguil is a powerhouse of an interface for alerts and we since it allows us a more direct interaction with the database holding our alerts, we can gain a little bit more insight into the alerts, the associated IPs and the rule in general.
 
 Here, I have logged into the sguil interface and clicked on the "CNT" column to sort the alerts by the number of correlated alerts.
 
-![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-sguil-01.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-sguil-01.png)
+![images/managing-rules/securityonion-sguil-01.png](images/managing-rules/securityonion-sguil-01.png)
 
 ![http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-sguil-02.png](http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-sguil-02.png)
 
