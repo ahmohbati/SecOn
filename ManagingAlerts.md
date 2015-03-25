@@ -178,20 +178,20 @@ Security Onion uses PulledPork (a perl script maintained by JJ Cummings) that do
 In a Server/Slave Security Onion environment, you only need to change the configuration file on the server and the rule-update script will sync with the signatures from the Server.
 
 As mentioned before, take care in disabling signatures as it can be likely that a more appropriate response is warranted.
-  1. Edit the disablesid.conf configuration file:
+1. Edit the disablesid.conf configuration file:
 ```
      sudo vi /etc/nsm/pulledpork/disablesid.conf
 ```
-  2. Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
+2. Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
 ```
      # Disable the GPL SNMP public access udp signature
      1:2101411
 ```
-  3. Run the rule update on the master server:
+3. Run the rule update on the master server:
 ```
      sudo /usr/bin/rule-update
 ```
-  4. Run the rule update on the slave machines:
+4. Run the rule update on the slave machines:
 ```
      sudo /usr/bin/rule-update
 ```
