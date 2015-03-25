@@ -13,7 +13,7 @@ If you're going to run something using sudo, remember to use the "-i" option to 
 
 For certain proxies (Bluecoat in particular), you may need to change from https to http in /etc/nsm/pulledpork/pulledpork.conf.  For more information, please see:<br>
 <br>
-[Issue 154](Security-Onion-Solutions/security-onion/issues/154)
+[Issue 154](https://github.com/Security-Onion-Solutions/security-onion/issues/154)
 
 <a href='https://groups.google.com/d/topic/security-onion/NQ-dLLPxR6A/discussion'>https://groups.google.com/d/topic/security-onion/NQ-dLLPxR6A/discussion</a>
 
