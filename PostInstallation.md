@@ -32,7 +32,7 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 </li><li>Optional: add new Sguil user accounts with the following:<br>
 <pre><code>sudo nsm_server_user-add<br>
 </code></pre>
-</li><li>Optional, but highly recommended: configure <a href='Email.md'>email</a> for alerting and reporting.<br>
+</li><li>Optional, but highly recommended: configure [Email](email) for alerting and reporting.<br>
 </li><li>Optional, but highly recommended: place /etc under version control.  If your organization doesn't already have a standard version control tool, you can use <a href='https://help.ubuntu.com/12.04/serverguide/etckeeper.html'>etckeeper</a>:<br>
 <pre><code>sudo apt-get install etckeeper bzr<br>
 </code></pre>
