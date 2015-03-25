@@ -37,4 +37,4 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 <pre><code>sudo apt-get install etckeeper bzr<br>
 </code></pre>
 </li><li>Optional: need “remote desktop” access to your Security Onion sensor or server?  We recommend SSH X-Forwarding as shown above, but if you want something more rdp-like, you can install <a href='http://www.xrdp.org/'>xrdp</a> (sudo apt-get install xrdp) or [FreeNX](FreeNX).  Please note that we do not support xrdp or FreeNX.<br>
-</li><li>Read more about the tools contained in Security Onion: [Tools]
+</li><li>Read more about the tools contained in Security Onion: [Tools](Tools)
