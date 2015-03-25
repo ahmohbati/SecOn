@@ -47,8 +47,8 @@ Please note that this is all subject to change!
     * [Issue 699](https://code.google.com/p/security-onion/issues/detail?id=699): NSM: Bro node.cfg host=localhost
     * [Issue 700](https://code.google.com/p/security-onion/issues/detail?id=700): Setup: Bro node.cfg host=localhost
     * [Issue 702](https://code.google.com/p/security-onion/issues/detail?id=702): Snort 2.9.7.2
-  * April 2015
     * [Issue 703](https://code.google.com/p/security-onion/issues/detail?id=703): Move from Google Code to Github
+  * April 2015
     * [Issue 705](https://code.google.com/p/security-onion/issues/detail?id=705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 681](https://code.google.com/p/security-onion/issues/detail?id=681): rule-update: wipe snort\_dynamicrules directory on sensor
     * [Issue 677](https://code.google.com/p/security-onion/issues/detail?id=677): rule-update: create /usr/local/lib/snort\_dynamicrules/ if it doesn't already exist
