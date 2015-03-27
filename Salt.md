@@ -29,7 +29,7 @@ For new deployments, Advanced Setup checks to see if the securityonion-onionsalt
 
 For existing deployments, please see:
 
-[Existing Deployment](Salt#Salting_an_Existing_Deployment)
+[Existing Deployment](Salt#salting-an-existing-deployment)
 
 # Checking Status #
 Want to verify all your sensors are up?
