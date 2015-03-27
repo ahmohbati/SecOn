@@ -43,7 +43,7 @@ For more information, please see:
 Always update the master server first before updating sensors.
 
 ## Using salt and soup to Update your entire Deployment ##
-https://code.google.com/p/security-onion/wiki/Salt#Using_Salt_to_Install_Updates_Across_Your_Entire_Deployment
+[salt and soup](Salt#using-salt-to-install-updates-across-your-entire-deployment)
 
 ## Standard Ubuntu package management tools ##
 
