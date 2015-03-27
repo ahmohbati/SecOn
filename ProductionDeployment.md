@@ -35,7 +35,7 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li><li>Install the securityonion-all metapackage (or one of the more focused [metapackages](MetaPackages)). This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
 <pre><code>sudo apt-get -y install securityonion-all<br>
 </code></pre>
-</li><li>OPTIONAL: If you want to use Salt to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup. <a href='https://code.google.com/p/security-onion/wiki/Salt'>https://code.google.com/p/security-onion/wiki/Salt</a><br>
+</li><li>OPTIONAL: If you want to use Salt to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup. [Salt](Salt)<br>
 <pre><code>sudo apt-get -y install securityonion-onionsalt<br>
 </code></pre>
 </li><li>Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):<br>
