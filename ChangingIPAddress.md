@@ -18,22 +18,6 @@ OR
 
 # Files to update when changing the IP address #
 
-## Changing Sensor IP ##
-
-Modern versions of the NSM scripts should be doing this automatically, so you should no longer have to manually update /opt/bro/etc/node.cfg when your sensor IP address changes.
-
-  * /opt/bro/etc/node.cfg:
-```
-host=[SENSOR-IP]
-```
-
-## Automating the change of the sensor IP ##
-```
-sudo sed -i 's|OLD.SENSOR.IP.ADDR|NEW.SENSOR.IP.ADDR|g' /opt/bro/etc/node.cfg
-sudo nsm_sensor_ps-restart --only-bro
-```
-
-
 ## Changing Server IP ##
 
   * /etc/nsm/HOSTNAME-INTERFACE/http\_agent.conf:
