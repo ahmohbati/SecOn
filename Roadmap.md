@@ -90,6 +90,7 @@ Please note that this is all subject to change!
     * [Issue 532](../issues/532): sosetup: Limit what autossh keys can do
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
   * May 2015
+    * [Issue 708](../issues/708): Update OSSEC
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
