@@ -29,7 +29,7 @@ For new deployments, Advanced Setup checks to see if the securityonion-onionsalt
 
 For existing deployments, please see:
 
-https://code.google.com/p/security-onion/wiki/Salt#Salting_an_Existing_Deployment
+[Existing Deployment](Salt#Salting_an_Existing_Deployment)
 
 # Checking Status #
 Want to verify all your sensors are up?
@@ -109,7 +109,7 @@ sudo apt-get update && sudo apt-get install securityonion-onionsalt
 # OR preferably just allow from your sensor IP addresses like this:
 # sudo ufw allow proto tcp from a.b.c.d to any port 4505,4506
 # Also see our Firewall page:
-# https://code.google.com/p/security-onion/wiki/Firewall
+# [Firewall](Firewall)
 
 # Configure minion
 echo "master: localhost" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
