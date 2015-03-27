@@ -49,6 +49,7 @@ Please note that this is all subject to change!
     * [Issue 702](../issues/702): Snort 2.9.7.2
     * [Issue 703](../issues/703): Move from Google Code to Github
   * April 2015
+    * [Issue 706](../issues/706): Add Josh Brower's ELSA parsers for process logs and sysmon
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 681](../issues/681): rule-update: wipe snort\_dynamicrules directory on sensor
     * [Issue 677](../issues/677): rule-update: create /usr/local/lib/snort\_dynamicrules/ if it doesn't already exist
