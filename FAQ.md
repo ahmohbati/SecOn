@@ -52,7 +52,7 @@
 [security-onion Google Group](MailingLists)
 
 # I submitted a message to the security-onion Google Group.  Why isn't it showing up? #
-https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
+[Moderation](MailingLists#moderation)
 
 # What's the directory structure of /nsm? #
 [/nsm Directory Structure](DirectoryStructure)
@@ -73,7 +73,7 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 [Wiping Snorby database](WipingSnorby)
 
 # I disabled some Sguil agents but they still appear in Sguil's "Agent Status" tab. #
-https://code.google.com/p/security-onion/wiki/DisablingProcesses#Sguil_Agent
+[Disabling Processes](DisablingProcesses#Sguil_Agent)
 
 # Is commercial support available for Security Onion? #
 Yes, please see:
@@ -184,7 +184,7 @@ OR<br>
 <br>
 - stop sguild (sudo nsm_server_ps-stop) and manually categorize events using mysql (see <a href='http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html'>http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html</a>) OR lower your DAYSTOKEEP setting in /etc/nsm/securityonion.conf and run "sudo sguil-db-purge".<br>
 <br>
-To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See <a href='https://code.google.com/p/security-onion/wiki/ManagingAlerts#Autocategorize_events'>https://code.google.com/p/security-onion/wiki/ManagingAlerts#Autocategorize_events</a>.<br>
+To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See [Autocat](ManagingAlerts#Autocategorize_events).<br>
 <br>
 Also see UNCAT_MAX: <a href='http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html'>http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html</a>
 
