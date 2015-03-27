@@ -23,7 +23,9 @@ We have different Installation Guides to cover various use cases.  Please choose
 If you just want to **quickly evaluate** Security Onion, choose one of the following.  If you're a first time user, please choose the first option.
 
   * [Download our Security Onion ISO image and Quickly Evaluate](QuickISOImage)
+
 OR
+
   * [Quickly Evaluating Security Onion using \*your preferred flavor of Ubuntu 12.04\*](InstallingOnUbuntu)
 
 ## Production Deployment ##
