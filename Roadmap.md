@@ -54,7 +54,6 @@ Please note that this is all subject to change!
     * [Issue 677](../issues/677): rule-update: create /usr/local/lib/snort\_dynamicrules/ if it doesn't already exist
     * [Issue 678](../issues/678): rule-update: /etc/cron.d/rule-update should have 2>&1
     * [Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log
-    * [Issue 682](../issues/682): rule-update: update Snorby signature\_lookup
     * [Issue 679](../issues/679): rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
