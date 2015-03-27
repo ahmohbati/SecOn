@@ -184,7 +184,7 @@ OR<br>
 <br>
 - stop sguild (sudo nsm_server_ps-stop) and manually categorize events using mysql (see <a href='http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html'>http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html</a>) OR lower your DAYSTOKEEP setting in /etc/nsm/securityonion.conf and run "sudo sguil-db-purge".<br>
 <br>
-To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See [Autocat](ManagingAlerts#Autocategorize_events).<br>
+To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See [Autocat](ManagingAlerts#autocategorize-events).<br>
 <br>
 Also see UNCAT_MAX: <a href='http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html'>http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html</a>
 
