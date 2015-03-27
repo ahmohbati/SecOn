@@ -69,9 +69,9 @@ When setup is finished you'll see several informative prompts providing you valu
     * prads.conf - configuration file used to define variables and configuration settings specific to PRADS.
   * "If you have any questions or problems, please visit our website where you can find the following links: FAQ, Wiki, Mailing Lists, IRC channel and more!" - If you need help or assistance, it's not far away. The Security Onion Mailing List is the most efficient means of getting community support or help if you experience problems or have questions.
     * Security Onion - http://blog.securityonion.net/
-    * Security Onion Google Code Project - http://code.google.com/p/security-onion/
-    * FAQ - http://code.google.com/p/security-onion/wiki/FAQ
-    * Wiki - http://code.google.com/p/security-onion/w/list
+    * Security Onion on Github - https://github.com/Security-Onion-Solutions/security-onion
+    * FAQ - https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ
+    * Wiki - https://github.com/Security-Onion-Solutions/security-onion/wiki
     * Mailing Lists - https://groups.google.com/forum/?fromgroups#!forum/security-onion
     * IRC channel - http://webchat.freenode.net/?channels=securityonion
 At this point we have a fully functioning Security Onion standalone system up and running. To confirm, open up a terminal and type "sudo nsm\_sensor\_ps-status" and you should see results showing the various agent and service components of Security Onion with an "OK" or "FAIL" status.
