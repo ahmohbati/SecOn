@@ -1,7 +1,6 @@
 # Overview #
 
-**Note from Doug Burks: We don't really recommend or support FreeNX, but some folks like to use it, so here are the notes from Lance Honer.  If you choose to install FreeNX, you should harden your server and tighten its UFW firewall:
-[Firewall](Firewall)**
+**Note from Doug Burks: We don't really recommend or support FreeNX, but some folks like to use it, so here are the notes from Lance Honer.  If you choose to install FreeNX, you should harden your server and [tighten its UFW firewall](Firewall).**
 
 **Also see the Ubuntu page on FreeNX (especially the section entitled "Using custom SSH keys"):
 https://help.ubuntu.com/community/FreeNX**
