@@ -13,7 +13,7 @@ Prevent Network Manager from starting at next boot:<br>
 Next, configure your network interfaces in /etc/network/interfaces.<br>
 <br>
 <h3>Management interface</h3>
-You'll want a management interface (preferably connected to a dedicated management network) using either DHCP OR <b>preferably</b> static IP.  If your management interface uses DHCP and you have Bro in cluster mode, it will complain whenever your DHCP address changes and you'll have to update your IP in Bro's node.cfg file.  Static IP is highly recommended to prevent this issue.<br>
+You'll want a management interface (preferably connected to a dedicated management network) using either DHCP OR <b>preferably</b> static IP.  <br>
 <br>
 <h3>Sniffing interface(s)</h3>
 You'll want one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'><a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'>http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html</a></a>).<br>
