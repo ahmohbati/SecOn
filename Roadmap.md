@@ -46,7 +46,7 @@ Please note that this is all subject to change!
     * ~~[Issue 698](../issues/698): NSM: nsm\_server\_del line 170 echo\_msg 0 "Deleting server: $SERVER\_NAME"~~
     * ~~[Issue 699](../issues/699): NSM: Bro node.cfg host=localhost~~
     * ~~[Issue 700](../issues/700): Setup: Bro node.cfg host=localhost~~
-    * [Issue 702](../issues/702): Snort 2.9.7.2
+    * ~~[Issue 702](../issues/702): Snort 2.9.7.2~~
     * [Issue 703](../issues/703): Move from Google Code to Github
   * April 2015
     * [Issue 706](../issues/706): Add Josh Brower's ELSA parsers for process logs and sysmon
