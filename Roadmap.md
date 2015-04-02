@@ -58,6 +58,7 @@ Please note that this is all subject to change!
     * [Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log
     * [Issue 679](../issues/679): rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
+    * [Issue 711](../issues/711): Add "date" command to /usr/bin/sguil-db-purge #711
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
