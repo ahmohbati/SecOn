@@ -1,5 +1,6 @@
 ## Getting Started ##
   * [Introduction](IntroductionToSecurityOnion)
+  * [Tools]
   * [Hardware Requirements](Hardware)
   * [Download/Install](Installation)
   * [Booting Issues](TroubleBooting)
