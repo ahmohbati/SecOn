@@ -52,13 +52,13 @@ Please note that this is all subject to change!
     * ~~[Issue 709](../issues/709): Add fear.nothing's ELSA parsers for pfSense~~
     * ~~[Issue 710](../issues/710): securityonion-web-page: add ELSA queries for Firewall logs and Windows Processes~~
   * April 2015
+    * [Issue 711](../issues/711): Add "date" command to /usr/bin/sguil-db-purge
     * [Issue 681](../issues/681): rule-update: wipe snort\_dynamicrules directory on sensor
     * [Issue 677](../issues/677): rule-update: create /usr/local/lib/snort\_dynamicrules/ if it doesn't already exist
     * [Issue 678](../issues/678): rule-update: /etc/cron.d/rule-update should have 2>&1
     * [Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log
     * [Issue 679](../issues/679): rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
-    * [Issue 711](../issues/711): Add "date" command to /usr/bin/sguil-db-purge
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
