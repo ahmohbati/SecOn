@@ -288,7 +288,7 @@ For more information, please see:<br>
 A few options:<br>
 <ul><li>"ssh -X" - any program started in the SSH session will be displayed on your local desktop (requires a local X server)<br>
 </li><li><a href='http://www.xrdp.org/'>xrdp</a> - sudo apt-get install xrdp - requires an rdp client<br>
-</li><li>You can use [FreeNX](FreeNX) but we don't recommend or support it</li></ul>
+</li><li>You can use [FreeNX](https://github.com/Security-Onion-Solutions/security-onion/wiki/FreeNX) but we don't recommend or support it</li></ul>
 
 <h1>Why does the Snorby dashboard show all zeroes?</h1>
 Please do the following:<br>
