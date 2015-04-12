@@ -15,6 +15,7 @@
 <pre><code>sudo apt-get clean<br>
 sudo rm -rf /var/lib/apt/lists/*<br>
 sudo apt-get clean<br>
+sudo apt-get update<br>
 </code></pre>
 </li><li>Add the Security Onion stable repository:<br>
 <pre><code>sudo apt-get -y install python-software-properties<br>
