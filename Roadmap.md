@@ -55,11 +55,11 @@ Please note that this is all subject to change!
     * ~~[Issue 711](../issues/711): Add "date" command to /usr/bin/sguil-db-purge~~
     * ~~[Issue 692](../issues/692): sostat: list number of ELSA buffers in queue and warn if higher than 20~~
     * ~~[Issue 701](../issues/701): sostat: include number of CPU cores~~
-    * [Issue 681](../issues/681): rule-update: wipe snort\_dynamicrules directory on sensor
-    * [Issue 677](../issues/677): rule-update: create /usr/local/lib/snort\_dynamicrules/ if it doesn't already exist
-    * [Issue 678](../issues/678): rule-update: /etc/cron.d/rule-update should have 2>&1
-    * [Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log
-    * [Issue 679](../issues/679): rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
+    * ~~[Issue 681](../issues/681): rule-update: wipe snort\_dynamicrules directory on sensor~~
+    * ~~[Issue 677](../issues/677): rule-update: create /usr/local/lib/snort\_dynamicrules/ if it doesn't already exist~~
+    * ~~[Issue 678](../issues/678): rule-update: /etc/cron.d/rule-update should have 2>&1~~
+    * ~~[Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log~~
+    * ~~[Issue 679](../issues/679): rule-update: run pulledpork as unprivileged user~~
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 714](../issues/714): nsm_server_user-disable
