@@ -16,7 +16,7 @@ We use the default Xplico credentials as listed here:
 http://wiki.xplico.org/doku.php?id=interface
 
 # Sguil #
-Log into Sguil using the username/password you created in the Setup wizard.  Add accounts with "sudo nsm\_server\_user-add" and change passwords with "sudo nsm\_server\_user-passwd".
+Log into Sguil using the username/password you created in the Setup wizard.  Add accounts with "sudo nsm\_server\_user-add" and change passwords with "sudo nsm\_server\_user-passwd".  Disable accounts with "sudo sguild -disableuser USER" (replacing USER with the actual username you'd like to disable).
 
 # Squert #
 Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil.
