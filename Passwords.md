@@ -17,17 +17,17 @@ http://wiki.xplico.org/doku.php?id=interface
 
 # Sguil #
 Log into Sguil using the username/password you created in the Setup wizard.  
-Add accounts with 
+You can add accounts as follows: 
 ```
 sudo nsm_server_user-add
 ```
-Change passwords with 
+You can change passwords as follows: 
 ```
 sudo nsm_server_user-passwd
 ```
-Disable accounts with
+You can disable accounts as follows (replacing USER with the actual username you'd like to disable):
 ```
-sudo sguild -disableuser USER (replacing USER with the actual username you'd like to disable).
+sudo sguild -disableuser USER 
 ```
 
 # Squert #
