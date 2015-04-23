@@ -61,8 +61,8 @@ Please note that this is all subject to change!
     * ~~[Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log~~
     * ~~[Issue 679](../issues/679): rule-update: run pulledpork as unprivileged user~~
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
-    * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 714](../issues/714): nsm_server_user-disable
+    * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
