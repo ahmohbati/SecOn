@@ -17,6 +17,7 @@ http://wiki.xplico.org/doku.php?id=interface
 
 # Sguil #
 Log into Sguil using the username/password you created in the Setup wizard.  
+
 You can add accounts as follows: 
 ```
 sudo nsm_server_user-add
