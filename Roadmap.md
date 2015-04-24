@@ -105,7 +105,6 @@ Please note that this is all subject to change!
     * [Issue 464](../issues/464): Consider changing default query\_timeout in /etc/elsa\_web.conf
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 336](../issues/336): When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
-    * [Issue 385](../issues/385): Additional log parsers (non-Bro) for ELSA
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
     * [Issue 467](../issues/467): ELSA dashboard for Snort performance
