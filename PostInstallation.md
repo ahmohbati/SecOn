@@ -28,13 +28,17 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 </code></pre>
 </li><li>[Disable any unneeded sensor processes](DisablingProcesses)<br>
 </li><li>Tune the number of PF_RING instances for Snort/Suricata and Bro: [PF_RING](PF_RING)
-</li><li>Optional: exclude unnecessary traffic from your monitoring using [BPF](BPF).<br>
-</li><li>Optional: add new Sguil user accounts with the following:<br>
+</li><li>*Optional:* exclude unnecessary traffic from your monitoring using [BPF](BPF).<br>
+</li><li>*Optional:* add new Sguil user accounts with the following:<br>
 <pre><code>sudo nsm_server_user-add<br>
 </code></pre>
-</li><li>Optional, but highly recommended: configure [Email](email) for alerting and reporting.<br>
-</li><li>Optional, but highly recommended: place /etc under version control.  If your organization doesn't already have a standard version control tool, you can use <a href='https://help.ubuntu.com/12.04/serverguide/etckeeper.html'>etckeeper</a>:<br>
-<pre><code>sudo apt-get install etckeeper bzr<br>
+</li><li>*Optional*, but highly recommended: configure [Email](email) for alerting and reporting.<br>
+</li><li>*Optional*, but highly recommended: place /etc under version control.  If your organization doesn't already have a standard version control tool, you can use [bazaar](https://help.ubuntu.com/12.04/serverguide/bazaar.html), [git](http://git-scm.com/), <a href='https://help.ubuntu.com/12.04/serverguide/etckeeper.html'>etckeeper</a>:<br>
+<pre><code>sudo apt-get install etckeeper<br>
 </code></pre>
-</li><li>Optional: need “remote desktop” access to your Security Onion sensor or server?  We recommend SSH X-Forwarding as shown above, but if you want something more rdp-like, you can install <a href='http://www.xrdp.org/'>xrdp</a> (sudo apt-get install xrdp) or [FreeNX](FreeNX).  Please note that we do not support xrdp or FreeNX.<br>
+</li><li>*Optional:* need “remote desktop” access to your Security Onion sensor or server? We recommend SSH X-Forwarding as shown above, but if you want something more rdp-like, you can install [FreeNX](https://help.ubuntu.com/community/FreeNX) or <a href='http://www.xrdp.org/'>xrdp</a>:
+```
+sudo apt-get install xrdp
+```
+Please note that we do not support FreeNX or xrdp.<br>
 </li><li>Read more about the tools contained in Security Onion: [Tools](Tools)
