@@ -7,7 +7,20 @@ Our Setup script automatically configures both Snorby and ELSA to be able to piv
   * Click "Save Settings".
 
 ## Configuring ELSA to auto-authenticate to CapME ##
-  * Click the ELSA menu and click Preferences.
-  * Create a new Preference called "openfpc\_username" and enter your **Sguil** username.
-  * Create a new Preference called "openfpc\_password" and enter your **Sguil** password.
-  * Close the Preferences window and reload the ELSA page.
+  * Navigate to ELSA -> Preferences:<br>
+<br>
+<img src='images/elsa/elsa_prefs.png' /><br>
+  * Select Actions -> Add New Preference:<br>
+<br>
+<img src='images/elsa/elsa_prefs_add.png' /><br>
+  * Enter the following into the new Preference:<br>
+<pre><code>Type = custom<br>
+Name = openfpc_username<br>
+Value = "your **Sguil** username"<br>
+</code></pre>
+  * Enter the following into the new Preference:<br>
+<pre><code>Type = custom<br>
+Name = openfpc_password<br>
+Value = "your **Sguil** password"<br>
+</code></pre>
+  * Close the Preferences window and reload the ELSA page (F5).
