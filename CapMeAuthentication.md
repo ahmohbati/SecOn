@@ -8,7 +8,7 @@ Our Setup script automatically configures both Snorby and ELSA to be able to piv
 
 ## Configuring ELSA to auto-authenticate to CapME ##
   * Navigate to ELSA -> Preferences:<br>
-<img src='images/elsa/elsa_prefs.png' /><br>
+<img src='images/elsa/elsa_prefs.png' />
   * Select Actions -> Add New Preference:<br>
 <img src='images/elsa/elsa_prefs_add.png' /><br>
   * Enter the following into the new Preference:<br>
