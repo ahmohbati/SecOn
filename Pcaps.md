@@ -1,8 +1,8 @@
-# /opt/samples/ #
+#### /opt/samples/ ####
 
 Security Onion 12.04 comes with several pcap samples in /opt/samples/.
 
-# Links #
+#### Links ####
 
   * http://www.malware-traffic-analysis.net/
 
@@ -38,6 +38,6 @@ Security Onion 12.04 comes with several pcap samples in /opt/samples/.
 
   * http://www.defcon.org/html/links/dc-ctf.html  (You have to follow some of the links, which redirect to competitor blogs but there's lots of goodness).
 
-# tcpreplay #
+#### tcpreplay ####
 You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see
 [here](http://blog.securityonion.net/2011/01/introduction-to-sguil-and-squert-part-3.html) for a quick, easy use-case and what you should see in the Sguil console.
