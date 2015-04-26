@@ -1,4 +1,4 @@
-## If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 32-bit/64-bit (not using our ISO image), follow these steps: ##
+#### If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 32-bit/64-bit (not using our ISO image), follow these steps: ####
   1. First, check the [Hardware Requirements](Hardware) page.
   1. Download the ISO image for your preferred flavor of Ubuntu 12.04.5, verify its checksum,  and boot from it.<br>
   1. Follow the prompts in the installer, but see the two notes below first.<br>
