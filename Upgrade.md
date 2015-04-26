@@ -1,6 +1,6 @@
-# Security Onion 12.04 Update Procedure #
+### Security Onion 12.04 Update Procedure ###
 
-## Initiating an update over SSH ##
+#### Initiating an update over SSH ####
 
 If you're updating your Security Onion box over an SSH connection and your connection drops, then your update process may be left in an inconsistent state.  It is therefore recommended to run byobu so that your session will continue to run on the Security Onion box even if your connection drops.  Byobu is very handy and we recommend running it all the time to avoid forgetting about it before an update.
 ```
@@ -16,7 +16,7 @@ byobu-enable
 For more information about byobu, please see:
 https://help.ubuntu.com/community/Byobu
 
-## soup - Security Onion UPdate ##
+#### soup - Security Onion UPdate ####
 
 We recommend using the "soup" script to automatically install updates while avoiding the MySQL/PF\_RING issues described below.
 ```
@@ -37,15 +37,16 @@ sudo apt-get update && sudo apt-get install securityonion-sostat
 
 For more information, please see:
 <a href='http://blog.securityonion.net/2013/08/new-securityonion-packages.html'><a href='http://blog.securityonion.net/2013/08/new-securityonion-packages.html'>http://blog.securityonion.net/2013/08/new-securityonion-packages.html</a></a>
-
-## Distributed deployments ##
+<br>
+<br>
+### Distributed deployments ###
 
 Always update the master server first before updating sensors.
 
-## Using salt and soup to Update your entire Deployment ##
+#### Using salt and soup to Update your entire Deployment ####
 [salt and soup](Salt#using-salt-to-install-updates-across-your-entire-deployment)
 
-## Standard Ubuntu package management tools ##
+#### Standard Ubuntu package management tools ####
 
 The "soup" command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
 
