@@ -1,8 +1,8 @@
-# Introduction #
+#### Introduction ####
 
 The tcl/tk packages are "on hold".  apt-get will report that tcl8.5 has been held back.  Update Manager will show tcl8.5 as grayed out and unavailable.  This is intentional and you should not try to manually install tcl8.5.
 
-# Details #
+#### Details ####
 
 Sguil is not compatible with tcl threading.  In 20110607, I compiled and deployed tcl8.5 WITHOUT threading and put the normal tcl8.5 (WITH theading) on hold to prevent it from being installed.  I did this using the command:<br>
 wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4<br>
