@@ -1,8 +1,8 @@
-# Team Members #
+#### Team Members ####
 
 Security Onion is made possible by the hard work of the following folks!  (If I've missed anybody, please let me know.)
 
-# Help Wanted #
+#### Help Wanted ####
 Security Onion needs more volunteers in all of the areas defined below.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to these needs!  If interested, please contact Doug Burks via email (if you're on our mailing list you know what the address is).  Thanks!
 
 **Core Development Team**
