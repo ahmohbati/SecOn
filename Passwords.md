@@ -1,21 +1,21 @@
-# OS root account #
+#### OS root account ####
 
 Like other Ubuntu-based distributions, there is no root password. Your default user account has been given sudo permissions. Graphical utilities requesting administrative access should prompt for password; enter your user password. Command-line utilities that require administrative access can be prefixed with "sudo". For example, to add a user:
 ```
 sudo adduser mynewuseraccount
 ```
 
-# MySQL #
+#### MySQL ####
 The MySQL root password is null to allow the NSMnow administration scripts to add/delete sensors properly. MySQL only allows connections from localhost.  If you need to look at the database manually, you can do so like this:
 ```
 mysql -uroot
 ```
 
-# Xplico #
+#### Xplico ####
 We use the default Xplico credentials as listed here:
 http://wiki.xplico.org/doku.php?id=interface
 
-# Sguil #
+#### Sguil ####
 Log into Sguil using the username/password you created in the Setup wizard.  
 
 You can add accounts as follows: 
@@ -31,16 +31,16 @@ You can disable accounts as follows (replacing USER with the actual username you
 sudo sguild -disableuser USER 
 ```
 
-# Squert #
+#### Squert ####
 Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil.
 
-# ELSA #
+#### ELSA ####
 ELSA authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil.
 
-# Snorby #
+#### Snorby ####
 Snorby does not authenticate against the Sguil user database.  Log into Snorby using the EMAIL ADDRESS and password you specified in Setup.
 
-## Reset Snorby Password ##
+#### Reset Snorby Password ####
 To reset your Snorby password, first open the Rails console:
 ```
 cd /opt/snorby/
