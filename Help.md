@@ -4,7 +4,7 @@
   * Check the [FAQ](FAQ).
   * Search the [Security Onion Mailing Lists](MailingLists).
   * Search the documentation and mailing lists of the tools contained within Security Onion: [Tools](Tools)
-  * Run "sostat" for some diagnostics:
+  * Run `sostat` for some diagnostics:
 ```
 sudo sostat | less
 ```
@@ -12,12 +12,12 @@ sudo sostat | less
 ```
 sudo service nsm restart
 ```
-  * Check log files in /var/log/nsm/ for any errors or possible clues.
+  * Check log files in `/var/log/nsm/` for any errors or possible clues.
   * If this is a sensor sending alerts to master server, is autossh running?
 ```
 pgrep -lf autossh
 ```
-  * If you're having problems with Snorby, check the log files in /opt/snorby/log/ and /var/log/apache2/ and see if its processes are running:
+  * If you're having problems with Snorby, check the log files in `/opt/snorby/log/` and `/var/log/apache2/` and see if its processes are running:
 ```
 pgrep -lf delayed_job
 ```
