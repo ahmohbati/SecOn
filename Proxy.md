@@ -1,6 +1,6 @@
 #### What do I need to do if I'm behind a proxy? ####
 
-Put your proxy server settings in /etc/environment like this:<br>
+Put your proxy server settings in `/etc/environment` like this:<br>
 <pre><code>export http_proxy=https://server:port<br>
 export https_proxy=https://server:port<br>
 export ftp_proxy=https://server:port<br>
@@ -11,7 +11,7 @@ If you're going to run something using sudo, remember to use the "-i" option to 
 <pre><code>sudo -i rule-update<br>
 </code></pre>
 
-For certain proxies (Bluecoat in particular), you may need to change from https to http in /etc/nsm/pulledpork/pulledpork.conf.  For more information, please see:<br>
+For certain proxies (Bluecoat in particular), you may need to change from https to http in `/etc/nsm/pulledpork/pulledpork.conf`.  For more information, please see:<br>
 <br>
 [Issue 154](https://github.com/Security-Onion-Solutions/security-onion/issues/154)
 
