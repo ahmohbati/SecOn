@@ -1,14 +1,13 @@
 #### Introduction ####
 
-The tcl/tk packages are "on hold".  apt-get will report that tcl8.5 has been held back.  Update Manager will show tcl8.5 as grayed out and unavailable.  This is intentional and you should not try to manually install tcl8.5.
+The tcl/tk packages are "on hold".  `apt-get` will report that tcl8.5 has been held back.  Update Manager will show tcl8.5 as grayed out and unavailable.  This is intentional and you should not try to manually install tcl8.5.
 
 #### Details ####
 
 Sguil is not compatible with tcl threading.  In 20110607, I compiled and deployed tcl8.5 WITHOUT threading and put the normal tcl8.5 (WITH theading) on hold to prevent it from being installed.  I did this using the command:<br>
-wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4<br>
+`wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4`<br>
 <br>
 If you force tcl8.5 to install, it will install the threaded version and Sguil will break.  Please do not change the tcl/tk packages!<br>
-<br>
 ####Fix####
 If you accidentally installed the threaded version of tcl8.5, you should be able to get back to a working configuration using the following steps:<br>
 <pre><code># get the correct version for SO<br>
@@ -31,6 +30,6 @@ sudo wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4<br>
 ####See Also####
 Also see the page on [FreeNX](FreeNX) and in particular this:<br>
 <br>
-"Now that the FreeNX Server is up and running if you were to attempt to launch Sguil from the desktop link you'll notice that nothing happens. This is due to a symlink change made during the installation that affects the execution of the 'wish' command. Execution of 'wish' launches /usr/bin/wish which is a symlink to /etc/alternatives/wish. Prior to the FreeNX Server installation the symlink /etc/alternatives/wish pointed to /usr/bin/wish8.5 and now points to a newly created symlink /usr/bin/wish-default which points to /usr/bin/wish8.4. You need to change it back so that exection of 'wish', by Sguil, will launch tk8.5 and not tk8.4."<br>
+"Now that the FreeNX Server is up and running if you were to attempt to launch Sguil from the desktop link you'll notice that nothing happens. This is due to a symlink change made during the installation that affects the execution of the `wish` command. Execution of `wish` launches `/usr/bin/wish` which is a symlink to `/etc/alternatives/wish`. Prior to the FreeNX Server installation the symlink `/etc/alternatives/wish` pointed to `/usr/bin/wish8.5` and now points to a newly created symlink `/usr/bin/wish-default` which points to `/usr/bin/wish8.4`. You need to change it back so that exection of `wish`, by Sguil, will launch tk8.5 and not tk8.4."<br>
 <pre><code>sudo ln -sf /usr/bin/wish8.5 /etc/alternatives/wish<br>
 </code></pre>
