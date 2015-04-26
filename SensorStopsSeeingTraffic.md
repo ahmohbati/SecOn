@@ -2,15 +2,15 @@ Just like in everything, there's always more than one way to do it!<br>
 <br>
 Here are a few options:<br>
 <br>
-<h1>OSSEC</h1>
+####OSSEC####
 OSSEC checks your sniffing interfaces every 10 minutes.  If no packets have been received within that 10 minute window, then OSSEC will generate an alert.  This alert can be found in Sguil, Squert, and ELSA.  If you'd like OSSEC to email you, then configure it for email as shown here:<br>
 [https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-ossec-to-send-emails](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-ossec-to-send-emails)
 
-<h1>Bro</h1>
+####Bro####
 Bro will automatically email you when it stops seeing traffic on an interface.  All you have to do is configure Bro per the [Email](Email) page:<br>
 [https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails)
 
-<h1>Script to check for lack of IDS alerts</h1>
+####Script to check for lack of IDS alerts####
 Here's another option contributed by Jerry Shenk:<br>
 <pre><code>#!/bin/sh<br>
 #script to monitor Security Onion activity for the past hour to alert on inactivity<br>
