@@ -1,9 +1,9 @@
-# Introduction #
+#### Introduction ####
 
 The following are posts from Martin Holste, the author of ELSA, extracted from the Security Onion and Security Onion Testing mailing lists, that provide insight and working examples of the power of ELSA's query capabilities.
 
 
-# 12/11/12 - [security-onion-testing] #
+#### 12/11/12 - [security-onion-testing] ####
 
 In any case, be sure to check out the documentation for subsearches (https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Subsearches) as that's where you get the really powerful queries from.
 
@@ -48,7 +48,7 @@ Change granularity to per-minute
 ```
 Be alerted in the future by clicking "Results..." and choosing "Create alert" so anytime uri:check.rsp shows up you get an email.
 
-# 1/12/13 - [security-onion] #
+#### 1/12/13 - [security-onion] ####
 
 Once you start looking at connections in ELSA with geoip, you can also use the "whois" plugin in the same way to see a description of the destination network.  So, from Brad's dashboard, you could run this query in the ELSA query box:
 ```
@@ -72,11 +72,11 @@ Now for something a bit more advanced.  Using the latest version of ELSA, you ca
 ```
 So now we're checking any remote host (as in not on the home network) involved in a Trojan incident for transferring more than a megabyte of data to an IP not owned by Google.
 
-# 1/22/13 - [security-onion] Is it possible to launch ELSA from command line? #
+#### 1/22/13 - [security-onion] Is it possible to launch ELSA from command line? ####
 
 You can use the command-line version of ELSA by navigating to /opt/elsa/web/ (I think that's the right directory on SO) and using the "cli.pl" script.  The "-q" parameter is for query, so it would look like perl cli.pl -q "example.com" and you can use "-f" to change the result format from TSV to JSON.
 
-# 4/16/2013 - [ELSA](ELSA) What is the best way to query for a list of all internal RFC1918 hosts sending / receiving traffic outside the US? #
+#### 4/16/2013 - [ELSA](ELSA) What is the best way to query for a list of all internal RFC1918 hosts sending / receiving traffic outside the US? ####
 
 Great question!
 
