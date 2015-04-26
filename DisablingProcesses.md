@@ -5,7 +5,7 @@ For example, suppose you access Bro's HTTP logs via ELSA, so you want to disable
 ```
 sudo nsm_sensor_ps-stop --only-http-agent
 ```
-You would then edit /etc/nsm/HOSTNAME-INTERFACE/sensor.conf and change:
+You would then edit `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf` and change:
 ```
 HTTP_AGENT_ENABLED="yes"
 ```
@@ -13,7 +13,7 @@ to:
 ```
 HTTP_AGENT_ENABLED="no"
 ```
-to prevent http\_agent from restarting the next time the NSM scripts are run.  A quick way to do this for all /etc/nsm/`*`/sensor.conf files on one box is to use the sed command as follows:
+to prevent http\_agent from restarting the next time the NSM scripts are run.  A quick way to do this for all `/etc/nsm/*/sensor.conf` files on one box is to use the sed command as follows:
 ```
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 ```
