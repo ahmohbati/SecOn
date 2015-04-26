@@ -31,7 +31,7 @@ There will be a lot of output, so you may need to increase your terminal's scrol
 sudo sostat-redacted > sostat-redacted.txt 2>&1
 ```
 
-sostat-redacted will automatically redact any IPv4/IPv6/MAC addresses, but there may be additional sensitive info that you still need to redact manually.
+`sostat-redacted` will automatically redact any IPv4/IPv6/MAC addresses, but there may be additional sensitive info that you still need to redact manually.
 
 Attach the output to your email in plain text format (.txt) OR use a service like http://pastebin.com.
 
