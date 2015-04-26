@@ -1,9 +1,9 @@
-# Adding a new disk for /nsm #
+#### Adding a new disk for /nsm ####
 
 Before doing this in production, make sure you practice this on a non-production system!
 
 There are two ways to do this:
-## Method 1: ##
+#### Method 1: ####
 Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in /nsm to the new drive using something like this:
 
 Stop all services
@@ -54,7 +54,7 @@ sudo service nsm start
 ```
 
 
-## Method 2: ##
+#### Method 2: ####
 
 Make /nsm a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
 
@@ -111,14 +111,14 @@ Start all services
 ```
 sudo service nsm start
 ```
+<br>
+#### Moving the MySQL Databases ####
 
-# Moving the MySQL Databases #
-
-## Synopsis: ##
+#### Synopsis: ####
 
 In this article I’m going to show how you can move the MySQL databases containing all of your important alert and event data to another place. I will be moving the databases to a large external drive I have mounted as /nsm, though, any other location will do.
 
-## Procedure: ##
+#### Procedure: ####
 
 The MySQL databases are stored under /var/lib/mysql. We will need to move this folder
 and its sub-contents to the destination location. First, we must stop all processes that may
