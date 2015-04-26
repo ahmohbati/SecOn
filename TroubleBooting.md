@@ -1,4 +1,4 @@
-# Why won't the ISO image boot on my machine? #
+#### Why won't the ISO image boot on my machine? ####
   * Did you verify the checksum of the downloaded ISO as described on the [Installation](Installation) page?
   * Does your machine support 64-bit?  (If you're trying to run a 64-bit VM, then your 64-bit processor must support virtualization and virtualization must be enabled in the BIOS.)  If not, then you'll need to obtain a 64-bit machine to use our 64-bit ISO image (recommended) or use your 32-bit machine by installing Ubuntu 12.04 32-bit and adding our PPA and packages as described on the [Installation](Installation) page.
   * If you think your machine does support 64-bit, but you're still having problems with our 64-bit ISO image, try downloading the Ubuntu 12.04 64-bit ISO image and seeing if it runs.  If it doesn't, then you should verify your 64-bit compatibility.
