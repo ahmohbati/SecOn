@@ -1,4 +1,4 @@
-# Why does Security Onion use UTC? #
+#### Why does Security Onion use UTC? ####
 When you run Security Onion Setup, it sets the timezone to UTC/GMT because that is the recommended/required setting for Sguil:<br>
 <a href='http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html'><a href='http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html'>http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a></a><br>
 <a href='https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem'><a href='https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem'>https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem</a></a><br>
@@ -12,7 +12,7 @@ Additionally, UTC comes in quite handy when you have sensors in different time z
 Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.  If you set your local timezone in Snorby, make sure that you also set the same timezone in CapMe's timezone.php:<br>
 <a href='http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html'>http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html</a>
 
-<h1>Why are the timestamps in ELSA not in UTC?</h1>
+####Why are the timestamps in ELSA not in UTC?####
 
 By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC/GMT by configuring the use_utc setting in your ELSA Preferences panel.<br>
 <br>
