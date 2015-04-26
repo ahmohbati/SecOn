@@ -63,6 +63,7 @@ Please note that this is all subject to change!
     * [Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 500](../issues/500): sosetup: restart starman
+    * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 714](../issues/714): nsm_server_user-disable
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
@@ -91,7 +92,6 @@ Please note that this is all subject to change!
     * [Issue 592](../issues/592): sosetup: add -y option
     * [Issue 593](../issues/593): sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
     * [Issue 480](../issues/480): sosetup: running on sensor should automatically create autossh account on server
-    * [Issue 504](../issues/504): sosetup: avoid running securityonion\_elsa\_register.rb twice
     * [Issue 532](../issues/532): sosetup: Limit what autossh keys can do
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
   * May 2015
