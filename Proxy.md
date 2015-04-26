@@ -1,4 +1,4 @@
-# What do I need to do if I'm behind a proxy? #
+#### What do I need to do if I'm behind a proxy? ####
 
 Put your proxy server settings in /etc/environment like this:<br>
 <pre><code>export http_proxy=https://server:port<br>
