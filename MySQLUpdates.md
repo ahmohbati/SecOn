@@ -1,12 +1,12 @@
-# Use Soup #
+#### Use Soup ####
 
 It's no longer necessary to perform the steps listed here as long as you use "soup" to perform updates.  For more information, please see the [Updating](Upgrade) page.
 
-# Introduction #
+#### Introduction ####
 
 Updating the Ubuntu MySQL packages can be problematic due to autossh port forwarding and a bug in our current version of ELSA.  Here's the recommended procedure to ensure a smooth update.
 
-# Procedure #
+#### Procedure ####
 
   1. Stop all relevant services:
 ```
