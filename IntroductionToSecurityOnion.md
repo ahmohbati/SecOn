@@ -7,11 +7,14 @@ Many assume NSM is a solution they can buy to fill a gap; purchase and deploy so
 
 #### Core Components ####
 
-Security Onion seamlessly weaves together three core functions: full packet capture, network-based and host-based intrusion detection intrusion detection systems (NIDS and HIDS, respectively), and powerful analysis tools.
+Security Onion seamlessly weaves together three core functions: 
+* full packet capture;
+* network-based and host-based intrusion detection systems (NIDS and HIDS, respectively);
+* and powerful analysis tools.
 
-Full-packet capture is accomplished via netsniff-ng (http://netsniff-ng.org/), “the packet sniffing beast”.  netsniff-ng captures all the traffic your Security Onion sensors see and stores as much of it as your storage solution will hold (Security Onion has a built-in mechanism to purge old data before your disks fill to capacity). Full packet capture is like a video camera for your network, but better because not only can it tell us who came and went, but also exactly where they went and what they brought or took with them (exploit payloads, phishing emails, file exfiltration). It’s a crime scene recorder that can tell us a lot about the victim and the white chalk outline of a compromised host on the ground. There is certainly valuable evidence to be found on the victim’s body, but evidence at the host can be destroyed or manipulated; the camera doesn't lie, is hard to deceive, and can capture a bullet in transit.
+_Full-packet capture_ is accomplished via netsniff-ng (http://netsniff-ng.org/), “the packet sniffing beast”.  netsniff-ng captures all the traffic your Security Onion sensors see and stores as much of it as your storage solution will hold (Security Onion has a built-in mechanism to purge old data before your disks fill to capacity). Full packet capture is like a video camera for your network, but better because not only can it tell us who came and went, but also exactly where they went and what they brought or took with them (exploit payloads, phishing emails, file exfiltration). It’s a crime scene recorder that can tell us a lot about the victim and the white chalk outline of a compromised host on the ground. There is certainly valuable evidence to be found on the victim’s body, but evidence at the host can be destroyed or manipulated; the camera doesn't lie, is hard to deceive, and can capture a bullet in transit.
 
-Network-based and host-based intrusion detection systems (IDS) analyze network traffic or host systems, respectively, and provide log and alert data for detected events and activity. Security Onion provides multiple IDS options:
+_Network-based and host-based intrusion detection systems_ (IDS) analyze network traffic or host systems, respectively, and provide log and alert data for detected events and activity. Security Onion provides multiple IDS options:
 
 NIDS:
   * Rule-driven NIDS. For rule-driven network intrusion detection, Security Onion offers the choice of Snort (http://snort.org/) or Suricata (http://suricata-ids.org/). Rule-based systems look at network traffic for fingerprints and identifiers that match known malicious, anomalous or otherwise suspicious traffic. You might say that they’re akin to antivirus signatures for the network, but they’re a bit deeper and more flexible than that.
@@ -43,11 +46,11 @@ Security Onion is built on a distributed client-server model.  A Security Onion 
 
 The following are the three Security Onion deployment scenarios:
 
-  * Standalone:  A standalone installation consists of a single physical or virtual machine running both the server and sensor components and related processes.  A standalone installation can have multiple network interfaces monitoring different network segments.  A standalone installation is the easiest and most convenient method to monitor a network or networks that are accessible from a single location.
+  * **Standalone**:  A standalone installation consists of a single physical or virtual machine running both the server and sensor components and related processes.  A standalone installation can have multiple network interfaces monitoring different network segments.  A standalone installation is the easiest and most convenient method to monitor a network or networks that are accessible from a single location.
 
-  * Server-sensor:  A server-sensor installation consists of a single machine running the server component with one or more separate machines running the sensor component and reporting back to the server.  The sensors run all of the sniffing processes and store the associated packet captures, IDS alerts, and databases for Sguil; Snorby and ELSA.  The analyst connects to the server from a separate client machine and all queries sent to the server are distributed to the appropriate sensor(s), with the requested information being directed back to the client.  This model reduces network traffic by keeping the bulk of the collected data on the sensors until requested by the analyst’s client.  All traffic between the server and sensors and client and server are protected with SSH encrypted tunnels.
+  * **Server-sensor**:  A server-sensor installation consists of a single machine running the server component with one or more separate machines running the sensor component and reporting back to the server.  The sensors run all of the sniffing processes and store the associated packet captures, IDS alerts, and databases for Sguil; Snorby and ELSA.  The analyst connects to the server from a separate client machine and all queries sent to the server are distributed to the appropriate sensor(s), with the requested information being directed back to the client.  This model reduces network traffic by keeping the bulk of the collected data on the sensors until requested by the analyst’s client.  All traffic between the server and sensors and client and server are protected with SSH encrypted tunnels.
 
-  * Hybrid:  A hybrid installation consists of a standalone installation that also has one or more separate sensors reporting back to the server component of the standalone machine.
+  * **Hybrid**:  A hybrid installation consists of a standalone installation that also has one or more separate sensors reporting back to the server component of the standalone machine.
 
 The Security Onion setup script allows you to easily configure the best installation scenario to suit your needs.
 
