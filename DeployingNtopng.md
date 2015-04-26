@@ -1,20 +1,20 @@
-# Introduction #
+#### Introduction ####
 
 How to install and get started with Ntopng on a Security Onion box
 
-# Author #
+#### Author ####
 
 This page was written by Kevin Branch.
 
-# Testing #
+#### Testing ####
 
 This procedure was last successfully tested by Kevin on 1/30/2015 when the latest stable ntopng was at version 1.2.2, rev `8661`.  At that time, the newer nightly build revision `8884` was broken, so this article now references the stable repo instead of the nightly build repo.
 
-# No Support #
+#### No Support ####
 
 Since ntopng is not an official part of Security Onion, we don't provide official support for it.
 
-# About the ntopng apt repository #
+#### About the ntopng apt repository ####
 
 Don't add that repo to your Security Onion system.  As nice as it would be to have ntopng updated as part of the "soup" process, adding the ntopng apt repository to your apt sources appears to break Security Onion because it will cause the pfring package from the ntopng repo to be installed in parallel to the Security Onion securityonion-pfring-`*` packages, which generally aren't on the same PFRING version, causing various applications to fail.
 
@@ -24,11 +24,11 @@ apt-get purge pfring
 apt-get --reinstall install securityonion-pfring-*
 ```
 
-# Are your http requests for ntop getting redirected to https? #
+#### Are your http requests for ntop getting redirected to https? ####
 
 Something in Security Onion appear to use HSTS to mark the SO host name for HTTPS-only use, so when you use a browser that honors HSTS -- like Chrome -- to access your ntop instance via the same host name as your other SO apps, it will redirect you to https which isn't what ntop is listening on.  The ideal solution is to enable https support in ntop, but I've not had luck with that yet.  The other options are to access ntop via the raw IP number of the SO box, or to set up an additional DNS name that points at your SO system, and use that name exclusively for reaching ntop.
 
-# Installation Details #
+#### Installation Details ####
 
 ```
 # Ntopng depends on this package
