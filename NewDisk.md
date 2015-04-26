@@ -1,10 +1,10 @@
-#### Adding a new disk for /nsm ####
+#### Adding a new disk for `/nsm` ####
 
 Before doing this in production, make sure you practice this on a non-production system!
 
 There are two ways to do this:
 #### Method 1: ####
-Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in /nsm to the new drive using something like this:
+Mount a separate drive to `/nsm`.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in `/nsm` to the new drive using something like this:
 
 Stop all services
 
@@ -18,7 +18,7 @@ Mount the new drive to a temporary location in the filesystem
 sudo mount /dev/sdb2 /mnt
 ```
 
-Copy the existing data from /nsm to the temporary location
+Copy the existing data from `/nsm` to the temporary location
 
 ```
 sudo cp -av /nsm/* /mnt/
@@ -30,19 +30,19 @@ Unmount the new drive from the temporary location
 sudo umount /mnt
 ```
 
-Rename the existing /nsm
+Rename the existing `/nsm`
 
 ```
 sudo mv /nsm /nsm-backup
 ```
 
-Update /etc/fstab to mount the new drive to /nsm
+Update `/etc/fstab` to mount the new drive to `/nsm`
 
 ```
 sudo vi /etc/fstab
 ```
 
-Mount the new /nsm
+Mount the new `/nsm`
 ```
 sudo mount /nsm
 ```
@@ -56,7 +56,7 @@ sudo service nsm start
 
 #### Method 2: ####
 
-Make /nsm a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
+Make `/nsm` a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
 
 Stop all services
 
@@ -64,37 +64,37 @@ Stop all services
 sudo service nsm stop
 ```
 
-Copy existing data from /nsm to new mount point
+Copy existing data from `/nsm` to new mount point
 
 ```
 sudo cp -av /nsm/* /mnt/nsm
 ```
 
-Rename existing /nsm
+Rename existing `/nsm`
 
 ```
 sudo mv /nsm /nsm-backup
 ```
 
-Make /nsm a symlink to the new logging location
+Make `/nsm` a symlink to the new logging location
 
 ```
 sudo ln -s /mnt/nsm /nsm
 ```
 
-Go to /etc/apparmor.d/local/
+Go to `/etc/apparmor.d/local/`
 
 ```
 cd /etc/apparmor.d/local/
 ```
 
-Edit usr.sbin.mysqld, copy the /nsm line(s), and change /nsm to the new location
+Edit `usr.sbin.mysqld`, copy the `/nsm` line(s), and change `/nsm` to the new location
 
 ```
 sudo vi usr.sbin.mysqld
 ```
 
-Edit usr.sbin.tcpdump, copy the /nsm line(s), and change /nsm to the new location
+Edit `usr.sbin.tcpdump`, copy the `/nsm` line(s), and change `/nsm` to the new location
 
 ```
 sudo vi usr.sbin.tcpdump
@@ -116,11 +116,11 @@ sudo service nsm start
 
 #### Synopsis: ####
 
-In this article I’m going to show how you can move the MySQL databases containing all of your important alert and event data to another place. I will be moving the databases to a large external drive I have mounted as /nsm, though, any other location will do.
+In this article I’m going to show how you can move the MySQL databases containing all of your important alert and event data to another place. I will be moving the databases to a large external drive I have mounted as `/nsm`, though, any other location will do.
 
 #### Procedure: ####
 
-The MySQL databases are stored under /var/lib/mysql. We will need to move this folder
+The MySQL databases are stored under `/var/lib/mysql`. We will need to move this folder
 and its sub-contents to the destination location. First, we must stop all processes that may
 be writing or using the databases.
 
@@ -131,14 +131,14 @@ sudo service sphinxsearch stop
 ```
 
 Now, we need to make sure all other nsm-related processes are stopped. To double-check,
-run lsof on the nsm mount point to list any processes that have open file descriptors. Kill everything,
+run `lsof` on the nsm mount point to list any processes that have open file descriptors. Kill everything,
 or nearly everything, that comes up in the list.
 
 ```
 lsof /nsm
 ```
 
-Next, let’s copy the data over to the new location leaving the original intact. You can use cp or rsync
+Next, let’s copy the data over to the new location leaving the original intact. You can use `cp` or `rsync`
 or another similar tool but be sure to preserve permissions ( -p ) and copy recursively ( -r ). Both
 examples are listed below, choose one:
 
@@ -153,7 +153,7 @@ Once that’s finished, rename or backup the original just in case something goe
 sudo mv /var/lib/mysql /var/lib/mysql.bak
 ```
 
-Next, create a symbolic link from /var/lib/mysql to the new location:
+Next, create a symbolic link from `/var/lib/mysql` to the new location:
 
 ```
 sudo ln -s /nsm/mysql /var/lib/mysql
@@ -167,7 +167,7 @@ the system from using it.
 sudo service apparmor stop
 ```
 
-Edit /etc/apparmor.d/usr.sbin.mysqld to reflect the following patch which adds the new location:
+Edit `/etc/apparmor.d/usr.sbin.mysqld` to reflect the following patch which adds the new location:
 ```
 sudo vim /etc/apparmor.d/usr.sbin.mysqld
 ```
