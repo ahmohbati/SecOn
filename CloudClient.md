@@ -2,10 +2,10 @@
 Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger or netsniff-ng as a virtual tap.  This virtual tap will copy all traffic from our production cloud box to an OpenVPN bridge that transports the traffic to our Security Onion sensor where it is then analyzed.
 
 #### Traffic Flow and NIC offloading functions ####
-The cloud client uses daemonlogger or netsniff-ng to copy all packets from eth0 to tap0 (OpenVPN).  OpenVPN transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.  This guide will walk you through disabling NIC offloading functions on eth0 and br0 via /etc/network/interfaces and tap0 via /etc/openvpn/up.sh.
+The cloud client uses `daemonlogger` or `netsniff-ng` to copy all packets from eth0 to tap0 (OpenVPN).  OpenVPN transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.  This guide will walk you through disabling NIC offloading functions on eth0 and br0 via `/etc/network/interfaces` and tap0 via `/etc/openvpn/up.sh`.
 
 #### Daemonlogger vs netsniff-ng ####
-This guide is written using daemonlogger because it is more likely to be available on most cloud boxes.  If netsniff-ng is available, it can provide higher performance (less packet loss), and you would just need to change the calls from daemonlogger to netsniff-ng and translate the options to the equivalent netsniff-ng options.
+This guide is written using `daemonlogger` because it is more likely to be available on most cloud boxes.  If `netsniff-ng` is available, it can provide higher performance (less packet loss), and you would just need to change the calls from daemonlogger to netsniff-ng and translate the options to the equivalent netsniff-ng options.
 
 #### References and Thanks ####
 
@@ -21,18 +21,18 @@ https://help.ubuntu.com/community/OpenVPN
 
 https://help.ubuntu.com/lts/serverguide/openvpn.html
 
-#### Warning! ####
+### Warning! ###
 
 **This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
 
 #### Security Onion Sensor ####
 
-We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1 (Network Configuration), allow it to write your /etc/network/interfaces file, but DON'T reboot at the end:
+We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1 (Network Configuration), allow it to write your `/etc/network/interfaces` file, but DON'T reboot at the end:
 ```
 sudo sosetup
 ```
 
-Add br0 to /etc/network/interfaces and disable offloading functions:
+Add br0 to `/etc/network/interfaces` and disable offloading functions:
 ```
 cat << EOF | sudo tee -a /etc/network/interfaces
 # Bridge for OpenVPN tap0
@@ -64,13 +64,13 @@ sudo apt-get update
 sudo apt-get install openvpn
 ```
 
-Next, copy files to the /etc/openvpn/easy-rsa/ directory:
+Next, copy files to the `/etc/openvpn/easy-rsa/` directory:
 ```
 sudo mkdir /etc/openvpn/easy-rsa/ 
 sudo cp -R /usr/share/doc/openvpn/examples/easy-rsa/2.0/* /etc/openvpn/easy-rsa/ 
 ```
 
-Edit /etc/openvpn/easy-rsa/vars:
+Edit `/etc/openvpn/easy-rsa/vars`:
 ```
 sudo vi /etc/openvpn/easy-rsa/vars
 ```
@@ -138,13 +138,13 @@ Make both of these scripts executable:
 sudo chmod +x /etc/openvpn/up.sh /etc/openvpn/down.sh
 ```
 
-Create OpenVPN server.conf:
+Create OpenVPN `server.conf`:
 ```
 sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/openvpn/
 sudo gzip -d /etc/openvpn/server.conf.gz
 ```
 
-Modify /etc/openvpn/server.conf:
+Modify `/etc/openvpn/server.conf`:
 ```
 sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/server.conf
 sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/server.conf
@@ -187,24 +187,24 @@ scp /etc/openvpn/easy-rsa/keys/ca.crt username@hostname:~/
 
 #### Cloud client ####
 
-Install openvpn and daemonlogger:
+Install `openvpn` and `daemonlogger`:
 ```
 sudo apt-get update
 sudo apt-get install openvpn daemonlogger
 ```
 
-Copy crt files to /etc/openvpn/:
+Copy crt files to `/etc/openvpn/`:
 ```
 sudo cp client* /etc/openvpn/
 sudo cp ca.crt /etc/openvpn/
 ```
 
-Create OpenVPN client.conf:
+Create OpenVPN `client.conf`:
 ```
 sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/
 ```
 
-Modify /etc/openvpn/client.conf:
+Modify `/etc/openvpn/client.conf`:
 ```
 sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/client.conf
 sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/client.conf
@@ -217,7 +217,7 @@ down "/etc/openvpn/down.sh"
 EOF
 ```
 
-Find the "remote my-server-1 1194" line in /etc/openvpn/client.conf and replace my-server-1 with the hostname or IP address of your OpenVPN server.
+Find the "remote my-server-1 1194" line in `/etc/openvpn/client.conf` and replace my-server-1 with the hostname or IP address of your OpenVPN server.
 
 Create a script that OpenVPN will call when the tunnel comes up to disable offloading functions on tap0 and start daemonlogger.  The daemonlogger BPF at minimum should exclude the OpenVPN traffic on port 1194 ('not port 1194').  You may need to restrict this BPF even further if there is other traffic you do not wish to send across the OpenVPN tunnel.
 ```
@@ -263,7 +263,7 @@ ifconfig
 ```
 
 Disable NIC offloading functions on main ethernet interface.
-Add the following to your eth stanza in /etc/network/interfaces:
+Add the following to your eth stanza in `/etc/network/interfaces`:
 ```
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 ```
