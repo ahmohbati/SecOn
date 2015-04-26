@@ -1,4 +1,4 @@
-# Introduction #
+#### Introduction ####
 
 This page will walk you through wiping the Snorby database.  This only pertains to the Snorby database and does not affect the Sguil database, the ELSA database, or any other data/config.
 
@@ -14,7 +14,7 @@ and follow the prompts.
 
 If you need to run this process manually, then see the steps below.
 
-# Details #
+#### Details ####
 
 The details below came from Kevin Branch in this mailing list thread:
 https://groups.google.com/d/topic/security-onion/m4uu2PSa_eg/discussion
