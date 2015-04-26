@@ -1,9 +1,9 @@
-# Configuration #
+#### Configuration ####
 
-## Global bpf.conf ##
+#### Global bpf.conf ####
 You can specify your BPF in /etc/nsm/rules/bpf.conf on your master server and, by default, it will apply to Snort/Suricata/Bro/netsniff-ng/prads on all interfaces in your entire deployment.  If you have separate sensors reporting to that master server, they will copy /etc/nsm/rules/bpf.conf as part of the daily rule-update cron job (or you can run it manually) which will also restart Snort/Suricata so that the BPF change will take effect.  Bro automatically monitors bpf.conf for changes and will update itself as needed.  Other services (such as prads and netsniff-ng) will need to be restarted manually for the change to take effect.
 
-## Granular bpf.conf ##
+#### Granular bpf.conf ####
 Each process on each interface has its own bpf file, but by default the per-process bpf files are symlinked to the interface bpf and the interface bpf is then symlinked to the global bpf.conf:
 ```
 lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-bro.conf -> bpf.conf
@@ -23,10 +23,10 @@ sudo vi bpf-ids.conf
 sudo nsm_sensor_ps-restart --only-snort-alert
 ```
 
-# Argus #
+#### Argus ####
 Currently, our argus configuration doesn't read from our global bpf.conf.  You should be able to add your bpf to your argus.conf file in /etc/nsm/HOSTNAME-INTERFACE/.
 
-# BPF Examples #
+#### BPF Examples ####
 
 From Phillip Wang:
 
@@ -46,7 +46,7 @@ Just to contribute, and for others to reference, here are some examples of what 
 !(host xxx.xxx.xxx.xxx)
 ```
 
-# VLAN #
+#### VLAN ####
 Note 2014-02-24: BPF support for VLAN filtering may be broken in certain 3.x kernels.  Please see:
 
 https://groups.google.com/d/topic/security-onion/DLvzwRYVdxg/discussion
@@ -71,7 +71,7 @@ Once the "vlan" tag is included in the filter, all subsequent expressions to the
 
 Also, I'm assuming that any tools you are running will support vlan tags and no tags simultaneously.  Bro 2.0 should work fine at least.
 
-# Troubleshooting BPF using tcpdump #
+#### Troubleshooting BPF using tcpdump ####
 
 http://taosecurity.blogspot.com/2004/09/understanding-tcpdumps-d-option-have.html
 
