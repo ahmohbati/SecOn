@@ -1,6 +1,6 @@
 #### /opt/samples/ ####
 
-Security Onion 12.04 comes with several pcap samples in /opt/samples/.
+Security Onion 12.04 comes with several pcap samples in `/opt/samples/`.
 
 #### Links ####
 
@@ -8,7 +8,7 @@ Security Onion 12.04 comes with several pcap samples in /opt/samples/.
 
   * http://digitalcorpora.org/corpora/network-packet-dumps
 
-  * https://www.openpacket.org/ (Security Onion 12.04 contains some pcaps from openpacket.org.  You can find them at /opt/samples/.)
+  * https://www.openpacket.org/ (Security Onion 12.04 contains some pcaps from openpacket.org.  You can find them at `/opt/samples/`.)
 
   * http://www.netresec.com/?page=PcapFiles
 
@@ -39,5 +39,5 @@ Security Onion 12.04 comes with several pcap samples in /opt/samples/.
   * http://www.defcon.org/html/links/dc-ctf.html  (You have to follow some of the links, which redirect to competitor blogs but there's lots of goodness).
 
 #### tcpreplay ####
-You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see
+You can use `tcpreplay` to replay any of these pcaps on your Security Onion sensor.  For example, please see
 [here](http://blog.securityonion.net/2011/01/introduction-to-sguil-and-squert-part-3.html) for a quick, easy use-case and what you should see in the Sguil console.
