@@ -1,15 +1,15 @@
-# Introduction #
+#### Introduction ####
 
 Many organizations would like to take data from Security Onion and send it to third party systems.
 
-# Support #
+#### Support ####
 
 We don't provide free support for third party systems, so this wiki page will be just a brief introduction to how you would accomplish this.  If you need commercial support, please see: http://www.securityonionsolutions.com
 
-# How do I send Bro and OSSEC logs to an external syslog collector? #
+#### How do I send Bro and OSSEC logs to an external syslog collector? ####
 Configure /etc/syslog-ng/syslog-ng.conf with a new "destination" to forward to your external syslog collector and then restart syslog-ng.
 
-# How do I send IDS alerts to an external system? #
+#### How do I send IDS alerts to an external system? ####
 
 2 options:
 
