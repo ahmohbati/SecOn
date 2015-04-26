@@ -1,4 +1,4 @@
-# Having problems?  Try the suggestions below. #
+#### Having problems?  Try the suggestions below. ####
 
   * Are you running the [latest version of Security Onion](Upgrade)?
   * Check the [FAQ](FAQ).
