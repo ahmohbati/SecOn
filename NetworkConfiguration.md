@@ -1,6 +1,6 @@
-# Disabling the graphical Network Manager and configuring networking from the command line #
+#### Disabling the graphical Network Manager and configuring networking from the command line ####
 
-## If you're running Security Onion 12.04, all of this configuration will happen automatically if you choose "Yes, configure /etc/network/interfaces" in the Setup wizard. ##
+#### If you're running Security Onion 12.04, all of this configuration will happen automatically if you choose "Yes, configure /etc/network/interfaces" in the Setup wizard. ####
 
 NOTE! You may lose network connectivity during this process! Have a backup plan if attempting over SSH!<br>
 <br>
@@ -12,13 +12,13 @@ Prevent Network Manager from starting at next boot:<br>
 </code></pre>
 Next, configure your network interfaces in /etc/network/interfaces.<br>
 <br>
-<h3>Management interface</h3>
+####Management interface####
 You'll want a management interface (preferably connected to a dedicated management network) using either DHCP OR <b>preferably</b> static IP.  <br>
 <br>
-<h3>Sniffing interface(s)</h3>
+####Sniffing interface(s)####
 You'll want one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'><a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'>http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html</a></a>).<br>
 <br>
-<h3>Sample /etc/network/interfaces</h3>
+####Sample /etc/network/interfaces####
 <pre><code>auto lo<br>
 iface lo inet loopback<br>
 <br>
