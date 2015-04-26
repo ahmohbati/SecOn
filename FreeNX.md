@@ -1,4 +1,4 @@
-# Overview #
+#### Overview ####
 
 **Note from Doug Burks: We don't really recommend or support FreeNX, but some folks like to use it, so here are the notes from Lance Honer.  If you choose to install FreeNX, you should harden your server and [tighten its UFW firewall](Firewall).**
 
@@ -9,7 +9,7 @@ Author:  Lance Honer
 
 Here's a quick writeup for how to get FreeNX installed and playing nicely with Sguil on your Security Onion installation. Check out the [Wikipedia page on NX Technology](http://en.wikipedia.org/wiki/NX_technology) for some background information but in a nutshell FreeNX is remote desktop for Linux and near local console speeds over network connections of any speed. This type of access is very useful when working with Security Onion since you may want to use tools included on the Security Onion distribution to analyze the data captured by the IDS sensors but not have local access to the server e.g. working at your desktop while the server is in the data center.
 
-# Post Installation Issues #
+#### Post Installation Issues ####
 
   1. There are two issues that occur after installation, first is that due to a dependency between FreeNX and tk8.4 the Sguil client will fail to start. If you were to execute the Sguil client from the command line after installing FreeNX you'll receive the following error:
 ```
@@ -23,7 +23,7 @@ Here's a quick writeup for how to get FreeNX installed and playing nicely with S
 
 ![![](images/freenx/thumbs/thumb_Xubuntu.png)](images/freenx/Xubuntu.png)
 
-# FreeNX Server installation and fix for the first issue #
+#### FreeNX Server installation and fix for the first issue ####
 
 After you follow Doug's instructions for installing and configuring Security Onion you can install the FreeNX Server in a few easy steps. They are taken from the [Ubuntu Community Documentation for FreeNX](https://help.ubuntu.com/community/FreeNX). Typically I do this process from my desktop over SSH as it makes distributing the key easier.
 
@@ -65,7 +65,7 @@ Now that the FreeNX Server is up and running if you were to attempt to launch Sg
 sudo ln -sf /usr/bin/wish8.5 /etc/alternatives/wish
 ```
 
-# FreeNX Client installation and fix for the second issue #
+#### FreeNX Client installation and fix for the second issue ####
 At this point the Security Onion server is ready to go with FreeNX but your desktop will need the client. There are a few different clients but I always use the official NoMachine client. If you bothered to read the Wikipedia article mentioned above you'll know that NoMachine developed the NX Technology and FreeNX is the open source version of it. NoMachine provides free versions of the NX client for Windows, Linux, OSX and Solaris. See http://www.nomachine.com/select-package-client.php for the appropriate client. After installing the client you'll have a menu entry somewhere on your system, i.e. Applications -> Internet in Ubuntu, Start -> Programs in Windows, etc. Launch the NX Connection Wizard and follow the steps below:
 
   1. Click Next on the intro page
