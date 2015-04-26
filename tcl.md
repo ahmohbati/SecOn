@@ -9,7 +9,7 @@ wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4<br>
 <br>
 If you force tcl8.5 to install, it will install the threaded version and Sguil will break.  Please do not change the tcl/tk packages!<br>
 <br>
-<h1>Fix</h1>
+####Fix####
 If you accidentally installed the threaded version of tcl8.5, you should be able to get back to a working configuration using the following steps:<br>
 <pre><code># get the correct version for SO<br>
 wget http://sourceforge.net/projects/security-onion/files/20110607/tcl8.5_8.5.8-2_i386.deb<br>
@@ -28,7 +28,7 @@ sudo update-alternatives --set tclsh /usr/bin/tclsh8.5 <br>
 sudo wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4<br>
 </code></pre>
 
-<h1>See Also</h1>
+####See Also####
 Also see the page on [FreeNX](FreeNX) and in particular this:<br>
 <br>
 "Now that the FreeNX Server is up and running if you were to attempt to launch Sguil from the desktop link you'll notice that nothing happens. This is due to a symlink change made during the installation that affects the execution of the 'wish' command. Execution of 'wish' launches /usr/bin/wish which is a symlink to /etc/alternatives/wish. Prior to the FreeNX Server installation the symlink /etc/alternatives/wish pointed to /usr/bin/wish8.5 and now points to a newly created symlink /usr/bin/wish-default which points to /usr/bin/wish8.4. You need to change it back so that exection of 'wish', by Sguil, will launch tk8.5 and not tk8.4."<br>
