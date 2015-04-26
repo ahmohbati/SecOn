@@ -1,4 +1,4 @@
-# Preamble #
+#### Preamble ####
 
 The http\_agent for Sguil was created to add URL events (httpry, Suricata, Bro) to Sguil. This page outlines the usage scenarios for this agent.
 
@@ -6,7 +6,7 @@ It is important to note that in most cases (> 50,000 URLs/day) you do not want t
 
 If you have enabled ELSA, then you already have Bro HTTP logs there and should probably disable http\_agent to avoid duplicating effort.
 
-# Using the http\_agent with Sguil #
+#### Using the http\_agent with Sguil ####
 
 If you have a small installation and want to put all URLs into the database it is wise to autocat these events. This can be achieved by adding the following line to Sguil's autocat.conf:
 
