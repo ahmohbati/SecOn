@@ -1,4 +1,4 @@
-#### Disabling the graphical Network Manager and configuring networking from the command line ####
+#### Disabling the graphical `Network Manager` and configuring networking from the command line ####
 
 #### If you're running Security Onion 12.04, all of this configuration will happen automatically if you choose "Yes, configure /etc/network/interfaces" in the Setup wizard. ####
 
@@ -10,15 +10,15 @@ Stop Network Manager:<br>
 Prevent Network Manager from starting at next boot:<br>
 <pre><code>sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED<br>
 </code></pre>
-Next, configure your network interfaces in /etc/network/interfaces.<br>
+Next, configure your network interfaces in `/etc/network/interfaces`.<br>
 <br>
 ####Management interface####
 You'll want a management interface (preferably connected to a dedicated management network) using either DHCP OR <b>preferably</b> static IP.  <br>
 <br>
 ####Sniffing interface(s)####
-You'll want one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'><a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'>http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html</a></a>).<br>
+You'll want one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as `tso`, `gso`, and `gro` should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'><a href='http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html'>http://blog.securityonion.net/2011/10/when-is-full-packet-capture-not-full.html</a></a>).<br>
 <br>
-####Sample /etc/network/interfaces####
+####Sample `/etc/network/interfaces`####
 <pre><code>auto lo<br>
 iface lo inet loopback<br>
 <br>
@@ -60,7 +60,7 @@ Note that 4096 is just an example and your NIC may have a different maximum rx s
 <pre><code>ethtool -g ethX<br>
 </code></pre>
 
-If necessary, configure DNS in /etc/resolv.conf:<br>
+If necessary, configure DNS in `/etc/resolv.conf`:<br>
 <a href='http://en.wikipedia.org/wiki/Resolv.conf'>http://en.wikipedia.org/wiki/Resolv.conf</a><br>
 <a href='http://www.cyberciti.biz/tips/howto-ubuntu-linux-convert-dhcp-network-configuration-to-static-ip-configuration.html'>http://www.cyberciti.biz/tips/howto-ubuntu-linux-convert-dhcp-network-configuration-to-static-ip-configuration.html</a><br>
 <a href='http://manpages.ubuntu.com/manpages/lucid/man5/resolver.5.html'>http://manpages.ubuntu.com/manpages/lucid/man5/resolver.5.html</a><br>
