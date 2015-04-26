@@ -1,5 +1,3 @@
-#### Connecting to Sguild ####
-
 #### Introduction ####
 
 This article will show how to connect to the Sguil server to view security alerts in real-time.
