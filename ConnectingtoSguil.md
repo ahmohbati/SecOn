@@ -1,10 +1,10 @@
-# Connecting to Sguild #
+#### Connecting to Sguild ####
 
-## Introduction ##
+#### Introduction ####
 
 This article will show how to connect to the Sguil server to view security alerts in real-time.
 
-## Connect to Sguild Locally ##
+#### Connect to Sguild Locally ####
 
 Double-click the Sguil icon on the desktop of your SecurityOnion server.
 
@@ -16,7 +16,7 @@ Set the Sguil Host to localhost, enter your credentials, and then click OK.
 
 After, choose which sensors you would like to monitor for this sguil session and then click Start Sguil.
 
-## Connect Remotely via SSH w/ X11 Forwarding ##
+#### Connect Remotely via SSH w/ X11 Forwarding ####
 
 This method requires SSH and an X11 server installed on the machine from which you will be
 connecting from.
@@ -48,7 +48,7 @@ Once logged in we will be able to select which sensors we would like to monitor.
 Finally, select Start Sguil. Now you can view the alerts in real-time, perform advanced SQL queries,
 and pivot into a number of applications like Wireshark, ELSA, and Network Minor.
 
-## Directly Connecting to Sguild Remotely ##
+#### Directly Connecting to Sguild Remotely ####
 
 To directly connect to a Sguild server one must possess a working Sguil client.
 Sguil may not be easy or available for install on certain operating systems. Because of this
