@@ -1,4 +1,4 @@
-# Where do I put my custom ELSA parsers? #
+#### Where do I put my custom ELSA parsers? ####
 Create a new subdirectory in /etc/elsa/patterns.d/, add your parsers to the new subdirectory, and then use pdbtool to merge the entire /etc/elsa/patterns.d/ directory into /opt/elsa/node/conf/patterndb.xml.  For example:
 ```
 # Create a new subdirectory in /etc/elsa/patterns.d/
@@ -20,7 +20,7 @@ sudo pdbtool merge -p /opt/elsa/node/conf/patterndb.xml --recursive -D /etc/elsa
 sudo service syslog-ng restart
 ```
 
-# How do I write custom ELSA parsers? #
+#### How do I write custom ELSA parsers? ####
 
 https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Adding_Parsers
 
