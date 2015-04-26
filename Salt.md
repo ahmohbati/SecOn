@@ -1,49 +1,49 @@
-# What is Salt? #
+#### What is Salt? ####
 
 "Salt delivers a dynamic communication bus for infrastructures that can be used for orchestration, remote execution, configuration management and much more."
 
 http://docs.saltstack.com/
 
-# What is OnionSalt? #
+#### What is OnionSalt? ####
 
 "OnionSalt is a tool created to manage multiple Security Onion sensors."
 
 https://github.com/TOoSmOotH/onionsalt
 
-# Salt and OnionSalt are optional packages #
+#### Salt and OnionSalt are optional packages ####
 
 Please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install securityonion-onionsalt and nothing will change for you.
 
-# Warning #
+#### Warning ####
 
 Please be advised that our Salt integration is still considered experimental.
 
-# Firewall Requirements #
+#### Firewall Requirements ####
 
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
 
 http://docs.saltstack.com/topics/tutorials/firewall.html
 
-# Installation #
+#### Installation ####
 For new deployments, Advanced Setup checks to see if the securityonion-onionsalt package is installed and, if so, asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.
 
 For existing deployments, please see:
 
 [Existing Deployment](Salt#salting-an-existing-deployment)
 
-# Checking Status #
+#### Checking Status ####
 Want to verify all your sensors are up?
 ```
 sudo salt '*' test.ping
 ```
 
-# Remote Execution #
+#### Remote Execution ####
 Want to execute a command on all your sensors at once?
 ```
 sudo salt '*' cmd.run 'InsertYourCommandHere'
 ```
 
-# Features #
+#### Features ####
 When you install and enable securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
 
   * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
@@ -64,7 +64,7 @@ sudo salt '*' cmd.run 'nsm_sensor_ps-restart --only-bro'
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
-# Using Salt to Install Updates Across Your Entire Deployment #
+#### Using Salt to Install Updates Across Your Entire Deployment ####
 You can use Salt and Soup to install updates across your entire deployment, but please remember to always update your master server first:
 ```
 # Update Master first
@@ -76,7 +76,7 @@ sudo soup -y
 sudo salt '*' cmd.run 'soup -y'
 ```
 
-# Modifying Salt config files #
+#### Modifying Salt config files ####
 If you need to modify the values in /etc/salt/master or /etc/salt/minion, please pay attention to this note at the top of each file:
 ```
 # /etc/salt/master
@@ -93,10 +93,11 @@ If you need to modify the values in /etc/salt/master or /etc/salt/minion, please
 #default_include: minion.d/*.conf
 ```
 Instead of modifying /etc/salt/master or /etc/salt/minion directly, please add your custom settings in /etc/salt/master.d/`*`.conf or /etc/salt/minion.d/`*`.conf, respectively.
+<br>
+<br>
+### Salting an Existing Deployment ###
 
-# Salting an Existing Deployment #
-
-## Configure the Master Server first ##
+#### Configure the Master Server first ####
 
 ```
 # Make sure the necessary packages are installed and updated
@@ -136,7 +137,7 @@ sudo salt '*' test.ping
 sudo salt '*' state.highstate
 ```
 
-## Now configure salt-minion on a Sensor ##
+#### Now configure salt-minion on a Sensor ####
 ```
 # Make sure the necessary packages are installed and updated
 sudo apt-get update && sudo apt-get install securityonion-onionsalt
@@ -159,7 +160,7 @@ echo "master: $MASTER" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
 sudo service salt-minion restart
 ```
 
-## Now return to the Master and accept the new minion ##
+#### Now return to the Master and accept the new minion ####
 ```
 # Edit /opt/onionsalt/salt/top.sls and add the new minion as a "sensor"
 
@@ -176,5 +177,5 @@ sudo salt '*' test.ping
 sudo salt '*' state.highstate
 ```
 
-# Additional Reading #
+#### Additional Reading ####
 http://www.geekempire.com/2014/09/onionsalt-saltstack-cheat-sheer.html
