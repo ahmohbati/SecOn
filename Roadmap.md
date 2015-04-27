@@ -61,11 +61,11 @@ Please note that this is all subject to change!
     * ~~[Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log~~
     * ~~[Issue 679](../issues/679): rule-update: run pulledpork as unprivileged user~~
     * [Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update
-    * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 714](../issues/714): nsm_server_user-disable
   * May 2015
+    * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
