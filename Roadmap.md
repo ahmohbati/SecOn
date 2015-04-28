@@ -63,7 +63,7 @@ Please note that this is all subject to change!
     * [Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
-    * [Issue 214](../issues/241): NSM scripts should have a timeout period when stopping services
+    * [Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services
     * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
     * [Issue 714](../issues/714): nsm_server_user-disable
   * May 2015
