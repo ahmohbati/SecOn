@@ -60,7 +60,7 @@ Please note that this is all subject to change!
     * ~~[Issue 678](../issues/678): rule-update: /etc/cron.d/rule-update should have 2>&1~~
     * ~~[Issue 697](../issues/697): rule-update: log snorby reference table update to barnyard2-snorby.log~~
     * ~~[Issue 679](../issues/679): rule-update: run pulledpork as unprivileged user~~
-    * [Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update
+    * ~~[Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update~~
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services
