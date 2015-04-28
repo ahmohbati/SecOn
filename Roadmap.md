@@ -70,6 +70,7 @@ Please note that this is all subject to change!
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP
     * [Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert
+    * [Issue 718](../issues/718): Sphinx 2.1.9
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
