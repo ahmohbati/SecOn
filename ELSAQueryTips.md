@@ -5,7 +5,7 @@ The following are posts from Martin Holste, the author of ELSA, extracted from t
 
 #### 12/11/12 - [security-onion-testing] ####
 
-In any case, be sure to check out the documentation for subsearches (https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Subsearches) as that's where you get the really powerful queries from.
+In any case, be sure to check out the documentation for [subsearches] (https://github.com/mcholste/_elsa/wiki/Documentation#Subsearches) as that's where you get the really powerful queries from.
 
 The queries from today were like this (note that you can always replace "groupby" with using the "Report On" menu button):
 
