@@ -75,6 +75,7 @@ Please note that this is all subject to change!
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
+  * June 2015
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
@@ -103,7 +104,7 @@ Please note that this is all subject to change!
     * [Issue 480](../issues/480): sosetup: running on sensor should automatically create autossh account on server
     * [Issue 532](../issues/532): sosetup: Limit what autossh keys can do
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
-  * June 2015
+  * July 2015
     * [Issue 708](../issues/708): Update OSSEC
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
