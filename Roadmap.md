@@ -71,6 +71,10 @@ Please note that this is all subject to change!
     * [Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP
     * [Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert
     * [Issue 718](../issues/718): Sphinx 2.1.9
+    * [Issue 657](../issues/657): ELSA 1205 or higher
+    * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
+    * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
+    * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
@@ -106,12 +110,8 @@ Please note that this is all subject to change!
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
     * [Issue 558](../issues/558): Add VirusTotal uploader
     * [Issue 369](../issues/369): Arpwatch
-    * [Issue 657](../issues/657): ELSA: email check
     * [Issue 651](../issues/651): ELSA: starman restart doesn't work properly
     * [Issue 464](../issues/464): Consider changing default query\_timeout in /etc/elsa\_web.conf
-    * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 336](../issues/336): When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
-    * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
-    * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
     * [Issue 467](../issues/467): ELSA dashboard for Snort performance
     * [Issue 594](../issues/594): securityonion-sudoers: 10\_securityonion
