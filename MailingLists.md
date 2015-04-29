@@ -1,17 +1,17 @@
-#### Check Wiki First ####
+### Check Wiki First ###
 Before sending an email to our mailing list, check to see if your question has already been answered by one of the following:
 
 [Help](Help)
 
 [FAQ](FAQ)
 
-#### Moderation ####
+### Moderation ###
 Please keep in mind that our Google Groups are moderated, so your email will have to be approved before it is published to the list.  If at first you don't see your email appear in the mailing list, there is no need to re-send your email.  It has been queued and will be approved if appropriate.
 
-#### Etiquette ####
+### Etiquette ###
 Please be courteous and respectful.  Disrespectful emails can result in being banned from the Google Group.
 
-#### Questions/Problems ####
+### Questions/Problems ###
 
 #### Start a new thread instead of replying to an old one ####
 Please search the mailing list to see if you can find similar issues that may help you.  However, please do not reply to old threads with your new issue.  Instead, please start a new thread and provide a hyperlink to the related discussion at https://groups.google.com/forum/#!forum/security-onion.
@@ -35,7 +35,7 @@ sudo sostat-redacted > sostat-redacted.txt 2>&1
 
 Attach the output to your email in plain text format (.txt) OR use a service like http://pastebin.com.
 
-#### Mailing Lists ####
+### Mailing Lists ###
 #### Security-Onion ####
 The security-onion mailing list is for announcements and general user support questions:
 
