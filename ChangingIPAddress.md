@@ -6,13 +6,13 @@ If you need to update the IP address of your server/sensor to move it to a diffe
 
 #### Update the actual IP address of the management interface ####
 To update the actual IP address of the management interface, you have two options:
-  * manually update /etc/network/interfaces
+  * manually update `/etc/network/interfaces`<br>
 OR
-  * re-run the FIRST phase of Setup (select "Yes, configure /etc/network/interfaces)
+  * re-run the `FIRST` phase of Setup (select "Yes, configure /etc/network/interfaces)
 
 #### Update NSM config files to reflect the new IP address ####
 To update NSM config files to reflect the new IP address, you have two options:
-  * re-run the SECOND phase of Setup on all server/sensors (wiping all data and config)
+  * re-run the `SECOND` phase of Setup on all server/sensors `(wiping all data and config)` <br>
 OR
   * manually update the IP address as shown below
 <br>
