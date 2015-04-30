@@ -74,6 +74,7 @@ Please note that this is all subject to change!
     * [Issue 657](../issues/657): ELSA 1205 or higher
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
+    * [Issue 722](../issues/722): securityonion-web-page: update HTTP mime type queries for ELSA 1205
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
   * June 2015
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
