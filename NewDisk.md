@@ -12,6 +12,11 @@ Stop all services
 sudo service nsm stop
 ```
 
+Determine your new drive's path
+```
+sudo fdisk -l
+```
+
 Mount the new drive to a temporary location in the filesystem
 
 ```
@@ -42,6 +47,11 @@ Update `/etc/fstab` to mount the new drive to `/nsm`
 sudo vi /etc/fstab
 ```
 
+(You can use blkid to find your drive's UUID to write in /etc/fstab)
+
+```
+sudo blkid /dev/sdb2
+```
 Mount the new `/nsm`
 ```
 sudo mount /nsm
