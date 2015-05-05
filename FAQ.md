@@ -1,5 +1,5 @@
 #### NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. ####
-
+<br>
 #### Why won't the ISO image boot on my machine? ####
 [TroubleBooting](TroubleBooting)
 
@@ -9,13 +9,13 @@
 #### How do I install Security Onion updates? ####
 [Upgrade Procedure](Upgrade)
 
-#### Why do I get Snorby/Suricata/Bro errors after upgrading the kernel and pfring packages? ####
+#### Why do I get `Snorby/Suricata/Bro` errors after upgrading the `kernel` and `pfring` packages? ####
 [Updating](Upgrade)
 
 #### What do I need to do if I'm behind a proxy? ####
 [Proxy Configuration](Proxy)
 
-#### What is the password for root/mysql/Sguil/Squert/Snorby/ELSA? ####
+#### What is the password for `root/mysql/Sguil/Squert/Snorby/ELSA`? ####
 [Passwords](Passwords)
 
 #### I've forgotten my Snorby password.  How do I reset it? ####
@@ -27,7 +27,7 @@
 #### Where can I read more about the tools contained within Security Onion? ####
 [Tools](Tools)
 
-#### How do I configure a BPF for Snort/Suricata/Bro? ####
+#### How do I configure a `BPF` for `Snort/Suricata/Bro`? ####
 [BPF](BPF)
 
 #### Where can I find interesting pcaps to replay? ####
@@ -45,7 +45,7 @@
 #### What do I need to modify in order to have the log files stored on a different mount point? ####
 [Adding a New Disk for /nsm](NewDisk)
 
-#### How do I disable the graphical Network Manager and configuring networking from the command line? ####
+#### How do I disable the graphical `Network Manager` and configuring networking from the command line? ####
 [Network Configuration](NetworkConfiguration)
 
 #### Where do I send questions/problems/suggestions? ####
@@ -54,13 +54,13 @@
 #### I submitted a message to the security-onion Google Group.  Why isn't it showing up? ####
 [Moderation](MailingLists#moderation)
 
-#### What's the directory structure of /nsm? ####
+#### What's the directory structure of `/nsm`? ####
 [/nsm Directory Structure](DirectoryStructure)
 
-#### Why does Security Onion use UTC? ####
+#### Why does Security Onion use `UTC`? ####
 [UTC and Time Zones](TimeZones)
 
-#### Why are the timestamps in ELSA not in UTC? ####
+#### Why are the `timestamps` in ELSA not in UTC? ####
 [UTC and Time Zones](TimeZones)
 
 #### How do I enable/disable processes? ####
@@ -72,7 +72,7 @@
 #### How do I wipe the Snorby database? ####
 [Wiping Snorby database](WipingSnorby)
 
-#### I disabled some Sguil agents but they still appear in Sguil's "Agent Status" tab. ####
+#### I disabled some Sguil agents but they still appear in Sguil's `Agent Status` tab. ####
 [Disabling Processes](DisablingProcesses#Sguil_Agent)
 
 #### Is commercial support available for Security Onion? ####
@@ -82,13 +82,11 @@ http://securityonionsolutions.com
 #### I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. ####
 This is a known issue with certain versions of VMware.  You can either:
 
-- go into the VM configuration and disable 3D in the video adapter
-
-OR
-
+- go into the VM configuration and disable 3D in the video adapter<br>
+OR<br>
 - upgrade the VM hardware level (may require upgrading to a new version of VMware)
 
-#### Why does soup fail with an error message like "find: `/usr/lib/python2.7/dist-packages/salt/': No such file or directory"? ####
+#### Why does `soup` fail with an error message like "find: `/usr/lib/python2.7/dist-packages/salt/': No such file or directory"? ####
 This is a bug in the salt packages that can manifest when skipping salt versions.  Resolve with the following:
 ```
 sudo mkdir -p /usr/lib/python2.7/dist-packages/salt/
@@ -97,7 +95,7 @@ sudo soup
 ```
 
 #### I recently updated barnyard and now I'm not getting any Snort alerts. ####
-Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like "Returned signature\_id is not equal to updated signature\_id".  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called so-snorby-fix-sigs and included it in the rule-update package.  If you're running the Snort engine with the VRT ruleset, please run so-snorby-fix-sigs and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
+Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like `Returned signature_id is not equal to updated signature_id`.  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called `so-snorby-fix-sigs` and included it in the `rule-update` package.  If you're running the Snort engine with the VRT ruleset, please run `so-snorby-fix-sigs` and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
 
 http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 
@@ -126,22 +124,19 @@ For more information, please see:
 
 http://blog.securityonion.net/2014/12/new-version-of-securityonion-rule.html
 
-#### Why does sostat show a high number of ELSA Buffers in Queue? ####
-There are usually 2 main reasons for this:
-
-- low on RAM
-
-OR
-
+#### Why does `sostat` show a high number of `ELSA Buffers in Queue`? ####
+There are usually 2 main reasons for this:<br>
+- low on RAM<br>
+OR<br>
 - ungraceful shutdown (perhaps power outage) resulted in database corruption
 
-Take a look at the ELSA log files in /nsm/elsa/data/elsa/log/ and look for errors.  If there are errors related to MySQL, please see this thread:
+Take a look at the ELSA log files in `/nsm/elsa/data/elsa/log/` and look for errors.  If there are errors related to MySQL, please see this thread:
 
 https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
 
-#### Why does rule-update show barnyard2 errors? ####
+#### Why does `rule-update` show barnyard2 errors? ####
 
-rule-update now runs barnyard2 to update Snorby's reference table:
+`rule-update` now runs `barnyard2` to update Snorby's reference table:
 
 http://blog.securityonion.net/2014/06/new-barnyard2-nsm-rule-update-and.html
 
@@ -154,9 +149,9 @@ ERROR: Unable to find the next spool file!
 This is normal.
 
 #### I just rebooted and it looks like the services aren't starting automatically. ####
-/etc/init/securityonion.conf waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
+`/etc/init/securityonion.conf` waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
 
-#### It looks like ELSA is purging data before I hit log\_size\_limit. ####
+#### It looks like ELSA is purging data before I hit `log_size_limit`. ####
 Please see:
 
 https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
@@ -165,41 +160,45 @@ https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22
 
 https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 
-#### What can I do to decrease the size of my securityonion\_db (sguild) MySQL database? ####
-You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.  Also see UNCAT\_MAX:
+#### What can I do to decrease the size of my `securityonion_db` (sguild) MySQL database? ####
+You can lower the `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf`.<br>
+Also see `UNCAT_MAX`:<br>
 http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
 
 #### Why is my disk filling up? ####
-Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor\_data/HOSTNAME-INTERFACE/dailylogs/.  /etc/cron.d/sensor-clean is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
+Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in `nsm/sensor_data/$HOSTNAME-$INTERFACE/dailylogs/`.  `/etc/cron.d/sensor-clean` is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
 
-####What does it mean if I have a high number of Sguil Uncategorized Events?####
+####What does it mean if I have a high number of `Sguil Uncategorized Events`?####
 
-Sguild has to load uncategorized events into memory when it starts and it won't accept connections until that's complete.<br>
-<br>
+`Sguild` has to load uncategorized events into memory when it starts and it won't accept connections until that's complete.<br>
 You can either:<br>
-<br>
-- wait for sguild to start up (may take a LONG time), then log into Sguil, and F8 LOTS of events<br>
-<br>
+- wait for sguild to start up (may take a LONG time), then log into Sguil, and `F8` LOTS of events<br>
 OR<br>
+- stop sguild 
+````
+sudo nsm_server_ps-stop
+````
+and manually categorize events using `mysql` (see <a href='http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html'>http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html</a>) OR lower your `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf` and run
+````
+sudo sguil-db-purge
+````
 <br>
-- stop sguild (sudo nsm_server_ps-stop) and manually categorize events using mysql (see <a href='http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html'>http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html</a>) OR lower your DAYSTOKEEP setting in /etc/nsm/securityonion.conf and run "sudo sguil-db-purge".<br>
-<br>
-To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See [Autocat](ManagingAlerts#autocategorize-events).<br>
-<br>
-Also see UNCAT_MAX: <a href='http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html'>http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html</a>
+To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.<br>
+See [Autocat](ManagingAlerts#autocategorize-events).<br>
+Also see `UNCAT_MAX`: <a href='http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html'>http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html</a>
 
 ####Can Security Onion run in IPS mode?####
-Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:<br>
+Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
 <a href='http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/'>http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/</a>
 
 ####Where can I get the source code?####
 You can download the full source code for any of our packages like this:<br>
 <pre><code>apt-get source PACKAGE-NAME<br>
 </code></pre>
-where PACKAGE-NAME is usually something like securityonion-snort.  Here's a list of all of our packages:<br>
+where `PACKAGE-NAME` is usually something like `securityonion-snort`.  Here's a list of all of our packages:<br>
 <a href='https://launchpad.net/~securityonion/+archive/stable'>https://launchpad.net/~securityonion/+archive/stable</a>
 
-####Why does my VMware image rename eth0 to eth1?####
+####Why does my VMware image rename `eth0` to `eth1`?####
 Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:<br>
 <pre><code>sudo rm /etc/udev/rules.d/70-persistent-net.rules<br>
 sudo reboot<br>
@@ -210,16 +209,18 @@ sudo reboot<br>
 In the Sguil client, click the File menu and then go to "Change Font".  You can change both the Standard and Fixed fonts.<br>
 <br>
 ####How do I boot Security Onion to text mode (CLI instead of GUI)?####
-In /etc/default/grub, change this line:<br>
-<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"<br>
-</code></pre>
-to:<br>
-<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="text"<br>
-</code></pre>
-
-Then run:<br>
-<pre><code>sudo update-grub<br>
-</code></pre>
+In `/etc/default/grub`, change this line:
+````
+GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"
+````
+to:
+````
+GRUB_CMDLINE_LINUX_DEFAULT="text"
+````
+Then run:
+````
+sudo update-grub
+````
 
 For more information, please see:<br>
 <a href='http://ubuntuforums.org/showthread.php?t=1690118'><a href='http://ubuntuforums.org/showthread.php?t=1690118'>http://ubuntuforums.org/showthread.php?t=1690118</a></a>
@@ -239,14 +240,14 @@ If you have a 32-bit machine, you'll need to use a 32-bit version of Ubuntu and 
 </li><li>Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver" or "Blank Screen Only".<br>
 </li><li>Close the Screensaver Preferences window.<br></li></ol>
 
-####I'm currently running Snort.  How do I switch to Suricata?####
+####I'm currently running `Snort`.  How do I switch to `Suricata`?####
 <pre><code>sudo nsm_sensor_ps-stop<br>
 sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf<br>
 sudo rule-update <br>
 sudo nsm_sensor_ps-start<br>
 </code></pre>
 
-####I'm currently running Suricata.  How do I switch to Snort?####
+####I'm currently running `Suricata`.  How do I switch to `Snort`?####
 <pre><code>sudo nsm_sensor_ps-stop<br>
 sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf<br>
 sudo rule-update<br>
@@ -265,7 +266,7 @@ sudo rm x-www-browser<br>
 sudo ln -s /usr/bin/google-chrome-stable x-www-browser<br>
 </code></pre>
 ####I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that?####
-Recent versions of Setup should set MySQL's open-files-limit to 90000 to avoid this problem:<br>
+Recent versions of Setup should set MySQL's `open-files-limit` to 90000 to avoid this problem:<br>
 <a href='http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html'>http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html</a>
 
 If you ran Setup before February 2014, you can set this manually as follows.<br>
@@ -274,7 +275,7 @@ First, stop sguil and mysql:<br>
 <pre><code>sudo nsm_server_ps-stop<br>
 sudo service mysql stop<br>
 </code></pre>
-Next, edit /etc/mysql/my.cnf and add the following in the mysqld section (please use hyphens not underscores):<br>
+Next, edit `/etc/mysql/my.cnf` and add the following in the `mysqld` section (please use hyphens not underscores):<br>
 <pre><code>open-files-limit        = 90000<br>
 </code></pre>
 Finally, start mysql and sguil:<br>
@@ -312,7 +313,7 @@ In the Rails console, initiate the GeoIP job:<br>
 quit<br>
 </code></pre>
 
-####How do I disable Snorby?####
+####How do I disable `Snorby`?####
 <ol><li>Disable Snorby in the Apache configuration:<br>
 <pre><code>sudo a2dissite snorby<br>
 </code></pre>
@@ -349,11 +350,11 @@ sudo nsm_server_ps-restart<br>
 sudo nsm_sensor_ps-restart --only-barnyard2<br>
 </code></pre>
 
-If that still doesn't fix it, you may have to perform MySQL surgery on the database "securityonion_db" as described in the Sguil FAQ:<br>
+If that still doesn't fix it, you may have to perform MySQL surgery on the database `securityonion_db` as described in the Sguil FAQ:<br>
 <a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
 
 ####Why does the Snorby worker fail with "ERROR: Process ID out of range."?####
-The root cause is that the Snorby worker got into a failed state with the /opt/snorby/tmp/pids/delayed_job.pid file being empty. Snorby reads in the contents of this pid file and if it's empty, it results in "ERROR: Process ID out of range.".  Removing the empty pid file allows Snorby to start correctly.<br>
+The root cause is that the Snorby worker got into a failed state with the `/opt/snorby/tmp/pids/delayed_job.pid` file being empty. Snorby reads in the contents of this pid file and if it's empty, it results in `ERROR: Process ID out of range.`.  Removing the empty pid file allows Snorby to start correctly.<br>
 <pre><code>sudo mv /opt/snorby/tmp/pids/delayed_job.pid /tmp/<br>
 sudo reboot<br>
 </code></pre>
@@ -374,36 +375,36 @@ To change this behavior you must modify the PHP code:<br>
 <blockquote>- file /opt/xplico/xi/cake/dispatcher.php<br>
 - replace demo.xplico.org with your host name (used in the url)<br></blockquote>
 
-####Why does Bro log "Failed to open GeoIP database" and "Fell back to GeoIP Country database"?####
+####Why does Bro log `Failed to open GeoIP database` and `Fell back to GeoIP Country database`?####
 
 The GeoIP CITY database is not free and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
 <a href='https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion'>https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion</a>
 
-####What's the difference between a "server" and a "sensor"?####
-box<br>
+####What's the difference between a `server` and a `sensor`?####
+**box**<br>
 Definition: A physical or virtual machine running the Security Onion operating system.<br>
 <br>
-server<br>
+**server**<br>
 Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and snorby.  The server is also responsible for ruleset management.<br>
-Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to "securityonion".<br>
-Configuration files: /etc/nsm/securityonion/<br>
-Controlled by:  /usr/sbin/nsm_server <br>
+Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to `securityonion`.<br>
+Configuration files: `/etc/nsm/securityonion/`<br>
+Controlled by:  `/usr/sbin/nsm_server` <br>
 <br>
-server box<br>
+**server box**<br>
 Definition: A machine running the server processes.  May optionally be running sensor processes.<br>
-Example 1: User runs Quick Setup on machine with hostname securityonion and two ethernet interfaces.  Setup creates a server and two sensors (securityonion-eth0 and securityonion-eth1).<br>
+Example 1: User runs Quick Setup on machine with hostname securityonion and two ethernet interfaces.  Setup creates a server and two sensors (`securityonion-eth0` and `securityonion-eth1`).<br>
 Example 2: User runs Advanced Setup and chooses Server.  Setup creates a server only (no sensor processes).<br>
 <br>
-sensor<br>
+**sensor**<br>
 Definition: A set of processes listening on a network interface.  The set of processes currently includes Snort/Suricata, netsniff-ng, argus, prads, and bro (although this is in constant flux as we add new capabilities and find better tools for existing capabilities).<br>
-Naming convention: $HOSTNAME-$INTERFACE<br>
-Configuration files: /etc/nsm/$HOSTNAME-$INTERFACE/<br>
-Example: sensor1-eth0<br>
-Controlled by:  /usr/sbin/nsm_sensor<br>
+Naming convention: `$HOSTNAME-$INTERFACE`<br>
+Configuration files: `/etc/nsm/$HOSTNAME-$INTERFACE/`<br>
+Example: `sensor1-eth0`<br>
+Controlled by:  `/usr/sbin/nsm_sensor`<br>
 <br>
-sensor box<br>
+**sensor box**<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
-Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
+Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-eth1`.<br>
 
 ####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?####
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
@@ -429,26 +430,22 @@ This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Securit
 All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
 <a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'><a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'>http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a></a>
 
-####How do I run ntop on Security Onion?####
+####How do I run `ntop` on Security Onion?####
 In the old Security Onion 10.04, Snorby was running on port 3000 (which ntop also defaults to).  In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.<br>
 <br>
-ntop defaults to port 3000, which is already being used by Snorby.  You can change ntop's port by editing /etc/default/ntop like this:<br>
+ntop defaults to port 3000, which is already being used by Snorby.  You can change ntop's port by editing `/etc/default/ntop` like this:<br>
 <pre><code>GETOPT="-w 0 -W 4000"<br>
 </code></pre>
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!<br>
 <br>
 ####Why can't I upgrade past version 20110628?####
-
-If your /etc/nsm/securityonion.conf says:<br>
+If your `/etc/nsm/securityonion.conf` says:
 <pre><code>VERSION=20110628<br>
 </code></pre>
-<br>
-and if running the upgrade says:<br>
+and if running the upgrade says:
 <pre><code>Your Security Onion installation is up to date.<br>
 </code></pre>
-<br>
-then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  Edit the VERSION in /etc/nsm/securityonion.conf as follows:<br>
+then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  Edit the VERSION in `/etc/nsm/securityonion.conf` as follows:<br>
 <pre><code>VERSION=20110709<br>
 </code></pre>
-<br>
 and then re-run the upgrade.<br>
