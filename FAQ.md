@@ -2,6 +2,7 @@
 <br>
 [Install / Update / Upgrade](#update)<br>
 [Users / Passwords](#passwords)<br>
+[Support / Help](#support)<br>
 <br>
 <a name="update"></a>
 ###Install / Update / Upgrade
@@ -89,8 +90,21 @@ You can add new Sguil user accounts with the following:<br>
 <pre><code>sudo nsm_server_user-add<br>
 </code></pre>
 <br>
-<br>
+<a name="support"></a>
+###Support / Help
+---
+#### Where do I send questions/problems/suggestions? ####
+[security-onion Google Group](MailingLists)
 
+#### I submitted a message to the security-onion Google Group.  Why isn't it showing up? ####
+[Moderation](MailingLists#moderation)
+
+#### Is commercial support available for Security Onion? ####
+Yes, please see:
+http://securityonionsolutions.com
+<br>
+<br>
+<br>
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
 
@@ -118,12 +132,6 @@ You can add new Sguil user accounts with the following:<br>
 #### How do I disable the graphical `Network Manager` and configuring networking from the command line? ####
 [Network Configuration](NetworkConfiguration)
 
-#### Where do I send questions/problems/suggestions? ####
-[security-onion Google Group](MailingLists)
-
-#### I submitted a message to the security-onion Google Group.  Why isn't it showing up? ####
-[Moderation](MailingLists#moderation)
-
 #### What's the directory structure of `/nsm`? ####
 [/nsm Directory Structure](DirectoryStructure)
 
@@ -144,10 +152,6 @@ You can add new Sguil user accounts with the following:<br>
 
 #### I disabled some Sguil agents but they still appear in Sguil's `Agent Status` tab. ####
 [Disabling Processes](DisablingProcesses#Sguil_Agent)
-
-#### Is commercial support available for Security Onion? ####
-Yes, please see:
-http://securityonionsolutions.com
 
 #### I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. ####
 This is a known issue with certain versions of VMware.  You can either:
