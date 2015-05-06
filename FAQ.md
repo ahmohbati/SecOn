@@ -1,8 +1,10 @@
 #### NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. ####
 <br>
 [Install / Update / Upgrade](#update)<br>
+[Users / Passwords](#passwords)<br>
 <br>
-###Install / Update / Upgrade<a name="update"></a>
+<a name="update"></a>
+###Install / Update / Upgrade
 ---
 #### Why won't the ISO image boot on my machine? ####
 [TroubleBooting](TroubleBooting)
@@ -70,14 +72,24 @@ Controlled by:  `/usr/sbin/nsm_sensor`<br>
 <br>
 **sensor box**<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
-Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-eth1`.<br>
+Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-eth1`.
 <br>
 <br>
+<a name="passwords"></a>
+###Users / Passwords
+---
 #### What is the password for `root/mysql/Sguil/Squert/Snorby/ELSA`? ####
 [Passwords](Passwords)
 
 #### I've forgotten my Snorby password.  How do I reset it? ####
 [Passwords](Passwords)
+
+####How do I add a new user to Sguil?####
+You can add new Sguil user accounts with the following:<br>
+<pre><code>sudo nsm_server_user-add<br>
+</code></pre>
+<br>
+<br>
 
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
@@ -284,11 +296,6 @@ sudo nsm_sensor_ps-start<br>
 sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf<br>
 sudo rule-update<br>
 sudo nsm_sensor_ps-start<br>
-</code></pre>
-
-####How do I add a new user to Sguil?####
-You can add new Sguil user accounts with the following:<br>
-<pre><code>sudo nsm_server_user-add<br>
 </code></pre>
 
 ####How do I get ELSA to display bar charts?####
