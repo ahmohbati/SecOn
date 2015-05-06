@@ -75,6 +75,7 @@ Please note that this is all subject to change!
     * [Issue 657](../issues/657): ELSA 1205 or higher
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
+    * [Issue 726](../issues/726): ELSA syslog-ng.conf - add filesystem destinations
     * [Issue 722](../issues/722): securityonion-web-page: update HTTP mime type queries for ELSA 1205
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
