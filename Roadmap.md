@@ -78,7 +78,7 @@ Please note that this is all subject to change!
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
   * June 2015
-    * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid the thundering herd problem
+    * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
