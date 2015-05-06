@@ -1,5 +1,9 @@
 #### NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. ####
 <br>
+[Install / Update / Upgrade](#update)<br>
+<br>
+###Install / Update / Upgrade<a name="update"></a>
+---
 #### Why won't the ISO image boot on my machine? ####
 [TroubleBooting](TroubleBooting)
 
@@ -12,9 +16,63 @@
 #### Why do I get `Snorby/Suricata/Bro` errors after upgrading the `kernel` and `pfring` packages? ####
 [Updating](Upgrade)
 
+#### I recently updated `barnyard` and now I'm not getting any `Snort` alerts. ####
+Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like `Returned signature_id is not equal to updated signature_id`.  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called `so-snorby-fix-sigs` and included it in the `rule-update` package.  If you're running the Snort engine with the VRT ruleset, please run `so-snorby-fix-sigs` and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
+
+http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
+
 #### What do I need to do if I'm behind a proxy? ####
 [Proxy Configuration](Proxy)
 
+#### Ubuntu is asking if I want to upgrade to Ubuntu 14.04.  Should I? ####
+No, please do not upgrade to Ubuntu 14.04, as it is incompatible with Security Onion.
+
+#### Will Security Onion move to Ubuntu 14.04? ####
+We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases
+
+#### Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? ####
+Please see:
+http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
+
+####Why does my VMware image rename `eth0` to `eth1`?####
+Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:<br>
+<pre><code>sudo rm /etc/udev/rules.d/70-persistent-net.rules<br>
+sudo reboot<br>
+</code></pre>
+
+####How do I get Security Onion to recognize more than 4GB of RAM?####
+If you have a 64-bit machine, use our 64-bit ISO image or use a 64-bit version of Ubuntu.<br>
+<br>
+If you have a 32-bit machine, you'll need to use a 32-bit version of Ubuntu and then install the PAE kernel as described here:<br>
+<a href='https://help.ubuntu.com/community/EnablingPAE'><a href='https://help.ubuntu.com/community/EnablingPAE'>https://help.ubuntu.com/community/EnablingPAE</a></a>
+
+####What's the difference between a `server` and a `sensor`?####
+**box**<br>
+Definition: A physical or virtual machine running the Security Onion operating system.<br>
+<br>
+**server**<br>
+Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and snorby.  The server is also responsible for ruleset management.<br>
+Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to `securityonion`.<br>
+Configuration files: `/etc/nsm/securityonion/`<br>
+Controlled by:  `/usr/sbin/nsm_server` <br>
+<br>
+**server box**<br>
+Definition: A machine running the server processes.  May optionally be running sensor processes.<br>
+Example 1: User runs Quick Setup on machine with hostname securityonion and two ethernet interfaces.  Setup creates a server and two sensors (`securityonion-eth0` and `securityonion-eth1`).<br>
+Example 2: User runs Advanced Setup and chooses Server.  Setup creates a server only (no sensor processes).<br>
+<br>
+**sensor**<br>
+Definition: A set of processes listening on a network interface.  The set of processes currently includes Snort/Suricata, netsniff-ng, argus, prads, and bro (although this is in constant flux as we add new capabilities and find better tools for existing capabilities).<br>
+Naming convention: `$HOSTNAME-$INTERFACE`<br>
+Configuration files: `/etc/nsm/$HOSTNAME-$INTERFACE/`<br>
+Example: `sensor1-eth0`<br>
+Controlled by:  `/usr/sbin/nsm_sensor`<br>
+<br>
+**sensor box**<br>
+Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
+Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-eth1`.<br>
+<br>
+<br>
 #### What is the password for `root/mysql/Sguil/Squert/Snorby/ELSA`? ####
 [Passwords](Passwords)
 
@@ -94,24 +152,9 @@ sudo apt-get -f install
 sudo soup
 ```
 
-#### I recently updated barnyard and now I'm not getting any Snort alerts. ####
-Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like `Returned signature_id is not equal to updated signature_id`.  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called `so-snorby-fix-sigs` and included it in the `rule-update` package.  If you're running the Snort engine with the VRT ruleset, please run `so-snorby-fix-sigs` and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
-
-http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
-
 #### Why does barnyard2 keep failing with errors like "Returned signature\_id is not equal to updated signature\_id"? ####
 Please see:
 http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
-
-#### Ubuntu is asking if I want to upgrade to Ubuntu 14.04.  Should I? ####
-No, please do not upgrade to Ubuntu 14.04, as it is incompatible with Security Onion.
-
-#### Will Security Onion move to Ubuntu 14.04? ####
-We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases
-
-#### Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? ####
-Please see:
-http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
 
 #### I just updated Snort and it's now saying 'ERROR: The dynamic detection library "/usr/local/lib/snort\_dynamicrules/chat.so" version 1.0 compiled with dynamic engine library version 2.1 isn't compatible with the current dynamic engine library "/usr/lib/snort\_dynamicengine/libsf\_engine.so" version 2.4.' ####
 
@@ -198,12 +241,6 @@ You can download the full source code for any of our packages like this:<br>
 where `PACKAGE-NAME` is usually something like `securityonion-snort`.  Here's a list of all of our packages:<br>
 <a href='https://launchpad.net/~securityonion/+archive/stable'>https://launchpad.net/~securityonion/+archive/stable</a>
 
-####Why does my VMware image rename `eth0` to `eth1`?####
-Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:<br>
-<pre><code>sudo rm /etc/udev/rules.d/70-persistent-net.rules<br>
-sudo reboot<br>
-</code></pre>
-
 ####How do I change the fonts in the Sguil client?####
 
 In the Sguil client, click the File menu and then go to "Change Font".  You can change both the Standard and Fixed fonts.<br>
@@ -227,11 +264,6 @@ For more information, please see:<br>
 
 In Security Onion 12.04, you can install our packages on top of Ubuntu Server (minimal installation, no GUI).<br>
 <br>
-####How do I get Security Onion to recognize more than 4GB of RAM?####
-If you have a 64-bit machine, use our 64-bit ISO image or use a 64-bit version of Ubuntu.<br>
-<br>
-If you have a 32-bit machine, you'll need to use a 32-bit version of Ubuntu and then install the PAE kernel as described here:<br>
-<a href='https://help.ubuntu.com/community/EnablingPAE'><a href='https://help.ubuntu.com/community/EnablingPAE'>https://help.ubuntu.com/community/EnablingPAE</a></a>
 
 ####I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver?####
 <ol><li>Click Applications.<br>
@@ -379,32 +411,6 @@ To change this behavior you must modify the PHP code:<br>
 
 The GeoIP CITY database is not free and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
 <a href='https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion'>https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion</a>
-
-####What's the difference between a `server` and a `sensor`?####
-**box**<br>
-Definition: A physical or virtual machine running the Security Onion operating system.<br>
-<br>
-**server**<br>
-Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and snorby.  The server is also responsible for ruleset management.<br>
-Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to `securityonion`.<br>
-Configuration files: `/etc/nsm/securityonion/`<br>
-Controlled by:  `/usr/sbin/nsm_server` <br>
-<br>
-**server box**<br>
-Definition: A machine running the server processes.  May optionally be running sensor processes.<br>
-Example 1: User runs Quick Setup on machine with hostname securityonion and two ethernet interfaces.  Setup creates a server and two sensors (`securityonion-eth0` and `securityonion-eth1`).<br>
-Example 2: User runs Advanced Setup and chooses Server.  Setup creates a server only (no sensor processes).<br>
-<br>
-**sensor**<br>
-Definition: A set of processes listening on a network interface.  The set of processes currently includes Snort/Suricata, netsniff-ng, argus, prads, and bro (although this is in constant flux as we add new capabilities and find better tools for existing capabilities).<br>
-Naming convention: `$HOSTNAME-$INTERFACE`<br>
-Configuration files: `/etc/nsm/$HOSTNAME-$INTERFACE/`<br>
-Example: `sensor1-eth0`<br>
-Controlled by:  `/usr/sbin/nsm_sensor`<br>
-<br>
-**sensor box**<br>
-Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
-Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-eth1`.<br>
 
 ####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?####
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
