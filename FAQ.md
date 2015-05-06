@@ -3,6 +3,7 @@
 [Install / Update / Upgrade](#update)<br>
 [Users / Passwords](#passwords)<br>
 [Support / Help](#support)<br>
+[Error messages](#errors)<br>
 <br>
 <a name="update"></a>
 ###Install / Update / Upgrade
@@ -104,6 +105,84 @@ Yes, please see:
 http://securityonionsolutions.com
 <br>
 <br>
+<a name="errors"></a>
+###Error messages
+---
+#### Why does `soup` fail with an error message like "find: `/usr/lib/python2.7/dist-packages/salt/': No such file or directory"? ####
+This is a bug in the salt packages that can manifest when skipping salt versions.  Resolve with the following:
+```
+sudo mkdir -p /usr/lib/python2.7/dist-packages/salt/
+sudo apt-get -f install
+sudo soup
+```
+
+#### Why does barnyard2 keep failing with errors like "Returned signature\_id is not equal to updated signature\_id"? ####
+Please see:
+http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
+
+#### I just updated Snort and it's now saying 'ERROR: The dynamic detection library "/usr/local/lib/snort\_dynamicrules/chat.so" version 1.0 compiled with dynamic engine library version 2.1 isn't compatible with the current dynamic engine library "/usr/lib/snort\_dynamicengine/libsf\_engine.so" version 2.4.' ####
+
+Run the following:
+```
+sudo rule-update
+```
+
+For more information, please see:
+
+http://blog.securityonion.net/2014/12/new-version-of-securityonion-rule.html
+
+####I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that?####
+Recent versions of Setup should set MySQL's `open-files-limit` to 90000 to avoid this problem:<br>
+<a href='http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html'>http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html</a>
+
+If you ran Setup before February 2014, you can set this manually as follows.<br>
+<br>
+First, stop sguil and mysql:<br>
+<pre><code>sudo nsm_server_ps-stop<br>
+sudo service mysql stop<br>
+</code></pre>
+Next, edit `/etc/mysql/my.cnf` and add the following in the `mysqld` section (please use hyphens not underscores):<br>
+<pre><code>open-files-limit        = 90000<br>
+</code></pre>
+Finally, start mysql and sguil:<br>
+<pre><code>sudo service mysql start<br>
+sudo nsm_server_ps-start<br>
+</code></pre>
+For more information, please see:<br>
+<a href='http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F'><a href='http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F'>http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a></a><br>
+
+####Why does the Snorby worker fail with "ERROR: Process ID out of range."?####
+The root cause is that the Snorby worker got into a failed state with the `/opt/snorby/tmp/pids/delayed_job.pid` file being empty. Snorby reads in the contents of this pid file and if it's empty, it results in `ERROR: Process ID out of range.`.  Removing the empty pid file allows Snorby to start correctly.<br>
+<pre><code>sudo mv /opt/snorby/tmp/pids/delayed_job.pid /tmp/<br>
+sudo reboot<br>
+</code></pre>
+For more info, please see:<br>
+<a href='https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion'>https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion</a>
+
+We now delete the pid file at boot by default, so you should just be able to reboot to resolve this issue:<br>
+<a href='http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html'>http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html</a>
+
+####Barnyard2 is failing with an error like "ERROR: sguil: Expected Confirm 13324 and got: Failed to insert 13324: mysqlexec/db server: Duplicate entry '9-13324' for key 'PRIMARY'".  How do I fix this?####
+
+Sometimes, just restarting Barnyard will clear this up:<br>
+<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2<br>
+</code></pre>
+
+Other times, restarting Sguild and then restarting Barnyard will clear it up:<br>
+<pre><code>sudo nsm_server_ps-restart<br>
+sudo nsm_sensor_ps-restart --only-barnyard2<br>
+</code></pre>
+
+If that doesn't work, then try also restarting mysql:<br>
+<pre><code>sudo service mysql restart<br>
+sudo nsm_server_ps-restart<br>
+sudo nsm_sensor_ps-restart --only-barnyard2<br>
+</code></pre>
+
+If that still doesn't fix it, you may have to perform MySQL surgery on the database `securityonion_db` as described in the Sguil FAQ:<br>
+<a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
+<br>
+<br>
 <br>
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
@@ -159,29 +238,6 @@ This is a known issue with certain versions of VMware.  You can either:
 - go into the VM configuration and disable 3D in the video adapter<br>
 OR<br>
 - upgrade the VM hardware level (may require upgrading to a new version of VMware)
-
-#### Why does `soup` fail with an error message like "find: `/usr/lib/python2.7/dist-packages/salt/': No such file or directory"? ####
-This is a bug in the salt packages that can manifest when skipping salt versions.  Resolve with the following:
-```
-sudo mkdir -p /usr/lib/python2.7/dist-packages/salt/
-sudo apt-get -f install
-sudo soup
-```
-
-#### Why does barnyard2 keep failing with errors like "Returned signature\_id is not equal to updated signature\_id"? ####
-Please see:
-http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
-
-#### I just updated Snort and it's now saying 'ERROR: The dynamic detection library "/usr/local/lib/snort\_dynamicrules/chat.so" version 1.0 compiled with dynamic engine library version 2.1 isn't compatible with the current dynamic engine library "/usr/lib/snort\_dynamicengine/libsf\_engine.so" version 2.4.' ####
-
-Run the following:
-```
-sudo rule-update
-```
-
-For more information, please see:
-
-http://blog.securityonion.net/2014/12/new-version-of-securityonion-rule.html
 
 #### Why does `sostat` show a high number of `ELSA Buffers in Queue`? ####
 There are usually 2 main reasons for this:<br>
@@ -308,25 +364,6 @@ ELSA's bar charts require flash, so one option would be to replace Chromium with
 sudo rm x-www-browser<br>
 sudo ln -s /usr/bin/google-chrome-stable x-www-browser<br>
 </code></pre>
-####I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that?####
-Recent versions of Setup should set MySQL's `open-files-limit` to 90000 to avoid this problem:<br>
-<a href='http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html'>http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html</a>
-
-If you ran Setup before February 2014, you can set this manually as follows.<br>
-<br>
-First, stop sguil and mysql:<br>
-<pre><code>sudo nsm_server_ps-stop<br>
-sudo service mysql stop<br>
-</code></pre>
-Next, edit `/etc/mysql/my.cnf` and add the following in the `mysqld` section (please use hyphens not underscores):<br>
-<pre><code>open-files-limit        = 90000<br>
-</code></pre>
-Finally, start mysql and sguil:<br>
-<pre><code>sudo service mysql start<br>
-sudo nsm_server_ps-start<br>
-</code></pre>
-For more information, please see:<br>
-<a href='http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F'><a href='http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F'>http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a></a><br>
 
 ####How can I remote control my Security Onion box?####
 A few options:<br>
@@ -376,36 +413,6 @@ quit<br>
 <a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'><a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'>https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a></a><br>
 After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.<br>
 <br>
-####Barnyard2 is failing with an error like "ERROR: sguil: Expected Confirm 13324 and got: Failed to insert 13324: mysqlexec/db server: Duplicate entry '9-13324' for key 'PRIMARY'".  How do I fix this?####
-
-Sometimes, just restarting Barnyard will clear this up:<br>
-<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2<br>
-</code></pre>
-
-Other times, restarting Sguild and then restarting Barnyard will clear it up:<br>
-<pre><code>sudo nsm_server_ps-restart<br>
-sudo nsm_sensor_ps-restart --only-barnyard2<br>
-</code></pre>
-
-If that doesn't work, then try also restarting mysql:<br>
-<pre><code>sudo service mysql restart<br>
-sudo nsm_server_ps-restart<br>
-sudo nsm_sensor_ps-restart --only-barnyard2<br>
-</code></pre>
-
-If that still doesn't fix it, you may have to perform MySQL surgery on the database `securityonion_db` as described in the Sguil FAQ:<br>
-<a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
-
-####Why does the Snorby worker fail with "ERROR: Process ID out of range."?####
-The root cause is that the Snorby worker got into a failed state with the `/opt/snorby/tmp/pids/delayed_job.pid` file being empty. Snorby reads in the contents of this pid file and if it's empty, it results in `ERROR: Process ID out of range.`.  Removing the empty pid file allows Snorby to start correctly.<br>
-<pre><code>sudo mv /opt/snorby/tmp/pids/delayed_job.pid /tmp/<br>
-sudo reboot<br>
-</code></pre>
-For more info, please see:<br>
-<a href='https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion'>https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion</a>
-
-We now delete the pid file at boot by default, so you should just be able to reboot to resolve this issue:<br>
-<a href='http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html'>http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html</a>
 
 ####How do I access Xplico with a hostname instead of IP address?####
 From Gianluca Costa:<br>
