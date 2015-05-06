@@ -4,6 +4,7 @@
 [Users / Passwords](#passwords)<br>
 [Support / Help](#support)<br>
 [Error messages](#errors)<br>
+[IDS engines](#engines)<br>
 <br>
 <a name="update"></a>
 ###Install / Update / Upgrade
@@ -183,6 +184,23 @@ If that still doesn't fix it, you may have to perform MySQL surgery on the datab
 <a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
 <br>
 <br>
+<a name="engines"></a>
+###IDS engines
+---
+####I'm currently running `Snort`.  How do I switch to `Suricata`?####
+<pre><code>sudo nsm_sensor_ps-stop<br>
+sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf<br>
+sudo rule-update <br>
+sudo nsm_sensor_ps-start<br>
+</code></pre>
+
+####I'm currently running `Suricata`.  How do I switch to `Snort`?####
+<pre><code>sudo nsm_sensor_ps-stop<br>
+sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf<br>
+sudo rule-update<br>
+sudo nsm_sensor_ps-start<br>
+</code></pre>
+<br>
 <br>
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
@@ -343,20 +361,6 @@ In Security Onion 12.04, you can install our packages on top of Ubuntu Server (m
 </li><li>Click Screensaver.<br>
 </li><li>Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver" or "Blank Screen Only".<br>
 </li><li>Close the Screensaver Preferences window.<br></li></ol>
-
-####I'm currently running `Snort`.  How do I switch to `Suricata`?####
-<pre><code>sudo nsm_sensor_ps-stop<br>
-sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf<br>
-sudo rule-update <br>
-sudo nsm_sensor_ps-start<br>
-</code></pre>
-
-####I'm currently running `Suricata`.  How do I switch to `Snort`?####
-<pre><code>sudo nsm_sensor_ps-stop<br>
-sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf<br>
-sudo rule-update<br>
-sudo nsm_sensor_ps-start<br>
-</code></pre>
 
 ####How do I get ELSA to display bar charts?####
 ELSA's bar charts require flash, so one option would be to replace Chromium with <a href='http://www.google.com/chrome/'>Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:<br>
