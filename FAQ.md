@@ -466,14 +466,3 @@ ntop defaults to port 3000, which is already being used by Snorby.  You can chan
 </code></pre>
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!<br>
 <br>
-####Why can't I upgrade past version 20110628?####
-If your `/etc/nsm/securityonion.conf` says:
-<pre><code>VERSION=20110628<br>
-</code></pre>
-and if running the upgrade says:
-<pre><code>Your Security Onion installation is up to date.<br>
-</code></pre>
-then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  Edit the VERSION in `/etc/nsm/securityonion.conf` as follows:<br>
-<pre><code>VERSION=20110709<br>
-</code></pre>
-and then re-run the upgrade.<br>
