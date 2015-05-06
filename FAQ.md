@@ -1,26 +1,5 @@
 #### NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. ####
 <br>
-[Install \ Update \ Upgrade](#update)<br>
-[Users \ Passwords](passwords)<br>
-[Proxy](proxy)<br>
-[Email](email)<br>
-[Berkeley packet filter (BPF)](bpf)<br>
-[Networking](networking)<br>
-[SPAN \ Mirror](span)<br>
-[IDS Engines](engines)<br>
-[Securing SO](security)<br>
-[Testing SO \ pcaps](pcaps)<br>
-[Extending SO](extend)<br>
-[SO internals](internals)<br>
-[Remote control](remote)<br>
-[Support \ Help](support)<br>
-[Errors](errors)<br>
-[Miscellaneous](miscellaneous)<br>
-<br>
-<br>
-###Install \ Update \ Upgrade###<a name="update"></a>
----
-
 #### Why won't the ISO image boot on my machine? ####
 [TroubleBooting](TroubleBooting)
 
