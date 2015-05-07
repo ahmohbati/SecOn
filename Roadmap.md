@@ -80,6 +80,7 @@ Please note that this is all subject to change!
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
   * June 2015
+    * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
