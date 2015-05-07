@@ -5,6 +5,7 @@
 [Support / Help](#support)<br>
 [Error messages](#errors)<br>
 [IDS engines](#engines)<br>
+[Security Onion internals](#internals)<br>
 <br>
 <a name="update"></a>
 ###Install / Update / Upgrade
@@ -201,12 +202,31 @@ sudo rule-update<br>
 sudo nsm_sensor_ps-start<br>
 </code></pre>
 <br>
+<a name="internals"></a>
+###Security Onion internals
+---
+#### Where can I read more about the tools contained within Security Onion? ####
+[Tools](Tools)
+
+#### What's the directory structure of `/nsm`? ####
+[/nsm Directory Structure](DirectoryStructure)
+
+#### Why does Security Onion use `UTC`? ####
+[UTC and Time Zones](TimeZones)
+
+#### Why are the `timestamps` in ELSA not in UTC? ####
+[UTC and Time Zones](TimeZones)
+
+#### Why is my disk filling up? ####
+Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in `nsm/sensor_data/$HOSTNAME-$INTERFACE/dailylogs/`.  `/etc/cron.d/sensor-clean` is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.
+
+#### I just rebooted and it looks like the services aren't starting automatically. ####
+`/etc/init/securityonion.conf` waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
+<br>
+<br>
 <br>
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
-
-#### Where can I read more about the tools contained within Security Onion? ####
-[Tools](Tools)
 
 #### How do I configure a `BPF` for `Snort/Suricata/Bro`? ####
 [BPF](BPF)
@@ -228,15 +248,6 @@ sudo nsm_sensor_ps-start<br>
 
 #### How do I disable the graphical `Network Manager` and configuring networking from the command line? ####
 [Network Configuration](NetworkConfiguration)
-
-#### What's the directory structure of `/nsm`? ####
-[/nsm Directory Structure](DirectoryStructure)
-
-#### Why does Security Onion use `UTC`? ####
-[UTC and Time Zones](TimeZones)
-
-#### Why are the `timestamps` in ELSA not in UTC? ####
-[UTC and Time Zones](TimeZones)
 
 #### How do I enable/disable processes? ####
 [Disabling Processes](DisablingProcesses)
@@ -281,9 +292,6 @@ ERROR: Unable to find the next spool file!
 
 This is normal.
 
-#### I just rebooted and it looks like the services aren't starting automatically. ####
-`/etc/init/securityonion.conf` waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
-
 #### It looks like ELSA is purging data before I hit `log_size_limit`. ####
 Please see:
 
@@ -297,9 +305,6 @@ https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 You can lower the `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf`.<br>
 Also see `UNCAT_MAX`:<br>
 http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
-
-#### Why is my disk filling up? ####
-Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in `nsm/sensor_data/$HOSTNAME-$INTERFACE/dailylogs/`.  `/etc/cron.d/sensor-clean` is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
 
 ####What does it mean if I have a high number of `Sguil Uncategorized Events`?####
 
