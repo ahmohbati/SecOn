@@ -1,3 +1,4 @@
+<a name="top"></a>
 #### NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. ####
 <br>
 [Install / Update / Upgrade](#update)<br>
@@ -79,6 +80,8 @@ Definition: A machine having one or more sensors that transmit to a central serv
 Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-eth1`.
 <br>
 <br>
+[back to top](#top)
+<br>
 <a name="passwords"></a>
 ###Users / Passwords
 ---
@@ -93,6 +96,8 @@ You can add new Sguil user accounts with the following:<br>
 <pre><code>sudo nsm_server_user-add<br>
 </code></pre>
 <br>
+[back to top](#top)
+<br>
 <a name="support"></a>
 ###Support / Help
 ---
@@ -106,6 +111,8 @@ You can add new Sguil user accounts with the following:<br>
 Yes, please see:
 http://securityonionsolutions.com
 <br>
+<br>
+[back to top](#top)
 <br>
 <a name="errors"></a>
 ###Error messages
@@ -185,6 +192,8 @@ If that still doesn't fix it, you may have to perform MySQL surgery on the datab
 <a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
 <br>
 <br>
+[back to top](#top)
+<br>
 <a name="engines"></a>
 ###IDS engines
 ---
@@ -201,6 +210,8 @@ sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf<br>
 sudo rule-update<br>
 sudo nsm_sensor_ps-start<br>
 </code></pre>
+<br>
+[back to top](#top)
 <br>
 <a name="internals"></a>
 ###Security Onion internals
@@ -222,6 +233,9 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 
 #### I just rebooted and it looks like the services aren't starting automatically. ####
 `/etc/init/securityonion.conf` waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
+<br>
+<br>
+[back to top](#top)
 <br>
 <br>
 <br>
