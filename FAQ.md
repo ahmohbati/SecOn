@@ -322,7 +322,7 @@ You can lower the `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf`.<br>
 Also see `UNCAT_MAX`:<br>
 http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
 
-####What does it mean if I have a high number of `Sguil Uncategorized Events`?####
+####What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`?####
 
 `Sguild` has to load uncategorized events into memory when it starts and it won't accept connections until that's complete.<br>
 You can either:<br>
