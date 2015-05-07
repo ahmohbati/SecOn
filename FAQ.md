@@ -192,6 +192,20 @@ sudo nsm_sensor_ps-restart --only-barnyard2<br>
 If that still doesn't fix it, you may have to perform MySQL surgery on the database `securityonion_db` as described in the Sguil FAQ:<br>
 <a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
 <br>
+#### Why does `rule-update` show barnyard2 errors? ####
+
+`rule-update` now runs `barnyard2` to update Snorby's reference table:
+
+http://blog.securityonion.net/2014/06/new-barnyard2-nsm-rule-update-and.html
+
+Since barnyard2 isn't processing any actual unified2 data, it outputs the following errors:
+```
+ERROR: Unable to open directory '' (No such file or directory)
+ERROR: Unable to find the next spool file!
+```
+
+This is normal.
+<br>
 <br>
 [back to top](#top)
 <br>
@@ -293,20 +307,6 @@ OR<br>
 Take a look at the ELSA log files in `/nsm/elsa/data/elsa/log/` and look for errors.  If there are errors related to MySQL, please see this thread:
 
 https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
-
-#### Why does `rule-update` show barnyard2 errors? ####
-
-`rule-update` now runs `barnyard2` to update Snorby's reference table:
-
-http://blog.securityonion.net/2014/06/new-barnyard2-nsm-rule-update-and.html
-
-Since barnyard2 isn't processing any actual unified2 data, it outputs the following errors:
-```
-ERROR: Unable to open directory '' (No such file or directory)
-ERROR: Unable to find the next spool file!
-```
-
-This is normal.
 
 #### It looks like ELSA is purging data before I hit `log_size_limit`. ####
 Please see:
