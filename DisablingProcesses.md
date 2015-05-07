@@ -17,7 +17,7 @@ to prevent http\_agent from restarting the next time the NSM scripts are run.  A
 ```
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 ```
-
+<br>
 #### Sguil Agent ####
 If you use the Sguil client and want to remove the disabled agent from Sguil's "Agent Status" tab, then stop sguild, set the sensor's "active" field to N in the database, and then restart sguild:
 ```
@@ -30,3 +30,18 @@ mysql -uroot -Dsecurityonion_db -e 'update sensor set active="N" where hostname=
 # Restart sguild
 sudo nsm_server_ps-start
 ```
+<br>
+#### Disabling `Snorby`
+<ol><li>Disable Snorby in the Apache configuration:<br>
+<pre><code>sudo a2dissite snorby<br>
+</code></pre>
+</li><li>Reload Apache configuration:<br>
+<pre><code>sudo service apache2 reload<br>
+</code></pre>
+</li><li>Prevent Snorby worker from starting on boot by setting SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.<br>
+</li><li>Comment out the output database line in all barnyard2.conf files on all sensors:<br>
+<pre><code>sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf<br>
+</code></pre>
+</li><li>Restart barnyard2 on all sensors:<br>
+<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2<br>
+</code></pre></li></ol>
