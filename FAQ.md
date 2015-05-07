@@ -419,19 +419,7 @@ quit<br>
 </code></pre>
 
 ####How do I disable `Snorby`?####
-<ol><li>Disable Snorby in the Apache configuration:<br>
-<pre><code>sudo a2dissite snorby<br>
-</code></pre>
-</li><li>Reload Apache configuration:<br>
-<pre><code>sudo service apache2 reload<br>
-</code></pre>
-</li><li>Prevent Snorby worker from starting on boot by setting SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.<br>
-</li><li>Comment out the output database line in all barnyard2.conf files on all sensors:<br>
-<pre><code>sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf<br>
-</code></pre>
-</li><li>Restart barnyard2 on all sensors:<br>
-<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2<br>
-</code></pre></li></ol>
+[Disabling Processes](DisablingProcesses)
 
 ####Why does Snort segfault every day at 7:01 AM?####
 7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
