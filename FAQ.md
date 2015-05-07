@@ -7,6 +7,7 @@
 [Error messages](#errors)<br>
 [IDS engines](#engines)<br>
 [Security Onion internals](#internals)<br>
+[Miscellaneous](#miscellaneous)<br>
 <br>
 <a name="update"></a>
 ###Install / Update / Upgrade
@@ -237,8 +238,9 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 <br>
 [back to top](#top)
 <br>
-<br>
-<br>
+<a name="miscellaneous"></a>
+###Miscellaneous
+---
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
 
@@ -484,4 +486,6 @@ ntop defaults to port 3000, which is already being used by Snorby.  You can chan
 <pre><code>GETOPT="-w 0 -W 4000"<br>
 </code></pre>
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!<br>
+<br>
+[back to top](#top)
 <br>
