@@ -204,8 +204,33 @@ Since barnyard2 isn't processing any actual unified2 data, it outputs the follow
 ERROR: Unable to open directory '' (No such file or directory)
 ERROR: Unable to find the next spool file!
 ```
-
 This is normal.
+
+####Why do I get the following error when starting Sguil?####
+<pre><code>Application initialization failed: no display name and no $DISPLAY environment variable<br>
+ERROR: Cannot fine the Iwidgets extension.<br>
+The iwidgets package is part of the incr tcl extension and is<br>
+available as a port/package most systems.<br>
+See http://www.tcltk.com/iwidgets/ for more info.<br>
+</code></pre>
+This is related to [this](#tclheldback) question.  See [tcl](tcl).
+
+####Why does Snort segfault every day at 7:01 AM?####
+7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
+<a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'><a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'>https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a></a><br>
+After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.
+
+#### I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. ####
+This is a known issue with certain versions of VMware.  You can either:
+
+- go into the VM configuration and disable 3D in the video adapter<br>
+OR<br>
+- upgrade the VM hardware level (may require upgrading to a new version of VMware)
+
+####Why does Bro log `Failed to open GeoIP database` and `Fell back to GeoIP Country database`?####
+
+The GeoIP CITY database is `not free` and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
+<a href='https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion'>https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion</a>
 <br>
 <br>
 [back to top](#top)
@@ -358,13 +383,6 @@ To change this behavior you must modify the PHP code:<br>
 #### How can I add and test local rules? ####
 [Adding local rules and testing them with scapy](AddingLocalRules)
 
-#### I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. ####
-This is a known issue with certain versions of VMware.  You can either:
-
-- go into the VM configuration and disable 3D in the video adapter<br>
-OR<br>
-- upgrade the VM hardware level (may require upgrading to a new version of VMware)
-
 #### Why does `sostat` show a high number of `ELSA Buffers in Queue`? ####
 There are usually 2 main reasons for this:<br>
 - low on RAM<br>
@@ -436,32 +454,13 @@ In the Rails console, initiate the GeoIP job:<br>
 quit<br>
 </code></pre>
 
-####Why does Snort segfault every day at 7:01 AM?####
-7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
-<a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'><a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'>https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a></a><br>
-After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.<br>
-<br>
-
-####Why does Bro log `Failed to open GeoIP database` and `Fell back to GeoIP Country database`?####
-
-The GeoIP CITY database is not free and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
-<a href='https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion'>https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion</a>
-
 ####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?####
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
 
+<a name="tclheldback"></a>
 ####Why do apt-get and the Update Manager show tcl8.5 as held back?####
 [tcl](tcl)
 
-####Why do I get the following error when starting Sguil?####
-<pre><code>Application initialization failed: no display name and no $DISPLAY environment variable<br>
-ERROR: Cannot fine the Iwidgets extension.<br>
-The iwidgets package is part of the incr tcl extension and is<br>
-available as a port/package most systems.<br>
-See http://www.tcltk.com/iwidgets/ for more info.<br>
-</code></pre>
-This is related to the previous question.  See [tcl](tcl).<br>
-<br>
 ####Why do I get segfaults when booting on VMware ESX?####
 This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
 <a href='http://ubuntuforums.org/showthread.php?t=1674759'>http://ubuntuforums.org/showthread.php?t=1674759</a><br>
