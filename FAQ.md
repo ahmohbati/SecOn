@@ -5,7 +5,7 @@
 [Users / Passwords](#passwords)<br>
 [Support / Help](#support)<br>
 [Error messages](#errors)<br>
-[IDS engines](#engines)<br>
+[IPS/IDS engines](#engines)<br>
 [Security Onion internals](#internals)<br>
 [Tuning](#tuning)<br>
 [Miscellaneous](#miscellaneous)<br>
@@ -226,6 +226,12 @@ sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf<br>
 sudo rule-update<br>
 sudo nsm_sensor_ps-start<br>
 </code></pre>
+
+####Can Security Onion run in `IPS` mode?####
+Running Security Onion as an IPS requires manual configuration and is `not supported`.<br>
+I talked about this on the [Packet Pushers](http://packetpushers.net/) podcast:<br>
+<a href='http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/'>http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/</a>
+<br>
 <br>
 [back to top](#top)
 <br>
@@ -384,13 +390,9 @@ and manually categorize events using `mysql` (see <a href='http://taosecurity.bl
 sudo sguil-db-purge
 ````
 <br>
-To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.<br>
-See [Autocat](ManagingAlerts#autocategorize-events).<br>
-Also see `UNCAT_MAX`: <a href='http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html'>http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html</a>
-
-####Can Security Onion run in IPS mode?####
-Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
-<a href='http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/'>http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/</a>
+To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ev mode?####
+Running Security Onion as an  requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
+<a href='http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and--drools/'>http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-s.html</a>
 
 ####Where can I get the source code?####
 You can download the full source code for any of our packages like this:<br>
