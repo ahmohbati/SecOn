@@ -253,7 +253,7 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 <br>
 [back to top](#top)
 <br>
-<a name="update"></a>
+<a name="tuning"></a>
 ###Tuning
 ---
 #### How do I configure email for alerting and reporting? ####
@@ -276,6 +276,9 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 
 #### I disabled some Sguil agents but they still appear in Sguil's `Agent Status` tab. ####
 [Disabling Processes](DisablingProcesses#Sguil_Agent)
+
+####How do I disable `Snorby`?####
+[Disabling Processes](DisablingProcesses)
 
 #### Where do I put my custom ELSA parsers? ####
 [CustomELSAParsers](CustomELSAParsers)
@@ -430,9 +433,6 @@ In the Rails console, initiate the GeoIP job:<br>
 <pre><code>Snorby::Jobs::GeoipUpdatedbJob.new(true).perform<br>
 quit<br>
 </code></pre>
-
-####How do I disable `Snorby`?####
-[Disabling Processes](DisablingProcesses)
 
 ####Why does Snort segfault every day at 7:01 AM?####
 7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
