@@ -7,6 +7,7 @@
 [Error messages](#errors)<br>
 [IDS engines](#engines)<br>
 [Security Onion internals](#internals)<br>
+[Tuning](#tuning)<br>
 [Miscellaneous](#miscellaneous)<br>
 <br>
 <a name="update"></a>
@@ -252,8 +253,8 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 <br>
 [back to top](#top)
 <br>
-<a name="miscellaneous"></a>
-###Miscellaneous
+<a name="update"></a>
+###Tuning
 ---
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
@@ -261,17 +262,8 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 #### How do I configure a `BPF` for `Snort/Suricata/Bro`? ####
 [BPF](BPF)
 
-#### Where can I find interesting pcaps to replay? ####
-[Pcaps](Pcaps)
-
 #### What are the default firewall settings and how do I change them? ####
 [Firewall](Firewall)
-
-#### How can I add and test local rules? ####
-[Adding local rules and testing them with scapy](AddingLocalRules)
-
-#### Can I be alerted when an interface stops receiving traffic? ####
-[Interface stops receiving traffic](SensorStopsSeeingTraffic)
 
 #### What do I need to modify in order to have the log files stored on a different mount point? ####
 [Adding a New Disk for /nsm](NewDisk)
@@ -282,14 +274,80 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 #### How do I enable/disable processes? ####
 [Disabling Processes](DisablingProcesses)
 
+#### I disabled some Sguil agents but they still appear in Sguil's `Agent Status` tab. ####
+[Disabling Processes](DisablingProcesses#Sguil_Agent)
+
 #### Where do I put my custom ELSA parsers? ####
 [CustomELSAParsers](CustomELSAParsers)
 
 #### How do I wipe the Snorby database? ####
 [Wiping Snorby database](WipingSnorby)
 
-#### I disabled some Sguil agents but they still appear in Sguil's `Agent Status` tab. ####
-[Disabling Processes](DisablingProcesses#Sguil_Agent)
+#### What can I do to decrease the size of my `securityonion_db` (sguild) MySQL database? ####
+You can lower the `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf`.<br>
+Also see `UNCAT_MAX`:<br>
+http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
+
+#### It looks like ELSA is purging data before I hit `log_size_limit`. ####
+Please see:
+https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
+
+https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
+
+https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
+
+####How do I change the fonts in the Sguil client?####
+In the Sguil client, click the `File` menu and then go to `Change Font`.  You can change both the Standard and Fixed fonts.
+
+#### Can I be alerted when an interface stops receiving traffic? ####
+[Interface stops receiving traffic](SensorStopsSeeingTraffic)
+
+####How do I boot Security Onion to text mode (CLI instead of GUI)?####
+In `/etc/default/grub`, change this line:
+````
+GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"
+````
+to:
+````
+GRUB_CMDLINE_LINUX_DEFAULT="text"
+````
+Then run:
+````
+sudo update-grub
+````
+For more information, please see:<br>
+<a href='http://ubuntuforums.org/showthread.php?t=1690118'><a href='http://ubuntuforums.org/showthread.php?t=1690118'>http://ubuntuforums.org/showthread.php?t=1690118</a></a>
+
+In Security Onion 12.04, you can install our packages on top of Ubuntu Server (minimal installation, no GUI).
+
+####I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver?####
+<ol><li>Click Applications.<br>
+</li><li>Click Settings.<br>
+</li><li>Click Screensaver.<br>
+</li><li>Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver" or "Blank Screen Only".<br>
+</li><li>Close the Screensaver Preferences window.<br></li></ol>
+
+####How do I access Xplico with a hostname instead of IP address?####
+From Gianluca Costa:<br>
+<br>
+Xplico has embedded (in its PHP code) a Http-proxy, this proxy is used to show the web pages, emulating, for example, the original cache of the user.<br>
+By default the XI url must be an IP address (wiki: <a href='http://wiki.xplico.org/doku.php?id=interface#browser'>http://wiki.xplico.org/doku.php?id=interface#browser</a> ), the only exception to this rule is the url <a href='http://demo.xplico.org'>http://demo.xplico.org</a> (for obvious reasons).<br>
+If you use as url a name (not an ip) then XI give you a blank page, because XI searches your url in the decoded data.<br>
+<br>
+To change this behavior you must modify the PHP code:<br>
+<blockquote>- file /opt/xplico/xi/cake/dispatcher.php<br>
+- replace demo.xplico.org with your host name (used in the url)<br></blockquote>
+<br>
+[back to top](#top)
+<br>
+<a name="miscellaneous"></a>
+###Miscellaneous
+---
+#### Where can I find interesting pcaps to replay? ####
+[Pcaps](Pcaps)
+
+#### How can I add and test local rules? ####
+[Adding local rules and testing them with scapy](AddingLocalRules)
 
 #### I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. ####
 This is a known issue with certain versions of VMware.  You can either:
@@ -307,20 +365,6 @@ OR<br>
 Take a look at the ELSA log files in `/nsm/elsa/data/elsa/log/` and look for errors.  If there are errors related to MySQL, please see this thread:
 
 https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
-
-#### It looks like ELSA is purging data before I hit `log_size_limit`. ####
-Please see:
-
-https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
-
-https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
-
-https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
-
-#### What can I do to decrease the size of my `securityonion_db` (sguild) MySQL database? ####
-You can lower the `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf`.<br>
-Also see `UNCAT_MAX`:<br>
-http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
 
 ####What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`?####
 
@@ -351,37 +395,6 @@ You can download the full source code for any of our packages like this:<br>
 </code></pre>
 where `PACKAGE-NAME` is usually something like `securityonion-snort`.  Here's a list of all of our packages:<br>
 <a href='https://launchpad.net/~securityonion/+archive/stable'>https://launchpad.net/~securityonion/+archive/stable</a>
-
-####How do I change the fonts in the Sguil client?####
-
-In the Sguil client, click the File menu and then go to "Change Font".  You can change both the Standard and Fixed fonts.<br>
-<br>
-####How do I boot Security Onion to text mode (CLI instead of GUI)?####
-In `/etc/default/grub`, change this line:
-````
-GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"
-````
-to:
-````
-GRUB_CMDLINE_LINUX_DEFAULT="text"
-````
-Then run:
-````
-sudo update-grub
-````
-
-For more information, please see:<br>
-<a href='http://ubuntuforums.org/showthread.php?t=1690118'><a href='http://ubuntuforums.org/showthread.php?t=1690118'>http://ubuntuforums.org/showthread.php?t=1690118</a></a>
-
-In Security Onion 12.04, you can install our packages on top of Ubuntu Server (minimal installation, no GUI).<br>
-<br>
-
-####I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver?####
-<ol><li>Click Applications.<br>
-</li><li>Click Settings.<br>
-</li><li>Click Screensaver.<br>
-</li><li>Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver" or "Blank Screen Only".<br>
-</li><li>Close the Screensaver Preferences window.<br></li></ol>
 
 ####How do I get ELSA to display bar charts?####
 ELSA's bar charts require flash, so one option would be to replace Chromium with <a href='http://www.google.com/chrome/'>Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:<br>
@@ -426,17 +439,6 @@ quit<br>
 <a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'><a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'>https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a></a><br>
 After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.<br>
 <br>
-
-####How do I access Xplico with a hostname instead of IP address?####
-From Gianluca Costa:<br>
-<br>
-Xplico has embedded (in its PHP code) a Http-proxy, this proxy is used to show the web pages, emulating, for example, the original cache of the user.<br>
-By default the XI url must be an IP address (wiki: <a href='http://wiki.xplico.org/doku.php?id=interface#browser'>http://wiki.xplico.org/doku.php?id=interface#browser</a> ), the only exception to this rule is the url <a href='http://demo.xplico.org'>http://demo.xplico.org</a> (for obvious reasons).<br>
-If you use as url a name (not an ip) then XI give you a blank page, because XI searches your url in the decoded data.<br>
-<br>
-To change this behavior you must modify the PHP code:<br>
-<blockquote>- file /opt/xplico/xi/cake/dispatcher.php<br>
-- replace demo.xplico.org with your host name (used in the url)<br></blockquote>
 
 ####Why does Bro log `Failed to open GeoIP database` and `Fell back to GeoIP Country database`?####
 
