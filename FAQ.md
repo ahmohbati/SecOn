@@ -280,6 +280,10 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 
 #### I just rebooted and it looks like the services aren't starting automatically. ####
 `/etc/init/securityonion.conf` waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
+
+<a name="tclheldback"></a>
+####Why do apt-get and the Update Manager show `tcl8.5 as held back`?####
+[tcl](tcl)
 <br>
 <br>
 [back to top](#top)
@@ -456,10 +460,6 @@ quit<br>
 
 ####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?####
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
-
-<a name="tclheldback"></a>
-####Why do apt-get and the Update Manager show tcl8.5 as held back?####
-[tcl](tcl)
 
 ####Why do I get segfaults when booting on VMware ESX?####
 This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
