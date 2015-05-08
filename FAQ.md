@@ -8,6 +8,7 @@
 [IPS/IDS engines](#engines)<br>
 [Security Onion internals](#internals)<br>
 [Tuning](#tuning)<br>
+[`sostat` output](#sostat)<br>
 [Miscellaneous](#miscellaneous)<br>
 <br>
 <a name="update"></a>
@@ -378,23 +379,17 @@ To change this behavior you must modify the PHP code:<br>
 <br>
 [back to top](#top)
 <br>
-<a name="miscellaneous"></a>
-###Miscellaneous
+<a name="sostat"></a>
+###`sostat` output
 ---
-#### Where can I find interesting pcaps to replay? ####
-[Pcaps](Pcaps)
-
-#### How can I add and test local rules? ####
-[Adding local rules and testing them with scapy](AddingLocalRules)
-
 #### Why does `sostat` show a high number of `ELSA Buffers in Queue`? ####
-There are usually 2 main reasons for this:<br>
+There are usually 2 main reasons for this:
+
 - low on RAM<br>
 OR<br>
 - ungraceful shutdown (perhaps power outage) resulted in database corruption
 
-Take a look at the ELSA log files in `/nsm/elsa/data/elsa/log/` and look for errors.  If there are errors related to MySQL, please see this thread:
-
+Take a look at the ELSA log files in `/nsm/elsa/data/elsa/log/` and look for errors.  If there are errors related to `MySQL`, please see this thread:
 https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
 
 ####What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`?####
@@ -407,14 +402,28 @@ OR<br>
 ````
 sudo nsm_server_ps-stop
 ````
-and manually categorize events using `mysql` (see <a href='http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html'>http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html</a>) OR lower your `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf` and run
+and manually categorize events using `mysql`<br>
+(see <a href='http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html'>http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html</a>)<br>
+OR<br>
+lower your `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf` and run
 ````
 sudo sguil-db-purge
 ````
-<br>
-To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ev mode?####
-Running Security Onion as an  requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
+To keep `Uncategorized Events` from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ev mode?
+Running Security Onion as an  requires manual configuration and is not supported.  I talked about this on the [Packet Pushers](http://packetpushers.net) podcast:<br>
 <a href='http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and--drools/'>http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-s.html</a>
+<br>
+<br>
+[back to top](#top)
+<br>
+<a name="miscellaneous"></a>
+###Miscellaneous
+---
+#### Where can I find interesting pcaps to replay? ####
+[Pcaps](Pcaps)
+
+#### How can I add and test local rules? ####
+[Adding local rules and testing them with scapy](AddingLocalRules)
 
 ####Where can I get the source code?####
 You can download the full source code for any of our packages like this:<br>
