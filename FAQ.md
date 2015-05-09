@@ -237,7 +237,7 @@ The GeoIP CITY database is `not free` and thus we cannot include it in the distr
 [back to top](#top)
 <br>
 <a name="engines"></a>
-###IDS engines
+###IPS/IDS engines
 ---
 ####I'm currently running `Snort`.  How do I switch to `Suricata`?####
 <pre><code>sudo nsm_sensor_ps-stop<br>
