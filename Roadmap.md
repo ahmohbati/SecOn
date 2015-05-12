@@ -96,7 +96,7 @@ Please note that this is all subject to change!
     * [Issue 571](../issues/571): securityonion-web-page: add Security Onion cheat sheet PDF
     * [Issue 644](../issues/644): sostat-quick: check server/sensor
     * [Issue 591](../issues/591): Bro Intel Whitelist
-    * [Issue 418](../issues/418): netsniff-ng 0.59
+    * [Issue 418](../issues/418): netsniff-ng 0.5.9
     * [Issue 492](../issues/492): CapMe needs to handle UDP better
     * [Issue 493](../issues/493): CapMe: send credentials interactively to avoid exposing on command line
     * [Issue 608](../issues/608): Update bash scripts to use /bin/sh
