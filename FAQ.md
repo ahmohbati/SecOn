@@ -389,7 +389,12 @@ There are usually 2 main reasons for this:
 OR<br>
 - ungraceful shutdown (perhaps power outage) resulted in database corruption
 
-Take a look at `/nsm/elsa/data/elsa/log/node.log`.  If it contains errors like "Can't find file: 'syslogs_archive_1'", then try running the following commands:
+If you think you have sufficient RAM, then search `/nsm/elsa/data/elsa/log/node.log` for errors:
+```
+sudo grep syslogs_archive_1 /nsm/elsa/data/elsa/log/node.log
+```
+
+If you see errors like "Can't find file: 'syslogs_archive_1'", then try running the following commands:
 ```
 sudo service syslog-ng stop
 sudo service nsm stop
