@@ -398,7 +398,7 @@ mysql -uroot syslog_data -e "DELETE FROM syslog.tables WHERE table_name='syslog_
 sudo rm /nsm/elsa/data/elsa/mysql/syslogs_archive_1*
 sudo reboot
 `
-
+Also see <https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion>.
 
 ####What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`?####
 
