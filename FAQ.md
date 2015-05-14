@@ -390,14 +390,14 @@ OR<br>
 - ungraceful shutdown (perhaps power outage) resulted in database corruption
 
 Take a look at `/nsm/elsa/data/elsa/log/node.log`.  If it contains errors like "Can't find file: 'syslogs_archive_1'", then try running the following commands:
-`
+```
 sudo service syslog-ng stop
 sudo service nsm stop
 mysql -uroot syslog_data -e "DROP TABLE syslog_data.syslogs_archive_1" 
 mysql -uroot syslog_data -e "DELETE FROM syslog.tables WHERE table_name='syslog_data.syslogs_archive_1'"
 sudo rm /nsm/elsa/data/elsa/mysql/syslogs_archive_1*
 sudo reboot
-`
+```
 Also see <https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion>.
 
 ####What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`?####
