@@ -397,7 +397,6 @@ sudo grep syslogs_archive_1 /nsm/elsa/data/elsa/log/node.log
 If you see errors like "Can't find file: 'syslogs_archive_1'", then try running the following commands:
 ```
 sudo service syslog-ng stop
-sudo service nsm stop
 mysql -uroot syslog_data -e "DROP TABLE syslog_data.syslogs_archive_1" 
 mysql -uroot syslog_data -e "DELETE FROM syslog.tables WHERE table_name='syslog_data.syslogs_archive_1'"
 sudo rm /nsm/elsa/data/elsa/mysql/syslogs_archive_1*
