@@ -1,7 +1,7 @@
 #### Disabling a process ####
-If you've already run Setup and want to disable a certain sensor service, you can simply stop the running service and then change the corresponding config value from "yes" to "no" to prevent it from restarting the next time the NSM scripts are run.
+If you've already run Setup and want to disable a certain sensor service, you can simply stop the running service and then change the corresponding config value from `yes` to `no` to prevent it from restarting the next time the NSM scripts are run.
 
-For example, suppose you access Bro's HTTP logs via ELSA, so you want to disable http\_agent to prevent those HTTP logs from being duplicated into the Sguil database.  You would first stop the running http\_agent service:
+For example, suppose you access Bro's HTTP logs via ELSA, so you want to disable `http_agent` to prevent those HTTP logs from being duplicated into the `Sguil` database.  You would first stop the running `http_agent` service:
 ```
 sudo nsm_sensor_ps-stop --only-http-agent
 ```
@@ -13,13 +13,13 @@ to:
 ```
 HTTP_AGENT_ENABLED="no"
 ```
-to prevent http\_agent from restarting the next time the NSM scripts are run.  A quick way to do this for all `/etc/nsm/*/sensor.conf` files on one box is to use the sed command as follows:
+to prevent `http_agent` from restarting the next time the NSM scripts are run.  A quick way to do this for all `/etc/nsm/*/sensor.conf` files on one box is to use the `sed` command as follows:
 ```
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 ```
 <br>
 #### Sguil Agent ####
-If you use the Sguil client and want to remove the disabled agent from Sguil's "Agent Status" tab, then stop sguild, set the sensor's "active" field to N in the database, and then restart sguild:
+If you use the Sguil client and want to remove the disabled agent from Sguil's `Agent Status` tab, then stop `sguild`, set the sensor's `active` field to `N` in the database, and then restart `sguild`:
 ```
 # Stop sguild
 sudo nsm_server_ps-stop
@@ -33,17 +33,17 @@ sudo nsm_server_ps-start
 <br>
 #### Disabling `Snorby`
 <ol><li>Disable Snorby in the Apache configuration:<br>
-<pre><code>sudo a2dissite snorby<br>
+<pre><code>sudo a2dissite snorby
 </code></pre>
 </li><li>Reload Apache configuration:<br>
-<pre><code>sudo service apache2 reload<br>
+<pre><code>sudo service apache2 reload
 </code></pre>
 </li><li>Prevent Snorby worker from starting on boot by setting SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.<br>
 </li><li>Comment out the output database line in all barnyard2.conf files on all sensors:<br>
-<pre><code>sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf<br>
+<pre><code>sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
 </code></pre>
 </li><li>Restart barnyard2 on all sensors:<br>
-<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2<br>
+<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2
 </code></pre></li></ol>
 <br>
 
