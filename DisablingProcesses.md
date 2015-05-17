@@ -32,19 +32,31 @@ sudo nsm_server_ps-start
 ```
 <br>
 #### Disabling `Snorby`
-<ol><li>Disable Snorby in the Apache configuration:<br>
-<pre><code>sudo a2dissite snorby
-</code></pre>
-</li><li>Reload Apache configuration:<br>
-<pre><code>sudo service apache2 reload
-</code></pre>
-</li><li>Prevent Snorby worker from starting on boot by setting SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.<br>
-</li><li>Comment out the output database line in all barnyard2.conf files on all sensors:<br>
-<pre><code>sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
-</code></pre>
-</li><li>Restart barnyard2 on all sensors:<br>
-<pre><code>sudo nsm_sensor_ps-restart --only-barnyard2
-</code></pre></li></ol>
+1. Disable Snorby in the Apache configuration:
+
+    ```
+    sudo a2dissite snorby
+    ```
+    
+1. Reload Apache configuration:
+
+    ```
+    sudo service apache2 reload
+    ```
+    
+1. Prevent Snorby worker from starting on boot by setting `SNORBY_ENABLED=no` in `/etc/nsm/securityonion.conf`.
+1. Comment out the output database line in all `barnyard2.conf` files on ALL sensors:
+
+    ```
+  sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
+    ```
+    
+1. Restart barnyard2 on all sensors:
+
+    ```
+    sudo nsm_sensor_ps-restart --only-barnyard2
+    ```
+<br>
 <br>
 
 #### Disabling `OSSEC`
