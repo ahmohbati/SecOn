@@ -27,7 +27,7 @@ If you just want to **quickly evaluate** Security Onion, choose one of the follo
 
 OR
 
-  * [Quickly Evaluating Security Onion using \*your preferred flavor of Ubuntu 12.04\*](InstallingOnUbuntu)
+  * [Quickly Evaluating Security Onion using **your preferred flavor of Ubuntu 12.04**](InstallingOnUbuntu)
 
 #### Production Deployment ####
 If you're deploying Security Onion in **production**, please see:
