@@ -2,32 +2,42 @@
   1. First, check the [Hardware Requirements](Hardware) page.
   1. Download the ISO image for your preferred flavor of Ubuntu 12.04.5, verify its checksum,  and boot from it.<br>
   1. Follow the prompts in the installer, but see the two notes below first.<br>
-  1. When prompted to "encrypt home folder" option, DO NOT enable this feature.<br>
-  1. When asked about automatic updates, DO NOT enable automatic updates.<br>
+  1. When prompted to `encrypt home folder` option, **DO NOT** enable this feature.<br>
+  1. When asked about automatic updates, **DO NOT** enable automatic updates.<br>
   1. Reboot into your new installation.<br>
-</li><li>Login using the username/password you specified during installation.<br>
-</li><li>Verify that you have Internet connectivity.  If necessary, configure your [proxy](Proxy) settings</a>.<br>
-</li><li>Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
-</li><li>Configure MySQL not to prompt for root password:<br>
-<pre><code>echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections<br>
-</code></pre>
-</li><li>Clean apt list repository:
-<pre><code>sudo rm -rf /var/lib/apt/lists/*<br>
-sudo apt-get update<br>
-</code></pre>
-</li><li>Add the Security Onion stable repository:<br>
-<pre><code>sudo apt-get -y install python-software-properties<br>
-sudo add-apt-repository -y ppa:securityonion/stable<br>
-sudo apt-get update<br>
-</code></pre>
-</li><li>Install the securityonion-all metapackage:<br>
-<pre><code>sudo apt-get -y install securityonion-all<br>
-</code></pre>
-</li><li>Run the Setup wizard:<br>
-<pre><code>sudo sosetup<br>
-</code></pre>
-</li><li>Follow the prompts.<br>
-</li><li>Analyze alerts using the Sguil client, or open a browser to <a href='https://localhost'>https://localhost</a> where you can access Squert, Snorby, and ELSA.<br>
-</li><li>Follow the [upgrade](Upgrade) process.</li></ol>
+  1. Login using the username/password you specified during installation.<br>
+  1. Verify that you have Internet connectivity.  If necessary, configure your [proxy](Proxy) settings</a>.<br>
+  1. Log back in (using `ssh -X` if you’re installing on Ubuntu Server or a headless distro).<br>
+  1. Configure `MySQL` not to prompt for root password:<br>
+
+    ````
+echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections
+    ````
+  1. Clean apt list repository:
+
+    ````
+sudo rm -rf /var/lib/apt/lists/*
+sudo apt-get update
+    ````
+  1. Add the Security Onion stable repository:<br>
+
+    ````
+sudo apt-get -y install python-software-properties
+sudo add-apt-repository -y ppa:securityonion/stable
+sudo apt-get update
+    ````
+  1. Install the securityonion-all metapackage:<br>
+
+    ````
+sudo apt-get -y install securityonion-all
+    ````
+  1. Run the Setup wizard:<br>
+
+    ````
+sudo sosetup
+    ````
+  1. Follow the prompts.<br>
+  1. Analyze alerts using the Sguil client, or open a browser to <a href='https://localhost'>https://localhost</a> where you can access `Squert`, `Snorby` and `ELSA`.<br>
+  1. Follow the [upgrade](Upgrade) process.
 
 Please review the [PostInstallation](PostInstallation) page.
