@@ -63,6 +63,7 @@ Please note that this is all subject to change!
     * ~~[Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update~~
   * May 2015
     * ~~[Issue 725](../issues/725): Suricata 2.0.8~~
+    * ~~[Issue 718](../issues/718): Sphinx 2.1.9~~
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services
@@ -71,7 +72,6 @@ Please note that this is all subject to change!
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP
     * [Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert
-    * [Issue 718](../issues/718): Sphinx 2.1.9
     * [Issue 657](../issues/657): ELSA 1205 or higher
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
