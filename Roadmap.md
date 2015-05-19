@@ -62,7 +62,7 @@ Please note that this is all subject to change!
     * ~~[Issue 679](../issues/679): rule-update: run pulledpork as unprivileged user~~
     * ~~[Issue 715](../issues/715): securityonion-rule-update: sensor-only boxes running salt shouldn't try to copy /etc/cron.d/rule-update~~
   * May 2015
-    * [Issue 725](../issues/725): Suricata 2.0.8
+    * ~~[Issue 725](../issues/725): Suricata 2.0.8~~
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services
