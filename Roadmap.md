@@ -64,8 +64,6 @@ Please note that this is all subject to change!
   * May 2015
     * ~~[Issue 725](../issues/725): Suricata 2.0.8~~
     * ~~[Issue 718](../issues/718): Sphinx 2.1.9~~
-    * [Issue 500](../issues/500): sosetup: restart starman
-    * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services
     * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
     * [Issue 714](../issues/714): nsm_server_user-disable
@@ -79,6 +77,8 @@ Please note that this is all subject to change!
     * [Issue 674](../issues/674): ELSA - update bro_notice parser to parse src and dst fields
     * [Issue 722](../issues/722): securityonion-web-page: update HTTP mime type queries for ELSA 1205
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
+    * [Issue 500](../issues/500): sosetup: restart starman
+    * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
   * June 2015
     * [Issue 730](../issues/730): Snort 2.9.7.3
