@@ -1,4 +1,5 @@
-* Developed by Dustin Webber
+* Developed by Dustin Webber:  
+https://www.snorby.org/
 
 * Web 2.0, Ajax, Ruby-on-Rails
 
@@ -12,9 +13,5 @@
 
 * Pivot from an IP address in Snorby to ELSA for related logs (Bro logs, OSSEC logs, syslog)
 
-* For more information, please see:  
-https://www.snorby.org/
-
-
-
-
+* If you need to wipe the Snorby database, please see:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/WipingSnorby
