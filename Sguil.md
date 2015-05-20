@@ -1,6 +1,12 @@
-* Developed by Bamm Visscher
+* Developed by Bamm Visscher:  
+http://sguil.net
 
 * tcl/tk (not web-based)
+
+* Single central MySQL database
+
+* For login information, please see:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * Data types:
 
@@ -12,10 +18,3 @@
 
 * Can pivot to transcript/Wireshark/NetworkMiner/ELSA
 
-* Single central MySQL database
-
-* For login information, please see:  
-https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
-
-* For more information, please see:  
-http://sguil.net
