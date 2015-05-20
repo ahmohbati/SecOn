@@ -1,2 +1,2 @@
-* Developed by Dustin Webber
-* https://www.snorby.org/
+Developed by Dustin Webber:  
+https://www.snorby.org/
