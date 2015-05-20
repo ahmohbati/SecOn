@@ -64,9 +64,9 @@ Please note that this is all subject to change!
   * May 2015
     * ~~[Issue 725](../issues/725): Suricata 2.0.8~~
     * ~~[Issue 718](../issues/718): Sphinx 2.1.9~~
-    * [Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services
-    * [Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden
-    * [Issue 714](../issues/714): nsm_server_user-disable
+    * ~~[Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services~~
+    * ~~[Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden~~
+    * ~~[Issue 714](../issues/714): nsm_server_user-disable~~
     * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
     * [Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP
     * [Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert
