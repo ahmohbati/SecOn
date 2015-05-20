@@ -4,6 +4,8 @@
 
 * Snorby has its own MySQL database (separate from the Sguil and ELSA databases)
 
+* Log into Snorby using the EMAIL ADDRESS and password you specified in Setup
+
 * The Snorby database only stores NIDS alerts from Snort or Suricata
 
 * Pivot from a NIDS alert in Snorby to CapME to access full packet capture
