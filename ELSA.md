@@ -13,7 +13,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthenticat
 * The ELSA web interface authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil
 
 * For more information, please see:  
-[ELSA Query Tips](ELSAQueryTips)
+[ELSA Query Tips](ELSAQueryTips)  
 [Custom ELSA Parsers](CustomELSAParsers)
 
 
