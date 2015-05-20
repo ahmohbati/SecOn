@@ -1,3 +1,2 @@
-Developed by Martin Holste:
-
+Developed by Martin Holste:  
 https://code.google.com/p/enterprise-log-search-and-archive/
