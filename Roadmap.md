@@ -84,6 +84,7 @@ Please note that this is all subject to change!
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
+    * [Issue 733](../issues/733): 12.04.5.2 ISO image
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
