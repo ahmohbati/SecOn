@@ -12,8 +12,7 @@
 
 * Can also pivot to ELSA to query Bro logs
 
-* For login information, please see:  
-https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#squert
+* Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil
 
 * For more information, please see:  
 http://www.squertproject.org/
