@@ -11,6 +11,12 @@
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
   * [Videos](Videos)
 
+## Interfaces ##
+  * [Snorby](Snorby)
+  * [Squert](Squert)
+  * [Sguil](Sguil)
+  * [ELSA](ELSA)
+
 ## Customizing for your network ##
   * [Network Configuration](NetworkConfiguration)
   * [Proxy Configuration](Proxy)
