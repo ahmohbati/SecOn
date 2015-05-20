@@ -8,5 +8,7 @@
 
 * Very fast, very scalable (each sensor has its own mysql database and sphinx index)
 
+* The ELSA web interface authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil
+
 * For more information, please see:  
 https://code.google.com/p/enterprise-log-search-and-archive/
