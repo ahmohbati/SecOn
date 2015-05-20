@@ -83,6 +83,7 @@ Please note that this is all subject to change!
   * June 2015
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
+    * [Issue 732](../issues/732): NSM: don't output color codes if not running on a tty
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
