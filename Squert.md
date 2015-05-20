@@ -12,5 +12,8 @@
 
 * Can also pivot to ELSA to query Bro logs
 
+* For login information, please see:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#squert
+
 * For more information, please see:  
 http://www.squertproject.org/
