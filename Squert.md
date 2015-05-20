@@ -1,2 +1,2 @@
-* Developed by Paul Halliday
-* http://www.squertproject.org/
+Developed by Paul Halliday:  
+http://www.squertproject.org/
