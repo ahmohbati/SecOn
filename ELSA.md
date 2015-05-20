@@ -1,4 +1,5 @@
-* Developed by Martin Holste
+* Developed by Martin Holste:  
+https://code.google.com/p/enterprise-log-search-and-archive/
 
 * Web interface for hunting through logs (Bro, Snort, OSSEC, syslog)
 
@@ -11,4 +12,8 @@
 * The ELSA web interface authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil
 
 * For more information, please see:  
-https://code.google.com/p/enterprise-log-search-and-archive/
+https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSAQueryTips
+https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthentication#configuring-elsa-to-auto-authenticate-to-capme
+https://github.com/Security-Onion-Solutions/security-onion/wiki/CustomELSAParsers
+
+
