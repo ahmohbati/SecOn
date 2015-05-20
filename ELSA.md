@@ -5,8 +5,8 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 
 * More data types than all other interfaces
 
-* Can pivot to CapMe to access full packet capture:  
-https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthentication
+* Can pivot to CapME to access full packet capture:  
+[CapME Authentication](CapMeAuthentication)
 
 * Very fast, very scalable (each sensor has its own mysql database and sphinx index)
 
