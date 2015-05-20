@@ -13,7 +13,9 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 
 * For more information, please see:  
 https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSAQueryTips
+
 https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthentication#configuring-elsa-to-auto-authenticate-to-capme
+
 https://github.com/Security-Onion-Solutions/security-onion/wiki/CustomELSAParsers
 
 
