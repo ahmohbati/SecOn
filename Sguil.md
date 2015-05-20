@@ -14,5 +14,8 @@
 
 * Single central MySQL database
 
+* For login information, please see:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
+
 * For more information, please see:  
 http://sguil.net
