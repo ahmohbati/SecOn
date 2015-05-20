@@ -26,9 +26,9 @@ You can change passwords as follows:
 ```
 sudo nsm_server_user-passwd
 ```
-You can disable accounts as follows (replacing USER with the actual username you'd like to disable):
+You can disable accounts as follows:
 ```
-sudo sguild -disableuser USER 
+sudo nsm_server_user-disable
 ```
 
 #### Squert ####
