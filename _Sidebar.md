@@ -5,7 +5,6 @@
   * [Download/Install](Installation)
   * [Booting Issues](TroubleBooting)
   * [After Installation](PostInstallation)
-  * [CapME Authentication](CapMeAuthentication)
   * [UTC and Time Zones](TimeZones)
   * [Updating](Upgrade)
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
@@ -16,6 +15,8 @@
   * [Squert](Squert)
   * [Sguil](Sguil)
   * [ELSA](ELSA)
+  * [CapME](CapMeAuthentication)
+
 
 ## Customizing for your network ##
   * [Network Configuration](NetworkConfiguration)
