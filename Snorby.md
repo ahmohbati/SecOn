@@ -9,7 +9,8 @@ https://www.snorby.org/
 
 * The Snorby database only stores NIDS alerts from Snort or Suricata
 
-* Pivot from a NIDS alert in Snorby to CapME to access full packet capture
+* Pivot from a NIDS alert in Snorby to CapME to access full packet capture:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthentication
 
 * Pivot from an IP address in Snorby to ELSA for related logs (Bro logs, OSSEC logs, syslog)
 
