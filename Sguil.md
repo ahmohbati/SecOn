@@ -1,1 +1,2 @@
-https://bammv.github.io/sguil/
+* Developed by Bamm Visscher
+* https://bammv.github.io/sguil/
