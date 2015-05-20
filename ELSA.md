@@ -5,7 +5,8 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 
 * More data types than all other interfaces
 
-* Can pivot to CapMe to access full packet capture
+* Can pivot to CapMe to access full packet capture:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthentication
 
 * Very fast, very scalable (each sensor has its own mysql database and sphinx index)
 
@@ -13,7 +14,6 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 
 * For more information, please see:  
 https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSAQueryTips
-https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthentication#configuring-elsa-to-auto-authenticate-to-capme
 https://github.com/Security-Onion-Solutions/security-onion/wiki/CustomELSAParsers
 
 
