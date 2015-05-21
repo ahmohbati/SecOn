@@ -67,9 +67,9 @@ Please note that this is all subject to change!
     * ~~[Issue 241](../issues/241): NSM scripts should have a timeout period when stopping services~~
     * ~~[Issue 392](../issues/392): Patch for lib-nsm-common-utils from Mark Seiden~~
     * ~~[Issue 714](../issues/714): nsm_server_user-disable~~
-    * [Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg
-    * [Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP
-    * [Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert
+    * ~~[Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg~~
+    * ~~[Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP~~
+    * ~~[Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert~~
     * [Issue 657](../issues/657): ELSA 1205 or higher
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
