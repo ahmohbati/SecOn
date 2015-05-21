@@ -116,6 +116,7 @@ Please note that this is all subject to change!
     * [Issue 480](../issues/480): sosetup: running on sensor should automatically create autossh account on server
     * [Issue 532](../issues/532): sosetup: Limit what autossh keys can do
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
+    * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
   * July 2015
     * [Issue 708](../issues/708): Update OSSEC
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
