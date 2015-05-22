@@ -102,7 +102,8 @@ Please note that this is all subject to change!
     * [Issue 644](../issues/644): sostat-quick: check server/sensor
     * [Issue 591](../issues/591): Bro Intel Whitelist
     * [Issue 418](../issues/418): netsniff-ng 0.5.9
-    * [Issue 736](../issues/736): CapME: Debug information occasionally gets rendered inside the transcript #736
+    * [Issue 737](../issues/737): Bro transcript debug output gets rendered in the transcript
+    * [Issue 736](../issues/736): CapME: Debug information occasionally gets rendered inside the transcript
     * [Issue 492](../issues/492): CapMe needs to handle UDP better
     * [Issue 493](../issues/493): CapMe: send credentials interactively to avoid exposing on command line
     * [Issue 608](../issues/608): Update bash scripts to use /bin/sh
