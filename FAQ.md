@@ -419,10 +419,7 @@ lower your `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf` and run
 ````
 sudo sguil-db-purge
 ````
-To keep `Uncategorized Events` from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ev mode?
-Running Security Onion as an  requires manual configuration and is not supported.  I talked about this on the [Packet Pushers](http://packetpushers.net) podcast:<br>
-<a href='http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and--drools/'>http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-s.html</a>
-<br>
+To keep `Uncategorized Events` from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.<br>
 <br>
 [back to top](#top)
 <br>
