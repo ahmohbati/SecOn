@@ -95,7 +95,7 @@ Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-et
 [Passwords](Passwords)
 
 ####How do I add a new user account for logging into Sguil/Squert/ELSA?####
-[Adding Sguil accounts](Passwords#sguil)
+[Adding Sguil accounts](Passwords#sguil)<br>
 <br>
 [back to top](#top)
 <br>
