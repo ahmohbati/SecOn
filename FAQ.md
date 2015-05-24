@@ -94,10 +94,8 @@ Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-et
 #### I've forgotten my Snorby password.  How do I reset it? ####
 [Passwords](Passwords)
 
-####How do I add a new user to Sguil?####
-You can add new Sguil user accounts with the following:<br>
-<pre><code>sudo nsm_server_user-add<br>
-</code></pre>
+####How do I add a new user account for logging into Sguil/Squert/ELSA?####
+[Adding Sguil accounts](Passwords#sguil)
 <br>
 [back to top](#top)
 <br>
