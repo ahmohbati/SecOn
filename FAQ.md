@@ -399,6 +399,7 @@ sudo service syslog-ng stop
 mysql -uroot syslog_data -e "DROP TABLE syslog_data.syslogs_archive_1" 
 mysql -uroot syslog_data -e "DELETE FROM syslog.tables WHERE table_name='syslog_data.syslogs_archive_1'"
 sudo rm /nsm/elsa/data/elsa/mysql/syslogs_archive_1*
+sudo rm /var/lib/mysql/syslog_data/syslogs_archive_1*
 sudo service mysql restart
 sudo service syslog-ng restart
 sudo service nsm start
