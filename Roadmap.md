@@ -79,7 +79,6 @@ Please note that this is all subject to change!
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
-    * [Issue 331](../issues/331): securityonion-elsa: update dependencies
   * June 2015
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
@@ -123,6 +122,7 @@ Please note that this is all subject to change!
     * [Issue 708](../issues/708): Update OSSEC
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
+    * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
     * [Issue 558](../issues/558): Add VirusTotal uploader
     * [Issue 369](../issues/369): Arpwatch
