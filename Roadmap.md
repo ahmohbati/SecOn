@@ -70,6 +70,7 @@ Please note that this is all subject to change!
     * ~~[Issue 705](../issues/705): ossec\_agent: improvements from Brian Kellogg~~
     * ~~[Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP~~
     * ~~[Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert~~
+  * June 2015
     * [Issue 657](../issues/657): ELSA 1205 or higher
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
@@ -79,7 +80,6 @@ Please note that this is all subject to change!
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
-  * June 2015
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
