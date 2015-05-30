@@ -12,6 +12,13 @@ Additionally, UTC comes in quite handy when you have sensors in different time z
 Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.  If you set your local timezone in Snorby, make sure that you also set the same timezone in CapMe's timezone.php:<br>
 <a href='http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html'>http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html</a>
 
+####How do I change the timezone in Squert?####
+* click the time interval (labeled INTERVAL)
+* on the right side, click the two arrows pointing right
+* de-select UTC
+* set your timezone offset (labeled TZ OFFSET)
+* click the "save TZ" button
+
 ####Why are the timestamps in ELSA not in UTC?####
 
 By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC/GMT by configuring the use_utc setting in your ELSA Preferences panel.<br>
