@@ -16,4 +16,15 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 [ELSA Query Tips](ELSAQueryTips)  
 [Custom ELSA Parsers](CustomELSAParsers)
 
+* ELSA tuning:
+
+https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
+
+https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
+
+https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
+
+https://groups.google.com/d/topic/enterprise-log-search-and-archive/Z-6YrCD_FkU/discussion
+
+
 
