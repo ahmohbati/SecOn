@@ -38,7 +38,7 @@ sudo gedit /etc/hosts.allow
     ````
 add line:
     ````
-sshd xxx.xxx.xxx.xxx/255.255.255.255
+sshd: xxx.xxx.xxx.xxx/255.255.255.255
     ````
 Flush IPTables (sosetup will configure properly)
     ````
