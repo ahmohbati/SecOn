@@ -31,6 +31,20 @@ sudo apt-get update
     ````
 sudo apt-get -y install securityonion-all
     ````
+  1. Add your IP to the /etc/hosts.allow file and configure your iptables: (If you don't do this you won't be able to SSH in)<br>
+
+    ````
+sudo gedit /etc/hosts.allow 
+    ````
+add line:
+    ````
+sshd xxx.xxx.xxx.xxx/255.255.255.255
+    ````
+Flush IPTables (sosetup will configure properly)
+    ````
+iptables -F
+    ````
+
   1. Run the Setup wizard:<br>
 
     ````
