@@ -31,7 +31,7 @@ sudo apt-get update
     ````
 sudo apt-get -y install securityonion-all
     ````
-  1. If you installed a fresh copy of Ubuntu, you can most likely skip this step.  Otherwise, you may need to add your IP address to the /etc/hosts.allow file and flush iptables: (If you don't do this, you may not be able to SSH in)<br>
+  1. If you installed a fresh copy of Ubuntu, you can most likely skip this step.  Otherwise, you may need to add your IP address to the /etc/hosts.allow file and flush iptables (if you don't do this, you may not be able to SSH in):<br>
 
     ````
 sudo gedit /etc/hosts.allow 
