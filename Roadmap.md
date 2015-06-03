@@ -85,6 +85,7 @@ Please note that this is all subject to change!
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
+    * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
@@ -111,7 +112,6 @@ Please note that this is all subject to change!
     * [Issue 493](../issues/493): CapMe: send credentials interactively to avoid exposing on command line
     * [Issue 608](../issues/608): Update bash scripts to use /bin/sh
     * [Issue 729](../issues/729): sosetup: add option for pivot URL
-    * [Issue 739](../issues/739): sosetup: enabling salt on master should try to accept minion for up to 30 seconds
     * [Issue 304](../issues/304): sosetup: support unique interface names
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
     * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
