@@ -80,6 +80,7 @@ Please note that this is all subject to change!
     * [Issue 723](../issues/723): CapMe: Update for new ELSA API
     * [Issue 500](../issues/500): sosetup: restart starman
     * [Issue 504](../issues/504): sosetup: avoid writing ELSA_PORT twice in SSH_CONF
+    * [Issue 547](../issues/547): sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
@@ -110,7 +111,6 @@ Please note that this is all subject to change!
     * [Issue 608](../issues/608): Update bash scripts to use /bin/sh
     * [Issue 729](../issues/729): sosetup: add option for pivot URL
     * [Issue 739](../issues/739): sosetup: enabling salt on master should try to accept minion for up to 30 seconds
-    * [Issue 547](../issues/547): sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * [Issue 304](../issues/304): sosetup: support unique interface names
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
     * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
