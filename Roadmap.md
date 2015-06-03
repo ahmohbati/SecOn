@@ -109,6 +109,7 @@ Please note that this is all subject to change!
     * [Issue 493](../issues/493): CapMe: send credentials interactively to avoid exposing on command line
     * [Issue 608](../issues/608): Update bash scripts to use /bin/sh
     * [Issue 729](../issues/729): sosetup: add option for pivot URL
+    * [Issue 739](../issues/739): sosetup: enabling salt on master should try to accept minion for up to 30 seconds
     * [Issue 547](../issues/547): sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * [Issue 304](../issues/304): sosetup: support unique interface names
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
