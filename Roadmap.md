@@ -86,7 +86,6 @@ Please note that this is all subject to change!
     * [Issue 730](../issues/730): Snort 2.9.7.3
     * [Issue 731](../issues/731): Snort DAQ 2.0.5
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
-    * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
@@ -124,6 +123,7 @@ Please note that this is all subject to change!
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
   * August 2015
+    * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 708](../issues/708): Update OSSEC
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
