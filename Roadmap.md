@@ -71,6 +71,9 @@ Please note that this is all subject to change!
     * ~~[Issue 716](../issues/716): ossec_agent: tighten regex to only look for -> anchored to hostname or IP~~
     * ~~[Issue 717](../issues/717): ossec_agent: send alerts to sguild immediately instead of waiting for next alert~~
   * June 2015
+    * [Issue 742](../issues/742): securityonion-suricata package missing debian/install
+    * [Issue 730](../issues/730): Snort 2.9.7.3
+    * [Issue 731](../issues/731): Snort DAQ 2.0.5
     * [Issue 657](../issues/657): ELSA 1205 or higher
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
@@ -83,9 +86,6 @@ Please note that this is all subject to change!
     * [Issue 547](../issues/547): sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * [Issue 740](../issues/740): sosetup: sensor should use sudo to restart apache on master
     * [Issue 741](../issues/741): sosetup: sometimes local salt-minion doesn't check in with local salt-master quickly enough
-    * [Issue 730](../issues/730): Snort 2.9.7.3
-    * [Issue 731](../issues/731): Snort DAQ 2.0.5
-    * [Issue 742](../issues/742): securityonion-suricata package missing debian/install
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
