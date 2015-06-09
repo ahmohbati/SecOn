@@ -89,6 +89,7 @@ Please note that this is all subject to change!
     * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
+    * [Issue 743](../issues/743): Bro 2.4
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
