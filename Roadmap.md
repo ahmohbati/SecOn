@@ -74,7 +74,7 @@ Please note that this is all subject to change!
     * ~~[Issue 742](../issues/742): securityonion-suricata package missing debian/install~~
     * ~~[Issue 730](../issues/730): Snort 2.9.7.3~~
     * ~~[Issue 731](../issues/731): Snort DAQ 2.0.5~~
-    * [Issue 657](../issues/657): ELSA 1205 or higher
+    * [Issue 657](../issues/657): ELSA 1205
     * [Issue 447](../issues/447): ELSA syslog-ng.conf rewrite r\_pipes
     * [Issue 512](../issues/512): ELSA syslog-ng.conf filter f\_bro\_headers
     * [Issue 726](../issues/726): ELSA syslog-ng.conf - add filesystem destinations
