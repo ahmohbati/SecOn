@@ -86,7 +86,7 @@ Please note that this is all subject to change!
     * ~~[Issue 547](../issues/547): sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist~~
     * ~~[Issue 740](../issues/740): sosetup: sensor should use sudo to restart apache on master~~
     * ~~[Issue 741](../issues/741): sosetup: sometimes local salt-minion doesn't check in with local salt-master quickly enough~~
-    * [Issue 732](../issues/732): NSM: only output color codes if running on a tty
+    * ~~[Issue 732](../issues/732): NSM: only output color codes if running on a tty~~
     * [Issue 744](../issues/744): sosetup: Restart Apache to activate new ELSA apikey
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
