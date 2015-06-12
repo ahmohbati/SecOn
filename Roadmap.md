@@ -88,6 +88,7 @@ Please note that this is all subject to change!
     * ~~[Issue 741](../issues/741): sosetup: sometimes local salt-minion doesn't check in with local salt-master quickly enough~~
     * ~~[Issue 732](../issues/732): NSM: only output color codes if running on a tty~~
     * [Issue 746](../issues/746): ELSA 1205 package enabled perl module on non-ELSA systems
+    * [Issue 747](../issues/747): ELSA 1205 package duplicated syslog-ng.conf entries on non-ELSA systems
     * [Issue 744](../issues/744): sosetup: Restart Apache to activate new ELSA apikey
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
