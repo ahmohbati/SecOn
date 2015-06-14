@@ -9,7 +9,14 @@ Trying to use a non-UTC timezone can result in the following:<br>
 <br>
 Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
 <br>
-Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.  If you set your local timezone in Snorby, make sure that you also set the same timezone in CapMe's timezone.php:<br>
+Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.
+
+####How do I change the timezone in Snorby?####
+* click Settings in the upper right corner
+* click the drop-down box next to "Time zone"
+* select your time zone from the list
+* click the "Update Settings" button
+* set the same timezone in CapMe's timezone.php:<br>
 <a href='http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html'>http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html</a>
 
 ####How do I change the timezone in Squert?####
