@@ -6,9 +6,9 @@ When you run Security Onion Setup, it sets the timezone to UTC/GMT because that 
 Trying to use a non-UTC timezone can result in the following:<br>
 - Time zones that have daylight saving time have a one-hour time warp twice a year.  This manifests itself in Sguil not being able to pull transcripts for events within that one-hour time period.  This is avoided by using UTC, since there is no daylight saving time.<br>
 - Something similar can happen on a daily basis under certain conditions.  If there is a discrepancy between the OS timezone and the Sguil UTC settings, then Sguil will be unable to pull transcripts for events in a window of time around midnight coinciding with the timezone's offset from UTC.<br>
-<br>
+
 Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
-<br>
+
 Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.
 
 ####How do I change the timezone in Snorby?####
