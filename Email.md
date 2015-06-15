@@ -46,8 +46,7 @@ Then restart OSSEC:<br>
 ####How do I configure ELSA to send emails?####
 Add your email address to the user_info table of the securityonion_db database:
 ```
-mysql -uroot -Dsecurityonion_db -e "update user_info set
-email='firstlast@yourdomain.com' where username='firstlast';"
+mysql -uroot -Dsecurityonion_db -e "update user_info set email='firstlast@yourdomain.com' where username='firstlast';"
 ```
 Restart Apache:
 ```
