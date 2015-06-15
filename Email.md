@@ -43,6 +43,17 @@ Then restart OSSEC:<br>
 <pre><code>sudo service ossec-hids-server restart<br>
 </code></pre>
 
+####How do I configure ELSA to send emails?####
+Add your email address to the user_info table of the securityonion_db database:
+```
+mysql -uroot -Dsecurityonion_db -e "update user_info set
+email='firstlast@yourdomain.com' where username='firstlast';"
+```
+Restart Apache:
+```
+sudo service apache2 restart
+```
+
 ####How do I configure the OS itself to send emails?####
 Install and configure your favorite mail server.  Depending on your needs, this could be something simple like `nullmailer` (recommended) or something more complex like `exim4`.<br>
 <br>
