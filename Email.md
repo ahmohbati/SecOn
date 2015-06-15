@@ -52,6 +52,11 @@ Restart Apache:
 ```
 sudo service apache2 restart
 ```
+You can then have ELSA send an email alert by doing the following:
+* run a query
+* click "Result Options"
+* click "Alert or Schedule"
+* choose your parameters and click the Submit button
 
 ####How do I configure the OS itself to send emails?####
 Install and configure your favorite mail server.  Depending on your needs, this could be something simple like `nullmailer` (recommended) or something more complex like `exim4`.<br>
