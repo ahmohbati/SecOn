@@ -78,7 +78,7 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li></ul></li><li>FIRST SENSOR<br>
 <ul><li>create an account on the SERVER called sensor1 using the `sudo adduser sensor1` command<br>
 </li><li>add the new account to the sudo group using the `sudo adduser sensor1 sudo` command<br>
-</li></ul></li><li>run through sosetup on the SENSOR<br>
+</li><li>run through sosetup on the SENSOR<br>
 </li><li>on the SERVER, remove the account from the sudo group, but leave the account active using the `sudo deluser sensor1 sudo` command<br>
 </li></ul></li><li>SECOND SENSOR<br>
 <ul><li>create a second account on the SERVER and add it to the sudo group using the `sudo adduser sensor2` command<br>
