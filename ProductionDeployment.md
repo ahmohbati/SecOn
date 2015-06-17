@@ -82,7 +82,7 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li><li>on the SERVER, remove the account from the sudo group, but leave the account active using the `sudo deluser sensor1 sudo` command<br>
 </li></ul></li><li>SECOND SENSOR - username sensor2<br>
 <ul><li>create a second account on the SERVER and add it to the sudo group using the `sudo adduser sensor2` command<br>
-<ul><li>add the new account to the sudo group using the `sudo adduser sensor2 sudo` command<br>
+</li><li>add the new account to the sudo group using the `sudo adduser sensor2 sudo` command<br>
 </li><li>run through SETUP on the second SENSOR<br>
 </li><li>on the SERVER, remove the account from the sudo group, but leave the account active using the `sudo deluser sensor2 sudo` command<br>
 </li></ul></li></ul></li><li>You’ll be asked which network interface should be monitored.<br>
