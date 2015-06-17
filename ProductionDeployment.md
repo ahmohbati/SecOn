@@ -75,12 +75,12 @@ sudo apt-get install python-software-properties=0.82.7<br>
 <ul><li>You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the `sudo adduser $user` command (replacing $user with the actual username).  (The new account must have a full home directory. If you do not create it when you create the account, copy `/etc/skel` to `/home/$user` and do `chown -R $user:$user /home/$user`. This is needed so the .ssh directory may be created to manage the connection.)  Then add the new user to the sudo group with the `sudo adduser $user sudo` command. Once Setup is complete, the user can be removed from the sudo group with the `sudo deluser $user sudo` command . For example, suppose you’re setting up a server and two separate sensors and you want to use sensor1 as the SSH username for the first sensor and sensor2 as the SSH username for the second sensor:<br>
 <ul><li>SERVER<br>
 <ul><li>run through sosetup<br>
-</li></ul></li><li>FIRST SENSOR<br>
+</li></ul></li><li>FIRST SENSOR - username sensor1<br>
 <ul><li>create an account on the SERVER called sensor1 using the `sudo adduser sensor1` command<br>
 </li><li>add the new account to the sudo group using the `sudo adduser sensor1 sudo` command<br>
 </li><li>run through sosetup on the SENSOR<br>
 </li><li>on the SERVER, remove the account from the sudo group, but leave the account active using the `sudo deluser sensor1 sudo` command<br>
-</li></ul></li><li>SECOND SENSOR<br>
+</li></ul></li><li>SECOND SENSOR - username sensor2<br>
 <ul><li>create a second account on the SERVER and add it to the sudo group using the `sudo adduser sensor2` command<br>
 <ul><li>add the new account to the sudo group using the `sudo adduser sensor2 sudo` command<br>
 </li><li>run through SETUP on the second SENSOR<br>
