@@ -91,7 +91,7 @@ Please note that this is all subject to change!
     * ~~[Issue 747](../issues/747): ELSA 1205 package duplicated syslog-ng.conf entries on non-ELSA systems~~
     * ~~[Issue 748](../issues/748): ELSA 1205 package didn't add the pid column to the query_log table for upgrades~~
     * ~~[Issue 749](../issues/749): Update tcl-tls package and replace DH512 key with DH2048~~
-    * [Issue 751](../issues/751): NSM: change watchdog run time to avoid race condition
+    * ~~[Issue 751](../issues/751): NSM: change watchdog run time to avoid race condition~~
     * [Issue 744](../issues/744): sosetup: Restart Apache to activate new ELSA apikey
     * [Issue 745](../issues/745): OSSEC 2.8.2
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
