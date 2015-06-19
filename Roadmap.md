@@ -102,6 +102,11 @@ Please note that this is all subject to change!
     * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
+    * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
+    * [Issue 756](../issues/756): securityonion-elsa-extras: add parser for Bro 2.4 kerberos.log
+    * [Issue 757](../issues/757): securityonion-elsa-extras: add parser for Bro 2.4 rdp.log
+    * [Issue 758](../issues/758): securityonion-elsa-extras: add parser for Bro 2.4 pe.log
+    * [Issue 759](../issues/759): securityonion-elsa-extras: add parser for Bro 2.4 sip.log
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
