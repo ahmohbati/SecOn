@@ -97,7 +97,7 @@ Please note that this is all subject to change!
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
     * [Issue 743](../issues/743): Bro 2.4
-    * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro and replace split_all with split_string_all
+    * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4
     * [Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4
     * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
     * [Issue 727](../issues/727): Argus 3.0.8.1
