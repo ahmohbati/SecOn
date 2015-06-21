@@ -100,6 +100,7 @@ Please note that this is all subject to change!
     * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4
     * [Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4
     * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
+    * [Issue 761](../issues/761): securityonion-tcpudpflow: remove connection_state_remove event handler
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
