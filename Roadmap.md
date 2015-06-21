@@ -150,7 +150,6 @@ Please note that this is all subject to change!
     * [Issue 558](../issues/558): Add VirusTotal uploader
     * [Issue 369](../issues/369): Arpwatch
     * [Issue 651](../issues/651): ELSA: starman restart doesn't work properly
-    * [Issue 464](../issues/464): Consider changing default query\_timeout in /etc/elsa\_web.conf
     * [Issue 336](../issues/336): When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * [Issue 467](../issues/467): ELSA dashboard for Snort performance
     * [Issue 594](../issues/594): securityonion-sudoers: 10\_securityonion
