@@ -101,6 +101,7 @@ Please note that this is all subject to change!
     * [Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4
     * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
     * [Issue 762](../issues/762): securityonion-elsa-extras: update bro_conn parser for Bro 2.4
+    * [Issue 763](../issues/763): sostat: show last update
     * [Issue 761](../issues/761): securityonion-tcpudpflow: remove connection_state_remove event handler
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
