@@ -94,8 +94,8 @@ Please note that this is all subject to change!
     * ~~[Issue 751](../issues/751): NSM: change watchdog run time to avoid race condition~~
     * ~~[Issue 744](../issues/744): sosetup: Restart Apache to activate new ELSA apikey~~
     * [Issue 745](../issues/745): OSSEC 2.8.2
-    * [Issue 733](../issues/733): 12.04.5.2 ISO image
   * July 2015
+    * [Issue 733](../issues/733): 12.04.5.2 ISO image
     * [Issue 743](../issues/743): Bro 2.4
     * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4
     * [Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4
