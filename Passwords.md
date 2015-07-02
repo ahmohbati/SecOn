@@ -18,7 +18,7 @@ http://wiki.xplico.org/doku.php?id=interface
 #### Sguil ####
 Log into Sguil using the username/password you created in the Setup wizard.  
 
-Note, Sguil usernames must be alphanumeric.  You can add accounts as follows: 
+You can add accounts as follows (please note that Sguil usernames must be alphanumeric): 
 ```
 sudo nsm_server_user-add
 ```
