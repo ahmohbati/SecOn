@@ -105,6 +105,7 @@ Please note that this is all subject to change!
     * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
     * [Issue 762](../issues/762): securityonion-elsa-extras: update bro_conn parser for Bro 2.4
     * [Issue 765](../issues/765): securityonion-elsa-extras: update bro_intel parser for Bro 2.4
+    * [Issue 766](../issues/766): Snorby 2.6.2 - Stored Cross-site Scripting Vulnerability
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
