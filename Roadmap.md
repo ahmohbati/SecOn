@@ -106,6 +106,7 @@ Please note that this is all subject to change!
     * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
     * [Issue 762](../issues/762): securityonion-elsa-extras: update bro_conn parser for Bro 2.4
     * [Issue 765](../issues/765): securityonion-elsa-extras: update bro_intel parser for Bro 2.4
+    * [Issue 768](../issues/768): securityonion-elsa-extras: update bro_ssl parser for Bro 2.4
     * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
     * [Issue 766](../issues/766): Snorby 2.6.2 - Stored Cross-site Scripting Vulnerability
     * [Issue 727](../issues/727): Argus 3.0.8.1
