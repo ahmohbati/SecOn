@@ -96,7 +96,6 @@ Please note that this is all subject to change!
     * ~~[Issue 745](../issues/745): OSSEC 2.8.2~~
   * July 2015
     * [Issue 733](../issues/733): 12.04.5.2 ISO image
-    * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
     * [Issue 763](../issues/763): sostat: show last update
     * [Issue 761](../issues/761): securityonion-tcpudpflow: remove connection_state_remove event handler
     * [Issue 760](../issues/760): ossec_agent: Add source of syslog as destination IP for Sguil alert
@@ -111,6 +110,7 @@ Please note that this is all subject to change!
     * [Issue 766](../issues/766): Snorby 2.6.2 - Stored Cross-site Scripting Vulnerability
     * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
     * [Issue 693](../issues/693): sosetup: improve input validation for email address
+    * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
