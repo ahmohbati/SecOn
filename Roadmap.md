@@ -109,6 +109,7 @@ Please note that this is all subject to change!
     * [Issue 768](../issues/768): securityonion-elsa-extras: update bro_ssl parser for Bro 2.4
     * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
     * [Issue 766](../issues/766): Snorby 2.6.2 - Stored Cross-site Scripting Vulnerability
+    * [Issue 769](../issues/769): Setup: allow user to enable/disable Snorby
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
