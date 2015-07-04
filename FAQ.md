@@ -312,7 +312,7 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 [Disabling Processes](DisablingProcesses#Sguil_Agent)
 
 ####How do I disable `Snorby`?####
-[Disabling Processes](DisablingProcesses)
+[Disabling Processes](DisablingProcesses#disabling-snorby)
 
 #### Where do I put my custom ELSA parsers? ####
 [CustomELSAParsers](CustomELSAParsers)
