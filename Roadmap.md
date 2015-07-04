@@ -109,7 +109,8 @@ Please note that this is all subject to change!
     * [Issue 768](../issues/768): securityonion-elsa-extras: update bro_ssl parser for Bro 2.4
     * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
     * [Issue 766](../issues/766): Snorby 2.6.2 - Stored Cross-site Scripting Vulnerability
-    * [Issue 769](../issues/769): Setup: allow user to enable/disable Snorby
+    * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
+    * [Issue 693](../issues/693): sosetup: improve input validation for email address
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
@@ -143,7 +144,6 @@ Please note that this is all subject to change!
     * [Issue 304](../issues/304): sosetup: support unique interface names
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
     * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
-    * [Issue 693](../issues/693): sosetup: improve input validation for email address
     * [Issue 592](../issues/592): sosetup: add -y option
     * [Issue 593](../issues/593): sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
     * [Issue 480](../issues/480): sosetup: running on sensor should automatically create autossh account on server
