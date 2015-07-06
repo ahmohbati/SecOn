@@ -4,7 +4,8 @@ To install Security Onion, you're going to either install our Security Onion ISO
 
 #### ALWAYS verify the checksum of ANY downloaded ISO image ####
 Regardless of whether you're downloading our Security Onion ISO image or whether you're starting with an Ubuntu 12.04 ISO image, you should ALWAYS verify the checksum of the downloaded ISO image.
-  * If downloading our Security Onion ISO image, you can download the accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").
+  * If downloading our Security Onion 12.04.5.2 ISO image, please verify the checksums here:
+http://blog.securityonion.net/2015/07/security-onion-120452-iso-image-now.html
   * If downloading an Ubuntu 12.04 ISO image, use the accompanying .md5 file.
 Here are some Ubuntu instructions for verifying checksums:
 https://help.ubuntu.com/community/HowToMD5SUM
