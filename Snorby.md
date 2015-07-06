@@ -1,5 +1,4 @@
-* Developed by Dustin Webber:  
-https://www.snorby.org/
+* Developed by Dustin Webber
 
 * Web 2.0, Ajax, Ruby-on-Rails
 
