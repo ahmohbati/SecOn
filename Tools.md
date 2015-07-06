@@ -88,7 +88,7 @@ Security Onion would like to thank the following open-source projects for their 
 "SniffIt is a Distribted Sniffer System, which allows users to capture network traffic from an unique machine using a graphical client application. This feature is very useful in switched networks, where traditional sniffers only allow users to sniff their own network traffic."<br>
 <br>
 <h4>Snorby</h4>
-<a href='http://snorby.org/'><a href='http://snorby.org/'>http://snorby.org/</a></a><br>
+<a href='https://github.com/snorby/snorby'><a href='https://github.com/snorby/snorby'>https://github.com/snorby/snorby</a></a><br>
 "Snorby is a ruby on rails web application for network security monitoring that interfaces with current popular intrusion detection systems (Snort, Suricata and Sagan).  The basic fundamental concepts behind Snorby are simplicity, organization and power.  The project goal is to create a free, open source and highly competitive application for network monitoring for both private and enterprise use."<br>
 <br>
 <h4>Snort</h4>
