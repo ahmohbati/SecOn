@@ -120,6 +120,7 @@ Please note that this is all subject to change!
     * [Issue 758](../issues/758): securityonion-elsa-extras: add parser for Bro 2.4 pe.log
     * [Issue 759](../issues/759): securityonion-elsa-extras: add parser for Bro 2.4 sip.log
     * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
+    * [Issue 771](../issues/771): onionsalt: comment out 2 examples in top.sls
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
