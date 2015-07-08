@@ -1,4 +1,4 @@
-## Problem
+## Current Ntopng Compatibility Problem with Security Onion
 
 As of July 8, 2015, neither the stable nor the development version of the ntopng packages appear to be compatible with Security Onion.  This likely coincides with the release of the new 2.x branch of ntopng, which appears to be built for use with PF_RING 6.1.1 while Security Onion is using PF_RING 6.0.2.  It might be possible to build ntopng 2.x from tarball but that is outside of the scope of this article.  I recommend you just use the ntopng 1.2.2 packages for now if you can find them.
 
