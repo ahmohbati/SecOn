@@ -113,6 +113,7 @@ Please note that this is all subject to change!
     * [Issue 693](../issues/693): sosetup: improve input validation for email address
     * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
+    * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
@@ -121,7 +122,6 @@ Please note that this is all subject to change!
     * [Issue 758](../issues/758): securityonion-elsa-extras: add parser for Bro 2.4 pe.log
     * [Issue 759](../issues/759): securityonion-elsa-extras: add parser for Bro 2.4 sip.log
     * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
-    * [Issue 771](../issues/771): onionsalt: comment out 2 examples in top.sls
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
