@@ -153,6 +153,7 @@ Please note that this is all subject to change!
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
   * August 2015
     * [Issue 739](../issues/739): Salt 2015.5.0
+    * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
     * [Issue 708](../issues/708): OSSEC 2.9
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
