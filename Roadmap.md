@@ -116,6 +116,7 @@ Please note that this is all subject to change!
     * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
+    * [Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
     * [Issue 756](../issues/756): securityonion-elsa-extras: add parser for Bro 2.4 kerberos.log
     * [Issue 757](../issues/757): securityonion-elsa-extras: add parser for Bro 2.4 rdp.log
