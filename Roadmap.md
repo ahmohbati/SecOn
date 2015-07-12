@@ -117,6 +117,7 @@ Please note that this is all subject to change!
     * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
     * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
+  * August 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
@@ -154,7 +155,7 @@ Please note that this is all subject to change!
     * [Issue 532](../issues/532): sosetup: Limit what autossh keys can do
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
-  * August 2015
+  * September 2015
     * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
     * [Issue 708](../issues/708): OSSEC 2.9
