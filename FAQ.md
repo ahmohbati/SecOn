@@ -296,6 +296,12 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 #### How do I configure a `BPF` for `Snort/Suricata/Bro`? ####
 [BPF](BPF)
 
+#### How do I filter traffic? ####
+[BPF](BPF)
+
+#### How do I exclude traffic? ####
+[BPF](BPF)
+
 #### What are the default firewall settings and how do I change them? ####
 [Firewall](Firewall)
 
