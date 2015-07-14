@@ -293,7 +293,7 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
 
-#### How do I configure a `BPF` for `Snort/Suricata/Bro`? ####
+#### How do I configure a `BPF` for `Snort/Suricata/Bro/netsniff-ng/prads`? ####
 [BPF](BPF)
 
 #### How do I filter traffic? ####
