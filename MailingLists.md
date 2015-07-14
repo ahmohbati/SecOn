@@ -16,6 +16,9 @@ Please be courteous and respectful.  Disrespectful emails can result in being ba
 #### Start a new thread instead of replying to an old one ####
 Please search the mailing list to see if you can find similar issues that may help you.  However, please do not reply to old threads with your new issue.  Instead, please start a new thread and provide a hyperlink to the related discussion at https://groups.google.com/forum/#!forum/security-onion.
 
+#### Avoid generic Ubuntu questions ####
+Security Onion is based on Ubuntu.  Quite often, folks ask the Security Onion mailing list for help with Ubuntu issues not strictly related to Security Onion.  In order to keep the signal-to-noise ratio as high as possible, the Security Onion mailing list should only be used for questions directly relating to Security Onion itself.  If you have questions about Ubuntu, you should check the Ubuntu website, forums, and Google.
+
 #### Provide sufficient technical info ####
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
