@@ -503,6 +503,9 @@ ntop defaults to port 3000, which is already being used by Snorby.  You can chan
 <pre><code>GETOPT="-w 0 -W 4000"<br>
 </code></pre>
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!<br>
+
+####How do I perform "X" in Ubuntu?####
+https://github.com/Security-Onion-Solutions/security-onion/wiki/MailingLists#avoid-generic-ubuntu-questions
 <br>
 [back to top](#top)
 <br>
