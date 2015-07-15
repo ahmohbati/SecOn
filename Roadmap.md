@@ -162,6 +162,7 @@ Please note that this is all subject to change!
     * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
     * [Issue 708](../issues/708): OSSEC 2.9
     * [Issue 707](../issues/707): Add Josh Brower's OSSEC decoders/rules for sysmon
+    * [Issue 778](../issues/778): QA tests
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
