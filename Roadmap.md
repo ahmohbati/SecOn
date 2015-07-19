@@ -126,6 +126,7 @@ Please note that this is all subject to change!
     * [Issue 758](../issues/758): securityonion-elsa-extras: add parser for Bro 2.4 pe.log
     * [Issue 759](../issues/759): securityonion-elsa-extras: add parser for Bro 2.4 sip.log
     * [Issue 780](../issues/780): securityonion-elsa-extras: add parser for IIS logs
+    * [Issue 782](../issues/782): securityonion-elsa-extras: update sysmon parser
     * [Issue 776](../issues/776): securityonion-elsa-extras: set version 3.3 in syslog-ng.conf
     * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
