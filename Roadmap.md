@@ -110,7 +110,6 @@ Please note that this is all subject to change!
     * [Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg
     * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
     * [Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query
-    * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
     * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
     * [Issue 693](../issues/693): sosetup: improve input validation for email address
@@ -118,6 +117,7 @@ Please note that this is all subject to change!
     * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
     * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
   * August 2015
+    * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
