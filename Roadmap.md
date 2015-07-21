@@ -110,7 +110,7 @@ Please note that this is all subject to change!
     * [Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg
     * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
     * [Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query
-    * [Issue 766](../issues/766): Snorby 2.6.2 - Stored Cross-site Scripting Vulnerability
+    * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
     * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
     * [Issue 693](../issues/693): sosetup: improve input validation for email address
