@@ -161,6 +161,7 @@ Please note that this is all subject to change!
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
     * [Issue 777](../issues/777): sosetup: refactor into more functions
   * September 2015
+    * [Issue 785](../issues/785): sostat: show number of available updates
     * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
     * [Issue 708](../issues/708): OSSEC 2.9
