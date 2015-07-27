@@ -31,7 +31,7 @@ Once logged in as the normal user open the sguil client application.
 The display will be sent to your machine using the X11 protocol over SSH.
 
 ```
-sudo sguil.tk
+sguil.tk
 ```
 
 ![http://jonschipp.com/seconion/sguil.png](http://jonschipp.com/seconion/sguil.png)
