@@ -99,12 +99,12 @@ Please note that this is all subject to change!
     * ~~[Issue 763](../issues/763): sostat: show last update~~
     * ~~[Issue 761](../issues/761): securityonion-tcpudpflow: remove connection_state_remove event handler~~
     * ~~[Issue 760](../issues/760): ossec_agent: Add source of syslog as destination IP for Sguil alert~~
-    * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
-    * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
-    * [Issue 693](../issues/693): sosetup: improve input validation for email address
-    * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
-    * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
-    * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
+    * ~~[Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby~~
+    * ~~[Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker~~
+    * ~~[Issue 693](../issues/693): sosetup: improve input validation for email address~~
+    * ~~[Issue 764](../issues/764): sosetup: fix typo in sosetup.conf~~
+    * ~~[Issue 605](../issues/605): sosetup: replace tmp with mktemp~~
+    * ~~[Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls~~
     * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
     * [Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query
   * August 2015
