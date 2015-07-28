@@ -17,4 +17,4 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthenticat
 * If you need to wipe the Snorby database, please see:  
 https://github.com/Security-Onion-Solutions/security-onion/wiki/WipingSnorby
 
-* Snorby is going away in the future, so you should go ahead and begin transitioning to [Squert], Sguil, and/or ELSA.
+* Snorby is going away in the future, so you should go ahead and begin transitioning to [Squert](Squert), Sguil, and/or ELSA.
