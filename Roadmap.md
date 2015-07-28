@@ -99,6 +99,15 @@ Please note that this is all subject to change!
     * ~~[Issue 763](../issues/763): sostat: show last update~~
     * ~~[Issue 761](../issues/761): securityonion-tcpudpflow: remove connection_state_remove event handler~~
     * ~~[Issue 760](../issues/760): ossec_agent: Add source of syslog as destination IP for Sguil alert~~
+    * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
+    * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
+    * [Issue 693](../issues/693): sosetup: improve input validation for email address
+    * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
+    * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
+    * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
+    * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
+    * [Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query
+  * August 2015
     * [Issue 743](../issues/743): Bro 2.4
     * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4
     * [Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4
@@ -108,15 +117,6 @@ Please note that this is all subject to change!
     * [Issue 768](../issues/768): securityonion-elsa-extras: update bro_ssl parser for Bro 2.4
     * [Issue 774](../issues/774): securityonion-elsa-extras: update bro_ssh parser for Bro 2.4
     * [Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg
-    * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
-    * [Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query
-    * [Issue 769](../issues/769): sosetup: allow user to enable/disable Snorby
-    * [Issue 596](../issues/596): sosetup: sensor should stop/disable Apache and Snorby worker
-    * [Issue 693](../issues/693): sosetup: improve input validation for email address
-    * [Issue 764](../issues/764): sosetup: fix typo in sosetup.conf
-    * [Issue 605](../issues/605): sosetup: replace tmp with mktemp
-    * [Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls
-  * August 2015
     * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 784](../issues/784): Snort 2.9.7.5
     * [Issue 727](../issues/727): Argus 3.0.8.1
