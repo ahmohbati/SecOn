@@ -120,7 +120,6 @@ Please note that this is all subject to change!
     * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 784](../issues/784): Snort 2.9.7.5
     * [Issue 788](../issues/788): DAQ 2.0.6
-    * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
     * [Issue 756](../issues/756): securityonion-elsa-extras: add parser for Bro 2.4 kerberos.log
@@ -131,6 +130,7 @@ Please note that this is all subject to change!
     * [Issue 782](../issues/782): securityonion-elsa-extras: update sysmon parser
     * [Issue 776](../issues/776): securityonion-elsa-extras: set version 3.3 in syslog-ng.conf
     * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
+    * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
     * [Issue 588](../issues/588): NSM: purge old OSSEC logs
