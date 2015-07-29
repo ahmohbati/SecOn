@@ -130,6 +130,7 @@ Please note that this is all subject to change!
     * [Issue 782](../issues/782): securityonion-elsa-extras: update sysmon parser
     * [Issue 776](../issues/776): securityonion-elsa-extras: set version 3.3 in syslog-ng.conf
     * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
+  * September 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
@@ -161,7 +162,7 @@ Please note that this is all subject to change!
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
     * [Issue 777](../issues/777): sosetup: refactor into more functions
-  * September 2015
+  * October 2015
     * [Issue 785](../issues/785): sostat: show number of available updates
     * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
