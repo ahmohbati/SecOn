@@ -105,8 +105,8 @@ Please note that this is all subject to change!
     * ~~[Issue 764](../issues/764): sosetup: fix typo in sosetup.conf~~
     * ~~[Issue 605](../issues/605): sosetup: replace tmp with mktemp~~
     * ~~[Issue 771](../issues/771): sosetup: comment out 2 examples in top.sls~~
-    * [Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query
-    * [Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query
+    * ~~[Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query~~
+    * ~~[Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query~~
   * August 2015
     * [Issue 743](../issues/743): Bro 2.4
     * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4
