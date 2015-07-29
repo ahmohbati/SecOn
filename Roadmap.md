@@ -119,6 +119,7 @@ Please note that this is all subject to change!
     * [Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg
     * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 784](../issues/784): Snort 2.9.7.5
+    * [Issue 788](../issues/788): DAQ 2.0.6
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
