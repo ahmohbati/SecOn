@@ -162,6 +162,7 @@ Please note that this is all subject to change!
     * [Issue 559](../issues/559): sosetup: support for NIC bonding configuration
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
     * [Issue 777](../issues/777): sosetup: refactor into more functions
+    * [Issue 789](../issues/789): sosetup: add ability to write an answer file
   * October 2015
     * [Issue 785](../issues/785): sostat: show number of available updates
     * [Issue 739](../issues/739): Salt 2015.5.0
