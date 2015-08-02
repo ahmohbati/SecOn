@@ -145,6 +145,7 @@ Please note that this is all subject to change!
     * [Issue 643](../issues/643): Rotate logs in /var/log/nsm/
     * [Issue 571](../issues/571): securityonion-web-page: add Security Onion cheat sheet PDF
     * [Issue 644](../issues/644): sostat-quick: check server/sensor
+    * [Issue 790](../issues/790): sostat: check to see if SNORBY_ENABLED=yes
     * [Issue 591](../issues/591): Bro Intel Whitelist
     * [Issue 418](../issues/418): netsniff-ng 0.5.9
     * [Issue 737](../issues/737): Bro transcript debug output gets rendered in the transcript
