@@ -108,15 +108,15 @@ Please note that this is all subject to change!
     * ~~[Issue 767](../issues/767): securityonion-web-page: add SSL Top Subjects query~~
     * ~~[Issue 775](../issues/775): securityonion-web-page: add groupby:site to ELSA HTTP SQL Injection query~~
   * August 2015
-    * [Issue 743](../issues/743): Bro 2.4
-    * [Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4
-    * [Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4
-    * [Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4
-    * [Issue 762](../issues/762): securityonion-elsa-extras: update bro_conn parser for Bro 2.4
-    * [Issue 765](../issues/765): securityonion-elsa-extras: update bro_intel parser for Bro 2.4
-    * [Issue 768](../issues/768): securityonion-elsa-extras: update bro_ssl parser for Bro 2.4
-    * [Issue 774](../issues/774): securityonion-elsa-extras: update bro_ssh parser for Bro 2.4
-    * [Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg
+    * ~~[Issue 743](../issues/743): Bro 2.4~~
+    * ~~[Issue 752](../issues/752): securityonion-bro-scripts: update sensortab.bro for Bro 2.4~~
+    * ~~[Issue 753](../issues/753): securityonion-bro-scripts: update shellshock module for Bro 2.4~~
+    * ~~[Issue 754](../issues/754): securityonion-bro-scripts: update extract.bro for Bro 2.4~~
+    * ~~[Issue 762](../issues/762): securityonion-elsa-extras: update bro_conn parser for Bro 2.4~~
+    * ~~[Issue 765](../issues/765): securityonion-elsa-extras: update bro_intel parser for Bro 2.4~~
+    * ~~[Issue 768](../issues/768): securityonion-elsa-extras: update bro_ssl parser for Bro 2.4~~
+    * ~~[Issue 774](../issues/774): securityonion-elsa-extras: update bro_ssh parser for Bro 2.4~~
+    * ~~[Issue 773](../issues/773): securityonion-elsa-extras: add Windows and Cisco parsers from Brian Kellogg~~
     * [Issue 766](../issues/766): Snorby 2.6.3
     * [Issue 784](../issues/784): Snort 2.9.7.5
     * [Issue 788](../issues/788): DAQ 2.0.6
