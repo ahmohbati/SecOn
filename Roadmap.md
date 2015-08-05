@@ -122,6 +122,7 @@ Please note that this is all subject to change!
     * [Issue 788](../issues/788): DAQ 2.0.6
     * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
     * [Issue 791](../issues/791): sosetup: change rule-update verbiage
+    * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
     * [Issue 756](../issues/756): securityonion-elsa-extras: add parser for Bro 2.4 kerberos.log
     * [Issue 757](../issues/757): securityonion-elsa-extras: add parser for Bro 2.4 rdp.log
@@ -130,7 +131,6 @@ Please note that this is all subject to change!
     * [Issue 780](../issues/780): securityonion-elsa-extras: add parser for IIS logs
     * [Issue 782](../issues/782): securityonion-elsa-extras: update sysmon parser
     * [Issue 776](../issues/776): securityonion-elsa-extras: set version 3.3 in syslog-ng.conf
-    * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
   * September 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
