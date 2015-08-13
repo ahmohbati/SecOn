@@ -457,9 +457,7 @@ where `PACKAGE-NAME` is usually something like `securityonion-snort`.  Here's a 
 
 ####How do I get ELSA to display bar charts?####
 ELSA's bar charts require flash, so one option would be to replace Chromium with <a href='http://www.google.com/chrome/'>Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:<br>
-<pre><code>cd /etc/alternatives<br>
-sudo rm x-www-browser<br>
-sudo ln -s /usr/bin/google-chrome-stable x-www-browser<br>
+<pre><code>sudo update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
 </code></pre>
 
 ####How can I remote control my Security Onion box?####
