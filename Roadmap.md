@@ -134,6 +134,8 @@ Please note that this is all subject to change!
     * [Issue 776](../issues/776): securityonion-elsa-extras: set version 3.3 in syslog-ng.conf
     * [Issue 794](../issues/794): securityonion-web-page: add DHCP Servers query
   * September 2015
+    * [Issue 795](../issues/795): 12.04.5.3 ISO image
+  * October 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
@@ -168,7 +170,7 @@ Please note that this is all subject to change!
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
     * [Issue 777](../issues/777): sosetup: refactor into more functions
     * [Issue 789](../issues/789): sosetup: add ability to write an answer file
-  * October 2015
+  * November 2015
     * [Issue 785](../issues/785): sostat: show number of available updates
     * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
