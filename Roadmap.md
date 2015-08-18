@@ -134,6 +134,7 @@ Please note that this is all subject to change!
     * [Issue 782](../issues/782): securityonion-elsa-extras: update sysmon parser
     * [Issue 776](../issues/776): securityonion-elsa-extras: set version 3.3 in syslog-ng.conf
     * [Issue 794](../issues/794): securityonion-web-page: add DHCP Servers query
+    * [Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF
     * [Issue 796](../issues/796): Add script to fix ELSA syslogs_archive_1 issue
   * September 2015
     * [Issue 795](../issues/795): 12.04.5.3 ISO image
