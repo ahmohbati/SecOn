@@ -108,7 +108,7 @@ You may want to receive emails for Bro notices.  To do that, add the following t
             }<br>
 </code></pre>
 Also see:<br>
-<a href='http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/007185.html'>http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/007185.html</a>
+<a href='http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/006418.html'>http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/006418.html</a>
 
 ####How can I get an email alert when my sensor stops seeing traffic?####
 If you configured OSSEC or Bro as shown above, they should automatically do this for you.  Another option can be found on the [SensorStopsSeeingTraffic](SensorStopsSeeingTraffic) page.
