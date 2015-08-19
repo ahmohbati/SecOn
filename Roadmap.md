@@ -121,8 +121,8 @@ Please note that this is all subject to change!
     * ~~[Issue 766](../issues/766): Snorby 2.6.3~~
     * ~~[Issue 784](../issues/784): Snort 2.9.7.5~~
     * ~~[Issue 788](../issues/788): DAQ 2.0.6~~
-    * [Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites
-    * [Issue 791](../issues/791): sosetup: change rule-update verbiage
+    * ~~[Issue 724](../issues/724): /etc/cron.d/rule-update should avoid overwhelming rule sites~~
+    * ~~[Issue 791](../issues/791): sosetup: change rule-update verbiage~~
     * [Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`
     * [Issue 797](../issues/797): NSM: update SpoolDir and LogDir in broctl.cfg
     * [Issue 799](../issues/799): NSM: add stderr redirect to stdout on adduser
