@@ -139,6 +139,7 @@ Please note that this is all subject to change!
     * [Issue 802](../issues/802): securityonion-web-page: add queries for Bro mysql logs
     * [Issue 803](../issues/803): securityonion-web-page: add queries for Bro pe logs
     * [Issue 804](../issues/804): securityonion-web-page: add queries for Bro rdp logs
+    * [Issue 805](../issues/805): securityonion-web-page: add queries for Bro sip logs
     * [Issue 794](../issues/794): securityonion-web-page: add DHCP Servers query
     * [Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF
     * [Issue 796](../issues/796): Add script to fix ELSA syslogs_archive_1 issue
