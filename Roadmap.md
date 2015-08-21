@@ -126,6 +126,7 @@ Please note that this is all subject to change!
     * ~~[Issue 728](../issues/728): securityonion-libcapture-tiny-perl should `Provides: libcapture-tiny-perl`~~
     * [Issue 797](../issues/797): NSM: update SpoolDir and LogDir in broctl.cfg
     * [Issue 799](../issues/799): NSM: add stderr redirect to stdout on adduser
+    * [Issue 800](../issues/800): Setup: update SpoolDir and LogDir in broctl.cfg
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
     * [Issue 756](../issues/756): securityonion-elsa-extras: add parser for Bro 2.4 kerberos.log
     * [Issue 757](../issues/757): securityonion-elsa-extras: add parser for Bro 2.4 rdp.log
