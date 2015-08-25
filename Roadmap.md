@@ -190,6 +190,7 @@ Please note that this is all subject to change!
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
+    * [Issue 806](../issues/806): rule-update: replace for with while when LOCAL_NIDS_RULE_TUNING=yes
     * [Issue 558](../issues/558): Add VirusTotal uploader
     * [Issue 369](../issues/369): Arpwatch
     * [Issue 651](../issues/651): ELSA: starman restart doesn't work properly
