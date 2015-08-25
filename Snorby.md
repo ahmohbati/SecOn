@@ -1,6 +1,9 @@
 * Developed by Dustin Webber:  
 https://github.com/snorby/snorby
 
+* Snorby is now considered un-maintained and will be removed from Security Onion in the future, so you should go ahead and begin transitioning to [Squert](Squert), [Sguil](Sguil), and/or [ELSA](ELSA).  To disable Snorby in your existing deployment, please see:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/DisablingProcesses#disabling-snorby
+
 * Web 2.0, Ajax, Ruby-on-Rails
 
 * Log into Snorby using the EMAIL ADDRESS and password you specified in Setup
@@ -16,6 +19,3 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMeAuthenticat
 
 * If you need to wipe the Snorby database, please see:  
 https://github.com/Security-Onion-Solutions/security-onion/wiki/WipingSnorby
-
-* Snorby is now considered un-maintained and will be removed from Security Onion in the future, so you should go ahead and begin transitioning to [Squert](Squert), [Sguil](Sguil), and/or [ELSA](ELSA).  To disable Snorby in your existing deployment, please see:  
-https://github.com/Security-Onion-Solutions/security-onion/wiki/DisablingProcesses#disabling-snorby
