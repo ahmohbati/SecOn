@@ -161,6 +161,11 @@ We can gather a little more information by using a query that also returns the d
   4 rows in set (9.65 sec)
 ```
 
+#### Identifying rule categories ####
+Both the Snort VRT and the Emerging Threats rulesets come with a large number of rules enabled (over 15,000 by default).  You should only run the rules necessary for your environment.  So you may want to disable entire categories of rules that don't apply to you.  Run the following command to get a listing of categories and the number of rules in each:
+```
+cut -d\" -f2 /etc/nsm/rules/downloaded.rules | awk '{print $1, $2}'|sort |uniq -c |sort -nr
+```
 
 #### So what's next? ####
 Firstly, in tuning your sensor, you must understand whether or not taking corrective actions on this signature will lower your overall security stance.  For some alerts, your understanding of your own network and the business being transacted across it will be the deciding factor. If you don't care that users are accessing facebook, you can silence the policy-based signatures that will generate alerts.
