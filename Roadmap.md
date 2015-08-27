@@ -191,6 +191,7 @@ Please note that this is all subject to change!
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
     * [Issue 807](../issues/807): securityonion-elsa-extras: Change NameVirtualHost to eliminate warning on apache restart
+    * [Issue 808](../issues/808): securityonion-elsa-extras: Sysmon RemoteThread ELSA parsers
     * [Issue 806](../issues/806): rule-update: replace for with while when LOCAL_NIDS_RULE_TUNING=yes
     * [Issue 558](../issues/558): Add VirusTotal uploader
     * [Issue 369](../issues/369): Arpwatch
