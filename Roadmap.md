@@ -127,6 +127,7 @@ Please note that this is all subject to change!
     * ~~[Issue 797](../issues/797): NSM: update SpoolDir and LogDir in broctl.cfg~~
     * ~~[Issue 799](../issues/799): NSM: add stderr redirect to stdout on adduser~~
     * ~~[Issue 800](../issues/800): Setup: update SpoolDir and LogDir in broctl.cfg~~
+  * September 2015
     * [Issue 755](../issues/755): securityonion-elsa-extras: add parser for Bro 2.4 mysql.log
     * [Issue 756](../issues/756): securityonion-elsa-extras: add parser for Bro 2.4 kerberos.log
     * [Issue 757](../issues/757): securityonion-elsa-extras: add parser for Bro 2.4 rdp.log
@@ -143,7 +144,6 @@ Please note that this is all subject to change!
     * [Issue 805](../issues/805): securityonion-web-page: add queries for Bro sip logs
     * [Issue 794](../issues/794): securityonion-web-page: add DHCP Servers query
     * [Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF
-  * September 2015
     * [Issue 795](../issues/795): 12.04.5.3 ISO image
   * October 2015
     * [Issue 727](../issues/727): Argus 3.0.8.1
