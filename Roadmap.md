@@ -146,6 +146,7 @@ Please note that this is all subject to change!
     * [Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF
     * [Issue 795](../issues/795): 12.04.5.3 ISO image
   * October 2015
+    * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
