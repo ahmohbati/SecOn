@@ -14,3 +14,11 @@ http://www.squertproject.org/
 * Can natively pivot to TCP transcripts from full packet capture
 
 * Can also pivot to ELSA to query Bro logs
+
+If you need to change the IP address that Squert uses to pivot to ELSA, you can use the following code copied from /usr/bin/sosetup (replacing $IP with your actual IP address or hostname):
+```
+# Pivot from Squert to ELSA
+URL="https://$IP:3154/?query_string=\"\${var}\"%20groupby:program"
+HEXVAL=$(xxd -pu -c 256 <<< "$URL")
+[ "$ELSA" = "YES" ] && mysql -uroot -Dsecurityonion_db -e "INSERT IGNORE INTO filters (type,username,global,name,notes,alias,filter) VALUES ('url','','1','454C5341','','ELSA','$HEXVAL');"
+```
