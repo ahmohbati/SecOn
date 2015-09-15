@@ -167,6 +167,9 @@ Both the Snort VRT and the Emerging Threats rulesets come with a large number of
 cut -d\" -f2 /etc/nsm/rules/downloaded.rules | awk '{print $1, $2}'|sort |uniq -c |sort -nr
 ```
 
+Also see:
+https://github.com/shirkdog/pulledpork/blob/master/doc/README.CATEGORIES
+
 #### So what's next? ####
 Firstly, in tuning your sensor, you must understand whether or not taking corrective actions on this signature will lower your overall security stance.  For some alerts, your understanding of your own network and the business being transacted across it will be the deciding factor. If you don't care that users are accessing facebook, you can silence the policy-based signatures that will generate alerts.
 
