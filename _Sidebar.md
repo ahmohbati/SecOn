@@ -6,6 +6,7 @@
   * [Booting Issues](TroubleBooting)
   * [After Installation](PostInstallation)
   * [UTC and Time Zones](TimeZones)
+  * [Services](Services)
   * [Updating](Upgrade)
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
   * [Videos](Videos)
