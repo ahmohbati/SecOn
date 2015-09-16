@@ -15,6 +15,7 @@ Stop all services:
 sudo service nsm stop
 ```
 
+# sguild
 Check status of sguild (Sguil server):
 ```
 sudo nsm_server-ps-status
