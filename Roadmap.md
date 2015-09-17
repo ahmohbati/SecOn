@@ -145,6 +145,8 @@ Please note that this is all subject to change!
     * ~~[Issue 794](../issues/794): securityonion-web-page: add DHCP Servers query~~
     * ~~[Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF~~
     * ~~[Issue 795](../issues/795): 12.04.5.3 ISO image~~
+  * December 2015
+
   * 2016
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
@@ -184,7 +186,6 @@ Please note that this is all subject to change!
     * [Issue 735](../issues/735): sosetup: Advanced Setup should automatically configure PF_RING instances based on number of CPU cores
     * [Issue 777](../issues/777): sosetup: refactor into more functions
     * [Issue 789](../issues/789): sosetup: add ability to write an answer file
-  * November 2015
     * [Issue 785](../issues/785): sostat: show number of available updates
     * [Issue 739](../issues/739): Salt 2015.5.0
     * [Issue 772](../issues/772): onionsalt: replicate ELSA parsers in /etc/elsa/patterns.d/local
