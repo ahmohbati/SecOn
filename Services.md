@@ -32,7 +32,15 @@ sudo nsm_server-ps-stop
 ```
 
 # Sensor services
-Sensor services are controlled with nsm_sensor_ps-*.  The following examples are for Bro, but you could substitute whatever sensor service you're trying to control.
+Sensor services are controlled with nsm_sensor_ps-*.
+
+List of controlled services:
+```
+sudo nsm_sensor_ps-* -?
+
+```
+
+The following examples are for Bro, but you could substitute whatever sensor service you're trying to control.
 
 Check status of Bro:
 ```
