@@ -6,4 +6,4 @@ Disable any unnecessary services.  In particular, most folks will want to disabl
 * argus
 * http_agent
 
-For more information, please see [DisablingProcesses](Disabling Processes).
+For more information, please see [Disabling Processes](DisablingProcesses).
