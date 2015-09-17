@@ -146,7 +146,7 @@ Please note that this is all subject to change!
     * ~~[Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF~~
     * ~~[Issue 795](../issues/795): 12.04.5.3 ISO image~~
   * December 2015
-
+    * [Issue 814](../issues/814): Move to Ubuntu 14.04
   * 2016
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
