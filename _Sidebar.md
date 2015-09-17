@@ -37,6 +37,7 @@
   * [Adding a new disk](NewDisk)
 
 ## Tricks and Tips ##
+  * [Best Practices](BestPractices)
   * [ELSA Query Tips](ELSAQueryTips)
   * [Custom ELSA Parsers](CustomELSAParsers)
   * [Using Salt to manage Sensors](Salt)
