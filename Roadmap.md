@@ -149,6 +149,7 @@ Please note that this is all subject to change!
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
   * 2016
     * [Issue 812](../issues/812): Bro 2.4.1
+    * [Issue 816](../issues/816): Snort needs liblzma
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
