@@ -152,6 +152,7 @@ Please note that this is all subject to change!
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
+    * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
