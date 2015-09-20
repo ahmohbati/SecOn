@@ -11,15 +11,15 @@ In addition, most folks will want to disable the following services:
 To do so:
 
     sudo nsm_sensor_ps-stop --only-http-agent
-sudo nsm_sensor_ps-stop --only-prads
-sudo nsm_sensor_ps-stop --only-pads-agent
-sudo nsm_sensor_ps-stop --only-sancp-agent
-sudo nsm_sensor_ps-stop --only-argus
+    sudo nsm_sensor_ps-stop --only-prads
+    sudo nsm_sensor_ps-stop --only-pads-agent
+    sudo nsm_sensor_ps-stop --only-sancp-agent
+    sudo nsm_sensor_ps-stop --only-argus
 
-sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
-sudo sed -i 's|PRADS_ENABLED="yes"|PRADS_ENABLED="no"|g' /etc/nsm/*/sensor.conf
-sudo sed -i 's|PADS_AGENT_ENABLED="yes"|PADS_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
-sudo sed -i 's|SANCP_AGENT_ENABLED="yes"|SANCP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
-sudo sed -i 's|ARGUS_ENABLED="yes"|ARGUS_ENABLED="no"|g' /etc/nsm/*/sensor.conf
+    sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
+    sudo sed -i 's|PRADS_ENABLED="yes"|PRADS_ENABLED="no"|g' /etc/nsm/*/sensor.conf
+    sudo sed -i 's|PADS_AGENT_ENABLED="yes"|PADS_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
+    sudo sed -i 's|SANCP_AGENT_ENABLED="yes"|SANCP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
+    sudo sed -i 's|ARGUS_ENABLED="yes"|ARGUS_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 
 For more information, please see [Disabling Processes](DisablingProcesses#disabling-a-process).
