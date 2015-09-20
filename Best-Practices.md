@@ -10,7 +10,7 @@ In addition, most folks will want to disable the following services:
 
 To do so:
 
-sudo nsm_sensor_ps-stop --only-http-agent
+    sudo nsm_sensor_ps-stop --only-http-agent
 sudo nsm_sensor_ps-stop --only-prads
 sudo nsm_sensor_ps-stop --only-pads-agent
 sudo nsm_sensor_ps-stop --only-sancp-agent
