@@ -8,14 +8,16 @@ In addition, most folks will want to disable the following services:
 * argus (argus creates session data, which is already provided by Bro)
 * http_agent (duplicates Bro http.log into Sguil database, which may cause performance issues)
 
-To do so:
+To do so, stop the required service/s:
 
     sudo nsm_sensor_ps-stop --only-http-agent
     sudo nsm_sensor_ps-stop --only-prads
     sudo nsm_sensor_ps-stop --only-pads-agent
     sudo nsm_sensor_ps-stop --only-sancp-agent
     sudo nsm_sensor_ps-stop --only-argus
- 
+
+And then disable them so they don't start on reboot:
+
     sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
     sudo sed -i 's|PRADS_ENABLED="yes"|PRADS_ENABLED="no"|g' /etc/nsm/*/sensor.conf
     sudo sed -i 's|PADS_AGENT_ENABLED="yes"|PADS_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
