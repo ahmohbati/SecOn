@@ -15,7 +15,7 @@ To do so:
     sudo nsm_sensor_ps-stop --only-pads-agent
     sudo nsm_sensor_ps-stop --only-sancp-agent
     sudo nsm_sensor_ps-stop --only-argus
-
+ 
     sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
     sudo sed -i 's|PRADS_ENABLED="yes"|PRADS_ENABLED="no"|g' /etc/nsm/*/sensor.conf
     sudo sed -i 's|PADS_AGENT_ENABLED="yes"|PADS_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
