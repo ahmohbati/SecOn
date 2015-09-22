@@ -408,7 +408,12 @@ If you think you have sufficient RAM, then search `/nsm/elsa/data/elsa/log/node.
 sudo grep syslogs_archive_1 /nsm/elsa/data/elsa/log/node.log
 ```
 
-If you see errors like "Can't find file: 'syslogs_archive_1'", then try running the following commands:
+If you see errors like "Can't find file: 'syslogs_archive_1'", then you'll need to reset the archive.  If you have all updates installed, you can simply run the following command:
+```
+sudo securityonion-elsa-reset-archive 
+```
+
+Otherwise, you can manually reset the archive by running the following commands:
 ```
 # Become root
 sudo -i
