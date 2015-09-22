@@ -154,6 +154,7 @@ Please note that this is all subject to change!
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 815](../issues/815): NSM: add log directory creation to postinst
+    * [Issue 817](../issues/817): sostat: awk division error when Bro doesn't report stats correctly
     * [Issue 727](../issues/727): Argus 3.0.8.1
     * [Issue 690](../issues/690): http\_agent: ---disable-inotify
     * [Issue 615](../issues/615): NSM: add "exit $RET" where necessary
