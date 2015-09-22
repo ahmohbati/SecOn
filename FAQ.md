@@ -219,6 +219,16 @@ This is related to [this](#tclheldback) question.  See [tcl](tcl).
 <a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'><a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'>https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a></a><br>
 After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.
 
+####Why does the pcap_agent log show "Error: can't read logFile: no such variable"?####
+This usually means that there is an unexpected file in the dailylogs directory.  Run the following:
+```
+ls /nsm/sensor_data/*/dailylogs/
+```
+You should see a bunch of date stamped directories and you may see some extraneous files.  Remove any extraneous files and restart pcap_agent:
+```
+sudo nsm_sensor_ps-restart --only-pcap-agent
+```
+
 #### I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. ####
 This is a known issue with certain versions of VMware.  You can either:
 
