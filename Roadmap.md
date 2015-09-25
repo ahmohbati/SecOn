@@ -148,6 +148,7 @@ Please note that this is all subject to change!
   * December 2015
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
   * 2016
+    * [Issue 818](../issues/818): Suricata 2.0.9
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 816](../issues/816): Snort needs liblzma
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
