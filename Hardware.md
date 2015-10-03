@@ -30,10 +30,10 @@ You'll need at least two network interfaces: one for management (preferably conn
 #### Packets ####
 You need some way of getting packets into your sensor interface(s).  If you're just evaluating Security Onion, you can replay [pcaps](Pcaps).  For a production deployment, you'll need a tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
 
-Shear simplicity and portability (USB-powered):<br>
+Sheer Simplicity and Portability (USB-powered):<br>
 <a href='http://www.dual-comm.com/port-mirroring-LAN_switch.htm'>http://www.dual-comm.com/port-mirroring-LAN_switch.htm</a><br>
 
-Dirt cheap and versatile:<br>
+Dirt Cheap and Versatile:<br>
 <a href='http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html'>http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html</a><br>
 
 Netgear GS105E (requires Windows app for config):<br>
@@ -42,4 +42,9 @@ Netgear GS105E (requires Windows app for config):<br>
 More exhaustive list of enterprise switches with port mirroring:<br>
 <a href='http://www.miarec.com/knowledge/switches-port-mirroring'>http://www.miarec.com/knowledge/switches-port-mirroring</a><br>
 
-For more enterprise tap solutions, take a look at Net Optics and Arista.
+Enterprise Tap Solutions: 
+ * [Net Optics / Ixia](http://www.ixiacom.com/network-visibility-products)
+ * [Arista Tap Aggregation Feature Set](http://www.arista.com/en/solutions/tap-aggregation)
+ * [Gigamon](http://gigamon.com)
+ * [cPacket](http://cpacket.com)
+ * [Bigswitch Monitoring Fabric](http://www.bigswitch.com/products/big-monitoring-fabric)
