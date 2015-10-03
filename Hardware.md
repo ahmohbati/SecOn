@@ -42,7 +42,7 @@ Netgear GS105E (requires Windows app for config):<br>
 More exhaustive list of enterprise switches with port mirroring:<br>
 <a href='http://www.miarec.com/knowledge/switches-port-mirroring'>http://www.miarec.com/knowledge/switches-port-mirroring</a><br>
 
-Enterprise Tap Solutions: 
+####Enterprise Tap Solutions:#### 
  * [Net Optics / Ixia](http://www.ixiacom.com/network-visibility-products)
  * [Arista Tap Aggregation Feature Set](http://www.arista.com/en/solutions/tap-aggregation)
  * [Gigamon](http://gigamon.com)
