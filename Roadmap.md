@@ -148,10 +148,11 @@ Please note that this is all subject to change!
   * December 2015
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
   * 2016
-    * [Issue 818](../issues/818): Suricata 2.0.9
     * [Issue 812](../issues/812): Bro 2.4.1
+    * [Issue 818](../issues/818): Suricata 2.0.9
     * [Issue 820](../issues/820): Snort 2.9.7.6
     * [Issue 816](../issues/816): Snort needs liblzma
+    * [Issue 821](../issues/821): Setup: fix domain name cancellation
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
