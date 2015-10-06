@@ -5,16 +5,6 @@ Like other Ubuntu-based distributions, there is no root password. Your default u
 sudo adduser mynewuseraccount
 ```
 
-#### MySQL ####
-The MySQL root password is null to allow the NSMnow administration scripts to add/delete sensors properly. MySQL only allows connections from localhost.  If you need to look at the database manually, you can do so like this:
-```
-mysql -uroot
-```
-
-#### Xplico ####
-We use the default Xplico credentials as listed here:
-http://wiki.xplico.org/doku.php?id=interface
-
 #### Sguil ####
 Log into Sguil using the username/password you created in the Setup wizard.  
 
@@ -22,7 +12,7 @@ You can add accounts as follows (please note that Sguil usernames must be alphan
 ```
 sudo nsm_server_user-add
 ```
-You can change passwords as follows: 
+You can change passwords using the Sguil client (File --> Change Password) or as follows: 
 ```
 sudo nsm_server_user-passwd
 ```
@@ -54,3 +44,13 @@ u.password_confirmation="NewUnencryptedPassword123"
 u.save
 quit
 ```
+
+#### MySQL ####
+The MySQL root password is null to allow the NSMnow administration scripts to add/delete sensors properly. MySQL only allows connections from localhost.  If you need to look at the database manually, you can do so like this:
+```
+mysql -uroot
+```
+
+#### Xplico ####
+We use the default Xplico credentials as listed here:
+http://wiki.xplico.org/doku.php?id=interface
