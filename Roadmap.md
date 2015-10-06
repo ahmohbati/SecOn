@@ -153,6 +153,7 @@ Please note that this is all subject to change!
     * [Issue 820](../issues/820): Snort 2.9.7.6
     * [Issue 816](../issues/816): Snort needs liblzma
     * [Issue 821](../issues/821): Setup: fix domain name cancellation
+    * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
