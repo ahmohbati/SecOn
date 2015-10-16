@@ -47,6 +47,7 @@
   * [FreeNX](FreeNX)
   * [Wiping the Snorby database](WipingSnorby)
   * [Installing NtopNG](DeployingNtopng)
+  * [MetaPackages](MetaPackages)
 
 ## Help ##
   * [Support](Support)
