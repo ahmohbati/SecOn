@@ -1,4 +1,4 @@
-Security Onion consists of over 70 packages.  You can install them individually or you can install one or more metapackages depending on what functionality you need.
+Security Onion consists of over 70 Ubuntu packages in a Launchpad PPA.  You can install these packages individually or you can install one or more metapackages (groups of packages) depending on what functionality you need.
 
 #### Metapackages ####
   * securityonion-client (about 50MB) - Sguil client, Wireshark, NetworkMiner, etc.
