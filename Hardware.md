@@ -48,3 +48,6 @@ More exhaustive list of enterprise switches with port mirroring:<br>
  * [Gigamon](http://gigamon.com)
  * [cPacket](http://cpacket.com)
  * [Bigswitch Monitoring Fabric](http://www.bigswitch.com/products/big-monitoring-fabric)
+
+####UPS
+Like most IT systems, Security Onion has databases and those databases don't like power outages or other ungraceful shutdowns.  To avoid power outages and having to manually repair databases, please consider a UPS.
