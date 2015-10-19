@@ -147,7 +147,6 @@ Please note that this is all subject to change!
     * ~~[Issue 795](../issues/795): 12.04.5.3 ISO image~~
   * December 2015
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
-  * 2016
     * [Issue 824](../issues/824): securityonion-web-page: htmlspecialchars
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
@@ -157,10 +156,12 @@ Please note that this is all subject to change!
     * [Issue 816](../issues/816): Snort needs liblzma
     * [Issue 821](../issues/821): Setup: fix domain name cancellation
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
-    * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 825](../issues/825): NSM: remove extra Bro output
+    * [Issue 790](../issues/790): sostat: check to see if SNORBY_ENABLED=yes
+  * 2016
+    * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
     * [Issue 826](../issues/826): Bro intel linter
     * [Issue 817](../issues/817): sostat: awk division error when Bro doesn't report stats correctly
     * [Issue 819](../issues/819): soup: check to see if PF_RING updates are available
@@ -178,7 +179,6 @@ Please note that this is all subject to change!
     * [Issue 643](../issues/643): Rotate logs in /var/log/nsm/
     * [Issue 571](../issues/571): securityonion-web-page: add Security Onion cheat sheet PDF
     * [Issue 644](../issues/644): sostat-quick: check server/sensor
-    * [Issue 790](../issues/790): sostat: check to see if SNORBY_ENABLED=yes
     * [Issue 792](../issues/792): soup: add note about running on master server before running on sensor
     * [Issue 591](../issues/591): Bro Intel Whitelist
     * [Issue 418](../issues/418): netsniff-ng 0.5.9
