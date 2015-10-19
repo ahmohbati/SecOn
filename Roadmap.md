@@ -150,6 +150,7 @@ Please note that this is all subject to change!
     * [Issue 739](../issues/739): Salt 2015.5.3
     * [Issue 824](../issues/824): securityonion-web-page: htmlspecialchars
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
+    * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 818](../issues/818): Suricata 2.0.9
@@ -157,7 +158,6 @@ Please note that this is all subject to change!
     * [Issue 816](../issues/816): Snort needs liblzma
     * [Issue 821](../issues/821): Setup: fix domain name cancellation
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
-    * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 825](../issues/825): NSM: remove extra Bro output
     * [Issue 790](../issues/790): sostat: remove snorby
