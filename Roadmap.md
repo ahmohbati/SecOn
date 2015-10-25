@@ -153,6 +153,7 @@ Please note that this is all subject to change!
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 821](../issues/821): Setup: fix domain name cancellation
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
+    * [Issue 828](../issues/828): Setup: if master/standalone, create desktop shortcuts for Sguil, Squert, and ELSA
     * [Issue 790](../issues/790): sostat: remove snorby
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
     * [Issue 812](../issues/812): Bro 2.4.1
