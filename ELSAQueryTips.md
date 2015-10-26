@@ -76,11 +76,14 @@ So now we're checking any remote host (as in not on the home network) involved i
 
 #### 1/22/13 - [security-onion] Is it possible to launch ELSA from command line? ####
 
-You can use the command-line version of ELSA by navigating to `/opt/elsa/web/` and using the `cli.pl` script.  The `-q` parameter is for query, so it would look like:
+You can use the command-line version of ELSA by navigating to `/opt/elsa/contrib/securityonion/contrib` and using the `cli.sh` script:
 ````
-perl cli.pl -q "example.com" 
+sh cli.sh "example.com" 
 ````
-and you can use `-f` to change the result format from `TSV` to `JSON`.
+The output is in JSON, so you might want to install jq and pipe the results into it:
+````
+sh cli.sh "example.com" | jq '.'
+````
 
 #### 4/16/2013 - [ELSA](ELSA) What is the best way to query for a list of all internal RFC1918 hosts sending / receiving traffic outside the US? ####
 
