@@ -54,11 +54,11 @@ Be alerted in the future by clicking `Results...` and choosing `Create alert` so
 
 Once you start looking at connections in ELSA with `geoip`, you can also use the `whois` plugin in the same way to see a description of the destination network.  So, from Brad's dashboard, you could run this query in the ELSA query box:
 ```
-   icmp udp tcp class=BRO_CONN groupby:BRO_CONN.dstip | whois
+   icmp or udp or tcp class=BRO_CONN groupby:BRO_CONN.dstip | whois
 ```
 Then, you can do some post-search filters to remove any well-known hosts like this:
 ```
-   icmp udp tcp class=BRO_CONN groupby:BRO_CONN.dstip | whois | filter(descr,google)
+   icmp or udp or tcp class=BRO_CONN groupby:BRO_CONN.dstip | whois | filter(descr,google)
 ```
 Or maybe you want to see TCP traffic not to port 80/443:
 ```
