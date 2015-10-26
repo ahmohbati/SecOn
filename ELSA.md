@@ -12,6 +12,15 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 
 * The ELSA web interface authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil
 
+* You can use the command-line version of ELSA by navigating to `/opt/elsa/contrib/securityonion/contrib` and using the `cli.sh` script:
+````
+sh cli.sh "example.com" 
+````
+The output is in JSON, so you might want to install jq and pipe the results into it:
+````
+sh cli.sh "example.com" | jq '.'
+````
+
 * For more information, please see:  
 [ELSA Query Tips](ELSAQueryTips)  
 [Custom ELSA Parsers](CustomELSAParsers)
