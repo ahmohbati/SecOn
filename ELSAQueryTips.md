@@ -9,9 +9,9 @@ In any case, be sure to check out the documentation for [subsearches] (https://g
 
 The queries from today were like this (note that you can always replace `groupby` with using the `Report On` menu button):
 
-Find today's summary of alerts for `current events` and `trojan` alerts
+Show NIDS alerts containing `current events` or `trojan`:
 ```
-   sig_msg:current_events sig_msg:trojan groupby:sig_msg
+   sig_msg:current_events or sig_msg:trojan groupby:sig_msg
 ```
 Choose `ET POLICY Proxy Judge Discovery/Evasion (prxjdg.cgi)` from the signature list, which executes:
 ```
