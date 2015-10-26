@@ -64,7 +64,7 @@ Or maybe you want to see TCP traffic not to port 80/443:
 ```
    tcp class=BRO_CONN groupby:BRO_CONN.dstip -dstport:80 -dstport:443 | whois
 ```
-Or, find only things destined for a high port with a certain byte count (you'll need to wait for the latest ELSA version to make it into SecurityOnion to get the bytes\_in field):
+Or, find only things destined for a high port with a certain byte count:
 ```
    +tcp class=BRO_CONN groupby:BRO_CONN.dstip +dstport>=1000 +bytes_in>1000000 | whois
 ```
