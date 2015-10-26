@@ -68,11 +68,6 @@ Or, find only things destined for a high port with a certain byte count:
 ```
    +tcp class=BRO_CONN groupby:BRO_CONN.dstip +dstport>=1000 +bytes_in>1000000 | whois
 ```
-Now for something a bit more advanced.  Using the latest version of ELSA, you can check for any high bytes transferred to the outside from hosts that recently had a `TROJAN` Snort alert:
-```
-   sig_msg:trojan class:snort groupby:srcip | remote > foreach(${remote} class=BRO_CONN groupby:BRO_CONN.dstip +dstport>=1000 +bytes_in>1000000 | whois | filter descr,google)
-```
-So now we're checking any remote host (as in not on the home network) involved in a Trojan incident for transferring more than a megabyte of data to an IP not owned by Google.
 
 #### 1/22/13 - [security-onion] Is it possible to launch ELSA from command line? ####
 
