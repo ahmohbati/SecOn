@@ -149,7 +149,7 @@ Please note that this is all subject to change!
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
     * [Issue 739](../issues/739): Salt 2015.5.3
     * [Issue 829](../issues/829): Apache reverse proxy /elsa-query to ELSA port 3154
-    * [Issue 824](../issues/824): securityonion-web-page: htmlspecialchars
+    * [Issue 824](../issues/824): securityonion-web-page: fix links to ELSA
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 807](../issues/807): securityonion-elsa-extras: Remove NameVirtualHost to eliminate warning on apache restart
