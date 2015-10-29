@@ -153,6 +153,7 @@ Please note that this is all subject to change!
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
     * [Issue 807](../issues/807): securityonion-elsa-extras: Remove NameVirtualHost to eliminate warning on apache restart
+    * [Issue 729](../issues/729): Setup: add option for pivot URL (no longer needed since Apache is proxying /elsa-query to ELSA port 3154)
     * [Issue 821](../issues/821): Setup: fix domain name cancellation
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
     * [Issue 828](../issues/828): Setup: desktop shortcuts
@@ -193,7 +194,6 @@ Please note that this is all subject to change!
     * [Issue 738](../issues/738): CapME: handle large pcaps more gracefully
     * [Issue 493](../issues/493): CapMe: send credentials interactively to avoid exposing on command line
     * [Issue 608](../issues/608): Update bash scripts to use /bin/sh
-    * [Issue 729](../issues/729): sosetup: add option for pivot URL
     * [Issue 304](../issues/304): sosetup: support unique interface names
     * [Issue 592](../issues/592): sosetup: add -y option
     * [Issue 593](../issues/593): sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
