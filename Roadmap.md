@@ -157,6 +157,7 @@ Please note that this is all subject to change!
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
     * [Issue 828](../issues/828): Setup: desktop shortcuts
     * [Issue 790](../issues/790): sostat: remove snorby
+    * [Issue 830](../issues/830): soup: remove old kernels using apt-get autoremove
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 818](../issues/818): Suricata 2.0.9
