@@ -1,5 +1,4 @@
 <a name="top"></a>
-#### NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. ####
 <br>
 [Install / Update / Upgrade](#update)<br>
 [Users / Passwords](#passwords)<br>
@@ -118,6 +117,16 @@ http://securityonionsolutions.com
 <a name="errors"></a>
 ###Error messages
 ---
+#### Why is rule-update failing with an error like "Error 404 when fetching https://s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz.md5"? ####
+Please see:
+http://blog.snort.org/2015/10/are-you-getting-404-errors-attempting.html
+
+You can run the following command to update the Snort Community URL:
+```
+sudo sed -i 's\rule_url=https://s3.amazonaws.com/snort-org/www/rules/community/|community-rules.tar.gz|Community\rule_url=https://snort.org/downloads/community/|community-rules.tar.gz|Community\g'
+/etc/nsm/pulledpork/pulledpork.conf
+```
+
 #### Why does `soup` fail with an error message like "find: `/usr/lib/python2.7/dist-packages/salt/': No such file or directory"? ####
 This is a bug in the salt packages that can manifest when skipping salt versions.  Resolve with the following:
 ```
