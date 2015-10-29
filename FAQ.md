@@ -118,7 +118,7 @@ http://securityonionsolutions.com
 ###Error messages
 ---
 #### Why does rule-update fail with an error like "Error 404 when fetching s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz.md5"? ####
-The Snort VRT changed the URL of the Snort Community ruleset.  You can run the following command to update the Snort Community URL in pulledpork.conf:
+The Snort Community ruleset has moved to a different URL.  You can run the following command to update the Snort Community URL in pulledpork.conf:
 ```
 sudo sed -i 's\rule_url=https://s3.amazonaws.com/snort-org/www/rules/community/|community-rules.tar.gz|Community\rule_url=https://snort.org/downloads/community/|community-rules.tar.gz|Community\g' /etc/nsm/pulledpork/pulledpork.conf
 ```
