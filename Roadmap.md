@@ -159,12 +159,12 @@ Please note that this is all subject to change!
     * [Issue 828](../issues/828): Setup: desktop shortcuts
     * [Issue 790](../issues/790): sostat: remove snorby
     * [Issue 830](../issues/830): soup: remove old kernels using apt-get autoremove
+    * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 818](../issues/818): Suricata 2.0.9
     * [Issue 820](../issues/820): Snort 2.9.7.6
     * [Issue 816](../issues/816): Snort needs liblzma
-    * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 825](../issues/825): NSM: remove extra Bro output
   * 2016
     * [Issue 813](../issues/813): Setup: bug when configuring 10 or more interfaces
