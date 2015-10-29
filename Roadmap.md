@@ -152,6 +152,7 @@ Please note that this is all subject to change!
     * [Issue 824](../issues/824): securityonion-web-page: htmlspecialchars
     * [Issue 810](../issues/810): securityonion-web-page: move SSH Logins query to Host Logs category
     * [Issue 811](../issues/811): securityonion-tcpudpflow: add SMTP and RDP support
+    * [Issue 807](../issues/807): securityonion-elsa-extras: Remove NameVirtualHost to eliminate warning on apache restart
     * [Issue 821](../issues/821): Setup: fix domain name cancellation
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
     * [Issue 828](../issues/828): Setup: desktop shortcuts
@@ -209,7 +210,6 @@ Please note that this is all subject to change!
     * [Issue 603](../issues/603): securityonion-bro-scripts: drwatson
     * [Issue 331](../issues/331): securityonion-elsa: update dependencies
     * [Issue 604](../issues/604): ELSA: parsers for Bro drwatson logs
-    * [Issue 807](../issues/807): securityonion-elsa-extras: Change NameVirtualHost to eliminate warning on apache restart
     * [Issue 808](../issues/808): securityonion-elsa-extras: Sysmon RemoteThread ELSA parsers
     * [Issue 806](../issues/806): rule-update: replace for with while when LOCAL_NIDS_RULE_TUNING=yes
     * [Issue 558](../issues/558): Add VirusTotal uploader
