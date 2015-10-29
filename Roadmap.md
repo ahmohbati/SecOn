@@ -160,6 +160,7 @@ Please note that this is all subject to change!
     * [Issue 790](../issues/790): sostat: remove snorby
     * [Issue 830](../issues/830): soup: remove old kernels using apt-get autoremove
     * [Issue 815](../issues/815): NSM: add log directory creation to postinst
+    * [Issue 831](../issues/831): Snort Community Ruleset has moved
   * January 2016
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
     * [Issue 812](../issues/812): Bro 2.4.1
