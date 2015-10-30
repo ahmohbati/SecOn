@@ -55,7 +55,7 @@ When you install and enable securityonion-onionsalt, the following data will rep
     * Bro does not restart automatically, but you can easily use salt on your master server to tell all your Bro instances to update and restart:
 ```
 # Force all Salt minions to update Bro scripts
-sudo salt '*' cmd.run 'salt-call state.highstate'
+sudo salt '*' state.highstate
 # Restart Bro
 sudo salt '*' cmd.run 'nsm_sensor_ps-restart --only-bro'
 ```
