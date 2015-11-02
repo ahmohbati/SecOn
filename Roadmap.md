@@ -146,6 +146,7 @@ Please note that this is all subject to change!
     * ~~[Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF~~
     * ~~[Issue 795](../issues/795): 12.04.5.3 ISO image~~
   * December 2015
+    * [Issue 832](../issues/832): pulledpork.pl refinement
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
     * [Issue 739](../issues/739): Salt 2015.5.3
     * [Issue 829](../issues/829): Apache reverse proxy /elsa-query to ELSA port 3154
