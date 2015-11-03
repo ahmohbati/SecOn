@@ -146,7 +146,6 @@ Please note that this is all subject to change!
     * ~~[Issue 798](../issues/798): securityonion-web-page: add HTTP sites hosting SWF~~
     * ~~[Issue 795](../issues/795): 12.04.5.3 ISO image~~
   * December 2015
-    * [Issue 832](../issues/832): pulledpork.pl refinement
     * [Issue 814](../issues/814): Move to Ubuntu 14.04
     * [Issue 739](../issues/739): Salt 2015.5.3
     * [Issue 829](../issues/829): Apache reverse proxy /elsa-query to ELSA port 3154
@@ -163,6 +162,7 @@ Please note that this is all subject to change!
     * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 831](../issues/831): Snort Community Ruleset has moved
   * January 2016
+    * [Issue 832](../issues/832): pulledpork.pl refinement
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 818](../issues/818): Suricata 2.0.9
