@@ -190,7 +190,7 @@ Please note that this is all subject to change!
     * [Issue 644](../issues/644): sostat-quick: check server/sensor
     * [Issue 792](../issues/792): soup: add note about running on master server before running on sensor
     * [Issue 591](../issues/591): Bro Intel Whitelist
-    * [Issue 418](../issues/418): netsniff-ng 0.5.9
+    * [Issue 418](../issues/418): netsniff-ng 0.6.0
     * [Issue 737](../issues/737): Bro transcript debug output gets rendered in the transcript
     * [Issue 736](../issues/736): CapME: Debug information occasionally gets rendered inside the transcript
     * [Issue 492](../issues/492): CapMe needs to handle UDP better
