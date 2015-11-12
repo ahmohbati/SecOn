@@ -158,7 +158,7 @@ Please note that this is all subject to change!
     * [Issue 822](../issues/822): Setup: remove alphanumeric password requirement
     * [Issue 828](../issues/828): Setup: desktop shortcuts
     * [Issue 790](../issues/790): sostat: remove snorby
-    * [Issue 830](../issues/830): soup: remove old kernels using apt-get autoremove
+    * [Issue 830](../issues/830): soup: remove old linux kernels
     * [Issue 815](../issues/815): NSM: add log directory creation to postinst
     * [Issue 831](../issues/831): Snort Community Ruleset has moved
   * January 2016
