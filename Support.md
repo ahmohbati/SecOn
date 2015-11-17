@@ -6,6 +6,6 @@ http://securityonionsolutions.com
 
 #### Free Support ####
 
-If you need free support, please use our public mailing list:
+If you need free support, please use our public security-onion mailing list:
 
 [MailingLists](MailingLists)
