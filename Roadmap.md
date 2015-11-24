@@ -163,11 +163,11 @@ Please note that this is all subject to change!
     * [Issue 831](../issues/831): Snort Community Ruleset has moved
     * [Issue 812](../issues/812): Bro 2.4.1
   * January 2016
-    * [Issue 832](../issues/832): pulledpork.pl refinement
-    * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
-    * [Issue 818](../issues/818): Suricata 2.0.9
     * [Issue 820](../issues/820): Snort 2.9.7.6
     * [Issue 816](../issues/816): Snort needs liblzma
+    * [Issue 818](../issues/818): Suricata 2.1.0
+    * [Issue 832](../issues/832): pulledpork.pl refinement
+    * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
   * February 2016
     * [Issue 825](../issues/825): NSM: remove extra Bro output
     * [Issue 833](../issues/833): soup: error checking
