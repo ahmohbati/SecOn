@@ -164,8 +164,8 @@ Please note that this is all subject to change!
     * [Issue 812](../issues/812): Bro 2.4.1
     * [Issue 820](../issues/820): Snort 2.9.7.6
     * [Issue 816](../issues/816): Snort needs liblzma
+    * [Issue 818](../issues/818): Suricata 3.0
   * January 2016
-    * [Issue 818](../issues/818): Suricata 2.0.10
     * [Issue 832](../issues/832): pulledpork.pl refinement
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
   * February 2016
