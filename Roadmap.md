@@ -168,6 +168,7 @@ Please note that this is all subject to change!
   * January 2016
     * [Issue 832](../issues/832): pulledpork.pl refinement
     * [Issue 827](../issues/827): securityonion-elsa-extras: additional cisco ASA deny logs
+    * [Issue 835](../issues/835): PF_RING 6.2
   * February 2016
     * [Issue 825](../issues/825): NSM: remove extra Bro output
     * [Issue 833](../issues/833): soup: error checking
