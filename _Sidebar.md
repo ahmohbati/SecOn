@@ -60,5 +60,6 @@
 ## Known Issues / Roadmap ##
   * [Issues Resolved in 2013](2013)
   * [Issues Resolved in 2014](2014)
-  * [Issues Scheduled for 2015](Roadmap)
+  * [Issues Resolved in 2015](2015)
+  * [Issues Scheduled for 2016](Roadmap)
   * [All Known Issues](https://github.com/Security-Onion-Solutions/security-onion/issues)
