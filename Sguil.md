@@ -18,3 +18,4 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * Can pivot to transcript/Wireshark/NetworkMiner/ELSA
 
+* You can change fonts by clicking File --> Change Font.
