@@ -1,4 +1,3 @@
-## Known Issues / Roadmap ##
   * [Issues Resolved in 2013](2013)
   * [Issues Resolved in 2014](2014)
   * [Issues Resolved in 2015](2015)
