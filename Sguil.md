@@ -18,7 +18,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * Can pivot to transcript/Wireshark/NetworkMiner by right-clicking the Alert ID field.
 
-- Pivot to ELSA by right-click an IP address and choosing "ELSA IP Lookup".
+- Pivot to ELSA by right-clicking an IP address and choosing "ELSA IP Lookup".
 
 * You can change fonts by clicking File --> Change Font.
 
