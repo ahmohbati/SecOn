@@ -34,10 +34,10 @@ http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 [Proxy Configuration](Proxy)
 
 #### Ubuntu is asking if I want to upgrade to Ubuntu 14.04.  Should I? ####
-No, please do not upgrade to Ubuntu 14.04, as it is incompatible with Security Onion.
+No, please do not upgrade to Ubuntu 14.04, as we are still working on 14.04 compatibility.
 
 #### Will Security Onion move to Ubuntu 14.04? ####
-We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases
+Yes, we are working on moving to Ubuntu 14.04.
 
 #### Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? ####
 Please see:
