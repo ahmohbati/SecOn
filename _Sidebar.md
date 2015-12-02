@@ -18,6 +18,10 @@
   * [ELSA](ELSA)
   * [CapME](CapMeAuthentication)
 
+## Data Sources ##
+  * [NIDS](NIDS)
+  * [Bro](Bro)
+  * [OSSEC](OSSEC HIDS)
 
 ## Customizing for your network ##
   * [Network Configuration](NetworkConfiguration)
