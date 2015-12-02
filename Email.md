@@ -1,21 +1,6 @@
 #### Introduction ####
 
-This page describes how to configure email for alerting and reporting.  Applications such as Snorby, Sguil, and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script and from Bro.
-
-#### How do I configure Snorby to send emails? ####
-Modify Snorby's `mail_config.rb` file on the master server as needed for your mail server:
-```
-/opt/snorby/config/initializers/mail_config.rb
-
-```
-Then restart the Snorby delayed\_job process:
-```
-sudo pkill -f delayed_job
-
-sudo su www-data -c "cd /opt/snorby; bundle exec rake snorby:update RAILS_ENV=production"
-
-```
-You can also modify `/opt/snorby/config/snorby_config.yml` and change the `domain` setting in the Production section to be the FQDN or IP address of your Snorby server.  However, the resulting link in the email will still be incorrect since it will be http instead of https and it will be missing the proper port.
+This page describes how to configure email for alerting and reporting.  Applications such as Sguil and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script and from Bro.
 
 #### How do I configure Sguil to send alerts via email?<br>####
 Modify `/etc/nsm/securityonion/sguild.email` (on the master server) as needed and restart sguild:
@@ -112,3 +97,20 @@ Also see:<br>
 
 ####How can I get an email alert when my sensor stops seeing traffic?####
 If you configured OSSEC or Bro as shown above, they should automatically do this for you.  Another option can be found on the [SensorStopsSeeingTraffic](SensorStopsSeeingTraffic) page.
+
+#### How do I configure Snorby to send emails? ####
+Snorby is now considered unmaintained and is being removed from Security Onion, but these steps are left here for legacy documentation purposes.
+
+Modify Snorby's `mail_config.rb` file on the master server as needed for your mail server:
+```
+/opt/snorby/config/initializers/mail_config.rb
+
+```
+Then restart the Snorby delayed\_job process:
+```
+sudo pkill -f delayed_job
+
+sudo su www-data -c "cd /opt/snorby; bundle exec rake snorby:update RAILS_ENV=production"
+
+```
+You can also modify `/opt/snorby/config/snorby_config.yml` and change the `domain` setting in the Production section to be the FQDN or IP address of your Snorby server.  However, the resulting link in the email will still be incorrect since it will be http instead of https and it will be missing the proper port.
