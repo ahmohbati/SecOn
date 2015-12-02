@@ -21,7 +21,7 @@
 ## Data Sources ##
   * [NIDS](NIDS)
   * [Bro](Bro)
-  * [OSSEC](OSSEC HIDS)
+  * [OSSEC HIDS](OSSEC)
 
 ## Customizing for your network ##
   * [Network Configuration](NetworkConfiguration)
