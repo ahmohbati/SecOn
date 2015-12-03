@@ -22,6 +22,7 @@
   * [NIDS](NIDS)
   * [Bro](Bro)
   * [OSSEC HIDS](OSSEC)
+  * [Syslog](Syslog)
 
 ## Customizing for your network ##
   * [Network Configuration](NetworkConfiguration)
