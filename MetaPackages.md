@@ -17,12 +17,12 @@ Sguil server, Squert, CapMe, etc.
   * securityonion-elsa and securityonion-elsa-extras (about 268MB)  
 ELSA web interface, log node, parsers/pattterns, syslog-ng, etc.  
 Since this metapackage depends on syslog-ng (which conflicts with rsyslog), you may need to specifically include syslog-ng and syslog-ng core in your install line like:  
-```sudo apt-get install securityonion-elsa securityonion-elsa-extras syslog-ng syslog-ng-core```
+```sudo apt-get install securityonion-elsa securityonion-elsa-extras syslog-ng-core```
 
   * securityonion-all (about 912MB)  
 all of the above  
-```sudo apt-get install securityonion-all syslog-ng syslog-ng-core```
+```sudo apt-get install securityonion-all syslog-ng-core```
 
   * securityonion-iso (new in Security Onion 14.04) (about 1004MB)  
 all of the above plus bridge-utils, byobu, foremost, securityonion-onionsalt, securityonion-samples-markofu, securityonion-samples-mta, securityonion-samples-shellshock, xfsprogs, xplico  
-```sudo apt-get install securityonion-iso syslog-ng syslog-ng-core```
+```sudo apt-get install securityonion-iso syslog-ng-core```
