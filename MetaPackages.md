@@ -2,7 +2,8 @@ Security Onion consists of over 70 Ubuntu packages in a Launchpad PPA.  You can 
 
 #### Metapackages ####
 
-  * securityonion-client (about 50MB) - Sguil client, Wireshark, NetworkMiner, etc.
+  * securityonion-client (about 50MB)
+Sguil client, Wireshark, NetworkMiner, etc.
 
   * securityonion-sensor (about 50MB) - Snort, Suricata, Bro, netsniff-ng, Sguil agents, etc.
 
