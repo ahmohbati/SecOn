@@ -6,4 +6,4 @@ Security Onion consists of over 70 Ubuntu packages in a Launchpad PPA.  You can 
   * securityonion-elsa and securityonion-elsa-extras (about 50MB) - ELSA
   * securityonion-server (about 200MB) - Sguil server, Squert, CapMe, etc.
   * securityonion-all - all of the above
-  * securityonion-iso (new in Security Onion 14.04) - all of the above plus bridge-utils, byobu, foremost, securityonion-onionsalt, securityonion-samples-markofu, securityonion-samples-mta, securityonion-samples-shellshock, xfsprogs
+  * securityonion-iso (new in Security Onion 14.04) - all of the above plus bridge-utils, byobu, foremost, securityonion-onionsalt, securityonion-samples-markofu, securityonion-samples-mta, securityonion-samples-shellshock, xfsprogs, xplico
