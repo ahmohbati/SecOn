@@ -9,8 +9,7 @@ If upgrading over ssh, please consider running byobu/screen/tmux to ensure that 
 * if possible, create a VM snapshot so that you can revert if necessary
 * backup Bro config since it will be removed when Ubuntu removes the package
 ```
-sudo sed -i ’s|PREV=“2.3.2”|PREV=“pre-2.4”|g’
-/var/lib/dpkg/info/securityonion-bro.preinst
+sudo sed -i ’s|PREV=“2.3.2”|PREV=“pre-2.4”|g’ /var/lib/dpkg/info/securityonion-bro.preinst
 sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 ```
 * ensure all 12.04 updates are installed:
