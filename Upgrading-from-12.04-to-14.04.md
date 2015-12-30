@@ -47,14 +47,14 @@ sudo do-release-upgrade
 * if you receive a prompt regarding xscreensaver, select OK
 * you may receive prompts regarding files that have changed like the following:
 /etc/sudoers
-Apache’s ssl.conf
-Apache’s apache2.conf
-Apache’s ports.conf
-php.ini
-xfce-applications.menu
-These are files that Security Onion modifies and you may receive prompts for additional files that you have modified.
-The safest option for each of these is to press Y to install the package maintainer’s version.
-This will back up the existing file in case you need to review it later for any custom modifications you had made.
+Apache’s ssl.conf  
+Apache’s apache2.conf  
+Apache’s ports.conf  
+php.ini  
+xfce-applications.menu  
+These are files that Security Onion modifies and you may receive prompts for additional files that you have modified.  
+The safest option for each of these is to press Y to install the package maintainer’s version.  
+This will back up the existing file in case you need to review it later for any custom modifications you had made.  
 * When prompted to restart, press Y to continue
 
 
