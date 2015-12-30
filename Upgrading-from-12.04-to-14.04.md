@@ -43,8 +43,8 @@ sudo pkill xscreensaver
 sudo do-release-upgrade
 ```
 
-* Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:
-/etc/sudoers
+* Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:  
+/etc/sudoers  
 Apache’s ssl.conf  
 Apache’s apache2.conf  
 Apache’s ports.conf  
