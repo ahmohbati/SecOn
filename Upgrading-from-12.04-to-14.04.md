@@ -1,10 +1,10 @@
-## PRE-UPGRADE NOTES
+#### PRE-UPGRADE NOTES
 
 If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
 
 If upgrading over ssh, please consider running byobu/screen/tmux to ensure that if your ssh connection drops your system will continue the upgrade process.
 
-# PREPARATION
+#### PREPARATION
 * start with a fully configured Security Onion 12.04 installation
 * if possible, create a VM snapshot so that you can revert if necessary
 * backup Bro config since it will be removed when Ubuntu removes the package
@@ -23,7 +23,7 @@ ahead and reboot anyway:
 * make sure system is healthy before continuing
 
 
-# UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
+#### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
 
 * configure Ubuntu to look for the 14.04 upgrade:
 ```sudo sed -i ‘s|Prompt=never|Prompt=lts|g’ /etc/update-manager/release-upgrades```
@@ -49,9 +49,9 @@ This will back up the existing file in case you need to review it later for any 
 * When prompted to restart, press Y to continue
 
 
-# SNAPSHOT IF POSSIBLE
+#### SNAPSHOT IF RUNNING IN A VM
 
-# ADD BACK SECURITY ONION PACKAGES
+#### ADD BACK SECURITY ONION PACKAGES
 
 * after reboot, log back in, open a terminal, and add my DEVELOPMENT repo:
 ```sudo add-apt-repository ppa:doug-burks/trusty```
