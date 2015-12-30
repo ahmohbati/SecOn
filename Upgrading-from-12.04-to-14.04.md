@@ -13,11 +13,15 @@ sudo sed -i ’s|PREV=“2.3.2”|PREV=“pre-2.4”|g’ /var/lib/dpkg/info/sec
 sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 ```
 * ensure all 12.04 updates are installed:
-```sudo soup```
+```
+sudo soup
+```
 
 * if soup prompted to reboot, go ahead and do that.  If it didn’t, go
 ahead and reboot anyway:
-```sudo reboot```
+```
+sudo reboot
+```
 
 * make sure system is healthy before continuing
 
@@ -25,13 +29,19 @@ ahead and reboot anyway:
 #### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
 
 * configure Ubuntu to look for the 14.04 upgrade:
-```sudo sed -i ‘s|Prompt=never|Prompt=lts|g’ /etc/update-manager/release-upgrades```
+```
+sudo sed -i ‘s|Prompt=never|Prompt=lts|g’ /etc/update-manager/release-upgrades
+```
 
 * kill xscreensaver (otherwise, do-release-upgrade will prompt you to do so)
-```sudo pkill xscreensaver```
+```
+sudo pkill xscreensaver
+```
 
 * initiate upgrade to 14.04:
-```sudo do-release-upgrade```
+```
+sudo do-release-upgrade
+```
 
 * follow the prompts
 * if you receive a prompt regarding xscreensaver, select OK
@@ -53,21 +63,31 @@ This will back up the existing file in case you need to review it later for any 
 #### ADD BACK SECURITY ONION PACKAGES
 
 * after reboot, log back in, open a terminal, and add my DEVELOPMENT repo:
-```sudo add-apt-repository ppa:doug-burks/trusty```
+```
+sudo add-apt-repository ppa:doug-burks/trusty
+```
 
 * update all packages that are currently installed:
-```sudo soup```
+```
+sudo soup
+```
 
 * add back any missing security onion packages:
-```sudo apt-get install securityonion-iso syslog-ng-core```
+```
+sudo apt-get install securityonion-iso syslog-ng-core
+```
 
 * IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your current copy
 
 * remove any unnecessary packages:
-```sudo apt-get autoremove```
+```
+sudo apt-get autoremove
+```
 
 * reboot:
-```sudo reboot```
+```
+sudo reboot
+```
 
 * log back in and verify all services are working properly
 
