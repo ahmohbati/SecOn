@@ -1,4 +1,4 @@
-# PRE-UPGRADE NOTES
+## PRE-UPGRADE NOTES
 
 If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
 
