@@ -9,7 +9,7 @@ If upgrading over ssh, please consider running byobu/screen/tmux to ensure that 
 * if possible, create a VM snapshot so that you can revert if necessary
 * backup Bro config since it will be removed when Ubuntu removes the package
 ```
-sudo sed -i ’s|PREV=“2.3.2”|PREV=“pre-2.4”|g’ /var/lib/dpkg/info/securityonion-bro.preinst
+sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
 sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 ```
 * ensure all 12.04 updates are installed:
@@ -30,7 +30,7 @@ sudo reboot
 
 * configure Ubuntu to look for the 14.04 upgrade:
 ```
-sudo sed -i ‘s|Prompt=never|Prompt=lts|g’ /etc/update-manager/release-upgrades
+sudo sed -i 's|Prompt=never|Prompt=lts|g' /etc/update-manager/release-upgrades
 ```
 
 * kill xscreensaver (otherwise, do-release-upgrade will prompt you to do so)
