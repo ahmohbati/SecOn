@@ -80,6 +80,8 @@ IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep you
 * Reboot:  
 `sudo reboot`
 
+#### VERIFY
+
 * Log back in and verify all services are working properly.
 
 * Run sostat and look for anything out of the ordinary:  
