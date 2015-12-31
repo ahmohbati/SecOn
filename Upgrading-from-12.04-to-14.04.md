@@ -78,7 +78,7 @@ sudo soup
 ```
 sudo apt-get install securityonion-iso syslog-ng-core
 ```
-If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you don't necessarily need to install securityonion-iso.  You should be able to just install the same metapackage(s) you originally installed.
+If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you don't necessarily need to install the securityonion-iso metapackage.  In the command above, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed.
 
 * IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your current copy.
 
