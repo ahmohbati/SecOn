@@ -1,10 +1,10 @@
 #### PRE-UPGRADE NOTES
 
-If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
+The upgrade process will take anywhere from 30 minutes to over an hour, depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
 
 If upgrading over ssh, please consider running byobu/screen/tmux to ensure that if your ssh connection drops your system will continue the upgrade process.
 
-The upgrade process will take anywhere from 30 minutes to over an hour, depending on the speed of your server hardware and Internet connection.
+If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
 
 #### PREPARATION
 * Start with a fully configured Security Onion 12.04 installation.
