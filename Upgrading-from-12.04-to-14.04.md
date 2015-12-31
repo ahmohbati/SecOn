@@ -1,6 +1,6 @@
 #### DISCLAIMERS
 
-* Security Onion 14.04 has not reached *STABLE* status yet, it's still considered *BETA* software!
+* Security Onion 14.04 has not reached **STABLE** status yet, it's still considered **BETA** software!
 
 * All testing should be done in sacrificial VMs.
 
@@ -10,7 +10,7 @@
 
 #### PRE-UPGRADE NOTES
 
-The upgrade process will take anywhere from 30 minutes to over an hour, depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
+The upgrade process will take at **least** 1-2 hours (per server/sensor), depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
 
 If upgrading over ssh, please consider running byobu/screen/tmux to ensure that if your ssh connection drops your system will continue the upgrade process.
 
