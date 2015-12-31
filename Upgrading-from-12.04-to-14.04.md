@@ -20,48 +20,32 @@ If you’re upgrading a distributed deployment, you’ll need to perform the ste
 * Start with a fully configured Security Onion 12.04 installation.
 * If running in a VM, create a snapshot so that you can revert if necessary.
 * If you're upgrading over ssh and not already running byobu/screen/tmux, start byobu:  
-```
-byobu-enable
-```
+`byobu-enable`
 
-* Ensure all 12.04 updates are installed:
-```
-sudo soup
-```
+* Ensure all 12.04 updates are installed:  
+`sudo soup`
 
 * If soup prompted to reboot, go ahead and do that.  If it didn’t, go
-ahead and reboot anyway:
-```
-sudo reboot
-```
+ahead and reboot anyway:  
+`sudo reboot`
 
-* Review sostat output to make sure system is healthy before continuing:
-```
-sudo sostat
-```
+* Review sostat output to make sure system is healthy before continuing:  
+`sudo sostat`
 
-* IMPORTANT! Backup Bro config since it will be removed when Ubuntu removes the package:
-```
-sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
-sudo /var/lib/dpkg/info/securityonion-bro.preinst install
-```
+* IMPORTANT! Backup Bro config since it will be removed when Ubuntu removes the package:  
+`sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst`  
+`sudo /var/lib/dpkg/info/securityonion-bro.preinst install`
 
 #### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
 
-* Configure Ubuntu to look for the 14.04 upgrade:
-```
-sudo sed -i 's|Prompt=never|Prompt=lts|g' /etc/update-manager/release-upgrades
-```
+* Configure Ubuntu to look for the 14.04 upgrade:  
+`sudo sed -i 's|Prompt=never|Prompt=lts|g' /etc/update-manager/release-upgrades`
 
-* Kill xscreensaver (otherwise, do-release-upgrade will prompt you to do so):
-```
-sudo pkill xscreensaver
-```
+* Kill xscreensaver (otherwise, do-release-upgrade will prompt you to do so):  
+`sudo pkill xscreensaver`
 
-* Initiate upgrade to 14.04:
-```
-sudo do-release-upgrade
-```
+* Initiate upgrade to 14.04:  
+`sudo do-release-upgrade`
 
 * Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:  
 /etc/sudoers  
@@ -76,39 +60,26 @@ These are files that Security Onion modifies and you may receive prompts for add
 
 #### ADD BACK SECURITY ONION PACKAGES
 
-* After rebooting, log back in, open a terminal, and add our TEST repo:
-```
-sudo add-apt-repository ppa:securityonion/test
-```
+* After rebooting, log back in, open a terminal, and add our TEST repo:  
+`sudo add-apt-repository ppa:securityonion/test`
 
-* Update all packages that are currently installed:
-```
-sudo soup
-```
+* Update all packages that are currently installed:  
+`sudo soup`
 
-* Add back any missing Security Onion packages:
-```
-sudo apt-get install securityonion-iso syslog-ng-core
-```
-IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your current copy.
-
+* Add back any missing Security Onion packages:  
+`sudo apt-get install securityonion-iso syslog-ng-core`  
+IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your current copy.  
 If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you don't necessarily need to install the securityonion-iso metapackage.  In the command above, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed (securityonion-server, securityonion-sensor, securityonion-elsa, securityonion-all, etc).
 
-* Remove any unnecessary packages:
-```
-sudo apt-get autoremove
-```
+* Remove any unnecessary packages:  
+`sudo apt-get autoremove`
 
-* Reboot:
-```
-sudo reboot
-```
+* Reboot:  
+`sudo reboot`
 
 * Log back in and verify all services are working properly.
 
-* Run sostat and look for anything out of the ordinary:
-```
-sudo sostat
-```
+* Run sostat and look for anything out of the ordinary:  
+`sudo sostat`
 
 * Check log files for anything out of the ordinary.
