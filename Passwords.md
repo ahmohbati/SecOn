@@ -52,5 +52,5 @@ mysql -uroot
 ```
 
 #### Xplico ####
-We use the default Xplico credentials as listed here:
+Xplico's default credentials are listed here:
 http://wiki.xplico.org/doku.php?id=interface
