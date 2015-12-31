@@ -9,6 +9,10 @@ If you’re upgrading a distributed deployment, you’ll need to perform the ste
 #### PREPARATION
 * Start with a fully configured Security Onion 12.04 installation.
 * If running in a VM, create a snapshot so that you can revert if necessary.
+* If you're not already running byobu/screen/tmux, start byobu:
+```
+byobu-enable
+```
 * Backup Bro config since it will be removed when Ubuntu removes the package:
 ```
 sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
