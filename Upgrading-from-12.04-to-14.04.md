@@ -1,6 +1,6 @@
 #### DISCLAIMERS
 
-* Security Onion 14.04 has not reached **STABLE** status yet, it's still considered **BETA** software!
+* Security Onion 14.04 has not reached *stable* status yet, it's still considered **BETA** software!
 
 * All testing should be done in sacrificial VMs.
 
