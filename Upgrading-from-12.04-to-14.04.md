@@ -29,8 +29,10 @@ ahead and reboot anyway:
 sudo reboot
 ```
 
-* Make sure system is healthy before continuing.
-
+* Review sostat output to make sure system is healthy before continuing:
+```
+sudo sostat
+```
 
 #### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
 
