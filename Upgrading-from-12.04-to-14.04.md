@@ -9,7 +9,7 @@ If you’re upgrading a distributed deployment, you’ll need to perform the ste
 #### PREPARATION
 * Start with a fully configured Security Onion 12.04 installation.
 * If running in a VM, create a snapshot so that you can revert if necessary.
-* If you're not already running byobu/screen/tmux, start byobu:
+* If you're upgrading over ssh and not already running byobu/screen/tmux, start byobu:
 ```
 byobu-enable
 ```
