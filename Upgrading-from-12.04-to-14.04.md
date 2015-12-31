@@ -72,6 +72,8 @@ These are files that Security Onion modifies and you may receive prompts for add
 `sudo apt-get install securityonion-iso syslog-ng-core`  
 IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your currently-installed version.  
 
+#### CLEAN UP
+
 * Remove any unnecessary packages:  
 `sudo apt-get autoremove`
 
