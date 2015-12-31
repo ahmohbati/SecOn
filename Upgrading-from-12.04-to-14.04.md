@@ -33,8 +33,10 @@ ahead and reboot anyway:
 `sudo sostat`
 
 * IMPORTANT! Backup Bro config since it will be removed when Ubuntu removes the package:  
-`sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst`  
-`sudo /var/lib/dpkg/info/securityonion-bro.preinst install`
+```
+sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
+sudo /var/lib/dpkg/info/securityonion-bro.preinst install
+```
 
 #### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
 
