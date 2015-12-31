@@ -49,11 +49,11 @@ ahead and reboot anyway:
 
 * Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:  
 /etc/sudoers  
-Apache’s ssl.conf  
-Apache’s apache2.conf  
-Apache’s ports.conf  
-php.ini  
-xfce-applications.menu  
+/etc/apache2/mods-available/ssl.conf  
+/etc/apache2/apache2.conf  
+/etc/apache2/ports.conf  
+/etc/php5/apache2/php.ini  
+/etc/xdg/xdg-xubuntu/menus/xfce-applications.menu  
 These are files that Security Onion modifies and you may receive prompts for additional files that you have modified. The safest option for each of these is to choose to install the package maintainer’s version. This will back up the existing file in case you need to review it later for any custom modifications you had made.  
 * When prompted to restart, press Y to continue.
 * If running in a VM, perform a snapshot.
