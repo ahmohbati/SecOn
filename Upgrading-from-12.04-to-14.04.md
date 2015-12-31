@@ -23,11 +23,7 @@ If you’re upgrading a distributed deployment, you’ll need to perform the ste
 ```
 byobu-enable
 ```
-* Backup Bro config since it will be removed when Ubuntu removes the package:
-```
-sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
-sudo /var/lib/dpkg/info/securityonion-bro.preinst install
-```
+
 * Ensure all 12.04 updates are installed:
 ```
 sudo soup
@@ -42,6 +38,12 @@ sudo reboot
 * Review sostat output to make sure system is healthy before continuing:
 ```
 sudo sostat
+```
+
+* Backup Bro config since it will be removed when Ubuntu removes the package:
+```
+sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
+sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 ```
 
 #### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
