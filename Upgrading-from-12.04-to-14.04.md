@@ -87,4 +87,9 @@ sudo reboot
 
 * Log back in and verify all services are working properly.
 
-* Check sostat and log files for anything out of the ordinary.
+* Run sostat and look for anything out of the ordinary:
+```
+sudo sostat
+```
+
+* Check log files for anything out of the ordinary.
