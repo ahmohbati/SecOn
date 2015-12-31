@@ -40,7 +40,7 @@ sudo reboot
 sudo sostat
 ```
 
-* Backup Bro config since it will be removed when Ubuntu removes the package:
+* IMPORTANT! Backup Bro config since it will be removed when Ubuntu removes the package:
 ```
 sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
 sudo /var/lib/dpkg/info/securityonion-bro.preinst install
@@ -90,9 +90,9 @@ sudo soup
 ```
 sudo apt-get install securityonion-iso syslog-ng-core
 ```
-If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you don't necessarily need to install the securityonion-iso metapackage.  In the command above, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed (securityonion-server, securityonion-sensor, securityonion-elsa, securityonion-all, etc).
+IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your current copy.
 
-* IMPORTANT! If you receive a prompt regarding syslog-ng.conf, press N to keep your current copy.
+If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you don't necessarily need to install the securityonion-iso metapackage.  In the command above, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed (securityonion-server, securityonion-sensor, securityonion-elsa, securityonion-all, etc).
 
 * Remove any unnecessary packages:
 ```
