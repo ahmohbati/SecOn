@@ -1,3 +1,15 @@
+#### DISCLAIMERS
+
+Security Onion 14.04 is still considered ALPHA! 
+
+* This isn't considered *stable*, it's not even *beta* yet, this is *ALPHA* software.
+
+* All testing should be done in sacrificial VMs.
+
+* Don't even think of getting this anywhere near your production sensors yet.
+
+* If you test on any kind of production system and it breaks, you get to keep both pieces!
+
 #### PRE-UPGRADE NOTES
 
 The upgrade process will take anywhere from 30 minutes to over an hour, depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
