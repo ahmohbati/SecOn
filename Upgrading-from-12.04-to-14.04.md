@@ -36,6 +36,9 @@ sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-b
 sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 ```
 
+* Verify that Bro config was backed up to /opt/bro/etc_pre-2.4/ (you should have files in this directory):
+`ls -alh /opt/bro/etc_pre-2.4/`
+
 #### UPGRADE FROM UBUNTU 12.04 TO UBUNTU 14.04
 
 * Configure Ubuntu to look for the 14.04 upgrade:  
