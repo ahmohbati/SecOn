@@ -44,7 +44,7 @@ sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 * Configure Ubuntu to look for the 14.04 upgrade:  
 `sudo sed -i 's|Prompt=never|Prompt=lts|g' /etc/update-manager/release-upgrades`
 
-* Kill xscreensaver (otherwise, do-release-upgrade will prompt you to do so):  
+* Kill xscreensaver (otherwise, do-release-upgrade in the next step will prompt you to do so):  
 `sudo pkill xscreensaver`
 
 * Initiate upgrade to 14.04:  
