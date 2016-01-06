@@ -65,3 +65,7 @@
 ## Known Issues / Roadmap ##
   * [Known Issues](https://github.com/Security-Onion-Solutions/security-onion/issues)
   * [Roadmap](Roadmap)
+
+## 14.04 ##
+  * [Release Notes](Security-Onion-14.04-Release-Notes)
+  * [Upgrading from 12.04](Upgrading-from-12.04-to-14.04)
