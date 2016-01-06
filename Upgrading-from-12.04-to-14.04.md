@@ -1,6 +1,6 @@
 #### DISCLAIMERS
 
-* Security Onion 14.04 has not reached *stable* status yet, it's still considered **BETA** software!
+* Security Onion 14.04 has not reached *stable* status yet, it's still considered **Release Candidate** software!
 
 * All testing should be done in sacrificial VMs.
 
@@ -63,8 +63,8 @@ These are files that Security Onion modifies and you may receive prompts for add
 
 #### ADD BACK SECURITY ONION PACKAGES
 
-* After rebooting, log back in, open a terminal, and add our TEST repo:  
-`sudo add-apt-repository ppa:securityonion/test`
+* After rebooting, log back in, open a terminal, and add back our stable PPA:  
+`sudo add-apt-repository ppa:securityonion/stable`
 
 * Update all packages that are currently installed:  
 `sudo soup`
