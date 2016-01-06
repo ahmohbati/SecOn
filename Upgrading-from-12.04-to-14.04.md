@@ -87,7 +87,7 @@ These are files that Security Onion modifies and you may receive prompts for add
 
 * If you had created your own ELSA query menu at /var/www/elsa/local.php and it wasn't automatically migrated to /var/www/so/elsa/local.php, then you can copy it:  
 `sudo cp /var/www/elsa/local.php /var/www/so/elsa/local.php`  
-You may also need to adjust any links to match the new URL structure.  Replace `<a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>:3154/?` with this `<a href="/elsa-query/?`
+You may also need to adjust any links to match the new URL structure.  Replace `<a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>:3154/?` with `<a href="/elsa-query/?`
 
 * Run sostat and look for anything out of the ordinary:  
 `sudo sostat`
