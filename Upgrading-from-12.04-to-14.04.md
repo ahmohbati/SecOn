@@ -30,7 +30,7 @@ ahead and reboot anyway:
 * Review sostat output to make sure system is healthy before continuing:  
 `sudo sostat`
 
-* IMPORTANT! Backup Bro config since it will be removed when Ubuntu removes the package:  
+* **IMPORTANT!** Backup Bro config since it will be removed when Ubuntu removes the package:  
 ```
 sudo sed -i 's|PREV="2.3.2"|PREV="pre-2.4"|g' /var/lib/dpkg/info/securityonion-bro.preinst
 sudo /var/lib/dpkg/info/securityonion-bro.preinst install
