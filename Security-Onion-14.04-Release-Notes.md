@@ -1,6 +1,6 @@
 #### Release Notes
 
-- The ISO boot menu no longer has the Live Desktop option.  Instead, choose the Install option to go directly to the installer.
+- The ISO boot menu no longer has the Live Desktop option.  Instead, choose the Install option to go directly to the installer (or simply wait 10 seconds for it to automatically boot into the installer).
 
 - The installer now supports LVM, which automatically creates a /boot partition and will likely be our recommended option.
 
