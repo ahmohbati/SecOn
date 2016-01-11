@@ -6,7 +6,7 @@ choose the Install option to go directly to the installer.
 - The installer now supports LVM, which automatically creates a /boot
 partition and will likely be our recommended option.
 
-- The Keyboard Layout page may be larger than your screen resolution and so the Next button may be hidden.  You can simply slide the window over until you see the Next button.
+- The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right.  You can simply slide the window over until you see the Continue button.
 
 - Once the installer completes, it should prompt to eject the media.
 If you don't see any text but it appears to hang, simply press Enter
