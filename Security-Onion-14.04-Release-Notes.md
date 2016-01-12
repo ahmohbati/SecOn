@@ -19,3 +19,5 @@
 - ELSA charts now work out of the box with the standard Chromium browser (no more Flash requirement).
 
 - ELSA dashboards now work with no Internet access (no more Google Visualization requirement).
+
+- For more information, please refer to the full [Installation](Installation) guide and other documentation on the Wiki.
