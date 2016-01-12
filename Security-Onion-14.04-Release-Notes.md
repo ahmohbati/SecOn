@@ -9,7 +9,7 @@ https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums
 
 - The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right.  You can simply slide the window over until you see the Continue button.
 
-- Once the installer completes, it should prompt to remove installation media and press ENTER.  If instead it appears to hang, simply press the ENTER key to reboot.  If that doesn't work, forcibly restart the machine.
+- Once the installer completes, it should prompt to remove installation media and press ENTER.  If instead it appears to hang, simply press the ENTER key to reboot.  If that doesn't work, you may forcibly restart the machine.
 
 - Once you've logged into your newly installed Security Onion, you'll notice that there is only a Setup icon on the desktop.  Icons for Sguil/Squert/ELSA will be created when you run Setup.
 
