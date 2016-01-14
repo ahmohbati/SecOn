@@ -14,6 +14,8 @@ head -20 /var/log/nsm/securityonion/sguild.log
 For more information, please see:<br>
 <a href='http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F'><a href='http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F'>http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F</a></a>
 
+You may want to install a local mail relay on your master server, configure it to relay mail to your corporate mail server, and then configure Sguil to send email to the local mail relay.
+
 ####How do I configure OSSEC to send emails?####
 Modify `/var/ossec/etc/ossec.conf` as follows:<br>
 <pre><code>  &lt;global&gt;<br>
