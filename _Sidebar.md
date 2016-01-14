@@ -43,16 +43,16 @@
 
 ## Tricks and Tips ##
   * [Best Practices](Best-Practices)
+  * [Using Salt to manage Sensors](Salt)
+  * [MetaPackages](MetaPackages)
   * [ELSA Query Tips](ELSAQueryTips)
   * [Custom ELSA Parsers](CustomELSAParsers)
-  * [Using Salt to manage Sensors](Salt)
   * [DNS Anomaly Detection script](DNSAnomalyDetection)
   * [Connecting to Sguild](ConnectingtoSguil)
   * [Pcaps for Testing](Pcaps)
   * [FreeNX](FreeNX)
-  * [Wiping the Snorby database](WipingSnorby)
   * [Installing NtopNG](DeployingNtopng)
-  * [MetaPackages](MetaPackages)
+  * [Wiping the Snorby database](WipingSnorby)
 
 ## Help ##
   * [Support](Support)
