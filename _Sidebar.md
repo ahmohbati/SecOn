@@ -44,6 +44,7 @@
 ## Tricks and Tips ##
   * [Best Practices](Best-Practices)
   * [Using Salt to manage Sensors](Salt)
+  * [Automating Setup](Automating-Setup)
   * [MetaPackages](MetaPackages)
   * [ELSA Query Tips](ELSAQueryTips)
   * [Custom ELSA Parsers](CustomELSAParsers)
