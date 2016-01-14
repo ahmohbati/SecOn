@@ -1,4 +1,4 @@
-You can automate the Setup process using sosetup.conf
+You can automate the Setup process using sosetup.conf.
 
 Copy the example file to your home directory:  
 ```cp /usr/share/securityonion/sosetup.conf ~```
