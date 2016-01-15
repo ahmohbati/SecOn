@@ -10,9 +10,6 @@
 <pre><code>xrandr -s WxH<br>
 </code></pre>
 </li><li>Login to Sguil and review your IDS alerts. Squert and ELSA can be accessed by visiting <a href='https://server/'>https://server/</a> for additional in-depth analysis.<br>
-</li><li>Be aware that Snorby uses highcharts. Read the <a href='http://shop.highsoft.com/highcharts.html'>highcharts</a> <a href='http://shop.highsoft.com/faq/non-commercial#what-is-non-commercial'>license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, you can [disable/remove Snorby altogether](DisablingProcesses#disabling-snorby) or de-activate HighCharts (the charts on the bottom half of the Snorby Dashboard will be blank, but nothing else in Snorby should be affected):<br>
-<pre><code>sudo mv /opt/snorby/public/javascripts/highcharts.js /opt/snorby/public/javascripts/highcharts.js.DISABLED<br>
-</code></pre>
 </li><li>Harden your server and sensors by disabling any unneeded services and [firewalling](Firewall) off any unused ports.<br>
 </li><li>Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
 <pre><code>sudo sostat | less<br>
@@ -42,3 +39,6 @@ sudo apt-get install xrdp
 ```
 Please note that we do not support FreeNX or xrdp.<br>
 </li><li>Read more about the tools contained in Security Onion: [Tools](Tools)
+</li><li>Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.  Be aware that Snorby uses highcharts. Read the <a href='http://shop.highsoft.com/highcharts.html'>highcharts</a> <a href='http://shop.highsoft.com/faq/non-commercial#what-is-non-commercial'>license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, you can [disable/remove Snorby altogether](DisablingProcesses#disabling-snorby) or de-activate HighCharts (the charts on the bottom half of the Snorby Dashboard will be blank, but nothing else in Snorby should be affected):<br>
+<pre><code>sudo mv /opt/snorby/public/javascripts/highcharts.js /opt/snorby/public/javascripts/highcharts.js.DISABLED<br>
+</code></pre>
