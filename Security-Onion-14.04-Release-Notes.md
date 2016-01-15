@@ -7,7 +7,10 @@ https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums
 
 - The installer now supports LVM, which automatically creates a /boot partition and will likely be our recommended option.
 
-- The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right.  You can simply slide the window over until you see the Continue button.
+- The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right like this:  
+https://launchpadlibrarian.net/207213663/Screenshot_wilyi386deskmanual_2015-05-22_13%3A05%3A41.png  
+You can simply slide the window over until you see the Continue button.  For more information, please see:  
+https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1458039
 
 - Once the installer completes, it should prompt to remove installation media and press ENTER.  If instead it appears to hang, simply press the ENTER key to reboot.  If that doesn't work, you may forcibly restart the machine.
 
