@@ -51,7 +51,7 @@ iptables -F
 sudo sosetup
     ````
   1. Follow the prompts.<br>
-  1. Analyze alerts using the Sguil client, or open a browser to <a href='https://localhost'>https://localhost</a> where you can access `Squert`, `Snorby` and `ELSA`.<br>
+  1. Analyze alerts using the Sguil client, or open a browser to <a href='https://localhost'>https://localhost</a> where you can access `Squert`, and `ELSA`.<br>
   1. Follow the [upgrade](Upgrade) process.
 
 Please review the [PostInstallation](PostInstallation) page.
