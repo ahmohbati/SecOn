@@ -8,6 +8,8 @@
 
 * If you test on any kind of production system and it breaks, you get to keep both pieces!
 
+* We offer no guarantees that this upgrade process will work perfectly.
+
 #### PRE-UPGRADE NOTES
 
 * The upgrade process will take at **least** 1-2 hours (per server/sensor), depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
