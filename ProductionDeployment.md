@@ -1,6 +1,6 @@
 #### If you're going to be deploying Security Onion in production, follow these steps: ####
   1. First, check the [Hardware Requirements](Hardware) page.
-  1. Download the ISO image for your preferred flavor of Ubuntu 12.04 32-bit/64-bit or download our Security Onion ISO image using the instructions [here](QuickISOImage). Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
+  1. Download the ISO image for your preferred flavor of Ubuntu 14.04 32-bit/64-bit or download our Security Onion ISO image using the instructions [here](QuickISOImage). Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
   1. If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.  For best performance, the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  Please note that sensors need to connect to the master server on ports 22 and 7736.  If you choose to enable salt for sensor management, they will also need to be able to connect to the master server on ports 4505 and 4506.<br>
   1. Using the downloaded ISO, install the operating system. If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
   1. When asked about partitioning, there are a few things to keep in mind:<br>
@@ -10,7 +10,7 @@
 </li></ul></li><li>When installation completes, reboot into your new installation and login with the credentials you specified during installation.<br>
 </li><li>If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
 </li><li>Verify that you have Internet connectivity. If necessary, configure your [proxy](Proxy) settings</a>.<br>
-</li><li>If you installed from the Security Onion Live 12.04 Distribution ISO, run `sudo soup`, reboot if prompted, and then skip to the "Setup wizard" step below.<br>
+</li><li>If you installed from the Security Onion 14.04 ISO image, run `sudo soup`, reboot if prompted, and then skip to the "Setup wizard" step below.<br>
 </li><li>If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href='https://help.ubuntu.com/community/EnablingPAE'>install the PAE kernel</a>.<br>
 </li><li>Install all Ubuntu updates and reboot.<br>
 </li><li>Log back in (over “ssh -X” if remote) and configure MySQL not to prompt for root password:<br>
@@ -59,7 +59,7 @@ sudo apt-get install python-software-properties=0.82.7<br>
 <ul><li>You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
 </li><li>You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
 </li></ul></li><li>You’ll be asked which IDS ruleset you would like to use.<br>
-</li><li>You will then be prompted for user account information for Sguil, Squert, ELSA and Snorby.<br>
+</li><li>You will then be prompted for user account information for Sguil, Squert, and ELSA.<br>
 </li><li>You’ll be asked whether you want to enable ELSA.<br>
 </li><li>You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
 </li></ul></li><li>Server<br>
