@@ -2,14 +2,6 @@ Please read through this entire page before beginning!
 
 #### DISCLAIMERS
 
-* Security Onion 14.04 has not reached *stable* status yet, it's still considered **Release Candidate** software!
-
-* All testing should be done in sacrificial VMs.
-
-* Don't even think of getting this anywhere near your production sensors yet.
-
-* If you test on any kind of production system and it breaks, you get to keep both pieces!
-
 * We offer no guarantees that this upgrade process will work perfectly.
 
 #### PRE-UPGRADE NOTES
