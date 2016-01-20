@@ -1,5 +1,6 @@
 #### If you just want to quickly evaluate Security Onion using our ISO image (based on Xubuntu 12.04 64-bit): ####
   1. First, review the [Hardware Requirements](Hardware) page.
+  1. Review the [Release Notes](Security-Onion-14.04-Release-Notes) page.
   1. Download the ISO image from <a href="https://sourceforge.net/projects/security-onion/files/12.04.5.3/">Sourceforge</a> or via <a href='http://port111.com/securityonion-12.04.5.3-20150825.iso.torrent'>Torrent</a>.
   1. Once the ISO image download has completed, verify the checksums as shown here: https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums.txt
   1. Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
