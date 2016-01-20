@@ -83,7 +83,12 @@ These are files that Security Onion modifies and you may receive prompts for add
 
 #### VERIFY
 
-* Log back in and verify all services are working properly.
+* After rebooting, log back in.
+
+* Keep in mind that there is a 60 second delay after the system boots before it tries to start any Security Onion processes, so wait a minute or two before continuing.
+
+* Verify services are running:  
+`sudo service nsm status`
 
 * If you had created your own ELSA query menu at /var/www/elsa/local.php and it wasn't automatically migrated to /var/www/so/elsa/local.php, then you can copy it:  
 `sudo cp /var/www/elsa/local.php /var/www/so/elsa/local.php`  
