@@ -1,3 +1,5 @@
+Please read through this entire page before beginning!
+
 #### DISCLAIMERS
 
 * Security Onion 14.04 has not reached *stable* status yet, it's still considered **Release Candidate** software!
