@@ -1,4 +1,4 @@
-#### If you just want to quickly evaluate Security Onion using our ISO image (based on Xubuntu 12.04 64-bit): ####
+#### If you just want to quickly evaluate Security Onion using our ISO image (based on Xubuntu 14.04 64-bit): ####
   1. First, review the [Hardware Requirements](Hardware) page.
   1. Review the [Release Notes](Security-Onion-14.04-Release-Notes) page.
   1. Download the ISO image from our [Releases](https://github.com/Security-Onion-Solutions/security-onion/releases) page.
