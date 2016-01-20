@@ -5,7 +5,7 @@ https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums
 
 - The ISO boot menu no longer has the Live Desktop option.  Instead, choose the Install option to go directly to the installer (or simply wait 10 seconds for it to automatically boot into the installer).
 
-- When asked about partitioning, please select the LVM option, as this will automatically create a /boot partition at the beginning of the drive and will give you more flexibility later.
+- On the "Installation type" screen, please select the "Use LVM" option, as this will automatically create a /boot partition at the beginning of the drive and will give you more flexibility later.
 
 - The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right like this:  
 https://launchpadlibrarian.net/207213663/Screenshot_wilyi386deskmanual_2015-05-22_13%3A05%3A41.png  
