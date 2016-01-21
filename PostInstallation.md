@@ -1,3 +1,9 @@
+Verify services are running:  
+```sudo service nsm status```
+
+If any services are not running, try starting them:  
+```sudo service nsm start```
+
 #### Tuning / Miscellaneous ####
 <li>If you’re monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12), you should update your sensor configuration with the correct IP ranges. Sensor configuration files can be found in `/etc/nsm/$HOSTNAME-$INTERFACE/`. Modify either `snort.conf` or `suricata.yaml` (depending on which IDS engine you chose during `sosetup`) and update the `HOME_NET` variable. Also update the `home_nets` variable in `prads.conf`. Then update Bro’s network configuration in `/opt/bro/etc/networks.cfg`.  Restart the sensor processes:<br>
 <pre><code>sudo nsm_sensor_ps-restart<br>
