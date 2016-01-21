@@ -33,7 +33,7 @@ sudo apt-get install python-software-properties=0.82.7<br>
 <pre><code>sudo apt-get update<br>
 </code></pre>
 </li><li>Install the securityonion-all metapackage (or one of the more focused [metapackages](MetaPackages)). This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
-<pre><code>sudo apt-get -y install securityonion-all<br>
+<pre><code>sudo apt-get -y install securityonion-all syslog-ng-core<br>
 </code></pre>
 </li><li>OPTIONAL: If you want to use [Salt](Salt) to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup.<br>
 <pre><code>sudo apt-get -y install securityonion-onionsalt<br>
