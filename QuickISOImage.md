@@ -8,6 +8,6 @@
   1. Verify that you have Internet connectivity.  If necessary, configure your [proxy settings](Proxy).
   1. [Install updates and reboot.](Upgrade)
   1. Double-click the Setup icon.  The Setup wizard will walk you through configuring `/etc/network/interfaces` and will then reboot.
-  1. After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured `/etc/network/interfaces` and will walk you through the rest of the configuration.
+  1. After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured `/etc/network/interfaces` and will walk you through the rest of the configuration.  When prompted for Evaluation Mode or Production Mode, choose Evaluation Mode.
   1. Once you've completed the Setup wizard, use the Desktop icons to login to `Sguil`, `Squert`, or `ELSA`.
   1. Finally, review the [Post Installation](PostInstallation) page.
