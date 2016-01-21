@@ -60,6 +60,7 @@ These are files that Security Onion modifies and you may receive prompts for add
 #### ADD BACK SECURITY ONION PACKAGES
 
 * After rebooting, log back in, open a terminal, and add back our stable PPA:  
+`sudo apt-get install -y software-properties-common`  
 `sudo add-apt-repository ppa:securityonion/stable`
 
 * Update all packages that are currently installed:  
