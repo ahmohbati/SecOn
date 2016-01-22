@@ -1,4 +1,4 @@
-### Security Onion 12.04 Update Procedure ###
+### Security Onion Update Procedure ###
 
 #### Initiating an update over SSH ####
 
