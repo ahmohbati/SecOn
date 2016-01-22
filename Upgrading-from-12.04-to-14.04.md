@@ -60,11 +60,12 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 * **IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
 
 * When prompted to restart, press `Y` to continue.
-* If running in a VM, perform a snapshot.
 
 #### ADD BACK SECURITY ONION PACKAGES
 
-* After rebooting, log back in, open a terminal, and add back our stable PPA:  
+* After rebooting, log back in.
+* If running in a VM, perform a snapshot.
+* Open a terminal, and add back our stable PPA:  
 `sudo apt-get install -y software-properties-common`  
 `sudo add-apt-repository ppa:securityonion/stable`
 
