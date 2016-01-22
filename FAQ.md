@@ -22,7 +22,7 @@
 #### How do I install Security Onion updates? ####
 [Upgrade Procedure](Upgrade)
 
-#### Why do I get `Snorby/Suricata/Bro` errors after upgrading the `kernel` and `pfring` packages? ####
+#### Why do I get `Snort/Suricata/Bro` errors after upgrading the `kernel` and `pfring` packages? ####
 [Updating](Upgrade)
 
 #### I recently updated `barnyard` and now I'm not getting any `Snort` alerts. ####
