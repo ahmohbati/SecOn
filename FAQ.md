@@ -33,12 +33,6 @@ http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 #### What do I need to do if I'm behind a proxy? ####
 [Proxy Configuration](Proxy)
 
-#### Ubuntu is asking if I want to upgrade to Ubuntu 14.04.  Should I? ####
-No, please do not upgrade to Ubuntu 14.04, as we are still working on 14.04 compatibility.
-
-#### Will Security Onion move to Ubuntu 14.04? ####
-Yes, we are working on moving to Ubuntu 14.04.
-
 #### Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? ####
 Please see:
 http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
