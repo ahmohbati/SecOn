@@ -63,7 +63,9 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 #### ADD BACK SECURITY ONION PACKAGES
 
 * After rebooting, log back in.  
-* If running in a VM, perform a snapshot.
+
+* If running in a VM, perform a snapshot.  
+
 * Open a terminal, and add back our stable PPA:  
 `sudo apt-get install -y software-properties-common`  
 `sudo add-apt-repository ppa:securityonion/stable`
