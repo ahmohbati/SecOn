@@ -47,14 +47,19 @@ sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 `sudo do-release-upgrade`
 
 * Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:  
-/etc/sudoers  
-/etc/apache2/mods-available/ssl.conf  
-/etc/apache2/apache2.conf  
-/etc/apache2/ports.conf  
-/etc/php5/apache2/php.ini  
-/etc/xdg/xdg-xubuntu/menus/xfce-applications.menu  
-These are files that Security Onion modifies and you may receive prompts for additional files that you have modified. The safest option for each of these is to choose to install the package maintainer’s version. This will back up the existing file in case you need to review it later for any custom modifications you had made.  
-* When prompted to restart, press Y to continue.
+  * /etc/sudoers `Y`
+  * /etc/apache2/mods-available/ssl.conf  `Y`
+  * /etc/apache2/apache2.conf  `Y`
+  * /etc/apache2/ports.conf  `Y`
+  * /etc/syslog-ng/syslog-ng.conf  `N`
+  * /etc/php5/apache2/php.ini  `Y`
+  * /etc/xdg/xdg-xubuntu/menus/xfce-applications.menu  `Y` 
+
+These are files that Security Onion modifies, and you may receive prompts for additional files that you have modified. The safest option for each of these is to choose to install the package maintainer’s version (`Y`, where applicable), with the exception of the prompt in regard to syslog-ng.conf. Choosing the installation of the package maintainer's version will back up the existing file in case you need to review it later for any custom modifications you had made.  
+
+* **IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
+
+* When prompted to restart, press `Y` to continue.
 * If running in a VM, perform a snapshot.
 
 #### ADD BACK SECURITY ONION PACKAGES
@@ -68,7 +73,7 @@ These are files that Security Onion modifies and you may receive prompts for add
 
 * Add back any missing Security Onion packages by installing the securityonion-iso metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the securityonion-iso metapackage. In the command below, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed (securityonion-server, securityonion-sensor, securityonion-elsa, securityonion-all, etc).:  
 `sudo apt-get install securityonion-iso syslog-ng-core`  
-**IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press N to keep your currently-installed version.  
+ 
 
 #### CLEAN UP
 
