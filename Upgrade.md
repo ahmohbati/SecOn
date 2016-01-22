@@ -61,3 +61,6 @@ If you accidentally install both the kernel and PF\_RING packages at the same ti
 ```
 sudo apt-get install --reinstall securityonion-pfring-module
 ```
+
+### Upgrades ###
+To upgrade from Security Onion 12.04 to Security Onion 14.04, please see [Upgrading-from-12.04-to-14.04](Upgrading-from-12.04-to-14.04).
