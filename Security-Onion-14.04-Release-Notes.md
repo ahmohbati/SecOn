@@ -16,13 +16,13 @@ https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1458039
 
 - Once you've logged into your newly installed Security Onion, you'll notice that there is only a Setup icon on the desktop.  Icons for Sguil/Squert/ELSA will be created when you run Setup.
 
-- Setup now defaults to [Best Practices](Best-Practices).
-
 - When you run Setup, the Quick Setup and Advanced Setup options have been renamed.  Quick Setup is now called Evaluation Mode.  Advanced Setup is now called Production Mode.  
 
 - When choosing Evaluation Mode, ELSA is now enabled by default.
 
 - When choosing Production Mode, you then have the option of Best Practices or Custom.  Best Practices asks a smaller number of questions and chooses the services that most folks want.  Custom asks all questions just as Advanced Setup used to.
+
+- Setup now defaults to [Best Practices](Best-Practices) so it automatically disables prads, pads_agent, sancp_agent, argus, and http_agent since most users don't need these services.  If you need these services, you can choose Production Mode, then choose Custom, and it will ask if you want to enable them.  Alternatively, you can enable them after Setup has completed in /etc/nsm/HOSTNAME-SENSOR/sensor.conf.
 
 - Once you've completed both phases of Setup, you should see the new icons on your Desktop for Sguil, Squert, and ELSA.  As a reminder, Snorby has been removed from this release.
 
