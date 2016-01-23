@@ -16,6 +16,8 @@ https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1458039
 
 - Once you've logged into your newly installed Security Onion, you'll notice that there is only a Setup icon on the desktop.  Icons for Sguil/Squert/ELSA will be created when you run Setup.
 
+- Setup now defaults to [Best Practices](Best-Practices).
+
 - When you run Setup, the Quick Setup and Advanced Setup options have been renamed.  Quick Setup is now called Evaluation Mode.  Advanced Setup is now called Production Mode.  
 
 - When choosing Evaluation Mode, ELSA is now enabled by default.
