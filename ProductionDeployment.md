@@ -13,7 +13,7 @@
 </li><li>If you installed from the Security Onion 14.04 ISO image, run `sudo soup`, reboot if prompted, and then skip to the "Setup wizard" step below.<br>
 </li><li>If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href='https://help.ubuntu.com/community/EnablingPAE'>install the PAE kernel</a>.<br>
 </li><li>Install all Ubuntu updates and reboot.<br>
-</li><li>Log back in (over “ssh -X” if remote) and configure MySQL not to prompt for root password:<br>
+</li><li>Log back in and configure MySQL not to prompt for root password:<br>
 <pre><code>echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections<br>
 </code></pre>
 <ul><li>If using “-X”, Once logged in, you may get a message concerning the .Xauthority file. This file should be created automatically, but if it doesn't (occasionally this has happened on AWS instances), you can create it manually:<br>
@@ -38,9 +38,9 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li><li>OPTIONAL: If you want to use [Salt](Salt) to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup.<br>
 <pre><code>sudo apt-get -y install securityonion-onionsalt<br>
 </code></pre>
-</li><li>Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):<br>
-<pre><code>sudo sosetup<br>
-</code></pre>
+</li><li>Run the Setup wizard.  If local, you can run the GUI:  
+```sudo sosetup```
+Otherwise, if you are remote and logged in over ssh, you can a CLI-only setup using sosetup.conf.  For more information, please see /usr/share/securityonion/sosetup.conf.
 </li><li>The Setup wizard will walk you through configuring `/etc/network/interfaces` and will then reboot.<br>
 <ul><li>When prompted whether you would like to configure `/etc/network/interfaces` now, choose “Yes, configure /etc/network/interfaces!.”<br>
 </li><li>If you have more than one network interface, you’ll be asked which to specify which one should be the management interface.<br>
