@@ -38,9 +38,9 @@ sudo apt-get install python-software-properties=0.82.7<br>
 </li><li>OPTIONAL: If you want to use [Salt](Salt) to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup.<br>
 <pre><code>sudo apt-get -y install securityonion-onionsalt<br>
 </code></pre>
-</li><li>Run the Setup wizard.  If local, you can run the GUI:  
-```sudo sosetup```
-Otherwise, if you are remote and logged in over ssh, you can a CLI-only setup using sosetup.conf.  For more information, please see /usr/share/securityonion/sosetup.conf.
+</li><li>Run the Setup wizard.  If you are locally on the box, you can run the GUI:  
+```sudo sosetup```  
+Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup using sosetup.conf.  For more information, please see /usr/share/securityonion/sosetup.conf.
 </li><li>The Setup wizard will walk you through configuring `/etc/network/interfaces` and will then reboot.<br>
 <ul><li>When prompted whether you would like to configure `/etc/network/interfaces` now, choose “Yes, configure /etc/network/interfaces!.”<br>
 </li><li>If you have more than one network interface, you’ll be asked which to specify which one should be the management interface.<br>
