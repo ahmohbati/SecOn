@@ -50,7 +50,7 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 </li><li>When prompted, choose “Yes, make changes!"<br>
 </li><li>If you need to adjust any network settings manually (e.g. `MTU`), you may edit `/etc/network/interfaces` before rebooting.<br>
 </li><li>When ready to reboot, click "Yes, reboot!”<br>
-</li></ul></li><li>After rebooting, log back in (over “ssh -X” if remote) and start the Setup wizard again (sudo sosetup). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
+</li></ul></li><li>After rebooting, log back in and start the Setup wizard again (GUI if local, sosetup.conf CLI if remote). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
 </li><li>Select Advanced Setup.<br>
 </li><li>Choose whether the host being configured will be Standalone, Server, or Sensor.  If deploying a distributed environment (a master server and one or more slave sensors), the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  So the first box should be configured using "Server" and the remaining boxes should be configured using "Sensor".<br>
 <ul><li>Standalone<br>
