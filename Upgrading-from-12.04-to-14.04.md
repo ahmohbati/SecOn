@@ -10,6 +10,8 @@ Please read through this entire page before beginning!
 
 * If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
 
+* After upgrading the master server, ensure all sensors are upgraded as soon as possible to minimize disruption and/or incompatibility issues.  Mixed-release (12.04 + 14.04) environments are currently untested and unsupported.
+
 #### PREPARATION
 * Start with a fully configured Security Onion 12.04 installation.  
 
