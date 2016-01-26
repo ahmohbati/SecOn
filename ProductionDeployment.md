@@ -63,9 +63,6 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 </li><li>You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
 </li></ul></li><li>Server<br>
 <ul><li>You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
-</li><li>If you have multiple CPU cores available:<br>
-<ul><li>You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
-</li><li>You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
 </li></ul></li><li>You’ll be asked which IDS ruleset you would like to use.<br>
 </li><li>You will then be prompted for user account information for Sguil, Squert, ELSA and Snorby.<br>
 </li><li>You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
