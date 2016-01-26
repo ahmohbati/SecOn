@@ -53,21 +53,21 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 </li></ul></li><li>After rebooting, log back in and start the Setup wizard again (GUI if local, sosetup.conf CLI if remote). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
 </li><li>Select Advanced Setup.<br>
 </li><li>Choose whether the host being configured will be Standalone, Server, or Sensor.  If deploying a distributed environment (a master server and one or more slave sensors), the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  So the first box should be configured using "Server" and the remaining boxes should be configured using "Sensor".<br>
-<ul><li>Standalone<br>
-<ul><li>You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
-</li><li>If you have multiple CPU cores available:<br>
-<ul><li>You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
-</li><li>You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
-</li></ul></li><li>You’ll be asked which IDS ruleset you would like to use.<br>
-</li><li>You will then be prompted for user account information for Sguil, Squert, and ELSA.<br>
-</li><li>You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
-</li></ul></li><li>Server<br>
-<ul><li>You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
-</li></ul></li><li>You’ll be asked which IDS ruleset you would like to use.<br>
-</li><li>You will then be prompted for user account information for Sguil, Squert, ELSA and Snorby.<br>
-</li><li>You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
-</li></ul></li><li>Sensor<br>
-<ul><li>You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the `sudo adduser $user` command (replacing $user with the actual username).  (The new account must have a full home directory. If you do not create it when you create the account, copy `/etc/skel` to `/home/$user` and do `chown -R $user:$user /home/$user`. This is needed so the .ssh directory may be created to manage the connection.)  Then add the new user to the sudo group with the `sudo adduser $user sudo` command. Once Setup is complete, the user can be removed from the sudo group with the `sudo deluser $user sudo` command . For example, suppose you’re setting up a server and two separate sensors and you want to use sensor1 as the SSH username for the first sensor and sensor2 as the SSH username for the second sensor (these are just examples, you should replace sensor1 and sensor2 with your own usernames):<br>
+* Standalone<br>
+      * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
+      * If you have multiple CPU cores available:<br>
+      * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
+      * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
+      * You’ll be asked which IDS ruleset you would like to use.<br>
+      * You will then be prompted for user account information for Sguil, Squert, and ELSA.<br>
+      * You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
+* Server<br>
+      * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
+      * You’ll be asked which IDS ruleset you would like to use.<br>
+      * You will then be prompted for user account information for Sguil, Squert, ELSA and Snorby.<br>
+      * You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
+* Sensor<br>
+      * You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the `sudo adduser $user` command (replacing $user with the actual username).  (The new account must have a full home directory. If you do not create it when you create the account, copy `/etc/skel` to `/home/$user` and do `chown -R $user:$user /home/$user`. This is needed so the .ssh directory may be created to manage the connection.)  Then add the new user to the sudo group with the `sudo adduser $user sudo` command. Once Setup is complete, the user can be removed from the sudo group with the `sudo deluser $user sudo` command . For example, suppose you’re setting up a server and two separate sensors and you want to use sensor1 as the SSH username for the first sensor and sensor2 as the SSH username for the second sensor (these are just examples, you should replace sensor1 and sensor2 with your own usernames):<br>
 <ul><li>SERVER<br>
 <ul><li>run through sosetup, choosing Advanced Setup and choosing Server only (no sniffing)<br>
 </li></ul></li><li>FIRST SENSOR - username sensor1<br>
