@@ -23,3 +23,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 * You can change fonts by clicking File --> Change Font.
 
 * You can resize columns by right-clicking on the column heading.
+
+* [Create an Autocat rule to automatically classify events](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events)
+
+* [Configure email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
