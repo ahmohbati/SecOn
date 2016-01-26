@@ -16,6 +16,8 @@ For more information, please see:<br>
 
 You may want to install a local mail relay on your master server, configure it to relay mail to your corporate mail server, and then configure Sguil to send email to the local mail relay.
 
+**Please note**: Sguil will only send email alerts for what is considers *new* events. Ensure you classify events within the Sguil console, or consider [creating an Autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to automatically classify them if you prefer to receive emails for all instances of an alert.  Otherwise, you may not receive alerts as intended.
+
 ####How do I configure OSSEC to send emails?####
 Modify `/var/ossec/etc/ossec.conf` as follows:<br>
 <pre><code>  &lt;global&gt;<br>
