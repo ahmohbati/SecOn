@@ -4,4 +4,4 @@ For more information, please see:
 https://syslog-ng.org/
 
 * Configuration file located at `/etc/syslog-ng/syslog-ng.conf`
-* To forward Bro, OSSEC, or IDS alerts, look [here](https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration).
+* [Forward Bro, OSSEC, or IDS alerts via syslog.](https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration).
