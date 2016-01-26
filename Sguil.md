@@ -26,4 +26,6 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * [Create an Autocat rule to automatically classify events](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events).
 
-* [Configure email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email).
+* [Configure Sguil alert email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
+
+* [Configure retention for Sguil alerts](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#sguil-days-to-keep)
