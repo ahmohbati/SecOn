@@ -3,6 +3,6 @@ Security Onion uses OSSEC as a Host Intrusion Detection System.  OSSEC is monito
 For more information about OSSEC, please see:  
 http://ossec.net
 
-* To configure OSSEC to send email notification(s), look [here](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-ossec-to-send-emails).
+* [Configure OSSEC to send email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-ossec-to-send-emails)
 
-* To forward OSSEC alerts to another server via syslog, look [here](https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration#how-do-i-send-bro-and-ossec-logs-to-an-external-syslog-collector).
+* [Forward OSSEC alerts to another server via syslog](https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration#how-do-i-send-bro-and-ossec-logs-to-an-external-syslog-collector)
