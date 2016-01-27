@@ -8,30 +8,14 @@ Security Onion generates a lot of valuable information for you the second you pl
 However, Network Security Monitoring, as a practice, is not a solution you can plug into your network, make sure you see blinking lights and tell people you are "secure."  It requires active intervention from an analyst to qualify the quantity of information presented.  One of those regular interventions is to ensure that you are tuning properly and proactively attempting to reach an acceptable level of signal to noise.
 
 
-#### Identifying overly active signature ####
+#### Identifying overly active signatures ####
 Given the large number of analyst tools available in Security Onion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Squert, Sguil, and the command line.
 
 #### From Squert ####
-You can access the Squert interface from a web browser using the URL:  https://IP_ADDRESS/squert/.  You will need to log in using the username and password you set for Sguil.
-
-The following screenshots are from the same test network with an untuned sensor.  In Squert, the information we need is provided on the first page.  We can see the top signatures, top sources, and top destinations.  Again we see that we have one signature generating too many alerts and the same pair of IP Addresses.
-
-![images/managing-rules/securityonion-squert-01a.png](images/managing-rules/securityonion-squert-01a.png)
-
-![images/managing-rules/securityonion-squert-02.png](images/managing-rules/securityonion-squert-02.png)
-
-Under the "Query Tab" we can take the information we've gathered and build a simple query.
-
-![images/managing-rules/securityonion-squert-03.png](images/managing-rules/securityonion-squert-03.png)
-
-The resulting page give us a run down of how often the event was seen broken down by hour and day.  Clicking the "visuals" button, we get some nice charts, the most handy being a bar chart of number of alerts per hour.  Since we searched over a very long period, our X and Y labels are a bit cramped.
-
-![images/managing-rules/securityonion-squert-04.png](images/managing-rules/securityonion-squert-04.png)
-
-![images/managing-rules/securityonion-squert-05.png](images/managing-rules/securityonion-squert-05.png)
+You can access the Squert interface from a web browser using the URL:  https://IP_ADDRESS/squert/.  You will need to log in using the username and password you set for Sguil.  Click the Summary tab and then look at the TOP SIGNATURES section.
 
 #### From Sguil ####
-Sguil is a powerhouse of an interface for alerts and we since it allows us a more direct interaction with the database holding our alerts, we can gain a little bit more insight into the alerts, the associated IPs and the rule in general.
+Sguil is a powerhouse of an interface for alerts and we since it allows us a more direct interaction with the database holding our alerts, we can gain a little bit more insight into the alerts, the associated IPs, and the rules in general.
 
 Here, I have logged into the sguil interface and clicked on the "CNT" column to sort the alerts by the number of correlated alerts.
 
