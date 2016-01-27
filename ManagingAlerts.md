@@ -1,5 +1,6 @@
 Author: Scott Runnels
 Date: 2012/01/18
+Updated by Doug Burks
 
 #### Overview ####
 Security Onion generates a lot of valuable information for you the second you plug it into a TAP or SPAN port.  Between Bro logs, session data from prads, and full packet capture from netsniff-ng, you have, in a very short amount of time, enough information to begin making identifying areas of interest and making positive changes to your security stance.
@@ -8,28 +9,7 @@ However, Network Security Monitoring, as a practice, is not a solution you can p
 
 
 #### Identifying overly active signature ####
-Given the large number of analyst tools available in Security Onion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Snorby, Squert, Sguil, and the command line.
-
-#### From Snorby ####
-You can access the Snorby interface from a web browser using the URL https://IP_ADDRESS:444 and supplying the email address and password you set during the setup of Security Onion.
-
-The following screenshots are from a test network where I have left the sensors untuned.  I've selected "This Year" to show all events in the last year and each screenshot below shows the output when Signatures, Sources, and Destinations are selected.
-
-![images/managing-rules/securityonion-snorby-01.png](images/managing-rules/securityonion-snorby-01.png)
-
-![images/managing-rules/securityonion-snorby-02.png](images/managing-rules/securityonion-snorby-02.png)
-
-![images/managing-rules/securityonion-snorby-03.png](images/managing-rules/securityonion-snorby-03.png)
-
-We can clearly see that one signature is generating too much traffic and we can see in the corresponding Sources and Destinations graphs that the IPs 172.16.42.109 and 192.168.0.33 are the source and responder respectively in each case.
-
-Going into events, it's easy to see that the offending alert is a vast majority of the page.
-
-![images/managing-rules/securityonion-snorby-04.png](images/managing-rules/securityonion-snorby-04.png)
-
-Clicking on "View Rule" we get a window displaying the exact rule that generated the alert.  Fields to note in the alert are:  classtype: sid: and msg:.  Knowing these fields will help us when it comes time to make decisions on how to address this noisy alert.
-
-![images/managing-rules/securityonion-snorby-05.png](images/managing-rules/securityonion-snorby-05.png)
+Given the large number of analyst tools available in Security Onion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Squert, Sguil, and the command line.
 
 #### From Squert ####
 You can access the Squert interface from a web browser using the URL:  https://IP_ADDRESS/squert/.  You will need to log in using the username and password you set for Sguil.
@@ -279,7 +259,6 @@ sudo nsm_sensor_ps-restart --only-snort-alert
 
 
 #### Autocategorize events ####
-This solution only applies to Sguil.  If you use Snorby, it would be best to investigate one of the other solutions.
 The sguild server can be set to autocategorize events as it processes them.  This is a great way to have sguil process the events for us as it sees them, saving us from any laborious categorization.
 Our current Sguil packages have an AutoCat builder in the Sguil client and in the Squert web interface.  For older versions of Sguil, edit /etc/nsm/securityonion/autocat.conf on the sguild server.
 
