@@ -180,7 +180,7 @@ As mentioned before, take care in disabling signatures as it can be likely that 
 ```
      sudo /usr/bin/rule-update
 ```
-* Run the rule update on the slave machines:
+* If you're running salt on your distributed deployment, then the ruleset will replicate to your sensors automatically within 15 minutes.  If you're not running salt, then you can run rule-update on the slave machines:
 ```
      sudo /usr/bin/rule-update
 ```
