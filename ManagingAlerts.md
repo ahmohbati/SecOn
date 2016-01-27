@@ -19,8 +19,6 @@ Sguil is a powerhouse of an interface for alerts and we since it allows us a mor
 
 Here, I have logged into the sguil interface and clicked on the "CNT" column to sort the alerts by the number of correlated alerts.
 
-![images/managing-rules/securityonion-sguil-01.png](images/managing-rules/securityonion-sguil-01.png)
-
 ![images/managing-rules/securityonion-sguil-02.png](images/managing-rules/securityonion-sguil-02.png)
 
 #### From the Command Line ####
