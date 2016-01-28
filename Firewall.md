@@ -92,9 +92,9 @@ sudo ufw allow proto udp from a.b.c.d to any port 1514
 ```
 
 ### Firewall rules to allow analysts/administrators to connect to master ###
-Then add a rule like the following for the IP addresses or subnet that you'll be using to connect to the master as an analyst/administrator to ports 22 (SSH), 443 (Squert/CapMe), 444 (Snorby), 3154 (ELSA), 7734 (Sguil client), 9876 (Xplico):
+Then add a rule like the following for the IP addresses or subnet that you'll be using to connect to the master as an analyst/administrator to ports 22 (SSH), 443 (Squert/ELSA/CapMe), 7734 (Sguil client):
 ```
-sudo ufw allow proto tcp from a.b.c.d to any port 22,443,444,3154,7734,9876
+sudo ufw allow proto tcp from a.b.c.d to any port 22,443,7734
 ```
 
 ### Remove default "allow from Anywhere" rules ###
