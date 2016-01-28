@@ -23,10 +23,6 @@
 </li><li>Add the Security Onion stable repository:<br>
 <pre><code>sudo add-apt-repository -y ppa:securityonion/stable<br>
 </code></pre>
-</li><li>If you got a ValueError when running the previous command, please see the following note from jonh; otherwise, continue to the next step.  "when I did the <code>add-apt-repository -y ppa:securityonion/stable</code> command it gave a bunch of lines of errors with the final line being <code>ValueError: cannot convert float NaN to integer</code>. This appears to be a known bug: <a href='https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350'><a href='https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350'>https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350</a></a>. The reported workaround of downgrading python-software-properties got me past that error."<br>
-<pre><code># Only run this if you got a ValueError in the previous step!<br>
-sudo apt-get install python-software-properties=0.82.7<br>
-</code></pre>
 </li><li>Update:<br>
 <pre><code>sudo apt-get update<br>
 </code></pre>
