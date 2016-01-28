@@ -16,10 +16,7 @@
 </li><li>Log back in and configure MySQL not to prompt for root password:<br>
 <pre><code>echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections<br>
 </code></pre>
-<ul><li>If using “-X”, Once logged in, you may get a message concerning the .Xauthority file. This file should be created automatically, but if it doesn't (occasionally this has happened on AWS instances), you can create it manually:<br>
-<pre><code>touch ~/.Xauthority<br>
-</code></pre>
-</li></ul></li><li>Install python-software-properties if it's not already installed:<br>
+</li><li>Install python-software-properties if it's not already installed:<br>
 <pre><code>sudo apt-get -y install python-software-properties<br>
 </code></pre>
 </li><li>Add the Security Onion stable repository:<br>
