@@ -19,6 +19,8 @@ Please read through this entire page before beginning!
 * If you're upgrading over ssh and not already running byobu/screen/tmux, start byobu:  
 `byobu-enable`
 
+* You may want to record a transcript of the full upgrade so you can refer back to it in case of any errors.  For more information, please see <https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html#record-session>.
+
 * Ensure all 12.04 updates are installed:  
 `sudo soup`
 
