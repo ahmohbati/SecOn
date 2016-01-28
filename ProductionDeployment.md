@@ -12,7 +12,8 @@
 </li><li>Verify that you have Internet connectivity. If necessary, configure your [proxy](Proxy) settings</a>.<br>
 </li><li>If you installed from the Security Onion 14.04 ISO image, run `sudo soup`, reboot if prompted, and then skip to the "Setup wizard" step below.<br>
 </li><li>If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href='https://help.ubuntu.com/community/EnablingPAE'>install the PAE kernel</a>.<br>
-</li><li>Install all Ubuntu updates and reboot.<br>
+</li><li>Install all Ubuntu updates and reboot:  
+```sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot```
 </li><li>Log back in and configure MySQL not to prompt for root password:<br>
 <pre><code>echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections<br>
 </code></pre>
