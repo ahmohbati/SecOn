@@ -45,7 +45,7 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 </li><li>If you need to adjust any network settings manually (e.g. `MTU`), you may edit `/etc/network/interfaces` before rebooting.<br>
 </li><li>When ready to reboot, click "Yes, reboot!”<br>
 </li></ul></li><li>After rebooting, log back in and start the Setup wizard again (GUI if local, sosetup.conf CLI if remote). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
-</li><li>Select Advanced Setup.<br>
+</li><li>Select Production Mode.<br>
 </li><li>Choose whether the host being configured will be Standalone, Server, or Sensor.  If deploying a distributed environment (a master server and one or more slave sensors), the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  So the first box should be configured using "Server" and the remaining boxes should be configured using "Sensor".<br>
 * Standalone<br>
       * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
@@ -63,7 +63,7 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 * Sensor<br>
       * You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the `sudo adduser $user` command (replacing $user with the actual username).  (The new account must have a full home directory. If you do not create it when you create the account, copy `/etc/skel` to `/home/$user` and do `chown -R $user:$user /home/$user`. This is needed so the .ssh directory may be created to manage the connection.)  Then add the new user to the sudo group with the `sudo adduser $user sudo` command. Once Setup is complete, the user can be removed from the sudo group with the `sudo deluser $user sudo` command . For example, suppose you’re setting up a server and two separate sensors and you want to use sensor1 as the SSH username for the first sensor and sensor2 as the SSH username for the second sensor (these are just examples, you should replace sensor1 and sensor2 with your own usernames):<br>
 <ul><li>SERVER<br>
-<ul><li>run through sosetup, choosing Advanced Setup and choosing Server only (no sniffing)<br>
+<ul><li>run through sosetup, choosing Production Mode and choosing Server only (no sniffing)<br>
 </li></ul></li><li>FIRST SENSOR - username sensor1<br>
 <ul><li>create an account on the SERVER called sensor1 using the `sudo adduser sensor1` command<br>
 </li><li>add the new account to the sudo group using the `sudo adduser sensor1 sudo` command<br>
