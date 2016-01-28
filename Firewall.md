@@ -55,11 +55,9 @@ sudo ufw allow proto tcp from 172.30.15.10/32 to 172.30.15.16 port 80
 
 By default, a master server allows connections to the following ports from **any** IP address:
   * 22 - SSH
-  * 443 - Squert/CapMe
-  * 444 - Snorby
+  * 443 - Squert/ELSA/CapMe
   * 514 - Syslog
   * 1514/udp - OSSEC
-  * 3154 - ELSA
   * 7734 - Sguil client
   * 7736 - sensor connection to sguild
 
