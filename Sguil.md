@@ -24,7 +24,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * You can resize columns by right-clicking on the column heading.
 
-* [Create an Autocat rule to automatically classify events](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events).
+* It is important to ensure events displayed in Sguil are regularly classified, or else it could cause problems with the Sguil database. Consider creating an [autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to assist with this.
 
 * [Configure Sguil alert email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
 
