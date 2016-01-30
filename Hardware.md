@@ -9,6 +9,8 @@ In an enterprise distributed deployment, a master server should just be a master
 
 #### Sensors
 
+The following hardware requirements apply to sensors.  They do not apply to master-only installations as described above.
+
 ##### CPU
 Snort, Suricata, and Bro are very CPU intensive.  The more traffic you are monitoring, the more CPU cores you'll need.  A very rough ballpark estimate would be 200Mbps per Snort instance, Suricata worker, or Bro worker.  So if you have a fully saturated 1Gbps link and are running Snort and Bro, then you'll want at least 5 Snort instances and 5 Bro workers, which means you'll need at least 10 CPU cores for Snort and Bro with additional CPU cores for netsniff-ng and/or other services.
 
