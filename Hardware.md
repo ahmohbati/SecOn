@@ -1,7 +1,18 @@
 #### 32-bit vs 64-bit ####
 All of our packages are available in both 32-bit and 64-bit versions, but 64-bit is highly recommended due to the increased performance.
 
-#### RAM ####
+####UPS
+Like most IT systems, Security Onion has databases and those databases don't like power outages or other ungraceful shutdowns.  To avoid power outages and having to manually repair databases, please consider a UPS.
+
+#### Master server only
+In an enterprise distributed deployment, a master server should just be a master server and leave the sniffing and log collection to the separate sensor boxes.  In that scenario, a master server doesn't require nearly as much hardware as a sensor.  An enterprise master server should have 1-4 CPU cores, 8-16GB RAM, and 100GB to 1TB of disk space.  
+
+#### Sensors
+
+##### CPU
+Snort, Suricata, and Bro are very CPU intensive.  The more traffic you are monitoring, the more CPU cores you'll need.  A very rough ballpark estimate would be 200Mbps per Snort instance, Suricata worker, or Bro worker.  So if you have a fully saturated 1Gbps link and are running Snort and Bro, then you'll want at least 5 Snort instances and 5 Bro workers, which means you'll need at least 10 CPU cores for Snort and Bro with additional CPU cores for netsniff-ng and/or other services.
+
+##### RAM
 
 RAM usage is highly dependent on several variables:
   * the services that you enable
@@ -21,13 +32,13 @@ If you're deploying Security Onion in production to a large network (500Mbps - 1
 
 If you're buying a new server, go ahead and max out the RAM (it's cheap!).  As always, more is obviously better!
 
-#### Storage ####
+##### Storage
 Sensors that have full packet capture (and/or ELSA) enabled need LOTS of storage. For example, suppose you are monitoring a 50 Mb/s link, here are some quick calculations: 50Mb/s = 6.25 MB/s = 375 MB/minute = 22,500 MB/hour = 540,000 MB/day. So you're going to need about 540GB for one day's worth of pcaps (multiply this by the number of days you want to keep on disk for investigative/forensic purposes). Note that this is just pcaps (other logs will take up additional storage), so you may want to round up to the next terabyte to ensure sufficient storage. The more disk space you have, the more log retention you'll have for doing investigations after the fact. Disk is cheap, get all you can!
 
-#### NIC ####
+##### NIC
 You'll need at least two network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  I've had good experiences with Intel.
 
-#### Packets ####
+##### Packets
 You need some way of getting packets into your sensor interface(s).  If you're just evaluating Security Onion, you can replay [pcaps](Pcaps).  For a production deployment, you'll need a tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
 
 Sheer Simplicity and Portability (USB-powered):<br>
@@ -42,12 +53,10 @@ Netgear GS105E (requires Windows app for config):<br>
 More exhaustive list of enterprise switches with port mirroring:<br>
 <a href='http://www.miarec.com/knowledge/switches-port-mirroring'>http://www.miarec.com/knowledge/switches-port-mirroring</a><br>
 
-####Enterprise Tap Solutions:
+#####Enterprise Tap Solutions:
  * [Net Optics / Ixia](http://www.ixiacom.com/network-visibility-products)
  * [Arista Tap Aggregation Feature Set](http://www.arista.com/en/solutions/tap-aggregation)
  * [Gigamon](http://gigamon.com)
  * [cPacket](http://cpacket.com)
  * [Bigswitch Monitoring Fabric](http://www.bigswitch.com/products/big-monitoring-fabric)
 
-####UPS
-Like most IT systems, Security Onion has databases and those databases don't like power outages or other ungraceful shutdowns.  To avoid power outages and having to manually repair databases, please consider a UPS.
