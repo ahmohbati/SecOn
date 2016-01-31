@@ -1,4 +1,4 @@
-Please note this walkthrough was written several years ago for the previous version of Security Onion (12.04).  The current version of Security Onion is 14.04 and you can follow one of the updated [Installation] guides.
+Please note this walkthrough was written several years ago for the previous version of Security Onion (12.04).  The current version of Security Onion is 14.04 and you can follow one of the updated [Installation](https://github.com/Security-Onion-Solutions/security-onion/wiki/Installation) guides.
 
 #### Walkthrough ####
 
