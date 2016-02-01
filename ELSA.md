@@ -29,7 +29,7 @@ sh cli.sh "example.com" | jq '.'
 
 * ELSA tuning:
 
-https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
+https://github.com/mcholste/elsa/wiki/Documentation#Lowvolumeconfigurationtuning
 
 https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
 
