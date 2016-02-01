@@ -46,7 +46,7 @@ Always update the master server first before updating sensors.
 #### Using salt and soup to Update your entire Deployment ####
 [salt and soup](Salt#using-salt-to-install-updates-across-your-entire-deployment)
 
-#### Standard Ubuntu package management tools ####
+### Standard Ubuntu package management tools
 
 The "soup" command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
 
