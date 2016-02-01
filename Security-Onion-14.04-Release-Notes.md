@@ -18,9 +18,9 @@ https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1458039
 
 - When you run Setup, the Quick Setup and Advanced Setup options have been renamed.  Quick Setup is now called Evaluation Mode.  Advanced Setup is now called Production Mode.  
 
-- When choosing Evaluation Mode, the following services are enabled by default: Snort, Bro, netsniff-ng, pcap_agent, snort_agent, barnyard2, Xplico.  The following services are disabled by default: argus, prads, pads_agent, sancp_agent, http_agent. 
+- When choosing Evaluation Mode, the following services are enabled by default: Snort, Bro, netsniff-ng, pcap_agent, snort_agent, barnyard2, ELSA, Xplico.  The following services are disabled by default: argus, prads, pads_agent, sancp_agent, http_agent. 
 
-- When choosing Production Mode, you then have the option of Best Practices or Custom.  Best Practices asks a smaller number of questions and chooses the services that most folks want (Snort, Bro, netsniff-ng, pcap_agent, snort_agent, barnyard2).  Custom asks all questions just as Advanced Setup used to.
+- When choosing Production Mode, you then have the option of Best Practices or Custom.  Best Practices asks a smaller number of questions and chooses the services that most folks want (Snort, Bro, netsniff-ng, pcap_agent, snort_agent, barnyard2, ELSA).  Custom asks all questions just as Advanced Setup used to.
 
 - Setup now defaults to [Best Practices](Best-Practices) so it automatically disables prads, pads_agent, sancp_agent, argus, and http_agent since most users don't need these services.  If you need these services, you can choose Production Mode, then choose Custom, and it will ask if you want to enable them.  Alternatively, you can enable them after Setup has completed in /etc/nsm/HOSTNAME-SENSOR/sensor.conf.
 
