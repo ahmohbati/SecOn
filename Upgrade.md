@@ -19,6 +19,9 @@ https://help.ubuntu.com/community/Byobu
 #### soup - Security Onion UPdate ####
 
 We recommend using the "soup" script to automatically install updates while avoiding the MySQL/PF\_RING issues described below.
+
+**Please note**: soup will continue to install Ubuntu updates until Ubuntu stops 
+releasing updates for 12.04.  However, there won't be any more Security Onion updates for version 12.04 as all development will be on version 14.04 moving forward.
 ```
 sudo soup
 ```
