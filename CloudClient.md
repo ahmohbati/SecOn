@@ -25,6 +25,8 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 **This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
 
+This guide was written for Security Onion 12.04 and has NOT been tested with Security Onion 14.04 yet.  If you test with Security Onion 14.04 successfully, please update this Wiki page to reflect that.
+
 #### Security Onion Sensor ####
 
 We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1 (Network Configuration), allow it to write your `/etc/network/interfaces` file, but DON'T reboot at the end:
