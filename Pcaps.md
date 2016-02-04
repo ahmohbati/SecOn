@@ -1,6 +1,6 @@
 #### /opt/samples/ ####
 
-Security Onion 12.04 comes with several pcap samples in `/opt/samples/`.
+Security Onion 14.04 comes with several pcap samples in `/opt/samples/`.
 
 #### Links ####
 
