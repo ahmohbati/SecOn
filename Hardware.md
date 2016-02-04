@@ -4,6 +4,9 @@ All of our packages are available in both 32-bit and 64-bit versions, but 64-bit
 ####UPS
 Like most IT systems, Security Onion has databases and those databases don't like power outages or other ungraceful shutdowns.  To avoid power outages and having to manually repair databases, please consider a UPS.
 
+Affordable and Effective: <br/>
+http://www.apc.com/shop/us/en/products/APC-Back-UPS-550/P-BE550G
+
 #### Master server only
 In an enterprise distributed deployment, a master server should just be a master server and leave the sniffing and log collection to the separate sensor boxes.  In that scenario, a master server doesn't require nearly as much hardware as a sensor.  An enterprise master server should have 1-4 CPU cores, 8-16GB RAM, and 100GB to 1TB of disk space.  Many folks choose to host their master server in their VM farm since it has lower hardware requirements than sensors but needs higher reliability and availability.
 
