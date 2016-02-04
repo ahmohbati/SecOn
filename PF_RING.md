@@ -1,7 +1,6 @@
 #### Setup ####
 
-Setup will automatically ask you how many PF\_RING instances you'd like for Snort/Suricata and Bro (assuming
-you choose Advanced Setup and you have multiple cores) and will tell you
+Setup will automatically ask you how many PF\_RING instances (IDS engine processes) you'd like for Snort/Suricata and Bro (assuming you have multiple cores) and will tell you
 how to adjust after the fact.
 
 #### Tuning ####
