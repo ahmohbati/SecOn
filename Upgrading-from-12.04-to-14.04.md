@@ -76,6 +76,9 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 `sudo apt-get install -y software-properties-common`  
 `sudo add-apt-repository ppa:securityonion/stable`
 
+  * If you encounter an error in regard to mod_passenger.so, try disabling the module as follows:
+   `sudo a2dismod passenger`
+
 * Update all packages that are currently installed:  
 `sudo soup`
 
