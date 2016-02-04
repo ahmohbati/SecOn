@@ -12,8 +12,25 @@ sudo sostat | less
 ```
 sudo service nsm restart
 ```
-  * Check log files in `/var/log/nsm/` for any errors or possible clues.
-  * If this is a sensor sending alerts to master server, is autossh running?
+  * Check log files in `/var/log/nsm/` or other locations for any errors or possible clues:
+
+
+    *  Setup          `/var/log/nsm/sosetup.log`
+    *  Daily Log / PCAPs      `/nsm/sensor_data/{ HOSTNAME-INTERFACE }/dailylogs`
+    *  sguil           `/var/log/nsm/securityonion/sguild.log`
+    *  Suricata        `/var/log/nsm/{ HOSTNAME-INTERFACE }/suricata.log`
+    *  barnyard2       `/var/log/nsm/ { HOSTNAME-INTERFACE }/barnyard2.log`
+    *  netsniff-ng     `/var/log/nsm/{ HOSTNAME-INTERFACE }/netsniff-ng.log`
+    *  ELSA            `/nsm/elsa/data/elsa/log/node.log`
+    *  Bro              `/nsm/bro/logs/current`
+    *  snort_agent      `/var/log/nsm/{ HOSTNAME-INTERFACE }/snort_agent.log`
+    *  argus            `/var/log/nsm/{ HOSTNAME-INTERFACE }/argus.log`
+    *  http_agent       `/var/log/nsm/{ HOSTNAME-INTERFACE }/http_agent.log`
+    *  pads_agent       `/var/log/nsm/{ HOSTNAME-INTERFACE }/pads_agent.log`
+    *  prads_agent      `/var/log/nsm/{ HOSTNAME-INTERFACE }/prads.log`
+    *  sancp_agent      `/var/log/nsm/{ HOSTNAME-INTERFACE }/sancp_agent.log`
+
+* If this is a sensor sending alerts to master server, is autossh running?
 ```
 pgrep -lf autossh
 ```
