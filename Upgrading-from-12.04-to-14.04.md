@@ -4,6 +4,11 @@ Please read through this entire page before beginning!
 
 * We offer no guarantees that this upgrade process will work perfectly.
 
+#### WARNINGS
+
+* If you had manually installed ntopng, please see the warning here:
+https://github.com/Security-Onion-Solutions/security-onion/wiki/DeployingNtopng#impact-on-ntopng-of-upgrading-to-so-1404
+
 #### PRE-UPGRADE NOTES
 
 * The upgrade process will take at **least** 1-2 hours (per server/sensor), depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
