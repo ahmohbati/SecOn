@@ -23,6 +23,10 @@ The output is in JSON, so you might want to install jq and pipe the results into
 sh cli.sh "example.com" | jq '.'
 ````
 
+* [Problems with cron.pl?](https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.pl/security-onion/t3o5rcTf_-U/VJKMdkDsBAAJ)
+
+* [Problems with ELSA buffers?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ#why-does-sostat-show-a-high-number-of-elsa- buffers-in-queue)
+
 * For more information, please see:  
 [ELSA Query Tips](ELSAQueryTips)  
 [Custom ELSA Parsers](CustomELSAParsers)
@@ -36,6 +40,4 @@ https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22
 https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 
 https://groups.google.com/d/topic/enterprise-log-search-and-archive/Z-6YrCD_FkU/discussion
-
-
 
