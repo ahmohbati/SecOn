@@ -1,4 +1,9 @@
-## Current Ntopng Compatibility Problem with Security Onion
+## Impact on Ntopng of Upgrading to SO 14.04 
+
+At this time, if you have ntopng installed according to this Wiki page on a Security Onion 12.04 system, and you upgrade Security Onion to 14.04, it will break ntopng because of a pfring version alignment issue between ntopng and SO 14.04.  The current version of pfring in SO 14.04 is 6.0.3, which is too new to work with the older ntopng version needed for SO 12.04, but too old to work with the latest stable ntopng packages from the ntop repo.  It is already on the SO roadmap to upgrade pfring in SO 14.04 to version 6.2, which is the version required by the latest stable ntopng packages from the ntop repo.  At that time I plan to test ntopng on SO 14.04 and update this Wiki page accordingly.
+
+
+## Compatibility Problem of newer Ntopng releases with Security Onion
 
 As of July 8, 2015, neither the stable nor the development version of the ntopng packages appear to be compatible with Security Onion.  This likely coincides with the release of the new 2.x branch of ntopng, which appears to be built for use with PF_RING 6.1.1 while Security Onion is using PF_RING 6.0.2.  It might be possible to build ntopng 2.x from tarball but that is outside of the scope of this article.  I recommend you just use the ntopng 1.2.2 packages for now if you can find them.
 
