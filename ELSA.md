@@ -8,6 +8,8 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 * Can pivot to CapME to access full packet capture:  
 [CapME Authentication](CapMeAuthentication)
 
+* In Security Onion 14.04, ELSA has dynamic bar charts and dashboards.
+
 * Very fast, very scalable (each sensor has its own mysql database and sphinx index)
 
 * When you query the ELSA web interface, it queries all ELSA databases in parallel and then gives you the aggregate results
