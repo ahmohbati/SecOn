@@ -1,38 +1,38 @@
 
-## Logs
+#### Logs
 `/nsm/bro/logs`
 
 Bro monitors your network traffic and creates logs, such as:  
-#### conn.log
+##### conn.log
 * TCP/UDP/ICMP connections
 
 * For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/conn/main.bro.html#type-Conn::Info
 
-#### dns.log
+##### dns.log
 
 * DNS activity	  
 
 * For more information ,see: https://www.bro.org/sphinx-git/scripts/base/protocols/dns/main.bro.html#type-DNS::Info
 
-#### ftp.log
+##### ftp.log
 
 * FTP activity
 
 * For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/ftp/info.bro.html#type-FTP::Info
 	  
-#### http.log
+##### http.log
 
 * HTTP requests and replies
 
 * For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/http/main.bro.html#type-HTTP::Info
 	  
-#### ssl.log
+##### ssl.log
 
 * SSL/TLS handshake info
 	  
 * For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/ssl/main.bro.html#type-SSL::Info
 
-#### notice.log
+##### notice.log
 
 * Bro notices	  
 
@@ -43,19 +43,19 @@ https://www.bro.org/sphinx-git/script-reference/log-files.html
 
 As you can see, Bro log data can provide a wealth of information to the analyst, all easily accessible through [ELSA](https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA). 
 
-##Bro * n
+#### Bro * n
 `/opt/bro/etc/node.cfg`
 
 We compile Bro with [PF_RING](https://github.com/Security-Onion-Solutions/security-onion/wiki/PF_RING) so that you can spin up multiple Bro workers to handle more traffic.
 
-## Email
+#### Email
 `/opt/bro/etc/broctl.cfg`
 
 * To configure email notifications, please see:
 
 https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails
 
-## Syslog
+#### Syslog
 `/etc/syslog-ng/syslog-ng.conf`
 
 * To forward Bro logs to an external syslog collector, please see: 
