@@ -1,3 +1,5 @@
+Snorby is no longer included in Security Onion as of Security Onion 14.04.  
+
 #### Introduction ####
 
 This page will walk you through wiping the Snorby database.  This only pertains to the Snorby database and does not affect the Sguil database, the ELSA database, or any other data/config.
