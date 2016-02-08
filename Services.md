@@ -23,7 +23,7 @@ sudo service nsm restart
 # Server services
 Check status of sguild (Sguil server):
 ```
-sudo nsm_server-ps-status
+sudo nsm_server_ps-status
 ```
 
 Start sguild:
