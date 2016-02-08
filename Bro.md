@@ -36,7 +36,7 @@ Bro monitors your network traffic and creates logs, such as:
 
 * Bro notices	  
 
-* https://www.bro.org/sphinx-git/scripts/base/frameworks/notice/main.bro.html#type-Notice::Info
+* For more information, see: https://www.bro.org/sphinx-git/scripts/base/frameworks/notice/main.bro.html#type-Notice::Info
 
 ...and others, which can be researched here:  
 https://www.bro.org/sphinx-git/script-reference/log-files.html
