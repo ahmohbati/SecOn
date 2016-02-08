@@ -15,6 +15,11 @@ Stop all services:
 sudo service nsm stop
 ```
 
+Restart all services:
+```
+sudo service nsm restart
+```
+
 # Server services
 Check status of sguild (Sguil server):
 ```
@@ -29,6 +34,11 @@ sudo nsm_server-ps-start
 Stop sguild:
 ```
 sudo nsm_server-ps-stop
+```
+
+Restart sguild:
+```
+sudo nsm_server_ps-restart
 ```
 
 # Sensor services
@@ -53,6 +63,11 @@ sudo nsm_sensor_ps-start --only-bro
 ```
 
 Stop Bro:
+```
+sudo nsm_sensor_ps-stop --only-bro
+```
+
+Restart Bro:
 ```
 sudo nsm_sensor_ps-stop --only-bro
 ```
