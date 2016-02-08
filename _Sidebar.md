@@ -54,6 +54,7 @@
   * [FreeNX](FreeNX)
   * [Installing NtopNG](DeployingNtopng)
   * [Wiping the Snorby database](WipingSnorby)
+  * [Removing a Sensor](RemovingASensor)
 
 ## Help ##
   * [Support](Support)
