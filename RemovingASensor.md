@@ -1,7 +1,7 @@
 There may come a time when you need to disable a sensor interface, delete a sensor's configuration, or get rid of an entire sensor and its data altogether.  The steps below outline what is required to accomplish each objective. 
 
 #### Disable sensor interface
-* To disable a sensor interface, simply comment out the interface in `/etc/nsm/sensortab`.  
+* To disable a sensor interface, simply comment out the interface in `/etc/nsm/sensortab` and in `/opt/bro/etc/node.cfg`.  
 * Restart NSM service(s) (`sudo service nsm restart`) and/or reboot to ensure changes have taken effect.
 
 #### Delete sensor configuration
@@ -12,7 +12,7 @@ There may come a time when you need to disable a sensor interface, delete a sens
 
 #### Remove sensor reference from master server
 
-* On the master server, edit `/etc/elsa_web.conf`, then restart Apache (`sudo service apache2 restart`). 
+* On the master server, edit `/etc/elsa_web.conf`, remove the sensor from the `peers` section, then restart Apache (`sudo service apache2 restart`). 
 
 * In MySQL database securityonion_db, edit sensor table (you can simply set 
  active='N'), then restart sguild. 
