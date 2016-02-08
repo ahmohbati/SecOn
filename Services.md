@@ -28,12 +28,12 @@ sudo nsm_server-ps-status
 
 Start sguild:
 ```
-sudo nsm_server-ps-start
+sudo nsm_server_ps-start
 ```
 
 Stop sguild:
 ```
-sudo nsm_server-ps-stop
+sudo nsm_server_ps-stop
 ```
 
 Restart sguild:
@@ -69,5 +69,5 @@ sudo nsm_sensor_ps-stop --only-bro
 
 Restart Bro:
 ```
-sudo nsm_sensor_ps-stop --only-bro
+sudo nsm_sensor_ps-restart --only-bro
 ```
