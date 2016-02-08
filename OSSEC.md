@@ -4,7 +4,8 @@ For more information about OSSEC, please see:
 http://ossec.net
 
 #### Adding an Agent ####
-If you wish to install an OSSEC agent on other hosts on your network, ensure the agent is installed on the host(s) to be monitored, then perform the steps defined here:
+
+The OSSEC agent is cross platform and you can download agents for Windows/Unix/Linux/FreeBSD from the OSSEC website.  Once you've installed the OSSEC agent on the host(s) to be monitored, then perform the steps defined here:
 
 http://ossec-docs.readthedocs.org/en/latest/manual/agent/agent-management.html#managing-agents
 
