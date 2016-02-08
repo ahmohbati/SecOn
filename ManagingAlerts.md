@@ -1,5 +1,4 @@
-Author: Scott Runnels  
-Date: 2012/01/18  
+Originally Authored by Scott Runnels on 2012/01/18  
 Updated by Doug Burks
 
 #### Overview ####
