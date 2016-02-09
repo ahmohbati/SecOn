@@ -93,6 +93,9 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 
 #### CLEAN UP
 
+* Clean up old UFW file:  
+`sudo rm /etc/ufw/applications.d/apache2.2-common`
+
 * Remove any unnecessary packages:  
 `sudo apt-get autoremove`
 
