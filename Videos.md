@@ -5,3 +5,5 @@ Please note the videos in the Security Onion Video Playlist were created several
 [![Security Onion Video Playlist](http://img.youtube.com/vi/dyLbgrdagaA/0.jpg)](https://www.youtube.com/watch?v=dyLbgrdagaA&list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe)
 
 [Angler EK Analysis with Security Onion](https://youtu.be/1qUF3Bv7dIQ)
+
+[![Angler EK Analysis with Security Onion](http://img.youtube.com/vi/1qUF3Bv7dIQ/0.jpg)](https://www.youtube.com/watch?v=1qUF3Bv7dIQ)
