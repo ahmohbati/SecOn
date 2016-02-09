@@ -453,7 +453,33 @@ lower your `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf` and run
 sudo sguil-db-purge
 ````
 To keep `Uncategorized Events` from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.<br>
-<br>
+
+####Why does sostat show high load/CPU usage and large number of Perl processes?
+Some users have reported issues with Perl processes continually spinning up and consuming a large amount of CPU.  This is likely related to `/opt/elsa/web/cron.pl` trying to load duplicate entries in the saved_results table of the elsa_web database.  Try the following steps if you notice a continuous spawning of Perl processes, paired with high load/CPU usage:
+
+* To temporarily deal with the load, comment out the last line of `/etc/cron.d/elsa`.  
+**Make sure to uncomment this line when you are done troubleshooting, as this is not a a permanent solution.  Disabling this script prevents ELSA (`cron.pl`) from loading new data into it's mysql database, therefore it should only be disabled for troubleshooting purposes.** 
+
+* Try running cron.pl manually, observing the output:<br>
+`sudo perl /opt/elsa/web/cron.pl -c /etc/elsa_web.conf`<br>
+
+* Look for references to a failure or an error in ELSA's web.log:<br>
+`sudo grep failed /nsm/elsa/data/elsa/log/web.log `
+
+* Check to see if any error messages are returned similar to the following:<br>
+`Duplicate entry '800' for key 'PRIMARY' QUERY: INSERT INTO saved_results`
+
+If so, you can attempt to remedy this issue by performing the following actions:<br>
+
+* Back up elsa_web database:<br> 
+As root: `cp -R /var/lib/mysql/elsa_web /var/lib/mysql/elsa_web_backup`
+
+* Remove offending entries:<br>
+`mysql -uroot -Delsa_web -e 'delete from saved_results where qid=[offendingentry#]';`
+
+Be sure to uncomment the final line of `/etc/cron.d/elsa` if you previously commented it out, and monitor processes to verify the issue is no longer present.  If the issue persists, pose the question to the [mailing list](https://github.com/Security-Onion-Solutions/security-onion/wiki/MailingLists) for further assistance.<br><br>
+Also see: https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.pl/security-onion/t3o5rcTf_-U/VJKMdkDsBAAJ
+<br><br>
 [back to top](#top)
 <br>
 <a name="miscellaneous"></a>
