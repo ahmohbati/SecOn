@@ -24,10 +24,12 @@ The output is in JSON, so you might want to install jq and pipe the results into
 ````
 sh cli.sh "example.com" | jq '.'
 ````
+* Large number of Perl processes?<br>
+See: [Why does sostat show high load/CPU usage and large number of Perl processes?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ/_edit#why-does-sostat-show-high-loadcpu-usage-and-large-number-of-perl-processes) 
 
-* [Problems with cron.pl?](https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.pl/security-onion/t3o5rcTf_-U/VJKMdkDsBAAJ)
-
-* [Problems with ELSA buffers?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ#why-does-sostat-show-a-high-number-of-elsa- buffers-in-queue)
+* Problems with ELSA buffers?<br>
+See: 
+[Why does sostat show a high number of ELSA buffers in queue?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ#why-does-sostat-show-a-high-number-of-elsa-buffers-in-queue)
 
 * For more information, please see:  
 [ELSA Query Tips](ELSAQueryTips)  
@@ -42,4 +44,3 @@ https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22
 https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 
 https://groups.google.com/d/topic/enterprise-log-search-and-archive/Z-6YrCD_FkU/discussion
-
