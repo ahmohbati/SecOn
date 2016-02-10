@@ -93,6 +93,8 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 
 #### CLEAN UP
 
+* Review your Snort/Suricata/Bro/other configuration for any local customizations that you may need to re-apply.
+
 * Clean up old UFW file:  
 `sudo rm /etc/ufw/applications.d/apache2.2-common`
 
