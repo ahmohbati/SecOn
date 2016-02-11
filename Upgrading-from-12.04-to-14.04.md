@@ -78,9 +78,9 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 * If running in a VM, perform a snapshot.  
 
 * Open a terminal, and add back our stable PPA:  
-`sudo apt-get install -y software-properties-common`  
-`sudo add-apt-repository ppa:securityonion/stable`
-`sudo apt-get update`
+ `sudo apt-get install -y software-properties-common`<br/>
+ `sudo add-apt-repository ppa:securityonion/stable`<br/>
+ `sudo apt-get update`<br/>
 
   * If you encounter an error in regard to mod_passenger.so, try disabling the module as follows:
    `sudo a2dismod passenger`
