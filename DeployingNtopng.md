@@ -1,4 +1,9 @@
-## Impact on Ntopng of Upgrading to SO 14.04 
+## Ntopng works on SO 14.04 testing
+
+See more here:  
+https://github.com/branchnetconsulting/so1404-ntopng-installer
+
+## Ntopng does not work on SO 14.04 stable 
 
 At this time, if you have ntopng installed according to this Wiki page on a Security Onion 12.04 system, and you upgrade Security Onion to 14.04, it will break ntopng because of a pfring version alignment issue between ntopng and SO 14.04.  The current version of pfring in SO 14.04 is 6.0.3, which is too new to work with the older ntopng version needed for SO 12.04, but too old to work with the latest stable ntopng packages from the ntop repo.  It is already on the SO roadmap to upgrade pfring in SO 14.04 to version 6.2, which is the version required by the latest stable ntopng packages from the ntop repo.  At that time I plan to test ntopng on SO 14.04 and update this Wiki page accordingly.
 
