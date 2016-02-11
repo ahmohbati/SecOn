@@ -80,16 +80,14 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 * Open a terminal, and add back our stable PPA:  
 `sudo apt-get install -y software-properties-common`  
 `sudo add-apt-repository ppa:securityonion/stable`
-
+`sudo apt-get update`
   * If you encounter an error in regard to mod_passenger.so, try disabling the module as follows:
    `sudo a2dismod passenger`
-
-* Update all packages that are currently installed:  
-`sudo soup`
-
 * Add back any missing Security Onion packages by installing the securityonion-iso metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the securityonion-iso metapackage. In the command below, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed (securityonion-server, securityonion-sensor, securityonion-elsa, securityonion-all, etc).:  
 `sudo apt-get install securityonion-iso syslog-ng-core`  
 **IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
+* Update all packages that are currently installed:  
+`sudo soup`
 
 #### CLEAN UP
 
