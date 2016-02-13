@@ -1,2 +1,2 @@
-Some organizations have airgapped networks with no connection to the Internet.  Security Onion works fine on these airgapped networks, although it may be missing some updates due to lack of Internet connection.  @SkiTheSlicer has created a set of scripts to assist in updating airgapped Security Onion installations:  
+Some organizations have airgapped networks with no connection to the Internet.  Security Onion works fine on these airgapped networks, although it may be missing some updates due to lack of Internet connection.  [@SkiTheSlicer](https://github.com/SkiTheSlicer/) has created a set of scripts to assist in updating airgapped Security Onion installations:  
 https://github.com/SkiTheSlicer/securityonion-airgap
