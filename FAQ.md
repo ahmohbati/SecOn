@@ -454,7 +454,7 @@ sudo sguil-db-purge
 ````
 To keep `Uncategorized Events` from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.<br>
 
-####Why does sostat show high load/CPU usage and large number of Perl processes?
+####Why does `sostat` show high load/CPU usage and large number of `Perl processes`?
 Some users have reported issues with Perl processes continually spinning up and consuming a large amount of CPU.  This is likely related to `/opt/elsa/web/cron.pl` trying to load duplicate entries in the saved_results table of the elsa_web database.  Try the following steps if you notice a continuous spawning of Perl processes, paired with high load/CPU usage:
 
 * To temporarily deal with the load, comment out the last line of `/etc/cron.d/elsa`.  
