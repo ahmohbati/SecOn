@@ -16,6 +16,12 @@ To check and see if the Bro script has fired a Notice, go to ELSA, click Notice,
 
 https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails
 
+#### Intel
+
+* To install and configure the Critical Stack Intel Client for use with Bro, please see:
+
+https://github.com/Security-Onion-Solutions/security-onion/wiki/CriticalStackIntelClient
+
 #### Logs
 `/nsm/bro/logs`
 
