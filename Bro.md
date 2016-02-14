@@ -1,3 +1,20 @@
+#### Bro * n
+`/opt/bro/etc/node.cfg`
+
+We compile Bro with [PF_RING](https://github.com/Security-Onion-Solutions/security-onion/wiki/PF_RING) so that you can spin up multiple Bro workers to handle more traffic.
+
+#### Custom Scripts
+`/opt/bro/share/bro/site/local.bro`
+
+* You can add custom scripts in `/opt/bro/share/bro/site/local.bro`. 
+To check and see if the Bro script has fired a Notice, go to ELSA, click Notice, and then click "Top Notice Types".
+
+#### Email
+`/opt/bro/etc/broctl.cfg`
+
+* To configure email notifications, please see:
+
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails
 
 #### Logs
 `/nsm/bro/logs`
@@ -43,25 +60,12 @@ https://www.bro.org/sphinx-git/script-reference/log-files.html
 
 As you can see, Bro log data can provide a wealth of information to the analyst, all easily accessible through [ELSA](https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA). 
 
-#### Bro * n
-`/opt/bro/etc/node.cfg`
-
-We compile Bro with [PF_RING](https://github.com/Security-Onion-Solutions/security-onion/wiki/PF_RING) so that you can spin up multiple Bro workers to handle more traffic.
-
-#### Email
-`/opt/bro/etc/broctl.cfg`
-
-* To configure email notifications, please see:
-
-https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails
-
 #### Syslog
 `/etc/syslog-ng/syslog-ng.conf`
 
 * To forward Bro logs to an external syslog collector, please see: 
 
 https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration#how-do-i-send-bro-and-ossec-logs-to-an-external-syslog-collector
-
 
 For more information about Bro, please see:
 https://www.bro.org/
