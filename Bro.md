@@ -29,37 +29,49 @@ Bro monitors your network traffic and creates logs, such as:
 ##### conn.log
 * TCP/UDP/ICMP connections
 
-* For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/conn/main.bro.html#type-Conn::Info
+* For more information, see: 
+
+https://www.bro.org/sphinx-git/scripts/base/protocols/conn/main.bro.html#type-Conn::Info
 
 ##### dns.log
 
 * DNS activity	  
 
-* For more information ,see: https://www.bro.org/sphinx-git/scripts/base/protocols/dns/main.bro.html#type-DNS::Info
+* For more information ,see: 
+
+https://www.bro.org/sphinx-git/scripts/base/protocols/dns/main.bro.html#type-DNS::Info
 
 ##### ftp.log
 
 * FTP activity
 
-* For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/ftp/info.bro.html#type-FTP::Info
+* For more information, see: 
+
+https://www.bro.org/sphinx-git/scripts/base/protocols/ftp/info.bro.html#type-FTP::Info
 	  
 ##### http.log
 
 * HTTP requests and replies
 
-* For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/http/main.bro.html#type-HTTP::Info
+* For more information, see: 
+
+https://www.bro.org/sphinx-git/scripts/base/protocols/http/main.bro.html#type-HTTP::Info
 	  
 ##### ssl.log
 
 * SSL/TLS handshake info
 	  
-* For more information, see: https://www.bro.org/sphinx-git/scripts/base/protocols/ssl/main.bro.html#type-SSL::Info
+* For more information, see: 
+
+https://www.bro.org/sphinx-git/scripts/base/protocols/ssl/main.bro.html#type-SSL::Info
 
 ##### notice.log
 
 * Bro notices	  
 
-* For more information, see: https://www.bro.org/sphinx-git/scripts/base/frameworks/notice/main.bro.html#type-Notice::Info
+* For more information, see: 
+
+https://www.bro.org/sphinx-git/scripts/base/frameworks/notice/main.bro.html#type-Notice::Info
 
 ...and others, which can be researched here:  
 https://www.bro.org/sphinx-git/script-reference/log-files.html
@@ -73,5 +85,17 @@ As you can see, Bro log data can provide a wealth of information to the analyst,
 
 https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration#how-do-i-send-bro-and-ossec-logs-to-an-external-syslog-collector
 
+#### Top for Bro
+
+* To view "top-like" information for Bro logs, consider using BroTop.
+
+* "Brotop lets you stream your bro logs to the browser for easy debugging and a real-time glimpse into whats being processed".
+
+* Written in Go, BroTop is a dependency-free binary that can be downloaded and run immediately, auto-detecting Bro log paths.
+
+* For more information about BroTop, please see: 
+
+https://github.com/criticalstack/brotop
+<br/><br/>
 For more information about Bro, please see:
 https://www.bro.org/
