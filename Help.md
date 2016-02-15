@@ -39,6 +39,16 @@ If you're having problems with Snorby, check the log files in `/opt/snorby/log/`
 ```
 pgrep -lf delayed_job
 ```
+
+ * Having trouble with MySQL?  Check all databases to see if any tables are are marked as crashed or corrupt.
+```
+sudo mysqlcheck -A
+```
+ * Check specific MySQL databases by running something similar the following:
+```
+sudo mysqlcheck -c securityonion_db
+```
+
   * Are you able to duplicate the problem on a fresh Security Onion installation?
   * Check the [Roadmap](Roadmap) to see if this is a known issue that we are working on.
   * If all else fails, please send an email to our [security-onion mailing list](MailingLists).
