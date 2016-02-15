@@ -34,7 +34,8 @@ sudo service nsm restart
 ```
 pgrep -lf autossh
 ```
-  * If you're having problems with Snorby, check the log files in `/opt/snorby/log/` and `/var/log/apache2/` and see if its processes are running:
+  * **Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.<br/><br/> 
+If you're having problems with Snorby, check the log files in `/opt/snorby/log/` and `/var/log/apache2/` and see if its processes are running:
 ```
 pgrep -lf delayed_job
 ```
