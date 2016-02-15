@@ -78,6 +78,10 @@ https://www.bro.org/sphinx-git/script-reference/log-files.html
 
 As you can see, Bro log data can provide a wealth of information to the analyst, all easily accessible through [ELSA](https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA). 
 
+####PF_RING
+* To adjust the number of PF_RING instances for Bro, please see:<br/>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/PF_RING#bro
+
 #### Syslog
 `/etc/syslog-ng/syslog-ng.conf`
 
