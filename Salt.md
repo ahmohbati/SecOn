@@ -31,7 +31,7 @@ Sensors need to be able to connect to the master server on ports 4505/tcp and 45
 http://docs.saltstack.com/topics/tutorials/firewall.html
 
 #### Installation ####
-For new deployments, Advanced Setup checks to see if the securityonion-onionsalt package is installed and, if so, asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.
+For new deployments, [Best Practices](https://github.com/Security-Onion-Solutions/security-onion/wiki/Best-Practices) (Production Mode) checks to see if the `securityonion-onionsalt` package is installed and, if so, enables Salt by default.  If choosing the "Custom" configuration option (Production Mode), simply answer "Yes" at the prompt (where applicable), and setup will configure salt-master and/or salt-minion services and open firewall ports as necessary.
 
 For existing deployments, please see:
 
