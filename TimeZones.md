@@ -12,6 +12,9 @@ Additionally, UTC comes in quite handy when you have sensors in different time z
 Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.
 
 ####How do I change the timezone in Snorby?####
+
+**Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.
+
 * click Settings in the upper right corner
 * click the drop-down box next to "Time zone"
 * select your time zone from the list
