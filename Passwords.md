@@ -28,6 +28,7 @@ Squert authenticates against the Sguil user database, so you should be able to l
 ELSA authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil.
 
 #### Snorby ####
+**Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.<br/><br/>
 Snorby does not authenticate against the Sguil user database.  Log into Snorby using the EMAIL ADDRESS and password you specified in Setup.
 
 #### Reset Snorby Password ####
