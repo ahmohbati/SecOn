@@ -6,8 +6,7 @@ Please read through this entire page before beginning!
 
 #### WARNINGS
 
-* If you had manually installed ntopng, please see the warning here:
-https://github.com/Security-Onion-Solutions/security-onion/wiki/DeployingNtopng#impact-on-ntopng-of-upgrading-to-so-1404
+* Before upgrading production sensors, you should fully test this upgrade process on test sensors in a test environment that closely matches your production environment.
 
 #### PRE-UPGRADE NOTES
 
