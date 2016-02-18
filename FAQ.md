@@ -548,12 +548,7 @@ All known issues with the dashboard and sensor cache job have been resolved with
 <a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'><a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'>http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a></a>
 
 ####How do I run `ntop` on Security Onion?####
-In the old Security Onion 10.04, Snorby was running on port 3000 (which ntop also defaults to).  In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.<br>
-<br>
-ntop defaults to port 3000, which is already being used by Snorby.  You can change ntop's port by editing `/etc/default/ntop` like this:<br>
-<pre><code>GETOPT="-w 0 -W 4000"<br>
-</code></pre>
-This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!<br>
+[Deploying NtopNG](DeployingNtopng)
 
 ####How do I perform "X" in Ubuntu?####
 Security Onion is based on Ubuntu, but we don't provide community support for the Ubuntu OS itself.  If you have questions about Ubuntu, you should check the Ubuntu website, forums, and Google.
