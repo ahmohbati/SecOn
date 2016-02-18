@@ -10,6 +10,8 @@ Please read through this entire page before beginning!
 
 #### PRE-UPGRADE NOTES
 
+* If you are behind a proxy, make sure that you've [configured your proxy settings](Proxy).  In the commands below that use sudo, you may need to use "sudo -i" so that your proxy settings are applied to the sudo environment.
+
 * The upgrade process will take at **least** 1-2 hours (per server/sensor), depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
 
 * If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
