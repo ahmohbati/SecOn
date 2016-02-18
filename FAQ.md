@@ -488,6 +488,9 @@ Also see: https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.
 #### Where can I find interesting pcaps to replay? ####
 [Pcaps](Pcaps)
 
+#### Should I backup my Security Onion box? ####
+Network Security Monitoring as a whole is considered "best effort". It is not a "mission critical" resource like a file server or web server.  Since we're dealing with "big data" (potentially terabytes of full packet capture), backups would be prohibitively expensive.  Most organizations don't do any backups and instead just rebuild boxes when necessary.
+
 #### How can I add and test local rules? ####
 [Adding local rules and testing them with scapy](AddingLocalRules)
 
@@ -499,7 +502,8 @@ where `PACKAGE-NAME` is usually something like `securityonion-snort`.  Here's a 
 <a href='https://launchpad.net/~securityonion/+archive/stable'>https://launchpad.net/~securityonion/+archive/stable</a>
 
 ####How do I get ELSA to display bar charts?####
-ELSA's bar charts require flash, so one option would be to replace Chromium with <a href='http://www.google.com/chrome/'>Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:<br>
+In the new Security Onion 14.04, ELSA should display bar charts automatically.  In the old Security Onion 12.04, 
+ELSA's bar charts required flash, so one option would be to replace Chromium with <a href='http://www.google.com/chrome/'>Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:<br>
 <pre><code>sudo update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
 </code></pre>
 
