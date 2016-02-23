@@ -1,8 +1,8 @@
-* Developed by Dustin Webber:  
-https://github.com/snorby/snorby
-
 * Snorby is now considered un-maintained and is no longer included in Security Onion as of Security Onion 14.04.  If you are currently using Snorby in your 12.04 installation, you should go ahead and begin transitioning to [Squert](Squert), [Sguil](Sguil), and/or [ELSA](ELSA).  To disable Snorby in your existing deployment, please see:  
 https://github.com/Security-Onion-Solutions/security-onion/wiki/DisablingProcesses#disabling-snorby
+
+* Originally developed by Dustin Webber:  
+https://github.com/snorby/snorby
 
 * Web 2.0, Ajax, Ruby-on-Rails
 
