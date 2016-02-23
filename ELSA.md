@@ -3,6 +3,8 @@ https://code.google.com/p/enterprise-log-search-and-archive/
 
 * Web interface for hunting through logs (Bro, Snort, OSSEC, syslog)
 
+* Works best with Chromium/Chrome browser
+
 * More data types than all other interfaces
 
 * Can pivot to CapME to access full packet capture:  
