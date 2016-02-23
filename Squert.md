@@ -3,7 +3,7 @@ http://www.squertproject.org/
 
 * PHP web interface to Sguil database
 
-* Works best with Chromium/Chrome
+* Works best with Chromium/Chrome browser
 
 * Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil
 
