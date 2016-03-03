@@ -243,6 +243,8 @@ sudo nsm_sensor_ps-restart --only-snort-alert
 The sguild server can be set to autocategorize events as it processes them.  This is a great way to have sguil process the events for us as it sees them, saving us from any laborious categorization.
 Our current Sguil packages have an AutoCat builder in the Sguil client and in the Squert web interface.  For older versions of Sguil, edit /etc/nsm/securityonion/autocat.conf on the sguild server.
 
+Please note the following instructions are for older versions of Sguil only.  If you're running the current version of Sguil you shouldn't use autocat.conf and should instead use the AutoCat builder in the Sguil client or Squert web interface.
+
 * edit /etc/nsm/securityonion/autocat.conf
 > > The autocat.conf file requires that you use the following format to identify events that you want categorized automatically.
 ```
