@@ -535,6 +535,11 @@ In the Rails console, initiate the GeoIP job:<br>
 quit<br>
 </code></pre>
 
+####Why isn't Squert showing GeoIP data properly?####
+If the Squert map is not showing the country for IPs, try running the following:<br>
+<pre><code>sudo /usr/bin/php -e /var/www/so/squert/.inc/ip2c.php 0'/<br>
+</code></pre>
+
 ####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?####
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
 
