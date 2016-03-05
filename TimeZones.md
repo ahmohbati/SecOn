@@ -11,6 +11,9 @@ Additionally, UTC comes in quite handy when you have sensors in different time z
 
 Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.
 
+####How do I change the timezone for Ubuntu?####
+To switch to UTC, execute sudo dpkg-reconfigure tzdata . Scroll to the bottom of the Continents list and select "None of the above". In the second list, select UTC. (http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt)
+
 ####How do I change the timezone in Snorby?####
 
 **Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.
