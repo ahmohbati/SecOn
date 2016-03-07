@@ -1,7 +1,7 @@
 #### If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 14.04 32-bit/64-bit (not using our ISO image), follow these steps: ####
   1. First, check the [Hardware Requirements](Hardware) page.
-  1. Download the ISO image for your preferred flavor of Ubuntu 14.04.5, verify its checksum,  and boot from it.<br>
-  1. Follow the prompts in the installer.  When prompted to `encrypt home folder` option, **DO NOT** enable this feature.  When asked about automatic updates, **DO NOT** enable automatic updates.<br>
+  1. Download the ISO image for your preferred flavor of Ubuntu 14.04.5, verify the ISO image,  and boot from it.<br>
+  1. Follow the prompts in the installer.  When prompted to `encrypt home folder` or `encrypt partition` option, **DO NOT** enable this feature.  When asked about automatic updates, **DO NOT** enable automatic updates.<br>
   1. Reboot into your new installation.<br>
   1. Login using the username/password you specified during installation.<br>
   1. Verify that you have Internet connectivity.  If necessary, configure your [proxy](Proxy) settings</a>.<br>
