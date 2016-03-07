@@ -1,7 +1,7 @@
 #### Release Notes
 
-- As always, make sure you verify the checksum of the downloaded ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums.txt
+- As always, make sure you verify the downloaded ISO image:  
+https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md
 
 - The ISO boot menu no longer has the Live Desktop option.  Instead, choose the Install option to go directly to the installer (or simply wait 10 seconds for it to automatically boot into the installer).
 
