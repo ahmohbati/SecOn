@@ -3,7 +3,6 @@
   * [Tools](Tools)
   * [Hardware Requirements](Hardware)
   * [Download/Install](Installation)
-  * [Verifying ISO](Verifying-ISO)
   * [Booting Issues](TroubleBooting)
   * [After Installation](PostInstallation)
   * [UTC and Time Zones](TimeZones)
