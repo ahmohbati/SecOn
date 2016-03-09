@@ -10,7 +10,7 @@ Please read through this entire page before beginning!
 
 #### PRE-UPGRADE NOTES
 
-* If you are behind a proxy, make sure that you've [configured your proxy settings](Proxy).  In the commands below that use sudo, you may need to use "sudo -i" so that your proxy settings are applied to the sudo environment.
+* If you are behind a proxy, make sure that you've [configured your proxy settings](Proxy).  In the commands below that use sudo, you may need to use `sudo -i` so that your proxy settings are applied to the sudo environment.
 
 * The upgrade process will take at **least** 1-2 hours (per server/sensor), depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
 
@@ -86,7 +86,7 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 * If you encounter an error in regard to mod_passenger.so, try disabling the module as follows:
    `sudo a2dismod passenger`
 
-* Add back any missing Security Onion packages by installing the securityonion-iso metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the securityonion-iso metapackage. In the command below, you can replace securityonion-iso with the same Security Onion metapackage(s) you originally installed (securityonion-server, securityonion-sensor, securityonion-elsa, securityonion-all, etc).:  
+* Add back any missing Security Onion packages by installing the `securityonion-iso` metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the `securityonion-iso` metapackage. In the command below, you can replace `securityonion-iso` with the same Security Onion metapackage(s) you originally installed (`securityonion-server`, `securityonion-sensor`,  `securityonion-all`, `securityonion-elsa`, etc).:  
 `sudo apt-get install securityonion-iso syslog-ng-core`  
 **IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
 * Update all packages that are currently installed:  
