@@ -12,8 +12,6 @@ Security Onion 14.04 comes with several pcap samples in `/opt/samples/`.
 
   * http://old.honeynet.org/scans/
 
-  * http://www.novell.com/connectionmagazine/laurachappell.html
-
   * http://cctf.shmoo.com/
 
   * http://ee.lbl.gov/anonymized-traces.html
