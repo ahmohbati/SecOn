@@ -1,27 +1,3 @@
-#### Bro * n
-`/opt/bro/etc/node.cfg`
-
-We compile Bro with [PF_RING](https://github.com/Security-Onion-Solutions/security-onion/wiki/PF_RING) so that you can spin up multiple Bro workers to handle more traffic.
-
-#### Custom Scripts
-`/opt/bro/share/bro/site/local.bro`
-
-* You can add custom scripts in `/opt/bro/share/bro/site/local.bro`. 
-To check and see if the Bro script has fired a Notice, go to ELSA, click Notice, and then click "Top Notice Types".
-
-#### Email
-`/opt/bro/etc/broctl.cfg`
-
-* To configure email notifications, please see:
-
-https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails
-
-#### Intel
-
-* To install and configure the Critical Stack Intel Client for use with Bro, please see:
-
-https://github.com/Security-Onion-Solutions/security-onion/wiki/CriticalStackIntelClient
-
 #### Logs
 `/nsm/bro/logs`
 
@@ -77,6 +53,32 @@ https://www.bro.org/sphinx-git/scripts/base/frameworks/notice/main.bro.html#type
 https://www.bro.org/sphinx-git/script-reference/log-files.html
 
 As you can see, Bro log data can provide a wealth of information to the analyst, all easily accessible through [ELSA](https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA). 
+
+#### Intel
+
+* You can add your own Intel to `/opt/bro/share/bro/intel/intel.dat`.
+
+* To install and configure the Critical Stack Intel Client for use with Bro, please see:
+
+https://github.com/Security-Onion-Solutions/security-onion/wiki/CriticalStackIntelClient
+
+#### Bro * n
+`/opt/bro/etc/node.cfg`
+
+We compile Bro with [PF_RING](https://github.com/Security-Onion-Solutions/security-onion/wiki/PF_RING) so that you can spin up multiple Bro workers to handle more traffic.
+
+#### Custom Scripts
+`/opt/bro/share/bro/site/local.bro`
+
+* You can add custom scripts in `/opt/bro/share/bro/site/local.bro`. 
+To check and see if the Bro script has fired a Notice, go to ELSA, click Notice, and then click "Top Notice Types".
+
+#### Email
+`/opt/bro/etc/broctl.cfg`
+
+* To configure email notifications, please see:
+
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-bro-to-send-emails
 
 #### Syslog
 `/etc/syslog-ng/syslog-ng.conf`
