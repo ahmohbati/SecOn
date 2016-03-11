@@ -22,8 +22,6 @@ Please read through this entire page before beginning!
 * Start with a fully configured Security Onion 12.04 installation.  
 
 * If running in a VM, create a snapshot so that you can revert if necessary.
-* If you're upgrading over ssh and not already running byobu/screen/tmux, start byobu:  
-`byobu-enable`
 
 * You may want to record a transcript of the full upgrade so you can refer back to it in case of any errors.  For more information, please see <https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html#record-session>.
 
