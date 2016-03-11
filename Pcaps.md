@@ -10,6 +10,8 @@ Security Onion 14.04 comes with several pcap samples in `/opt/samples/`.
 
   * http://www.netresec.com/?page=PcapFiles
 
+  * https://github.com/bro/bro/tree/master/testing/btest/Traces
+
   * http://old.honeynet.org/scans/
 
   * http://cctf.shmoo.com/
