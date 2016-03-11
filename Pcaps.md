@@ -24,8 +24,6 @@ Security Onion 14.04 comes with several pcap samples in `/opt/samples/`.
 
   * https://www.evilfingers.com/repository/pcaps.php
 
-  * https://www.openpacket.org/capture
-
   * http://www.honeynet.org/node/504
 
   * https://github.com/markofu/hackeire/tree/master/2011/pcap
