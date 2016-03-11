@@ -465,6 +465,8 @@ Some users have reported issues with Perl processes continually spinning up and 
 
 * Try running cron.pl manually, observing the output:<br>
 `sudo perl /opt/elsa/web/cron.pl -c /etc/elsa_web.conf`<br>
+or if you're on 14.04:  
+`sh /opt/elsa/contrib/securityonion/contrib/securityonion-elsa-cron.sh`
 
 * Look for references to a failure or an error in ELSA's web.log:<br>
 `sudo grep failed /nsm/elsa/data/elsa/log/web.log `
