@@ -1,4 +1,4 @@
-Security Onion uses OSSEC as a Host Intrusion Detection System.  OSSEC is monitoring and defending Security Onion itself and you can add OSSEC agents to monitor other hosts on your network as well.
+Security Onion uses OSSEC as a Host Intrusion Detection System (HIDS).  OSSEC is monitoring and defending Security Onion itself and you can add OSSEC agents to monitor other hosts on your network as well.
 
 Additionally, you may want to:
 
