@@ -2,6 +2,36 @@
 
 This page describes how to configure email for alerting and reporting.  Applications such as Sguil and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script and from Bro.
 
+####How do I configure the OS itself to send emails?####
+Install and configure your favorite mail server.  Depending on your needs, this could be something simple like `nullmailer` (recommended) or something more complex like `exim4`.<br>
+<br>
+Here are some `nullmailer` instructions provided by Michael Iverson:<br>
+<pre><code>sudo apt-get install nullmailer<br>
+# edit /etc/mailname to hold your "from" domain name. (If you were google, you'd use "gmail.com".)<br>
+# edit /etc/nullmailer/adminaddr to contain the address you want mail to root to be routed to.<br>
+# edit /etc/nullmailer/remotes to contain the mail server to forward email to. <br>
+</code></pre>
+Alternatively, here are some instructions for the more complex `exim4`:<br>
+<pre><code>sudo apt-get -y install mailutils<br>
+sudo dpkg-reconfigure exim4-config<br>
+</code></pre>
+Once you've configured your mail server and verified that it can send email properly, you might want to create a daily cronjob to execute `/usr/bin/sostat` and email you the output:<br>
+<pre><code># /etc/cron.d/sostat<br>
+#<br>
+# crontab entry to run sostat and email its output<br>
+<br>
+SHELL=/bin/sh<br>
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin<br>
+EMAIL=YourUsername@YourDomain.com<br>
+<br>
+01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat 2&gt;&amp;1 | mail -s "$HOSTNAME stats" $EMAIL<br>
+<br>
+</code></pre>
+
+If you don't already have the `mail` utility, you can try installing:<br>
+<pre><code>sudo apt-get install mailutils<br>
+</code></pre>
+
 #### How do I configure Sguil to send alerts via email?<br>####
 Modify `/etc/nsm/securityonion/sguild.email` (on the master server) as needed and restart sguild:
 ```
@@ -47,35 +77,7 @@ You can then have ELSA send an email alert by doing the following:
 * click "Alert or Schedule"
 * choose your parameters and click the Submit button
 
-####How do I configure the OS itself to send emails?####
-Install and configure your favorite mail server.  Depending on your needs, this could be something simple like `nullmailer` (recommended) or something more complex like `exim4`.<br>
-<br>
-Here are some `nullmailer` instructions provided by Michael Iverson:<br>
-<pre><code>sudo apt-get install nullmailer<br>
-# edit /etc/mailname to hold your "from" domain name. (If you were google, you'd use "gmail.com".)<br>
-# edit /etc/nullmailer/adminaddr to contain the address you want mail to root to be routed to.<br>
-# edit /etc/nullmailer/remotes to contain the mail server to forward email to. <br>
-</code></pre>
-Alternatively, here are some instructions for the more complex `exim4`:<br>
-<pre><code>sudo apt-get -y install mailutils<br>
-sudo dpkg-reconfigure exim4-config<br>
-</code></pre>
-Once you've configured your mail server and verified that it can send email properly, you might want to create a daily cronjob to execute `/usr/bin/sostat` and email you the output:<br>
-<pre><code># /etc/cron.d/sostat<br>
-#<br>
-# crontab entry to run sostat and email its output<br>
-<br>
-SHELL=/bin/sh<br>
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin<br>
-EMAIL=YourUsername@YourDomain.com<br>
-<br>
-01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat 2&gt;&amp;1 | mail -s "$HOSTNAME stats" $EMAIL<br>
-<br>
-</code></pre>
 
-If you don't already have the `mail` utility, you can try installing:<br>
-<pre><code>sudo apt-get install mailutils<br>
-</code></pre>
 
 ####How do I configure Bro to send emails?####
 Edit `/opt/bro/etc/broctl.cfg` and set the following:<br>
