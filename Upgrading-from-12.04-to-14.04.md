@@ -57,14 +57,17 @@ sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 * Initiate upgrade to Ubuntu 14.04:  
 `sudo do-release-upgrade`
 
-* Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:  
-  * /etc/sudoers `Y`
-  * /etc/apache2/mods-available/ssl.conf  `Y`
-  * /etc/apache2/apache2.conf  `Y`
-  * /etc/apache2/ports.conf  `Y`
-  * /etc/syslog-ng/syslog-ng.conf  `N`
-  * /etc/php5/apache2/php.ini  `Y`
-  * /etc/xdg/xdg-xubuntu/menus/xfce-applications.menu  `Y` 
+* Follow the prompts. If you receive a prompt regarding xscreensaver, select OK. You may receive prompts regarding files that have changed like the following:
+
+    | file       | answer |
+    | ---------- | :----: |
+    | /etc/sudoers | `Y` |
+    | /etc/apache2/mods-available/ssl.conf | `Y` |
+    | /etc/apache2/apache2.conf | `Y` |
+    | /etc/apache2/ports.conf | `Y` |
+    | /etc/syslog-ng/syslog-ng.conf | `N` |
+    | /etc/php5/apache2/php.ini | `Y` |
+    | /etc/xdg/xdg-xubuntu/menus/xfce-applications.menu | `Y` |
 
 These are files that Security Onion modifies, and you may receive prompts for additional files that you have modified. The safest option for each of these is to choose to install the package maintainer’s version (`Y`, where applicable), with the exception of the prompt in regard to syslog-ng.conf. Choosing the installation of the package maintainer's version will back up the existing file in case you need to review it later for any custom modifications you had made.  **IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
 
