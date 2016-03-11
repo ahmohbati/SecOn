@@ -10,6 +10,7 @@
   * [Updating](Upgrade)
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
   * [Videos](Videos)
+  * [Architecture](Architecture)
 
 ## Interfaces ##
   * [Snorby](Snorby)
