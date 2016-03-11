@@ -16,8 +16,6 @@ Security Onion 14.04 comes with several pcap samples in `/opt/samples/`.
 
   * http://ee.lbl.gov/anonymized-traces.html
 
-  * https://www.openpacket.org/post/showthread/49
-
   * https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Public_Data_Sets
 
   * http://wiki.wireshark.org/SampleCaptures#Sample_Captures
