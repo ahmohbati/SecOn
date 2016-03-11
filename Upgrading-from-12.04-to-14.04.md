@@ -14,7 +14,7 @@ Please read through this entire page before beginning!
 
 * The upgrade process will take at **least** 1-2 hours (per server/sensor), depending on the speed of your server hardware and Internet connection.  Please plan accordingly.
 
-* If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you start with the master server first!
+* If you’re upgrading a distributed deployment, you’ll need to perform the steps below on the master server and all sensors, but make sure you **start with the master server first!**
 
 * After upgrading the master server, ensure all sensors are upgraded as soon as possible to minimize disruption and/or incompatibility issues.  Mixed-release (12.04 + 14.04) environments are currently untested and unsupported.
 
@@ -81,12 +81,13 @@ These are files that Security Onion modifies, and you may receive prompts for ad
  `sudo add-apt-repository ppa:securityonion/stable`  
  `sudo apt-get update`  
 
-* If you encounter an error in regard to mod_passenger.so, try disabling the module as follows:
+* If you encounter an error in regard to `mod_passenger.so`, try disabling the module as follows:
    `sudo a2dismod passenger`
 
-* Add back any missing Security Onion packages by installing the `securityonion-iso` metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the `securityonion-iso` metapackage. In the command below, you can replace `securityonion-iso` with the same Security Onion metapackage(s) you originally installed (`securityonion-server`, `securityonion-sensor`,  `securityonion-all`, `securityonion-elsa`, etc).:  
-`sudo apt-get install securityonion-iso syslog-ng-core`  
-**IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
+* Add back any missing Security Onion packages by installing the `securityonion-iso` metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the `securityonion-iso` metapackage. In the command below, you can replace `securityonion-iso` with the same Security Onion metapackage(s) you originally installed (`securityonion-server`, `securityonion-sensor`,        `securityonion-all`, `securityonion-elsa`, etc).:
+
+    `sudo apt-get install securityonion-iso syslog-ng-core`  
+**IMPORTANT!** If you receive a prompt regarding `syslog-ng.conf`, press `N` to keep your currently-installed version. 
 * Update all packages that are currently installed:  
 `sudo soup`
 
