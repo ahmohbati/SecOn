@@ -8,8 +8,6 @@ Security Onion 14.04 comes with several pcap samples in `/opt/samples/`.
 
   * http://digitalcorpora.org/corpora/network-packet-dumps
 
-  * https://www.openpacket.org/ (Security Onion 12.04 contains some pcaps from openpacket.org.  You can find them at `/opt/samples/`.)
-
   * http://www.netresec.com/?page=PcapFiles
 
   * http://old.honeynet.org/scans/
