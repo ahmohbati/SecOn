@@ -302,6 +302,9 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 <a name="tuning"></a>
 ###Tuning
 ---
+#### What do I need to tune if I'm monitoring VLAN tagged traffic?
+[VLAN](VLAN-Traffic)
+
 #### How do I configure email for alerting and reporting? ####
 [Email](Email)
 
