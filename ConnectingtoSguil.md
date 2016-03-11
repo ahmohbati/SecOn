@@ -6,11 +6,7 @@ This article will show how to connect to the Sguil server to view security alert
 
 Double-click the Sguil icon on the desktop of your SecurityOnion server.
 
-![http://jonschipp.com/seconion/sguil-icon.png](http://jonschipp.com/seconion/sguil-icon.png)
-
 Set the Sguil Host to localhost, enter your credentials, and then click OK.
-
-![http://jonschipp.com/seconion/sguil-local.png](http://jonschipp.com/seconion/sguil-local.png)
 
 After, choose which sensors you would like to monitor for this sguil session and then click Start Sguil.
 
@@ -34,14 +30,10 @@ The display will be sent to your machine using the X11 protocol over SSH.
 sguil.tk
 ```
 
-![http://jonschipp.com/seconion/sguil.png](http://jonschipp.com/seconion/sguil.png)
-
 Since we're only forwarding the application window, we're connected locally i.e. as if we were
 sitting at the server's console. Because of this we can use localhost as the Sguild Host.
 
 Once logged in we will be able to select which sensors we would like to monitor.
-
-![http://jonschipp.com/seconion/sguil-select.png](http://jonschipp.com/seconion/sguil-select.png)
 
 Finally, select Start Sguil. Now you can view the alerts in real-time, perform advanced SQL queries,
 and pivot into a number of applications like Wireshark, ELSA, and Network Minor.
@@ -58,17 +50,9 @@ For this section I will be using VMware Fusion on OSX.
 Install SecurityOnion in a Virtual Machine and configure the network adapter to use NAT mode (easiest)
 by going to your VM's settings. This will work if you have per-IP/host ACL's too since the same IP address will be used.
 
-![http://jonschipp.com/seconion/sguil-network-adapter.png](http://jonschipp.com/seconion/sguil-network-adapter.png)
-
-![http://jonschipp.com/seconion/sguil-enable-network-adapter.png](http://jonschipp.com/seconion/sguil-enable-network-adapter.png)
-
 Now double-click the Sguil desktop icon to launch the Sguil client.
-
-![http://jonschipp.com/seconion/sguil-icon.png](http://jonschipp.com/seconion/sguil-icon.png)
 
 Fill in the IP address or DNS name
 of the SecurityOnion server and apply your credentials.
-
-![http://jonschipp.com/seconion/sguil-vm.png](http://jonschipp.com/seconion/sguil-vm.png)
 
 Then select the sensors to monitor and finally click Start Sguil.
