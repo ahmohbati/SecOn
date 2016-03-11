@@ -464,9 +464,9 @@ Some users have reported issues with Perl processes continually spinning up and 
 **Make sure to uncomment this line when you are done troubleshooting, as this is not a a permanent solution.  Disabling this script prevents ELSA (`cron.pl`) from loading new data into it's mysql database, therefore it should only be disabled for troubleshooting purposes.** 
 
 * Try running cron.pl manually, observing the output:<br>
+`sudo sh /opt/elsa/contrib/securityonion/contrib/securityonion-elsa-cron.sh`
+or if you're still on the old 12.04:  
 `sudo perl /opt/elsa/web/cron.pl -c /etc/elsa_web.conf`<br>
-or if you're on 14.04:  
-`sh /opt/elsa/contrib/securityonion/contrib/securityonion-elsa-cron.sh`
 
 * Look for references to a failure or an error in ELSA's web.log:<br>
 `sudo grep failed /nsm/elsa/data/elsa/log/web.log `
