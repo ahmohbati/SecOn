@@ -7,7 +7,7 @@ config snaplen: 1518
 ```
 
 ### Suricata
-When Suricata receives packets from PF_RING ,it sets the Snap Length (Bucket Len) to 1516 by default (the default MTU of the sniffing interface 1500 plus 16).  To increase Suricata's Snap Length to 1518, increase the MTU of your sniffing interface to 1502 by adding the following line to your network interface config file `/etc/network/interfaces`:
+When Suricata receives packets from PF_RING ,it sets the Snap Length (Bucket Len) to 1516 by default (the default MTU of the sniffing interface 1500 plus 16).  To increase Suricata's Snap Length to 1518, increase the MTU of your sniffing interface to 1502 by adding the following line to the sniffing interface section of your network interface config file `/etc/network/interfaces`:
 ```
     mtu 1502
 ```
