@@ -34,11 +34,6 @@ sudo service nsm restart
 ```
 pgrep -lf autossh
 ```
-  * **Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.<br/><br/> 
-If you're having problems with Snorby, check the log files in `/opt/snorby/log/` and `/var/log/apache2/` and see if its processes are running:
-```
-pgrep -lf delayed_job
-```
 
  * Having trouble with MySQL?  Check all databases to see if any tables are are marked as crashed or corrupt.
 ```
@@ -47,6 +42,11 @@ sudo mysqlcheck -A
  * Check specific MySQL databases by running something similar the following:
 ```
 sudo mysqlcheck -c securityonion_db
+```
+  * **Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.<br/><br/> 
+If you're having problems with Snorby, check the log files in `/opt/snorby/log/` and `/var/log/apache2/` and see if its processes are running:
+```
+pgrep -lf delayed_job
 ```
 
   * Are you able to duplicate the problem on a fresh Security Onion installation?
