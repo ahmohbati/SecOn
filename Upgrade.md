@@ -1,8 +1,7 @@
 ### Security Onion Update Procedure ###
 
-#### Initiating an update over SSH ####
-
-If you're updating your Security Onion box over an SSH connection and your connection drops, then your update process may be left in an inconsistent state.  It is therefore recommended to run byobu so that your session will continue to run on the Security Onion box even if your connection drops.  Byobu is very handy and we recommend running it all the time to avoid forgetting about it before an update.
+#### Initiating an update over SSH
+If you're updating your Security Onion box over an SSH connection and your connection drops, then your update process may be left in an inconsistent state.  It is therefore recommended to run `byobu` so that your session will continue to run on the Security Onion box even if your connection drops.  `Byobu` is very handy and we recommend running it all the time to avoid forgetting about it before an update.
 ```
 # install byobu
 sudo apt-get install byobu
@@ -13,15 +12,13 @@ byobu-enable
 # you're now ready to update
 ```
 
-For more information about byobu, please see:
+For more information about `byobu`, please see:
 https://help.ubuntu.com/community/Byobu
 
-#### soup - Security Onion UPdate ####
+#### `soup` - Security Onion UPdate ####
+We recommend using the `soup` script to automatically install all available Ubuntu and Security Onion updates.  `Soup` will avoid the MySQL/PF\_RING issues described below.
 
-We recommend using the "soup" script to automatically install all available Ubuntu and Security Onion updates.  Soup will avoid the MySQL/PF\_RING issues described below.
-
-**Please note**: If you're still running the old Security Onion 12.04, soup will continue to install Ubuntu updates until Ubuntu stops releasing updates for 12.04.  However, there won't be any more Security Onion updates for version 12.04 as all development will be on version 14.04 moving forward.  Please see the bottom of this page for information on upgrading from 12.04 to 14.04.
-
+**Please note**: If you're still running the old Security Onion 12.04, `soup` will continue to install Ubuntu updates until Ubuntu stops releasing updates for 12.04.  However, there won't be any more Security Onion updates for version 12.04 as all development will be on version 14.04 moving forward.  Please see the [bottom of this page](#Upgrades) for information on upgrading from 12.04 to 14.04.
 ```
 sudo soup
 ```
@@ -32,7 +29,6 @@ If you get the following error:
 ```
 sudo: soup: command not found
 ```
-
 then do the following:
 ```
 sudo apt-get update && sudo apt-get install securityonion-sostat
@@ -42,16 +38,19 @@ For more information, please see:
 <a href='http://blog.securityonion.net/2013/08/new-securityonion-packages.html'><a href='http://blog.securityonion.net/2013/08/new-securityonion-packages.html'>http://blog.securityonion.net/2013/08/new-securityonion-packages.html</a></a>
 <br>
 <br>
-### Distributed deployments ###
 
-Always update the master server first before updating sensors.
+#### Distributed deployments
+**IMPORTANT!** Always update the master server first before updating sensors.
+<br>
+<br>
 
-#### Using salt and soup to Update your entire Deployment ####
+#### Using `salt` and `soup` to Update your entire Deployment ####
 [salt and soup](Salt#using-salt-to-install-updates-across-your-entire-deployment)
+<br>
+<br>
 
-### Standard Ubuntu package management tools
-
-The "soup" command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
+#### Standard Ubuntu package management tools
+The `soup` command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
 
   * MySQL - if you've already run Setup, please see the [recommended procedure for updating the MySQL packages](MySQLUpdates).
 
@@ -60,10 +59,10 @@ You may be prompted to update your kernel packages and PF\_RING at the same time
 ```
 sudo apt-get update ; sudo apt-get install securityonion-pfring-module ; sudo apt-get dist-upgrade
 ```
-If you accidentally install both the kernel and PF\_RING packages at the same time and then reboot and find out that PF\_RING services (Snort and Suricata) are failing, you can reinstall the securityonion-pfring-module package:
+If you accidentally install both the kernel and PF\_RING packages at the same time and then reboot and find out that PF\_RING services (Snort and Suricata) are failing, you can reinstall the `securityonion-pfring-module` package:
 ```
 sudo apt-get install --reinstall securityonion-pfring-module
 ```
 
-### Upgrades ###
+### Upgrades
 To upgrade from Security Onion 12.04 to Security Onion 14.04, please see [Upgrading-from-12.04-to-14.04](Upgrading-from-12.04-to-14.04).
