@@ -17,7 +17,7 @@ If any services are not running, try starting them:
 <pre><code>xrandr -s WxH<br>
 </code></pre>
 </li><li>Login to Sguil and review your IDS alerts. Squert and ELSA can be accessed by visiting <a href='https://server/'>https://server/</a> for additional in-depth analysis.<br>
-</li><li>Harden your server and sensors by disabling any unneeded services and [firewalling](Firewall) off any unused ports.<br>
+</li><li>As of securityonion-setup - 20120912-0ubuntu0securityonion201, Setup now defaults to only opening port 22 in the firewall.  If you need to connect OSSEC agents, syslog devices, or analyst VMs, you can run the new `so-allow` utility which will walk you through creating firewall rules to allow these devices to connect.  For more information, please see the [firewall](Firewall) page.<br>
 </li><li>Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
 <pre><code>sudo sostat | less<br>
 </code></pre>
