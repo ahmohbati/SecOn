@@ -1,4 +1,6 @@
-This page contains legacy information for older versions of Setup.
+This page contains legacy information for versions of Setup older than securityonion-setup - 20120912-0ubuntu0securityonion201.  
+
+If you're running securityonion-setup - 20120912-0ubuntu0securityonion201 or newer, please see the [current firewall documentation](firewall).
 
 ## Tightening the firewall on a master server ##
 
