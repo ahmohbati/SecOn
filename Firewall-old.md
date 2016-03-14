@@ -2,6 +2,54 @@ This page contains legacy information for versions of Setup older than securityo
 
 If you're running securityonion-setup - 20120912-0ubuntu0securityonion201 or newer, please see the [current firewall documentation](firewall).
 
+# UFW - Uncomplicated Firewall #
+The default firewall configuration tool for Ubuntu is `ufw`.  `ufw` is enabled by default on Security Onion.
+
+## Enable/Disable ##
+```
+sudo ufw enable
+```
+
+```
+sudo ufw disable
+```
+## Allow/Deny ##
+
+**example:** allow port 9876 for Xplico
+```
+sudo ufw allow 9876/tcp
+```
+**example:** allow irc port range 6667 - 7000
+```
+sudo ufw allow 6667:7000
+```
+**example:** deny https
+```
+sudo ufw deny 443
+```
+
+## What Ports Are Opened/Listening ##
+**example**
+```
+sudo ufw status
+```
+**example output**
+```
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+7734/tcp                   ALLOW       Anywhere
+7736/tcp                   ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+```
+
+## More Info ##
+For more info you can visit the UFW documentation [site](https://help.ubuntu.com/community/UFW)
+
+Note: [Gufw](https://help.ubuntu.com/community/Gufw) is a GUI front end for the ufw.
+
 ## Tightening the firewall on a master server ##
 
 By default, older versions of Setup configure a master server to allow connections to the following ports from **any** IP address:
