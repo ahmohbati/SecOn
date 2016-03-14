@@ -24,6 +24,8 @@ The OSSEC agent is cross platform and you can download agents for Windows/Unix/L
 
 http://ossec-docs.readthedocs.org/en/latest/manual/agent/agent-management.html#managing-agents
 
+You may need to run so-allow to allow traffic from the IP address of your OSSEC agent(s).
+
 #### Automated Deployment ####
 
 Many individuals require or prefer the ability to automatically deploy OSSEC agents on endpoint machines.  Although **this is currently untested and unsupported**, Auto-OSSEC provides a method for achieving this goal.
