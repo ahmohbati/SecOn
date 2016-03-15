@@ -2,8 +2,9 @@
 As of securityonion-setup - 20120912-0ubuntu0securityonion201, Setup now defaults to locking down the local `ufw` firewall to only allowing port 22 (ssh):  
 http://blog.securityonion.net/2016/03/securityonion-setup-20120912.html
 
-There is a note at the end of Setup that tells you this and lets you know that if you need to allow connections on other ports, you can run the new `so-allow` utility.
+There is a note at the end of Setup that tells you this and lets you know that, if you need to allow connections on other ports, you can run the new `so-allow` utility.
 
+## Sensors automatically add their own firewall rules to the master server
 When you run Setup on a sensor-only installation, it will ssh to the master server and add new firewall rules to the master server to allow the sensor to connect on ports 22,4505,4506,7736.
 
 ## `so-allow`
