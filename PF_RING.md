@@ -1,6 +1,7 @@
 #### Setup ####
 
-If you have multiple CPU cores, Setup will automatically ask you how many PF\_RING instances you'd like for Snort/Suricata (IDS engine processes) and Bro and will tell you how to adjust after the fact.
+If you have multiple CPU cores, Setup will automatically ask you how many PF\_RING instances you'd like for Snort/Suricata (IDS engine processes) and Bro and will tell you how to adjust after the fact.  As of securityonion-setup - 20120912-0ubuntu0securityonion201, Setup should analyze your system and recommend a certain number of PF_RING instances:  
+http://blog.securityonion.net/2016/03/securityonion-setup-20120912.html
 
 #### Tuning ####
 
