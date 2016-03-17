@@ -13,11 +13,11 @@
   * [Architecture](Architecture)
 
 ## Interfaces ##
-  * [Snorby](Snorby)
   * [Squert](Squert)
-  * [Sguil](Sguil)
   * [ELSA](ELSA)
+  * [Sguil](Sguil)
   * [CapME](CapMeAuthentication)
+  * [Snorby](Snorby)
 
 ## Data Sources ##
   * [NIDS](NIDS)
