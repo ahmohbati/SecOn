@@ -67,6 +67,11 @@ Add your email address to the user_info table of the securityonion_db database (
 ```
 mysql -uroot -Dsecurityonion_db -e "update user_info set email='FIRSTLAST@YOURDOMAIN.COM' where username='FIRSTLAST';"
 ```
+Change the following in the "email" section of /etc/elsa_web.conf:
+```
+"base_url" : "https://YOUR.SECURITY.ONION.BOX/elsa-query",
+"smtp_server": "mail.example.com",
+```
 Restart Apache:
 ```
 sudo service apache2 restart
