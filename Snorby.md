@@ -24,10 +24,27 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/WipingSnorby
 <pre><code>sudo mv /opt/snorby/public/javascripts/highcharts.js /opt/snorby/public/javascripts/highcharts.js.DISABLED<br>
 </code></pre>
 
-* ####How do I change the timezone in Snorby?####
+* How do I change the timezone in Snorby?
  * click Settings in the upper right corner
  * click the drop-down box next to "Time zone"
  * select your time zone from the list
  * click the "Update Settings" button
  * set the same timezone in CapMe's timezone.php:<br>
 <a href='http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html'>http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html</a>
+
+* How do I configure Snorby to send emails?
+Snorby is now considered unmaintained and is being removed from Security Onion, but these steps are left here for legacy documentation purposes.
+
+Modify Snorby's `mail_config.rb` file on the master server as needed for your mail server:
+```
+/opt/snorby/config/initializers/mail_config.rb
+
+```
+Then restart the Snorby delayed\_job process:
+```
+sudo pkill -f delayed_job
+
+sudo su www-data -c "cd /opt/snorby; bundle exec rake snorby:update RAILS_ENV=production"
+
+```
+You can also modify `/opt/snorby/config/snorby_config.yml` and change the `domain` setting in the Production section to be the FQDN or IP address of your Snorby server.  However, the resulting link in the email will still be incorrect since it will be http instead of https and it will be missing the proper port.
