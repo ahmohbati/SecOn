@@ -25,9 +25,9 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/WipingSnorby
 </code></pre>
 
 * ####How do I change the timezone in Snorby?####
-** click Settings in the upper right corner
-** click the drop-down box next to "Time zone"
-** select your time zone from the list
-** click the "Update Settings" button
-** set the same timezone in CapMe's timezone.php:<br>
+ * click Settings in the upper right corner
+ * click the drop-down box next to "Time zone"
+ * select your time zone from the list
+ * click the "Update Settings" button
+ * set the same timezone in CapMe's timezone.php:<br>
 <a href='http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html'>http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html</a>
