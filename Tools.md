@@ -87,10 +87,6 @@ Security Onion would like to thank the following open-source projects for their 
 <a href='http://sniffit.sourceforge.net/'><a href='http://sniffit.sourceforge.net/'>http://sniffit.sourceforge.net/</a></a><br>
 "SniffIt is a Distribted Sniffer System, which allows users to capture network traffic from an unique machine using a graphical client application. This feature is very useful in switched networks, where traditional sniffers only allow users to sniff their own network traffic."<br>
 <br>
-<h4>Snorby</h4>
-<a href='https://github.com/snorby/snorby'><a href='https://github.com/snorby/snorby'>https://github.com/snorby/snorby</a></a><br>
-"Snorby is a ruby on rails web application for network security monitoring that interfaces with current popular intrusion detection systems (Snort, Suricata and Sagan).  The basic fundamental concepts behind Snorby are simplicity, organization and power.  The project goal is to create a free, open source and highly competitive application for network monitoring for both private and enterprise use."<br>
-<br>
 <h4>Snort</h4>
 <a href='http://www.snort.org/'><a href='http://www.snort.org/'>http://www.snort.org/</a></a><br>
 "Snort® is an open source network intrusion prevention and detection system (IDS/IPS) developed by Sourcefire. Combining the benefits of signature, protocol, and anomaly-based inspection, Snort is the most widely deployed IDS/IPS technology worldwide. With millions of downloads and nearly 400,000 registered users, Snort has become the de facto standard for IPS."<br>
