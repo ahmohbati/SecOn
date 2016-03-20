@@ -9,21 +9,10 @@ Trying to use a non-UTC timezone can result in the following:<br>
 
 Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
 
-Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.
+Squert and ELSA allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert allows you to change your timezone.
 
 ####How do I change the timezone for Ubuntu?####
 When you run our Setup wizard, it should automatically set your timezone to UTC.  If you've already run Setup and then manually changed your timezone to non-UTC and would like to switch back to UTC, you can execute ```sudo dpkg-reconfigure tzdata```. Scroll to the bottom of the Continents list and select `None of the above`. In the second list, select `UTC`. (http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt)
-
-####How do I change the timezone in Snorby?####
-
-**Please note**: Snorby has been removed in the new Security Onion 14.04, but this note is left here for legacy documentation purposes.
-
-* click Settings in the upper right corner
-* click the drop-down box next to "Time zone"
-* select your time zone from the list
-* click the "Update Settings" button
-* set the same timezone in CapMe's timezone.php:<br>
-<a href='http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html'>http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html</a>
 
 ####How do I change the timezone in Squert?####
 * click the time interval (labeled INTERVAL)
@@ -40,7 +29,7 @@ Known issue in ELSA 713 (old ELSA package):  If you access ELSA from a browser w
 <br>
 The workaround is to enable the use_utc setting in your ELSA<br>
 Preferences (which is probably a good idea anyway to ensure that your<br>
-timestamps in ELSA match your timestamps in Sguil/Squert/Snorby):<br>
+timestamps in ELSA match your timestamps in Sguil/Squert):<br>
 <br>
 1. Navigate to ELSA -> Preferences:<br>
 <br>
