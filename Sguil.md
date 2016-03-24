@@ -24,6 +24,22 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * You can resize columns by right-clicking on the column heading.
 
+* You can separate realtime alerts into separate panes, based on severity level, by editing `/etc/sguil/sguil.conf` as follows:
+
+<pre><code>
+    #Number of RealTime Event Panes    
+    #set RTPANES 1    
+    set RTPANES 3    
+ 
+    # Specify which priority events go into what pane   
+    # According to the latest classification.config from snort,   
+    # there are only 4 priorities. The sguil spp_portscan mod   
+    # uses a priority of 5.    
+    #set RTPANE_PRIORITY(0) "1 2 3 4 5"  
+    set RTPANE_PRIORITY(0) "1"  
+    set RTPANE_PRIORITY(1) "2 3"  
+    set RTPANE_PRIORITY(2) "4 5"   
+</code></pre>
 * It is important to ensure events displayed in Sguil are regularly classified, or else it could cause problems with the Sguil database. Consider creating an [autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to assist with this.
 
 * [Configure Sguil alert email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
