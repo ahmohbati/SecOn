@@ -28,5 +28,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Firewall
 Please enter your selection (a - analyst, l - syslog, o - ossec, or s - Security Onion sensor):
 ```
 
+If you have upgraded from Security Onion 12.04 and you receive duplicate profile warnings for UFW when adding rules, please see:    
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Upgrading-from-12.04-to-14.04#clean-up    
 ## More `ufw` documentation
 For more information about manually adding `ufw` firewall rules or if you're still running a version of Setup older than securityonion-setup - 20120912-0ubuntu0securityonion201, then you can reference the [original firewall documentation](firewall-old).
