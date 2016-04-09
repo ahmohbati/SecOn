@@ -41,7 +41,7 @@ If you're buying a new server, go ahead and max out the RAM (it's cheap!).  As a
 Sensors that have full packet capture (and/or ELSA) enabled need LOTS of storage. For example, suppose you are monitoring a 50 Mb/s link, here are some quick calculations: 50Mb/s = 6.25 MB/s = 375 MB/minute = 22,500 MB/hour = 540,000 MB/day. So you're going to need about 540GB for one day's worth of pcaps (multiply this by the number of days you want to keep on disk for investigative/forensic purposes). Note that this is just pcaps (other logs will take up additional storage), so you may want to round up to the next terabyte to ensure sufficient storage. The more disk space you have, the more log retention you'll have for doing investigations after the fact. Disk is cheap, get all you can!
 
 ##### NIC
-You'll need at least two network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  I've had good experiences with Intel.
+You'll need at least two wired network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  Most users report good experiences with Intel cards.
 
 ##### Packets
 You need some way of getting packets into your sensor interface(s).  If you're just evaluating Security Onion, you can replay [pcaps](Pcaps).  For a production deployment, you'll need a tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
