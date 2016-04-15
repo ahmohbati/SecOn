@@ -24,7 +24,7 @@ The OSSEC agent is cross platform and you can download agents for Windows/Unix/L
 
 http://ossec-docs.readthedocs.org/en/latest/manual/agent/agent-management.html#managing-agents
 
-You may need to run so-allow to allow traffic from the IP address of your OSSEC agent(s).
+You may need to run [so-allow](https://github.com/Security-Onion-Solutions/security-onion/wiki/Firewall#so-allow) to allow traffic from the IP address of your OSSEC agent(s).
 
 #### Automated Deployment ####
 
