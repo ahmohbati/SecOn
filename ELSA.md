@@ -1,5 +1,5 @@
 * Developed by Martin Holste:  
-https://code.google.com/p/enterprise-log-search-and-archive/
+https://github.com/mcholste/elsa
 
 * Web interface for hunting through logs (Bro, Snort, OSSEC, syslog)
 
