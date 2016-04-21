@@ -4,7 +4,7 @@ To install Security Onion, you're going to either install our Security Onion ISO
 
 #### ALWAYS verify the checksum of ANY downloaded ISO image ####
 Regardless of whether you're downloading our Security Onion ISO image or whether you're starting with an Ubuntu 14.04 ISO image, you should ALWAYS verify the downloaded ISO image.
-  * If downloading our Security Onion 14.04.3.1 ISO image, please verify using these instructions:  
+  * If downloading our Security Onion 14.04.4.1 ISO image, please verify using these instructions:  
 https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md  
   * If downloading an Ubuntu 14.04 ISO image, please verify using these instructions:  
 https://help.ubuntu.com/community/VerifyIsoHowto  
