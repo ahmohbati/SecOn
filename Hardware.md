@@ -52,8 +52,8 @@ Sheer Simplicity and Portability (USB-powered):<br>
 Dirt Cheap and Versatile:<br>
 <a href='http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html'>http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html</a><br>
 
-Netgear GS105E (requires Windows app for config):<br>
-<a href='http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.aspx'>http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.aspx</a><br>
+Netgear GS105E (requires Windows app for config):  
+https://www.netgear.com/support/product/GS105E.aspx  
 
 More exhaustive list of enterprise switches with port mirroring:<br>
 <a href='http://www.miarec.com/knowledge/switches-port-mirroring'>http://www.miarec.com/knowledge/switches-port-mirroring</a><br>
