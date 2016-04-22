@@ -1,6 +1,8 @@
 * Developed by Bamm Visscher:  
 http://sguil.net
 
+* pronounced like "squeal"
+
 * tcl/tk (not web-based)
 
 * Single central MySQL database
