@@ -1,6 +1,6 @@
 #### OS root account ####
 
-Like other Ubuntu-based distributions, there is no root password. Your default user account has been given sudo permissions. Graphical utilities requesting administrative access should prompt for password; enter your user password. Command-line utilities that require administrative access can be prefixed with `sudo`. For example, to add a user:
+Like other Ubuntu-based distributions, there is no root password. Your default user account has been given sudo permissions. Graphical utilities requesting administrative access should prompt for password; enter your user password. Command-line utilities that require administrative access can be prefixed with `sudo`. For example, to add an OS user account:
 ```
 sudo adduser mynewuseraccount
 ```
