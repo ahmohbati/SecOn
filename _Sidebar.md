@@ -2,6 +2,7 @@
   * [Introduction](IntroductionToSecurityOnion)
   * [Tools](Tools)
   * [Hardware Requirements](Hardware)
+  * [Release Notes](Security-Onion-14.04-Release-Notes)
   * [Download/Install](Installation)
   * [Booting Issues](TroubleBooting)
   * [After Installation](PostInstallation)
