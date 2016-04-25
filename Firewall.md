@@ -5,7 +5,11 @@ http://blog.securityonion.net/2016/03/securityonion-setup-20120912.html
 There is a note at the end of Setup that tells you this and lets you know that, if you need to allow connections on other ports, you can run the new `so-allow` utility.
 
 ## Sensors automatically add their own firewall rules to the master server
-When you run Setup on a sensor-only installation, it will ssh to the master server and add new firewall rules to the master server to allow the sensor to connect on ports 22,4505,4506,7736.
+When you run Setup on a sensor-only installation, it will ssh to the master server and add new firewall rules to the master server to allow the sensor to connect on the following ports:
+- 22/tcp (ssh)
+- 4505/tcp (salt)
+- 4506/tcp (salt)
+- 7736/tcp (sguil)
 
 ## `so-allow`
 If you need to open ports for OSSEC agents, syslog devices, or analyst VMs, you can run `so-allow` and it will walk you through this process.  `so-allow` also provides an option to add firewall rules for sensors although you shouldn't need this under normal circumstances since they should automatically add their own rules as described above.
