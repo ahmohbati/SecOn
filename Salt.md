@@ -11,13 +11,9 @@ http://docs.saltstack.com/
 https://github.com/TOoSmOotH/onionsalt
 
 #### Best Practices
-`securityonion-iso syslog-ng-core`
-
 For the Security Onion 14.04 ISO, `securityonion-onionsalt` is pre-installed (via `securityonion-iso syslog-ng-core`) , and Salt is configured by default when choosing [Best Practices](https://github.com/Security-Onion-Solutions/security-onion/wiki/Best-Practices) during setup.
 
 #### Salt and OnionSalt are optional packages ####
-`securityonion-all syslog-ng-core`
-
 If you choose to install Security Onion via PPA without installing `securityonion-iso syslog-ng-core`, please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install `securityonion-onionsalt`, and nothing will change for you.  Otherwise, install `securityonion-onionsalt` before running setup to enable Salt for your deployment.
 
 #### Warning ####
