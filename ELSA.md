@@ -1,5 +1,5 @@
 * Developed by Martin Holste:  
-https://github.com/mcholste/elsa
+https://github.com/mcholste/elsa  
 https://github.com/mcholste/elsa/wiki/Documentation
 
 * Web interface for hunting through logs (Bro, Snort, OSSEC, syslog)
