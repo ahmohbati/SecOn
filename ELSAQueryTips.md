@@ -2,6 +2,8 @@
 
 The following are posts from Martin Holste, the author of ELSA, extracted from the Security Onion and Security Onion Testing mailing lists, that provide insight and working examples of the power of ELSA's query capabilities.
 
+Also see the ELSA documentation:  
+https://github.com/mcholste/elsa/wiki/Documentation
 
 #### 12/11/12 - [security-onion-testing] ####
 
