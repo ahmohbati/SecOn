@@ -8,8 +8,7 @@ https://github.com/mcholste/elsa/wiki/Documentation
 
 * More data types than all other interfaces
 
-* Can pivot to CapME to access full packet capture:  
-[CapME Authentication](CapMeAuthentication)
+* Can pivot to CapME to access full packet capture.  For any log relating to TCP traffic that has timestamp; src ip; source port; destination ip; and destination port, you can click Info, Plugin, getPcap to pivot to CapMe.  Enter your username and password and CapMe will retrieve the pcap and render it as an ASCII transcript.  If ELSA doesn't show the getPcap plugin, then the log you were trying to pivot from didn't contain all of the fields listed above that are necessary to active the getPcap plugin.
 
 * In Security Onion 14.04, ELSA has dynamic bar charts and dashboards.
 
