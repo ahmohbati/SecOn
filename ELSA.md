@@ -19,13 +19,13 @@ https://github.com/mcholste/elsa/wiki/Documentation
 
 * The ELSA web interface authenticates against the Sguil user database, so you should be able to login to ELSA using the same username/password you use to login to Sguil
 
-* You can use the command-line version of ELSA by navigating to `/opt/elsa/contrib/securityonion/contrib` and using the `cli.sh` script:
+* You can use the command-line version of ELSA as follows (replacing example.com with your desired search criteria):
 ````
-sh cli.sh "example.com" 
+sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" 
 ````
-The output is in JSON, so you might want to install jq and pipe the results into it:
+The output is in JSON, so you might want to pipe the results into `jq`:
 ````
-sh cli.sh "example.com" | jq '.'
+sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" | jq '.'
 ````
 * Large number of Perl processes?<br>
 See: [Why does sostat show high load/CPU usage and large number of Perl processes?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ/_edit#why-does-sostat-show-high-loadcpu-usage-and-large-number-of-perl-processes) 
