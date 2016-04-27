@@ -18,13 +18,15 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
   * asset data from PRADS (if PRADS and pads_agent are enabled)
   * HTTP logs from Bro (if http_agent is enabled)
 
-* You can pivot to transcript/Wireshark/NetworkMiner by right-clicking the Alert ID field.
+* resize columns by right-clicking on the column heading
 
-* You can pivot to ELSA by right-clicking an IP address and choosing "ELSA IP Lookup".
+* pivot to transcript/Wireshark/NetworkMiner by right-clicking the Alert ID
 
-* You can change fonts by clicking File --> Change Font.
+* automatically pivot to ASCII transcript by middle-clicking the Alert ID
 
-* You can resize columns by right-clicking on the column heading.
+* pivot to ELSA by right-clicking an IP address and choosing "ELSA IP Lookup".
+
+* change fonts by clicking File --> Change Font.
 
 * You can separate realtime alerts into separate panes, based on severity level, by editing `/etc/sguil/sguil.conf` as follows:
 
