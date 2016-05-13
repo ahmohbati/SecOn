@@ -17,9 +17,9 @@ There may come a time when you need to disable a sensor interface, delete a sens
 * In MySQL database securityonion_db, edit sensor table (you can simply set 
  active='N'), then restart sguild. 
   * Stop sguild<br> `sudo nsm_server_ps-stop` 
-  * Show sensor entries<br> `mysql -uroot -Dsecurityonion_db -e 'select * from sensor';`
+  * Show sensor entries<br> `sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e 'select * from sensor';`
   * Set sensor as inactive<br> 
-  `mysql -uroot -Dsecurityonion_db -e "update sensor set active='N' where sid in (<SID1>,<SID2>)";`
+  `sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "update sensor set active='N' where sid in (<SID1>,<SID2>)";`
   * Start sguild<br> `sudo nsm_server_ps-start `
 
 
