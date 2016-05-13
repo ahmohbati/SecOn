@@ -25,7 +25,7 @@ If you use the Sguil client and want to remove the disabled agent from Sguil's `
 sudo nsm_server_ps-stop
 
 # Set active="N", replacing HOSTNAME-INTERFACE-INSTANCE with your actual HOSTNAME, INTERFACE, and INSTANCE
-mysql -uroot -Dsecurityonion_db -e 'update sensor set active="N" where hostname="HOSTNAME-INTERFACE-INSTANCE";'
+sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e 'update sensor set active="N" where hostname="HOSTNAME-INTERFACE-INSTANCE";'
 
 # Restart sguild
 sudo nsm_server_ps-start
