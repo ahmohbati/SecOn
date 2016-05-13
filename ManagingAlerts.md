@@ -29,14 +29,14 @@ You can enter the mysql shell or issue mysql one-liner's from the command line.
 To enter the mysql shell, issue the following command
 
 ```
-  mysql -uroot -Dsecurityonion_db
+  sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db
 ```
 
 
 To issue commandline one-liners use the following template
 
 ```
-  mysql -uroot -Dsecurityonion_db -e "QUERY"
+  sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "QUERY"
 ```
 
 
