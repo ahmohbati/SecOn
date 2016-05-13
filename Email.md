@@ -65,7 +65,7 @@ Then restart OSSEC:<br>
 ####How do I configure ELSA to send emails?####
 Add your email address to the user_info table of the securityonion_db database (replacing FIRSTLAST@YOURDOMAIN.COM with your actual email address and FIRSTLAST with your Sguil/ELSA username):
 ```
-mysql -uroot -Dsecurityonion_db -e "update user_info set email='FIRSTLAST@YOURDOMAIN.COM' where username='FIRSTLAST';"
+sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "update user_info set email='FIRSTLAST@YOURDOMAIN.COM' where username='FIRSTLAST';"
 ```
 Change the following in the "email" section of /etc/elsa_web.conf (replacing YOUR.SECURITY.ONION.BOX with the actual hostname or IP address of your Security Onion master server and replacing MAIL.EXAMPLE.COM with the actual hostname or IP address of your internal mail relay):
 ```
