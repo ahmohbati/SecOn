@@ -22,5 +22,5 @@ http://www.squertproject.org/
 # Pivot from Squert to ELSA
 URL="https://$IP:3154/?query_string=\"\${var}\"%20groupby:program"
 HEXVAL=$(xxd -pu -c 256 <<< "$URL")
-mysql -uroot -Dsecurityonion_db -e "INSERT IGNORE INTO filters (type,username,global,name,notes,alias,filter) VALUES ('url','','1','454C5341','','ELSA','$HEXVAL');"
+sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "INSERT IGNORE INTO filters (type,username,global,name,notes,alias,filter) VALUES ('url','','1','454C5341','','ELSA','$HEXVAL');"
 ```
