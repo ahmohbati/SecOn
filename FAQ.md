@@ -420,21 +420,19 @@ sudo securityonion-elsa-reset-archive
 
 Otherwise, you can manually reset the archive by running the following commands:
 ```
-# Become root
-sudo -i
 # Stop services
-service nsm stop
-service syslog-ng stop
+sudo service nsm stop
+sudo service syslog-ng stop
 # Cleanup database tables and entries
-mysql -uroot syslog_data -e "DROP TABLE syslog_data.syslogs_archive_1" 
-mysql -uroot syslog_data -e "DELETE FROM syslog.tables WHERE table_name='syslog_data.syslogs_archive_1'"
+sudo mysql --defaults-file=/etc/mysql/debian.cnf syslog_data -e "DROP TABLE syslog_data.syslogs_archive_1" 
+sudo mysql --defaults-file=/etc/mysql/debian.cnf syslog_data -e "DELETE FROM syslog.tables WHERE table_name='syslog_data.syslogs_archive_1'"
 # Cleanup database files
-rm /nsm/elsa/data/elsa/mysql/syslogs_archive_1*
-rm /var/lib/mysql/syslog_data/syslogs_archive_1*
+sudo rm /nsm/elsa/data/elsa/mysql/syslogs_archive_1*
+sudo rm /var/lib/mysql/syslog_data/syslogs_archive_1*
 # Restart services
-service mysql restart
-service syslog-ng restart
-service nsm start
+sudo service mysql restart
+sudo service syslog-ng restart
+sudo service nsm start
 ```
 Also see <https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion>.
 
@@ -477,10 +475,10 @@ or if you're still on the old 12.04:
 If so, you can attempt to remedy this issue by performing the following actions:<br>
 
 * Back up elsa_web database:<br> 
-As root: `cp -R /var/lib/mysql/elsa_web /var/lib/mysql/elsa_web_backup`
+`sudo cp -R /var/lib/mysql/elsa_web /var/lib/mysql/elsa_web_backup`
 
 * Remove offending entries:<br>
-`mysql -uroot -Delsa_web -e 'delete from saved_results where qid=[offendingentry#]';`
+`sudo mysql --defaults-file=/etc/mysql/debian.cnf -Delsa_web -e 'delete from saved_results where qid=[offendingentry#]';`
 
 Be sure to uncomment the final line of `/etc/cron.d/elsa` if you previously commented it out, and monitor processes to verify the issue is no longer present.  If the issue persists, pose the question to the [mailing list](https://github.com/Security-Onion-Solutions/security-onion/wiki/MailingLists) for further assistance.<br><br>
 Also see: https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.pl/security-onion/t3o5rcTf_-U/VJKMdkDsBAAJ
