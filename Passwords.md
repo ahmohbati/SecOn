@@ -49,7 +49,7 @@ quit
 #### MySQL ####
 The MySQL root password is null to allow the NSMnow administration scripts to add/delete sensors properly. MySQL only allows connections from localhost.  If you need to look at the database manually, you can do so like this:
 ```
-mysql -uroot
+sudo mysql --defaults-file=/etc/mysql/debian.cnf
 ```
 
 #### Xplico ####
