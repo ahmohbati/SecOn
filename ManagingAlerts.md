@@ -293,7 +293,7 @@ Let's look at the following rules using:
 
    alert tcp $HOME_NET any -> $EXTERNAL_NET !1433 (msg:"ET TROJAN Bancos.DV MSSQL CnC Connection Outbound"; flow:to_server,established; flowbits:isset,ET.MSSQL; content:"|49 00 B4 00 4D 00 20 00 54 00 48 00 45 00 20 00 4D 00 41 00 53 00 54 00 45 00 52 00|"; classtype:trojan-activity; sid:2013411; rev:1;)
 ```
-If you try to disable the first two rules without disabling the third rule (which has "flowbits:isset...) the third rule could never fire due to one of the first two rules needing to fire first. Pulled Pork (helpfully) resolves all of your flowbit dependencies, and in this case, is "re-enabling" that rule for you on the fly.  Disabling all three of those rules by adding the following to disabledsid.conf has the obvious negative effect of disabling all three of the rules:
+If you try to disable the first two rules without disabling the third rule (which has "flowbits:isset...) the third rule could never fire due to one of the first two rules needing to fire first. Pulled Pork (helpfully) resolves all of your flowbit dependencies, and in this case, is "re-enabling" that rule for you on the fly.  Disabling all three of those rules by adding the following to disablesid.conf has the obvious negative effect of disabling all three of the rules:
 ```
    1:2013409
    1:2013410
@@ -302,7 +302,7 @@ If you try to disable the first two rules without disabling the third rule (whic
 When you run sudo rule-update, watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
 
 #### Sguil Days To Keep ####
-You can configure Sguil's database retention by editing securityonion.conf and changing the DAYSTOKEEP setting (the default is 365 days):
+You can configure Sguil's database retention by editing securityonion.conf and changing the DAYSTOKEEP setting (the default is 30 days):
 ```
    /etc/nsm/securityonion.conf
 ```
