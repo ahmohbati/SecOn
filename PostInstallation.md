@@ -23,8 +23,8 @@ If any services are not running, try starting them:
 </code></pre>
 </li><li>Please note that any IDS/NSM system needs to be tuned for the network it’s monitoring. Please see [ManagingAlerts](ManagingAlerts). You should only run the signatures you really care about.<br>
 </li><li>Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day. Even if you don’t use the Sguil console for your primary analysis, you need to log into it periodically and F8 old events to keep the real time queue from getting too big. Neglecting to do so will result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis. Please see the <a href='http://nsmwiki.org/Sguil_Client'>Sguil client page on NSMwiki</a>.<br>
-</li><li>On the server running the Sguil database, set the `DAYSTOKEEP` variable in `/etc/nsm/securityonion.conf` to however many days you want to keep in your archive. The default is 365, but you may need to adjust it based on your organization’s detection/response policy and your available disk space.<br>
-</li><li>You should also tune [http_agent](http_agent).  If you're running ELSA, you already have all the Bro HTTP logs available there, so you might want to disable http_agent to avoid duplicating those logs in the Sguil database:<br>
+</li><li>On the server running the Sguil database, set the `DAYSTOKEEP` variable in `/etc/nsm/securityonion.conf` to however many days you want to keep in your archive. The default is 30, but you may need to adjust it based on your organization’s detection/response policy and your available disk space.<br>
+</li><li>If you enabled [http_agent](http_agent), you should tune it using http_agent.conf.  If you're running ELSA, you already have all the Bro HTTP logs available there, so you might want to disable http_agent to avoid duplicating those logs in the Sguil database:<br>
 <pre><code># Terminate the running http_agent<br>
 sudo nsm_sensor_ps-stop --only-http-agent<br>
 # Disable http_agent<br>
