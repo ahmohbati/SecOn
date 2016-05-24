@@ -1,15 +1,17 @@
 #### What do I need to do if I'm behind a proxy? ####
 
 Put your proxy server settings in `/etc/environment` like this:<br>
-<pre><code>export http_proxy=https://server:port<br>
-export https_proxy=https://server:port<br>
-export ftp_proxy=https://server:port<br>
-export PERL_LWP_ENV_PROXY=https://server:port<br>
-export no_proxy="localhost,127.0.0.1"<br>
-</code></pre>
+```
+export http_proxy=http://server:port
+export https_proxy=https://server:port
+export ftp_proxy=https://server:port
+export PERL_LWP_ENV_PROXY=https://server:port
+export no_proxy="localhost,127.0.0.1"
+```
 If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
-<pre><code>sudo -i rule-update<br>
-</code></pre>
+```
+sudo -i rule-update
+```
 
 For certain proxies (Bluecoat in particular), you may need to change from https to http in `/etc/nsm/pulledpork/pulledpork.conf`.  For more information, please see:<br>
 <br>
