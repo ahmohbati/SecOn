@@ -36,7 +36,7 @@ iface eth0 inet static<br>
   netmask 255.255.255.0<br>
   network 192.168.1.0<br>
   broadcast 192.168.1.255<br>
-  # If running Security Onion 12.04, you'll need to configure DNS here<br>
+  # If running Security Onion 14.04, you'll need to configure DNS here<br>
   dns-nameservers 192.168.1.1 192.168.1.2<br>
 <br>
 # AND one or more of the following<br>
@@ -49,7 +49,7 @@ iface eth1 inet manual<br>
   down ip link set $IFACE promisc off<br>
   down ifconfig $IFACE down<br>
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done<br>
-  # If running Security Onion 12.04, you should also disable IPv6 as follows:<br>
+  # If running Security Onion 14.04, you should also disable IPv6 as follows:<br>
   post-up echo 1 &gt; /proc/sys/net/ipv6/conf/$IFACE/disable_ipv6<br>
 </code></pre>
 
