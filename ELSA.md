@@ -29,7 +29,7 @@ The output is in JSON, so you might want to pipe the results into `jq`:
 sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" | jq '.'
 ````
 * Large number of Perl processes?<br>
-See: [Why does sostat show high load/CPU usage and large number of Perl processes?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ/_edit#why-does-sostat-show-high-loadcpu-usage-and-large-number-of-perl-processes) 
+See: [Why does sostat show high load/CPU usage and large number of Perl processes?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ#why-does-sostat-show-high-loadcpu-usage-and-large-number-of-perl-processes) 
 
 * Problems with ELSA buffers?<br>
 See: 
