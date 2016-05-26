@@ -28,9 +28,16 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
 
 * change fonts by clicking File --> Change Font.
 
-* You can separate realtime alerts into separate panes, based on severity level, by editing `/etc/sguil/sguil.conf` as follows:
+* Sguil client settings are stored in `/etc/sguil/sguil.conf`:
+  * You can enable "Show Rule", "Show Packet Data", and "Display Detail" (respectively) by setting the following (also see https://groups.google.com/d/topic/security-onion/MJaAlxgpMvU/discussion):
+  ```
+set SHOWRULE 1
+set PACKETINFO 1
+set DISPLAY_GENERIC 1
+  ```
+  * You can separate realtime alerts into separate panes, based on severity level, by editing `/etc/sguil/sguil.conf` as follows:
 
-<pre><code>
+  ```
     #Number of RealTime Event Panes    
     #set RTPANES 1    
     set RTPANES 3    
@@ -43,7 +50,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
     set RTPANE_PRIORITY(0) "1"  
     set RTPANE_PRIORITY(1) "2 3"  
     set RTPANE_PRIORITY(2) "4 5"   
-</code></pre>
+  ```
 * It is important to ensure events displayed in Sguil are regularly classified, or else it could cause problems with the Sguil database. Consider creating an [autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to assist with this.
 
 * [Configure Sguil alert email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
