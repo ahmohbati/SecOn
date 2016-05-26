@@ -1,5 +1,8 @@
 ### Security Onion Update Procedure ###
 
+#### Distributed deployments
+**IMPORTANT!** If you have a distributed deployment with a master server and separate sensor boxes, always update the master server first before updating sensors.
+
 #### Initiating an update over SSH
 If you're updating your Security Onion box over an SSH connection and your connection drops, then your update process may be left in an inconsistent state.  It is therefore recommended to run `byobu` so that your session will continue to run on the Security Onion box even if your connection drops.  `Byobu` is very handy and we recommend running it all the time to avoid forgetting about it before an update.
 ```
@@ -36,11 +39,6 @@ sudo apt-get update && sudo apt-get install securityonion-sostat
 
 For more information, please see:
 <a href='http://blog.securityonion.net/2013/08/new-securityonion-packages.html'><a href='http://blog.securityonion.net/2013/08/new-securityonion-packages.html'>http://blog.securityonion.net/2013/08/new-securityonion-packages.html</a></a>
-<br>
-<br>
-
-#### Distributed deployments
-**IMPORTANT!** Always update the master server first before updating sensors.
 <br>
 <br>
 
