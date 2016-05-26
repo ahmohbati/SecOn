@@ -21,13 +21,13 @@ https://github.com/mcholste/elsa/wiki/Documentation
 * When you query the ELSA web interface, it queries all ELSA databases in parallel and then gives you the aggregate results
 
 * You can use the command-line version of ELSA as follows (replacing example.com with your desired search criteria):
-````
+  ````
 sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" 
-````
+  ````
 The output is in JSON, so you might want to pipe the results into `jq`:
-````
+  ````
 sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" | jq '.'
-````
+  ````
 * Large number of Perl processes?<br>
 See: [Why does sostat show high load/CPU usage and large number of Perl processes?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ#why-does-sostat-show-high-loadcpu-usage-and-large-number-of-perl-processes) 
 
@@ -41,10 +41,10 @@ See:
 
 * ELSA tuning:
 
-https://github.com/mcholste/elsa/wiki/Documentation#Lowvolumeconfigurationtuning
+  https://github.com/mcholste/elsa/wiki/Documentation#Lowvolumeconfigurationtuning
 
-https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
+  https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
 
-https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
+  https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 
-https://groups.google.com/d/topic/enterprise-log-search-and-archive/Z-6YrCD_FkU/discussion
+  https://groups.google.com/d/topic/enterprise-log-search-and-archive/Z-6YrCD_FkU/discussion
