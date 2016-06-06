@@ -17,7 +17,7 @@
   * [Squert](Squert)
   * [ELSA](ELSA)
   * [Sguil](Sguil)
-  * [CapME](CapMeAuthentication)
+  * [CapME](CapMe)
   * [Snorby](Snorby)
 
 ## Data Sources ##
