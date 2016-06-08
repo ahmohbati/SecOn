@@ -39,7 +39,7 @@ pgrep -lf autossh
 ```
 sudo mysqlcheck -A
 ```
- * Check specific MySQL databases by running something similar the following:
+ * Check specific MySQL databases by running something similar to the following:
 ```
 sudo mysqlcheck -c securityonion_db
 ```
