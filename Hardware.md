@@ -53,7 +53,10 @@ Dirt Cheap and Versatile:<br>
 <a href='http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html'>http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html</a><br>
 
 Netgear GS105E (requires Windows app for config):  
-https://www.netgear.com/support/product/GS105E.aspx  
+https://www.netgear.com/support/product/GS105E.aspx 
+
+Another flavor of low cost SPAN type tap:<br>
+http://www.midbittech.com 
 
 More exhaustive list of enterprise switches with port mirroring:<br>
 <a href='http://www.miarec.com/knowledge/switches-port-mirroring'>http://www.miarec.com/knowledge/switches-port-mirroring</a><br>
