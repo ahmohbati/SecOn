@@ -38,3 +38,5 @@ log {
         destination(d_sguil_udp);
 };
 ```
+
+Please note that this option requires `set DEBUG 2` in /etc/sguild/sguild.conf.
