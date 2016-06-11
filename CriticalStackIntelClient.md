@@ -10,7 +10,7 @@ Once the client is correctly installed and configured , Bro should create `intel
 
 **Please note**: Depending on the type of traffic seen by Security Onion, it may take a while for information to be available, or for `intel.log` to be created, as this is only done once an indicator has been recognized.
 
-Also note that, by default, the Critical Stack client polls hourly to update feeds to which you are subscribed.  Requests are limited to a certain amount per hour, so it is recommended to use a different API key per server.  The feeds themselves are updated at an interval defined by the the feed author/origin.
+Also note that, by default, the Critical Stack client polls hourly to update (locally) feeds to which you are subscribed.  Requests are limited to a certain amount per hour, so it is recommended to use a different API key per server.  The content of the feeds themselves are updated at an interval defined by the the feed author/origin.
 
 For more information, please see Richard Bejtlich's TaoSecurity blog or the Critical Stack Intel Marketplace:<br/>
 http://taosecurity.blogspot.com/2015/01/try-critical-stack-intel-client.html
