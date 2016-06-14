@@ -33,6 +33,16 @@ For Bro, you would do the following:<br>
 </li><li>Start bro:<br>
 <pre><code>sudo nsm_sensor_ps-start --only-bro<br>
 </code></pre></li></ul>
-<br>
+
+####Slots####
+If you've already run Setup and want to modify min_num_slots, you can manually create/edit <code>/etc/modprobe.d/pf_ring.conf</code>.  
+
+For example, to increase min_num_slots to 65534, do the following:<br><br>
+<code>echo "options pf_ring transparent_mode=0 min_num_slots=65534" | sudo tee /etc/modprobe.d/pf_ring.conf</code>
+<br><br>After creating/editing <code>/etc/modprobe.d/pf_ring.conf</code>, you'll need to reload the PF_RING module as follows (or just reboot):<br><br>
+<code>sudo nsm_sensor_ps-stop</code><br>
+<code>sudo rmmod pf_ring</code><br>
+<code>sudo nsm_sensor_ps-start</code>
+
 #### Updating ####
 Please see the [Upgrade](Upgrade) page for notes on updating the PF_RING kernel module.
