@@ -69,7 +69,8 @@ sudo /var/lib/dpkg/info/securityonion-bro.preinst install
     | /etc/php5/apache2/php.ini | `Y` |
     | /etc/xdg/xdg-xubuntu/menus/xfce-applications.menu | `Y` |
 
-These are files that Security Onion modifies, and you may receive prompts for additional files that you have modified. The safest option for each of these is to choose to install the package maintainer’s version (`Y`, where applicable), with the exception of the prompt in regard to syslog-ng.conf. Choosing the installation of the package maintainer's version will back up the existing file in case you need to review it later for any custom modifications you had made.  **IMPORTANT!** If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version. 
+* These are files that Security Onion modifies, and you may receive prompts for additional files that you have modified. The safest option for each of these is to choose to install the package maintainer’s version (`Y`, where applicable), with the exception of the prompt in regard to syslog-ng.conf. Choosing the installation of the package maintainer's version will back up the existing file in case you need to review it later for any custom modifications you had made.<br>
+* **IMPORTANT!**  If you receive a prompt regarding syslog-ng.conf, press `N` to keep your currently-installed version.
 
 * When prompted to restart, press `Y` to continue.
 
@@ -89,8 +90,8 @@ These are files that Security Onion modifies, and you may receive prompts for ad
 
 * Add back any missing Security Onion packages by installing the `securityonion-iso` metapackage.  If you didn't install from our ISO and instead installed from your preferred flavor of Ubuntu and added our PPA and packages, then you may not necessarily need to install the `securityonion-iso` metapackage. In the command below, you can replace `securityonion-iso` with the same Security Onion metapackage(s) you originally installed (`securityonion-server`, `securityonion-sensor`,        `securityonion-all`, `securityonion-elsa`, etc).:
 
-    `sudo apt-get install securityonion-iso syslog-ng-core`  
-**IMPORTANT!** If you receive a prompt regarding `syslog-ng.conf`, press `N` to keep your currently-installed version. 
+    `sudo apt-get install securityonion-iso syslog-ng-core`<br>
+* **IMPORTANT!** If you receive a prompt regarding `syslog-ng.conf`, press `N` to keep your currently-installed version. 
 * Update all packages that are currently installed:  
 `sudo soup`
 
