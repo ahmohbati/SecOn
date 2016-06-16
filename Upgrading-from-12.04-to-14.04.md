@@ -92,7 +92,7 @@ sudo /var/lib/dpkg/info/securityonion-bro.preinst install
 * **IMPORTANT!** If you receive a prompt regarding `syslog-ng.conf`, press `N` to keep your currently-installed version. 
 
 * If you encounter an error in regard to `mod_passenger.so`, try disabling the module as follows:
-   `sudo a2dismod passenger`
+   `sudo a2dismod passenger`  
 
 * Update all packages that are currently installed:  
 `sudo soup`
