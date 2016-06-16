@@ -1,5 +1,7 @@
 * Developed by Bamm Visscher:  
-http://sguil.net
+http://sguil.net  
+http://nsmwiki.org/Sguil  
+http://nsmwiki.org/Sguil_Client  
 
 * pronounced like "squeal"
 
