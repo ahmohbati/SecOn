@@ -558,6 +558,13 @@ All known issues with the dashboard and sensor cache job have been resolved with
 ####How do I run `ntop` on Security Onion?####
 [Deploying NtopNG](DeployingNtopng)
 
+####How do I open rar files?
+We're not allowed to redistribute the unrar plugin, so you'll need to install it manually:
+```
+sudo apt-get update
+sudo apt-get install unrar
+````
+
 ####How do I perform "X" in Ubuntu?####
 Security Onion is based on Ubuntu, but we don't provide community support for the Ubuntu OS itself.  If you have questions about Ubuntu, you should check the Ubuntu website, forums, and Google.
 <br>
