@@ -67,4 +67,5 @@ More exhaustive list of enterprise switches with port mirroring:<br>
  * [Gigamon](http://gigamon.com)
  * [cPacket](http://cpacket.com)
  * [Bigswitch Monitoring Fabric](http://www.bigswitch.com/products/big-monitoring-fabric)
+ * [Garland Technologies Taps](https://www.garlandtechnology.com/products)
 
