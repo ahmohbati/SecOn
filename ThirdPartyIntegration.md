@@ -4,7 +4,7 @@ Many organizations would like to take data from Security Onion and send it to th
 
 #### Support ####
 
-We don't provide free support for third party systems, so this wiki page will be just a brief introduction to how you would accomplish this.  If you need commercial support, please see: http://www.securityonionsolutions.com
+We don't provide free support for third party systems, so this wiki page will be just a brief introduction to how you would accomplish this.  If you need commercial support, please see: https://www.securityonionsolutions.com
 
 #### How do I send Bro and OSSEC logs to an external syslog collector? ####
 Configure `/etc/syslog-ng/syslog-ng.conf` with a new `destination` to forward to your external syslog collector and then restart `syslog-ng`.
