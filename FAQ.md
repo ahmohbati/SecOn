@@ -103,7 +103,7 @@ Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-et
 
 #### Is commercial support available for Security Onion? ####
 Yes, please see:
-http://securityonionsolutions.com
+https://securityonionsolutions.com
 <br>
 <br>
 [back to top](#top)
