@@ -2,7 +2,7 @@
 
 If you need private and/or priority support, please consider purchasing commercial support:
 
-http://securityonionsolutions.com
+https://securityonionsolutions.com
 
 #### Free Support ####
 
