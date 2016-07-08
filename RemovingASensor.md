@@ -23,4 +23,6 @@ There may come a time when you need to disable a sensor interface, delete a sens
   * Start sguild<br> `sudo nsm_server_ps-start `
 
 
-* If running salt, remove the sensor from `/opt/onionsalt/salt/top.sls`.
+* If running salt:<br>
+  * Remove the sensor from `/opt/onionsalt/salt/top.sls`.<br>
+  * Delete the key from salt: `sudo salt-key -d [sensor_key_name ]`
