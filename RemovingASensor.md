@@ -25,4 +25,4 @@ There may come a time when you need to disable a sensor interface, delete a sens
 
 * If running salt:<br>
   * Remove the sensor from `/opt/onionsalt/salt/top.sls`.<br>
-  * Delete the key from salt: `sudo salt-key -d [sensor_key_name ]`
+  * Delete the key from salt: `sudo salt-key -d [sensor_key_name]`
