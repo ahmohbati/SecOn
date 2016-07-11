@@ -16,10 +16,6 @@ For the Security Onion 14.04 ISO, `securityonion-onionsalt` is pre-installed (vi
 #### Salt and OnionSalt are optional packages ####
 If you choose to install Security Onion via PPA without installing `securityonion-iso syslog-ng-core`, please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install `securityonion-onionsalt`, and nothing will change for you.  Otherwise, install `securityonion-onionsalt` before running setup to enable Salt for your deployment.
 
-#### Warning ####
-
-Please be advised that our Salt integration is still considered experimental.
-
 #### Firewall Requirements ####
 
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
