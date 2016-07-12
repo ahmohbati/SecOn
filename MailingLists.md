@@ -43,8 +43,3 @@ Attach the output to your email in plain text format (.txt) OR use a service lik
 The security-onion mailing list is for announcements and general user support questions:
 
 http://groups.google.com/group/security-onion
-
-#### Security-Onion-Testing ####
-The security-onion-testing mailing list is for those who'd like to help test upcoming versions of Security Onion packages before they are released:
-
-http://groups.google.com/group/security-onion-testing
