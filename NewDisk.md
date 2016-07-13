@@ -1,10 +1,15 @@
-#### Adding a new disk for `/nsm` ####
+## Adding a new disk
 
 Before doing this in production, make sure you practice this on a non-production system!
 
-There are two ways to do this:
-#### Method 1: ####
-Mount a separate drive to `/nsm`.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in `/nsm` to the new drive using something like this:
+There are at least 3 different ways to do this:
+
+#### Method 1: LVM (Logical Volume Management)
+As of Security Onion 14.04, the Ubuntu installer supports LVM.  If you chose the LVM option in the Ubuntu installer, then this should be the easiest way of adding disk space:
+https://wiki.ubuntu.com/Lvm
+
+#### Method 2: Mount a separate drive to `/nsm`
+This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in `/nsm` to the new drive using something like this:
 
 Stop all services
 
@@ -64,9 +69,9 @@ sudo service nsm start
 ```
 
 
-#### Method 2: ####
+#### Method 3: Make `/nsm` a symlink to the new logging location
 
-Make `/nsm` a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
+If you do this, you'll need to do something like the following to avoid AppArmor issues:
 
 Stop all services
 
