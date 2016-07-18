@@ -1,3 +1,8 @@
+#### Setup now includes sosetup-email
+As of securityonion-setup - 20120912-0ubuntu0securityonion222, the Setup package now includes a script called sosetup-email, which will automatically configure everything for you as shown below.
+
+http://blog.securityonion.net/2016/07/securityonion-setup-20120912.html
+
 #### Introduction ####
 
 This page describes how to configure email for alerting and reporting.  Applications such as Sguil and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script and from Bro.
