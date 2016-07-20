@@ -1,7 +1,6 @@
 #### Setup now includes sosetup-email
-As of securityonion-setup - 20120912-0ubuntu0securityonion222, the Setup package now includes a script called sosetup-email, which will automatically configure everything for you as shown below.
-
-http://blog.securityonion.net/2016/07/securityonion-setup-20120912.html
+As of [securityonion-setup - 20120912-0ubuntu0securityonion222](http://blog.securityonion.net/2016/07/securityonion-setup-20120912.html), the Setup package now includes a script called so-email, which will automatically configure everything for you as described below.  Simply run the following command then follow the prompts:  
+`sudo so-email`
 
 #### Introduction ####
 
