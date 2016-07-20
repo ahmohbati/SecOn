@@ -18,8 +18,9 @@ If any services are not running, try starting them:
 - Full-time analysts should install Security Onion in a VM on their workstation (run through the Ubuntu installer, but do not run our Setup wizard). This gives you a local copy of Wireshark, NetworkMiner, and our customized Sguil client.  Launch the Sguil client and connect to the IP/hostname of your production Sguil sensor (you may need to run so-allow as described in the previous step).  This allows you to investigate pcaps without fear of impacting your production server/sensors. To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr. For a list of available screen resolutions, simply execute “xrandr”. To set the screen resolution (replace W and H with the actual Width and Height desired):<br>
 `xrandr -s WxH`
 
-- Login to Sguil and review your IDS alerts. Squert and ELSA can be accessed by visiting <a href='https://server/'>https://server/</a> for additional in-depth analysis.<br>
-</li><li>Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
+- Login to Sguil and review your IDS alerts. Squert and ELSA can be accessed by visiting https://YourSecurityOnionBox/ (please note the HTTPS) for additional in-depth analysis.<br>
+
+- Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
 `sudo sostat | less`
 
 - Any IDS/NSM system needs to be tuned for the network it’s monitoring. Please see [ManagingAlerts](ManagingAlerts). You should only run the signatures you really care about.<br>
