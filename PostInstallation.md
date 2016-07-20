@@ -28,7 +28,7 @@ If any services are not running, try starting them:
 
 - On the server running the Sguil database, set the `DAYSTOKEEP` variable in `/etc/nsm/securityonion.conf` to however many days you want to keep in your archive. The default is 30, but you may need to adjust it based on your organization’s detection/response policy and your available disk space.<br>
 
-- If you enabled [http_agent](http_agent), you should tune it using http_agent.conf.  If you're running ELSA, you already have all the Bro HTTP logs available there, so you might want to disable http_agent to avoid duplicating those logs in the Sguil database:<br>
+- Modern versions of Setup automatically disable http_agent if you choose "Best Practices".  However, if you chose Custom and then chose to enable [http_agent](http_agent), you should tune it using http_agent.conf.  If you're running ELSA, you already have all the Bro HTTP logs available there, so you might want to disable http_agent to avoid duplicating those logs in the Sguil database:<br>
 ```
 # Terminate the running http_agent
 sudo nsm_sensor_ps-stop --only-http-agent
