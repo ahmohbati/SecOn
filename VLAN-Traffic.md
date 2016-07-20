@@ -1,4 +1,5 @@
-If you're monitoring VLAN tagged traffic with Snort or Suricata, you may need to modify your configuration to avoid inconsistent alerting.  Here are some things to consider.
+If you're monitoring VLAN tagged traffic with Snort or Suricata, you may need to modify your configuration to avoid inconsistent alerting.  Here are some things to consider.  As of securityonion-setup - 20120912-0ubuntu0securityonion222, Setup will automatically increase interface MTU and Snort/Suricata snaplen to account for VLAN tags:  
+http://blog.securityonion.net/2016/07/securityonion-setup-20120912.html
 
 ### Snort
 Snort's default Snap Length is 1514.  To allow for VLAN tags, you should increase this to 1518 by setting the following option in your Snort configuration file `/etc/nsm/HOSTNAME-INTERFACE/snort.conf`:
