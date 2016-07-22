@@ -20,7 +20,7 @@ sudo apt-get update
   1. Add the Security Onion stable repository:<br>
 
     ````
-sudo apt-get -y install python-software-properties
+sudo apt-get -y install software-properties-common
 sudo add-apt-repository -y ppa:securityonion/stable
 sudo apt-get update
     ````
