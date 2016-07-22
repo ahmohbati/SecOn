@@ -17,8 +17,8 @@
 </li><li>Log back in and configure MySQL not to prompt for root password:<br>
 <pre><code>echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections<br>
 </code></pre>
-</li><li>Install python-software-properties if it's not already installed:<br>
-<pre><code>sudo apt-get -y install python-software-properties<br>
+</li><li>Install software-properties-common if it's not already installed:<br>
+<pre><code>sudo apt-get -y install software-properties-common<br>
 </code></pre>
 </li><li>Add the Security Onion stable repository:<br>
 <pre><code>sudo add-apt-repository -y ppa:securityonion/stable<br>
