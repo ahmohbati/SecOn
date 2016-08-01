@@ -22,6 +22,6 @@ sudo service syslog-ng restart
 
 #### How do I write custom ELSA parsers? ####
 
-https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Adding_Parsers
+https://github.com/mcholste/elsa/wiki/Documentation#AddingParsers
 
 http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.3-guides/en/syslog-ng-ose-v3.3-guide-admin-en/html/reference_patterndb_schemes.html
