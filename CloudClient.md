@@ -25,7 +25,7 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 **This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
 
-This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04 yet.  It may not be fully functional until it is fully updated.
+This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04.  It may not be fully functional until it is fully updated.
 
 #### Security Onion Sensor ####
 
