@@ -100,7 +100,7 @@ source ./vars ## execute your new vars file
 ./build-key-server server ## creates a server cert and private key
 ./build-dh
 cd keys
-sudo cp server.crt server.key ca.crt dh2048.pem ta.key /etc/openvpn/
+sudo cp server.crt server.key ca.crt dh2048.pem /etc/openvpn/
 # The Certificate Authority is now setup and the needed keys are in /etc/openvpn/
 ```
 
