@@ -25,7 +25,7 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 **This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
 
-This guide was written for Security Onion 12.04 and has NOT been tested with Security Onion 14.04 yet.  If you test with Security Onion 14.04 successfully, please update this Wiki page to reflect that.
+This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04 yet.  It may not be fully functional until it is fully updated.
 
 #### Security Onion Sensor ####
 
@@ -63,13 +63,13 @@ sudo ufw allow 1194
 Install OpenVPN:
 ```
 sudo apt-get update
-sudo apt-get install openvpn
+sudo apt-get install openvpn easy-rsa
 ```
 
 Next, copy files to the `/etc/openvpn/easy-rsa/` directory:
 ```
 sudo mkdir /etc/openvpn/easy-rsa/ 
-sudo cp -R /usr/share/doc/openvpn/examples/easy-rsa/2.0/* /etc/openvpn/easy-rsa/ 
+sudo cp -r /usr/share/easy-rsa/* /etc/openvpn/easy-rsa/
 ```
 
 Edit `/etc/openvpn/easy-rsa/vars`:
