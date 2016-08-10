@@ -97,7 +97,7 @@ sudo chmod g+w . ## make this directory writable by the system administrators
 source ./vars ## execute your new vars file
 ./clean-all  ## Setup the easy-rsa directory (Deletes all keys)
 ./build-ca  ## generate the master Certificate Authority (CA) certificate and key
-./build-key-server myservername ## creates a server cert and private key
+./build-key-server server ## creates a server cert and private key
 ./build-dh
 cd keys
 sudo cp server.crt server.key ca.crt dh2048.pem ta.key /etc/openvpn/
