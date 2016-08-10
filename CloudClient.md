@@ -104,7 +104,7 @@ source ./vars ## execute your new vars file
 ## Refer to: https://bugs.launchpad.net/ubuntu/+source/openvpn/+bug/998918
 cd keys
 openvpn --genkey --secret ta.key  ## Build a TLS key
-sudo cp server.crt server.key ca.crt dh1024.pem ta.key ../../
+sudo cp server.crt server.key ca.crt dh2048.pem ta.key ../../
 # The Certificate Authority is now setup and the needed keys are in /etc/openvpn/
 ```
 
