@@ -77,16 +77,16 @@ Edit `/etc/openvpn/easy-rsa/vars`:
 sudo vi /etc/openvpn/easy-rsa/vars
 ```
 
-Change these lines at the bottom so that they reflect your new CA:
+Change these lines at the bottom so that they reflect the proper settings for your new CA:
 ```
-export KEY_COUNTRY="US"
-export KEY_PROVINCE="NC"
-export KEY_CITY="Winston-Salem"
-export KEY_ORG="Example Company"
-export KEY_EMAIL="steve@example.com"
-export KEY_CN=MyVPN
-export KEY_NAME=MyVPN
-export KEY_OU=MyVPN
+export KEY_COUNTRY
+export KEY_PROVINCE
+export KEY_CITY
+export KEY_ORG
+export KEY_EMAIL
+export KEY_CN
+export KEY_NAME
+export KEY_OU
 ```
 
 Setup the CA and create the first server certificate:
