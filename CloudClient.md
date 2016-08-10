@@ -80,11 +80,13 @@ sudo vi /etc/openvpn/easy-rsa/vars
 Change these lines at the bottom so that they reflect your new CA:
 ```
 export KEY_COUNTRY="US"
-export KEY_PROVINCE="CA"
-export KEY_CITY="SanFrancisco"
-export KEY_ORG="Fort-Funston"
-export KEY_EMAIL="me@myhost.mydomain"
-Also change any lines that contain "changeme"
+export KEY_PROVINCE="NC"
+export KEY_CITY="Winston-Salem"
+export KEY_ORG="Example Company"
+export KEY_EMAIL="steve@example.com"
+export KEY_CN=MyVPN
+export KEY_NAME=MyVPN
+export KEY_OU=MyVPN
 ```
 
 Setup the CA and create the first server certificate:
@@ -94,17 +96,11 @@ sudo chown -R root:sudo .  ## make this directory writable by the system adminis
 sudo chmod g+w . ## make this directory writable by the system administrators
 source ./vars ## execute your new vars file
 ./clean-all  ## Setup the easy-rsa directory (Deletes all keys)
-./build-dh  ## takes a while consider backgrounding
-./pkitool --initca ## creates ca cert and key
-./pkitool --server server ## creates a server cert and key
-## If you get this error: 
-##    "The correct version should have a comment that says: easy-rsa version 2.x"
-## Try This:
-##     sudo ln -s openssl-1.0.0.cnf openssl.cnf
-## Refer to: https://bugs.launchpad.net/ubuntu/+source/openvpn/+bug/998918
+./build-ca  ## generate the master Certificate Authority (CA) certificate and key
+./build-key-server myservername ## creates a server cert and private key
+./build-dh
 cd keys
-openvpn --genkey --secret ta.key  ## Build a TLS key
-sudo cp server.crt server.key ca.crt dh2048.pem ta.key ../../
+sudo cp server.crt server.key ca.crt dh2048.pem ta.key /etc/openvpn/
 # The Certificate Authority is now setup and the needed keys are in /etc/openvpn/
 ```
 
