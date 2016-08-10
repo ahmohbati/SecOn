@@ -166,7 +166,7 @@ sudo service openvpn restart
 
 Check log for errors:
 ```
-tail -f /var/log/syslog
+sudo tail -f /var/log/syslog
 ```
 
 Verify tap0 came up:
