@@ -176,10 +176,10 @@ Generate client cert (replacing "client" with the name of the cloud client you w
 ```
 cd /etc/openvpn/easy-rsa/ ## move to the easy-rsa directory
 source ./vars             ## execute the vars file
-KEY_CN=client ./pkitool client
+./build-key client
 ```
 
-Copy generated files to cloud client:
+Copy generated files to cloud client (replacing "client" with the name of the cloud client you want to add):
 ```
 scp /etc/openvpn/easy-rsa/keys/client* username@hostname:~/
 scp /etc/openvpn/easy-rsa/keys/ca.crt username@hostname:~/
