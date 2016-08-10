@@ -151,6 +151,8 @@ Modify `/etc/openvpn/server.conf`:
 sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/server.conf
 sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/server.conf
 sudo sed -i 's|^comp-lzo|;comp-lzo|g' /etc/openvpn/server.conf
+sudo sed -i 's|^dh dh1024.pem|dh dh2048.pem|g' /etc/openvpn/server.conf
+
 
 cat << EOF | sudo tee -a /etc/openvpn/server.conf
 
