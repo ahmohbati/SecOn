@@ -1,7 +1,7 @@
 #### Introduction
 Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger or netsniff-ng as a virtual tap.  This virtual tap will copy all traffic from our production cloud box to an OpenVPN bridge that transports the traffic to our Security Onion sensor where it is then analyzed.
 
-**Warning! This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
+**Warning! This cloud client is considered experimental!  USE AT YOUR OWN RISK!**
 
 This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04.  It may not be fully functional until it is fully updated.
 
