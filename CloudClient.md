@@ -172,14 +172,15 @@ Verify tap0 came up:
 ifconfig
 ```
 
-Generate client cert (replacing "client" with the name of the cloud client you want to add):
+#### Generate client certs
+Do this for each cloud client you want to monitor.  Generate client cert (replacing `client` with the name of the cloud client you want to add):
 ```
 cd /etc/openvpn/easy-rsa/ ## move to the easy-rsa directory
 source ./vars             ## execute the vars file
 ./build-key client
 ```
 
-Copy generated files to cloud client (replacing "client" with the name of the cloud client you want to add):
+Copy generated files to cloud client (replacing `client` with the name of the cloud client you want to add):
 ```
 scp /etc/openvpn/easy-rsa/keys/client* username@hostname:~/
 scp /etc/openvpn/easy-rsa/keys/ca.crt username@hostname:~/
