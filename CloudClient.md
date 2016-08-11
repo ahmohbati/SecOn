@@ -271,6 +271,8 @@ Add the following to your eth stanza in `/etc/network/interfaces`:
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 ```
 
+Bounce the interface (you may lose access if connected remotely over ssh) or reboot the box.
+
 #### Check traffic
 Your Security Onion sensor should now be seeing traffic from your Cloud Client.  Verify as follows:
 ```
