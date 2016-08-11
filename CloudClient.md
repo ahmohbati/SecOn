@@ -27,7 +27,15 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 #### Security Onion Sensor
 
-We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1 (Network Configuration), allow it to write your `/etc/network/interfaces` file, but DON'T reboot at the end:
+We start with our Security Onion sensor.  
+
+First, ensure that bridge-utils are installed:
+```
+sudo apt-get update
+sudo apt-get install bridge-utils
+```
+
+Run Security Onion Setup Phase 1 (Network Configuration), allow it to write your `/etc/network/interfaces` file, but DON'T reboot at the end:
 ```
 sudo sosetup
 ```
@@ -266,7 +274,7 @@ ifconfig
 ```
 
 Disable NIC offloading functions on main ethernet interface.
-Add the following to your eth stanza in `/etc/network/interfaces`:
+Add the following to your eth stanza in `/etc/network/interfaces` OR add to `/etc/openvpn/up.sh`:
 ```
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 ```
