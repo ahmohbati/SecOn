@@ -29,7 +29,7 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 We start with our Security Onion sensor.  
 
-First, ensure that bridge-utils are installed:
+First, ensure that the bridge-utils package is installed:
 ```
 sudo apt-get update
 sudo apt-get install bridge-utils
