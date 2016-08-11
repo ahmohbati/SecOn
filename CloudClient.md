@@ -1,13 +1,17 @@
-#### Introduction ####
+#### Introduction
 Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger or netsniff-ng as a virtual tap.  This virtual tap will copy all traffic from our production cloud box to an OpenVPN bridge that transports the traffic to our Security Onion sensor where it is then analyzed.
 
-#### Traffic Flow and NIC offloading functions ####
+**Warning! This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
+
+This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04.  It may not be fully functional until it is fully updated.
+
+#### Traffic Flow and NIC offloading functions
 The cloud client uses `daemonlogger` or `netsniff-ng` to copy all packets from eth0 to tap0 (OpenVPN).  OpenVPN transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.  This guide will walk you through disabling NIC offloading functions on eth0 and br0 via `/etc/network/interfaces` and tap0 via `/etc/openvpn/up.sh`.
 
-#### Daemonlogger vs netsniff-ng ####
+#### Daemonlogger vs netsniff-ng
 This guide is written using `daemonlogger` because it is more likely to be available on most cloud boxes.  If `netsniff-ng` is available, it can provide higher performance (less packet loss), and you would just need to change the calls from daemonlogger to netsniff-ng and translate the options to the equivalent netsniff-ng options.
 
-#### References and Thanks ####
+#### References and Thanks
 
 This is based on Josh Brower's great work:
 
@@ -21,13 +25,7 @@ https://help.ubuntu.com/community/OpenVPN
 
 https://help.ubuntu.com/lts/serverguide/openvpn.html
 
-### Warning! ###
-
-**This cloud client is considered experimental.  USE AT YOUR OWN RISK!**
-
-This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04.  It may not be fully functional until it is fully updated.
-
-#### Security Onion Sensor ####
+#### Security Onion Sensor
 
 We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1 (Network Configuration), allow it to write your `/etc/network/interfaces` file, but DON'T reboot at the end:
 ```
@@ -173,7 +171,9 @@ ifconfig
 ```
 
 #### Generate client certs
-Do this for each cloud client you want to monitor.  Generate client cert (replacing `client` with the name of the cloud client you want to add):
+Perform the steps in this section for each cloud client you want to monitor.  
+
+Generate client cert (replacing `client` with the name of the cloud client you want to add):
 ```
 cd /etc/openvpn/easy-rsa/ ## move to the easy-rsa directory
 source ./vars             ## execute the vars file
@@ -186,7 +186,9 @@ scp /etc/openvpn/easy-rsa/keys/client* username@hostname:~/
 scp /etc/openvpn/easy-rsa/keys/ca.crt username@hostname:~/
 ```
 
-#### Cloud client ####
+#### Cloud client
+
+Perform the steps in this section on each cloud client you want to monitor.
 
 Install `openvpn` and `daemonlogger`:
 ```
@@ -269,7 +271,7 @@ Add the following to your eth stanza in `/etc/network/interfaces`:
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 ```
 
-#### Check traffic ####
+#### Check traffic
 Your Security Onion sensor should now be seeing traffic from your Cloud Client.  Verify as follows:
 ```
 sudo tcpdump -nnvvAi tap0
@@ -282,8 +284,8 @@ sudo tcpdump -nnvvAi br0
 
 When you ran Setup phase 2 you configured Security Onion to monitor br0, so you should be getting IDS alerts and Bro logs.
 
-#### Hardening ####
+#### Hardening
 Once you get everything working properly, you should configure OpenVPN (server and client) and daemonlogger to run as a limited user.
 
-#### Tuning ####
+#### Tuning
 If your cloud box is seeing lots of traffic, daemonlogger may not be able to keep up, resulting in packet loss.  You may need to switch to netsniff-ng for higher performance.  Don't forget to run netsniff-ng as a limited user!
