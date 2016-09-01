@@ -2,7 +2,7 @@
 If you're running Security Onion 14.04 with all updates applied as of 2016/08/31, then you should be able to monitor VLAN tagged traffic with no special configuration.  The current version of Suricata will automatically increase its snaplen setting to account for VLAN tags and our current NSM scripts will automatically update Snort's snaplen in the same way.
 
 ## Older software
-If for some reason you have to run older software, you may need to modify your configuration to avoid inconsistent alerting.  Here are some things to consider.  
+If for some reason you are unable to install the latest updates and have to run older software, you may need to modify your configuration to avoid inconsistent alerting.  Here are some things to consider.  
 
 ### Snort
 Snort's default Snap Length is 1514.  To allow for VLAN tags, you can increase this to 1518 by setting the following option in your Snort configuration file `/etc/nsm/HOSTNAME-INTERFACE/snort.conf`:
