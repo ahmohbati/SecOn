@@ -1,5 +1,8 @@
-* Developed by Paul Halliday:  
+* Originally developed by Paul Halliday:  
 http://www.squertproject.org/
+
+* Security Onion maintains its own fork of Squert:  
+http://blog.securityonion.net/2016/09/squert-development.html
 
 * PHP web interface to Sguil database
 
