@@ -15,8 +15,7 @@ If any services are not running, try starting them:
 
 - As of securityonion-setup - 20120912-0ubuntu0securityonion201, Setup now defaults to only opening port 22 in the firewall.  If you need to connect OSSEC agents, syslog devices, or analyst VMs, you can run the new `so-allow` utility which will walk you through creating firewall rules to allow these devices to connect.  For more information, please see the [firewall](Firewall) page.<br>
 
-- Full-time analysts should install Security Onion in a VM on their workstation (run through the Ubuntu installer, but do not run our Setup wizard). This gives you a local copy of Wireshark, NetworkMiner, and our customized Sguil client.  Launch the Sguil client and connect to the IP/hostname of your production Sguil sensor (you may need to run so-allow as described in the previous step).  This allows you to investigate pcaps without fear of impacting your production server/sensors. To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr. For a list of available screen resolutions, simply execute “xrandr”. To set the screen resolution (replace W and H with the actual Width and Height desired):<br>
-`xrandr -s WxH`
+- Full-time analysts should use an [Analyst VM](Analyst-VM).
 
 - Login to Sguil and review your IDS alerts. Squert and ELSA can be accessed by visiting https://YourSecurityOnionBox/ (please note the HTTPS) for additional in-depth analysis.<br>
 
