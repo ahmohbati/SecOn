@@ -25,3 +25,7 @@ sudo service syslog-ng restart
 https://github.com/mcholste/elsa/wiki/Documentation#AddingParsers
 
 http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.3-guides/en/syslog-ng-ose-v3.3-guide-admin-en/html/reference_patterndb_schemes.html
+
+##### Palo Alto default log format parser #####
+
+https://groups.google.com/forum/#!topic/enterprise-log-search-and-archive/SJwOY7N2A60
