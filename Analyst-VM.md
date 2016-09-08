@@ -16,5 +16,5 @@ xrandr -s WxH
 If you have limited screen resolution options, you may need to install the Virtual Tools for your virtualization solution.  For example, this can happen if you're running VirtualBox and you'll need to install the VirtualBox Extensions.
 
 ## Ultimate Forensics VM
-Want an analyst VM that also includes SANS SIFT AND Remnux?  See Brian Kellogg's Ultimate Forensics VM:  
+Want an analyst VM that also includes forensics and reverse engineering tools from SANS SIFT and Remnux?  See Brian Kellogg's Ultimate Forensics VM:  
 https://github.com/theflakes/Ultimate-Forensics-VM
