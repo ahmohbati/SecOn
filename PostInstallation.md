@@ -1,3 +1,5 @@
+#### Check services
+
 Verify services are running:  
 ```sudo service nsm status```
 
