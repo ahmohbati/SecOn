@@ -1,9 +1,9 @@
 #### Check services
 
-Verify services are running:  
+- Verify services are running:  
 ```sudo service nsm status```
 
-If any services are not running, try starting them:  
+- If any services are not running, try starting them:  
 ```sudo service nsm start```
 
 #### Tuning / Miscellaneous
