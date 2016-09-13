@@ -5,31 +5,35 @@
 
 Eric Conrad  
 C2 Phone Home: Leveraging Security Onion to Identify Command and Control Channels  
-http://www.ericconrad.com/2016/09/c2-phone-home-leveraging-securityonion.html
+[Slides](http://www.ericconrad.com/2016/09/c2-phone-home-leveraging-securityonion.html) - [Video](https://www.youtube.com/watch?v=ViR405l-ggg&index=1&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
 
 Robert M. Lee  
 ICS/SCADA Network Security Monitoring in Difficult Scenarios  
+[Video](https://www.youtube.com/watch?v=R67qce_KrY8&index=2&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
 
 Josh Brower  
 Uncovering Persistence With Autoruns & Security Onion  
-http://www.slideshare.net/DefensiveDepth/security-onion-conference-2016
+[Slides](http://www.slideshare.net/DefensiveDepth/security-onion-conference-2016) - [Video](https://www.youtube.com/watch?v=LT45m30Ev4s&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=3)
 
 Chris Sanders  
 The Investigation Labyrinth  
-http://www.slideshare.net/chrissanders88/soc2016-the-investigation-labyrinth?cardname=player&autoplay_disabled=true&earned=true&lang=en&card_height=130
+[Slides](http://www.slideshare.net/chrissanders88/soc2016-the-investigation-labyrinth?cardname=player&autoplay_disabled=true&earned=true&lang=en&card_height=130) - [Video](https://www.youtube.com/watch?v=nW9g2K69qOA&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=4)
 
 Martin Holste  
 ELSA 2.0  
-https://drive.google.com/file/d/0By1KXg1ivlIeaDNBd2VBT0NUMFU/view
+[Slides](https://drive.google.com/file/d/0By1KXg1ivlIeaDNBd2VBT0NUMFU/view) - [Video](https://www.youtube.com/watch?v=U8gwKp8enYQ&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=5)
 
 Chris McCubbin  
 Practical Cyborgism: Machine Learning for Bro Logs
+[Video](https://www.youtube.com/watch?v=ZV5Ckf9wLrc&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=6)
 
 Brad Duncan  
 My Use of Security Onion as a researcher
+[Video](https://www.youtube.com/watch?v=eFaPVym_n1A&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=7)
 
 Nathan Crews and Tanner Payne  
 Simplifying Home Security with CHIVE
+[Video](https://www.youtube.com/watch?v=zBDAjNnRiQI&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=8)
 
 # Security Onion Conference 2015
 Todd Heberlein - Looking Back Over a Quarter Century of Network Monitoring  
