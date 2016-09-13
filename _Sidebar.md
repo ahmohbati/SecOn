@@ -12,6 +12,7 @@
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
   * [Videos](Videos)
   * [Architecture](Architecture)
+  * [Conference](Conference)
 
 ## Interfaces ##
   * [Squert](Squert)
