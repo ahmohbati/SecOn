@@ -27,6 +27,9 @@ Brad Duncan - My Use of Security Onion as a researcher
 Nathan Crews and Tanner Payne - Simplifying Home Security with CHIVE  
 [Video](https://www.youtube.com/watch?v=zBDAjNnRiQI&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=8)
 
+Doug Burks - State of the Onion  
+[Video](https://www.youtube.com/watch?v=AXk-Te_lMmg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=9)
+
 # Security Onion Conference 2015
 Todd Heberlein - Looking Back Over a Quarter Century of Network Monitoring  
 http://www.toddheberlein.com/blog/2015/9/11/security-onion-conference-presentation
