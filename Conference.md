@@ -3,7 +3,7 @@
 
 [![Security Onion Conference 2016](http://img.youtube.com/vi/ViR405l-ggg/0.jpg)](https://www.youtube.com/watch?v=ViR405l-ggg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
 
-Eric Conrad - C2 Phone Home: Leveraging Security Onion to Identify Command & Control Channels  
+Eric Conrad - C2 Phone Home: Leveraging Security Onion to Identify C&C Channels  
 [Slides](http://www.ericconrad.com/2016/09/c2-phone-home-leveraging-securityonion.html) - [Video](https://www.youtube.com/watch?v=ViR405l-ggg&index=1&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
 
 Robert M. Lee - ICS/SCADA Network Security Monitoring in Difficult Scenarios  
