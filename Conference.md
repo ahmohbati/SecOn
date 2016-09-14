@@ -63,7 +63,7 @@ https://drive.google.com/file/d/0B4apMwOBMmVUOXE0c0dDdWc1U0k/view?usp=sharing
 
 Richard Bejtlich - Keynote Speech  
 Dustin Webber - Why I Built Snorby and the Future of Security Interfaces  
-Paul Halliday - SQUERT – An Open Source Web Interface for Network Security Monitoring (NSM) Data  
+Paul Halliday - SQUERT – An Open Source Web Interface for NSM Data  
 Martin Holste - ELSA  
 Mike Reeves - Scaling Security Onion to the Enterprise  
 Josh Brower - The Security Onion Cloud Client  
