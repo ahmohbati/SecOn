@@ -61,14 +61,14 @@ https://drive.google.com/file/d/0B4apMwOBMmVUOXE0c0dDdWc1U0k/view?usp=sharing
 
 ### Security Onion Conference 2014
 
-Richard Bejtlich - Keynote Speech
-Dustin Webber - Why I Built Snorby and the Future of Security Interfaces
-Paul Halliday - SQUERT – An Open Source Web Interface for Network Security Monitoring (NSM) Data
-Martin Holste - ELSA
-Mike Reeves - Scaling Security Onion to the Enterprise
-Josh Brower - The Security Onion Cloud Client
-Chris Sanders and Jason Smith - Using Flow Data Effectively
-Ben Knowles - Learn Analysis and Forensics for Free** with Security Onion
-Tim Krabec - Custodiet MSSP Framework
-Scott Runnels - Contributing to Security Onion
+Richard Bejtlich - Keynote Speech  
+Dustin Webber - Why I Built Snorby and the Future of Security Interfaces  
+Paul Halliday - SQUERT – An Open Source Web Interface for Network Security Monitoring (NSM) Data  
+Martin Holste - ELSA  
+Mike Reeves - Scaling Security Onion to the Enterprise  
+Josh Brower - The Security Onion Cloud Client  
+Chris Sanders and Jason Smith - Using Flow Data Effectively  
+Ben Knowles - Learn Analysis and Forensics for Free** with Security Onion  
+Tim Krabec - Custodiet MSSP Framework  
+Scott Runnels - Contributing to Security Onion  
 Doug Burks - State of the Onion, Q&A, Closing Remarks
