@@ -1,5 +1,5 @@
 ### Location
-Our annual Security Onion Conference is hosted in beautiful Augusta GA.
+Our annual Security Onion Conference is hosted in beautiful Augusta GA at Augusta University.
 
 ### Social Media
 The Twitter hashtag is #socAugusta:  
