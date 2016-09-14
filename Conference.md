@@ -6,6 +6,9 @@ The Twitter hashtag is #socAugusta:
 https://twitter.com/search?q=socaugusta&src=typd
 
 # Security Onion Conference 2016
+
+[Pictures](http://blog.securityonion.net/2016/09/pictures-from-security-onion-conference.html)
+
 [Security Onion Conference 2016 Video Playlist](https://www.youtube.com/watch?v=ViR405l-ggg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
 
 [![Security Onion Conference 2016](http://img.youtube.com/vi/ViR405l-ggg/0.jpg)](https://www.youtube.com/watch?v=ViR405l-ggg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
@@ -36,8 +39,6 @@ Nathan Crews and Tanner Payne - Simplifying Home Security with CHIVE
 
 Doug Burks - State of the Onion  
 [Video](https://www.youtube.com/watch?v=AXk-Te_lMmg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe&index=9)
-
-[Pictures](http://blog.securityonion.net/2016/09/pictures-from-security-onion-conference.html)
 
 # Security Onion Conference 2015
 Todd Heberlein - Looking Back Over a Quarter Century of Network Monitoring  
