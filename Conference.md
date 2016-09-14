@@ -1,3 +1,10 @@
+# Location
+Our annual Security Onion Conference is hosted in beautiful Augusta GA.
+
+# Social Media
+The Twitter hashtag is #socAugusta:  
+https://twitter.com/search?q=socaugusta&src=typd
+
 # Security Onion Conference 2016
 [Security Onion Conference 2016 Video Playlist](https://www.youtube.com/watch?v=ViR405l-ggg&list=PLljFlTO9rB15Tve-LhV5k_5_0HH37eALe)
 
