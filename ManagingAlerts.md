@@ -159,16 +159,26 @@ As mentioned before, take care in disabling signatures as it can be likely that 
 ```
 * Run the rule update on the master server:
 ```
-     sudo /usr/bin/rule-update
+     sudo rule-update
 ```
 * If you're running salt on your distributed deployment, then the ruleset will replicate to your sensors automatically within 15 minutes.  If you're not running salt, then you can run rule-update on the slave machines:
 ```
-     sudo /usr/bin/rule-update
+     sudo rule-update
+```
+
+#### modifysid.conf ####
+PulledPork's modifysid.conf will allow you to write modifications to rules that are applied every time PulledPork downloads the latest ruleset.  There are several examples in the modifysid.conf file, so we won't repeat them here.  Edit the modifysid.conf configuration file:
+```
+     sudo vi /etc/nsm/pulledpork/modifysid.conf
+```
+
+Then run rule-update:
+```
+sudo rule-update
 ```
 
 #### Rewrite the signature ####
-Sometimes a signature is simply written too broadly for the particular use on a sensor.  In this case, a small rewrite to the signature can make it so we can weed out.
-In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rules
+In some cases, you may not want to use Pulledpork's modifysid.conf, but instead create a copy of the rule and disable the original.  In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rules
 * Edit the /etc/nsm/rules/local.rules file:
 ```
      sudo vi /etc/nsm/rules/local.rules
@@ -198,16 +208,8 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
 ```
 * Run a rule update:
 ```
-   sudo /usr/bin/rule-update
+   sudo rule-update
 ```
-
-
-#### modifysid.conf ####
-Another option is to use PulledPork's modifysid.conf to do the above.  There are several examples in the modifysid.conf file, so we won't repeat them here.  Edit the modifysid.conf configuration file:
-```
-     sudo vi /etc/nsm/pulledpork/modifysid.conf
-```
-
 
 #### Threshold ####
 See /etc/nsm/rules/threshold.conf
