@@ -1,7 +1,7 @@
 ### Introduction
 HWE stands for Hardware Enablement and is Ubuntu's term for kernel and graphics driver support.  Depending on which HWE stack you're running, you may need to upgrade it.
 
-### Install all updates first
+### Install updates first
 Some older versions may not have the hwe-support-status tool that we're going to use in the next step, so our first step is to install all updates using [soup](Upgrade):
 ```
 sudo soup
@@ -16,7 +16,7 @@ sudo hwe-support-status
 
 If it says `Your Hardware Enablement Stack (HWE) is supported until April 2019`, then no further action is required and you can ignore the rest of the page.  If you got something other than that, then please continue reading!
 
-### Upgrading HWE
+### Upgrade HWE
 If you're running Security Onion 14.04 and you get a WARNING that security updates have ended, you may need to upgrade your HWE stack using the "Ubuntu 14.04 LTS - Trusty Tahr" instructions here:  
 https://wiki.ubuntu.com/Kernel/LTSEnablementStack
 
