@@ -48,7 +48,7 @@ For more information, please see:
 <br>
 
 #### HWE
-Also be aware that you may need to manually upgrade your [HWE](HWE stack).
+Also be aware that you may need to manually upgrade your [HWE stack](HWE).
 
 #### Standard Ubuntu package management tools
 The `soup` command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
