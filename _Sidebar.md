@@ -8,11 +8,14 @@
   * [After Installation](PostInstallation)
   * [UTC and Time Zones](TimeZones)
   * [Services](Services)
-  * [Updating](Upgrade)
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
   * [Videos](Videos)
   * [Architecture](Architecture)
   * [Conference](Conference)
+
+## Update/Upgrade
+  * [Updating](Upgrade)
+  * [Upgrading from 12.04 to 14.04](Upgrading-from-12.04-to-14.04)
 
 ## Interfaces ##
   * [Squert](Squert)
@@ -70,7 +73,3 @@
 ## Known Issues / Roadmap ##
   * [Known Issues](https://github.com/Security-Onion-Solutions/security-onion/issues)
   * [Roadmap](Roadmap)
-
-## 14.04 ##
-  * [Release Notes](Security-Onion-14.04-Release-Notes)
-  * [Upgrading from 12.04](Upgrading-from-12.04-to-14.04)
