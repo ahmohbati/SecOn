@@ -44,9 +44,6 @@ sudo salt '*' cmd.run 'InsertYourCommandHere'
 #### Features ####
 When you install and enable securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
 
-  * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
-  * user ssh keys in /opt/onionsalt/salt/users/keys/
-    * For each user account in /opt/onionsalt/pillar/users/init.sls, you can add an SSH Public Key to /opt/onionsalt/salt/users/keys/USERNAME.id\_rsa.pub (replacing USERNAME with the user's actual username)
   * NIDS rules in /etc/nsm/rules/ (Snort/Suricata/barnyard will automatically restart as necessary)
   * HIDS rules in /var/ossec/rules/local\_rules.xml (OSSEC will automatically restart as necessary)
   * Bro scripts in /opt/bro/share/bro/policy/
@@ -59,6 +56,9 @@ sudo salt '*' cmd.run 'nsm_sensor_ps-restart --only-bro'
 ```
   * Bro intel in /opt/bro/share/bro/intel/
     * You'll need to restart Bro as shown above if you add any intel files to the default intel.dat.  After that initial Bro restart, Bro should be watching the intel files with the Input framework which should automatically notice if the files ever change (new intel is added).  In many cases, you won't need to restart Bro if you're just adding intel to the existing intel file(s).
+  * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
+  * user ssh keys in /opt/onionsalt/salt/users/keys/
+    * For each user account in /opt/onionsalt/pillar/users/init.sls, you can add an SSH Public Key to /opt/onionsalt/salt/users/keys/USERNAME.id\_rsa.pub (replacing USERNAME with the user's actual username)
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
