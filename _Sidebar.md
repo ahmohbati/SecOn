@@ -15,6 +15,7 @@
 
 ## Update/Upgrade
   * [Updating](Upgrade)
+  * [HWE](HWE)
   * [Upgrading from 12.04 to 14.04](Upgrading-from-12.04-to-14.04)
 
 ## Interfaces ##
