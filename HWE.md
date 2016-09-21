@@ -6,6 +6,7 @@ Some older versions may not have the hwe-support-status tool that we're going to
 ```
 sudo soup
 ```
+If soup prompts to reboot, please do so.
 
 ### Check HWE Status
 Now that all updates have been installed, run the `hwe-support-status` tool to see if your HWE stack is supported:
