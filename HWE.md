@@ -1,5 +1,5 @@
 ### Introduction
-HWE stands for Hardware Enablement and is Ubuntu's term for kernel and graphics driver support.
+HWE stands for Hardware Enablement and is Ubuntu's term for kernel and graphics driver support.  Depending on which HWE stack you're running, you may need to upgrade it.
 
 ### Install all updates first
 Some older versions may not have the hwe-support-status tool that we're going to use in the next step, so our first step is to install all updates using [soup](Upgrade):
