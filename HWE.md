@@ -5,5 +5,5 @@ Check to see if your HWE stack is supported:
 sudo hwe-support-status
 ```
 
-If you get a WARNING that security updates have ended, you may need to upgrade your HWE stack using the instructions here:  
+If you're running Security Onion 14.04 and you get a WARNING that security updates have ended, you may need to upgrade your HWE stack using the "Ubuntu 14.04 LTS - Trusty Tahr" instructions here:  
 https://wiki.ubuntu.com/Kernel/LTSEnablementStack
