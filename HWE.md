@@ -26,7 +26,7 @@ If you're running Security Onion 14.04 and you get a WARNING that security updat
 https://wiki.ubuntu.com/Kernel/LTSEnablementStack
 
 ### Example
-For example, if you installed your system using our original Security Onion 14.04 ISO images (14.04.3.1, 14.04.4.4.1, or 14.04.4.2), then you're running an interim HWE stack and you'll need to upgrade the HWE stack as follows:
+For example, if you installed your system using our older Security Onion 14.04 ISO images (14.04.3.1, 14.04.4.4.1, or 14.04.4.2), then you're running an interim HWE stack and you'll need to upgrade the HWE stack as follows:
 ```
 # First, run soup to ensure that all updates have been installed
 sudo soup
