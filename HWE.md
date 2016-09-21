@@ -7,7 +7,7 @@ Check to see if your HWE stack is supported:
 sudo hwe-support-status
 ```
 
-If it says `Your Hardware Enablement Stack (HWE) is supported until April 2019.`, then no further action is required and you can ignore the rest of the page.  If you got something other than that, then please continue reading!
+If it says `Your Hardware Enablement Stack (HWE) is supported until April 2019`, then no further action is required and you can ignore the rest of the page.  If you got something other than that, then please continue reading!
 
 ### Upgrading HWE
 If you're running Security Onion 14.04 and you get a WARNING that security updates have ended, you may need to upgrade your HWE stack using the "Ubuntu 14.04 LTS - Trusty Tahr" instructions here:  
