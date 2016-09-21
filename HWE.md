@@ -25,6 +25,8 @@ If it says `Your Hardware Enablement Stack (HWE) is supported until April 2019`,
 If you're running Security Onion 14.04 and you get a WARNING that security updates have ended, you may need to upgrade your HWE stack using the "Ubuntu 14.04 LTS - Trusty Tahr" instructions here:  
 https://wiki.ubuntu.com/Kernel/LTSEnablementStack
 
+You may then want to reboot and run `hwe-support-status` again to verify that it now says `Your Hardware Enablement Stack (HWE) is supported until April 2019`.
+
 ### Example
 For example, if you installed your system using our older Security Onion 14.04 ISO images (14.04.3.1, 14.04.4.4.1, or 14.04.4.2), then you're running an interim HWE stack and you'll need to upgrade the HWE stack as follows:
 ```
@@ -37,7 +39,13 @@ sudo soup
 sudo hwe-support-status
 
 # If hwe-support-status asks you to upgrade to a new HWE stack, then do the following:
-sudo apt-get install --install-recommends linux-generic-lts-xenial xserver-xorg-core-lts-xenial xserver-xorg-lts-xenial xserver-xorg-video-all-lts-xenial xserver-xorg-input-all-lts-xenial libwayland-egl1-mesa-lts-xenial 
+sudo apt-get install --install-recommends linux-generic-lts-xenial xserver-xorg-core-lts-xenial xserver-xorg-lts-xenial xserver-xorg-video-all-lts-xenial xserver-xorg-input-all-lts-xenial libwayland-egl1-mesa-lts-xenial
+
+# Reboot
+sudo reboot
+
+# Run hwe-support-status again to verify
+sudo hwe-support-status 
 ```
 
 ### More information
