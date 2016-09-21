@@ -7,6 +7,7 @@ Check to see if your HWE stack is supported:
 sudo hwe-support-status
 ```
 
+### Upgrading HWE
 If you're running Security Onion 14.04 and you get a WARNING that security updates have ended, you may need to upgrade your HWE stack using the "Ubuntu 14.04 LTS - Trusty Tahr" instructions here:  
 https://wiki.ubuntu.com/Kernel/LTSEnablementStack
 
@@ -17,3 +18,10 @@ sudo apt-get install --install-recommends linux-generic-lts-xenial xserver-xorg-
 ```
 
 Our recent 14.04.5.1 ISO image already includes the 16.04 Xenial HWE stack.
+
+### More information
+For more information, please see:  
+
+https://lists.ubuntu.com/archives/ubuntu-security-announce/2016-July/003493.html
+
+https://wiki.ubuntu.com/Kernel/LTSEnablementStack
