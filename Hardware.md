@@ -14,6 +14,9 @@ In an enterprise distributed deployment, a master server should just be a master
 
 The following hardware requirements apply to sensors.  They do not apply to master-only installations as described above.
 
+##### Virtualization
+Sensors can be virtualized.  However, for sensors monitoring lots of traffic, we recommend dedicated physical hardware to avoid competing for resources.
+
 ##### CPU
 Snort, Suricata, and Bro are very CPU intensive.  The more traffic you are monitoring, the more CPU cores you'll need.  A very rough ballpark estimate would be 200Mbps per Snort instance, Suricata worker, or Bro worker.  So if you have a fully saturated 1Gbps link and are running Snort and Bro, then you'll want at least 5 Snort instances and 5 Bro workers, which means you'll need at least 10 CPU cores for Snort and Bro with additional CPU cores for netsniff-ng and/or other services.
 
@@ -39,6 +42,8 @@ If you're buying a new server, go ahead and max out the RAM (it's cheap!).  As a
 
 ##### Storage
 Sensors that have full packet capture (and/or ELSA) enabled need LOTS of storage. For example, suppose you are monitoring a link that averages 50Mbps, here are some quick calculations: 50Mb/s = 6.25 MB/s = 375 MB/minute = 22,500 MB/hour = 540,000 MB/day. So you're going to need about 540GB for one day's worth of pcaps (multiply this by the number of days you want to keep on disk for investigative/forensic purposes). Note that this is just pcaps and ELSA will need disk space as well.  By default, Setup will set ELSA's log_size_limit to be about 50% of your disk space leaving about the other half of your disk for full packet capture, so you may want to double your pcap calculation to ensure sufficient storage for pcap and a long ELSA archive. The more disk space you have, the more log retention you'll have for doing investigations after the fact. Disk is cheap, get all you can!
+
+We highly recommend using local storage whenever possible!  SAN/iSCSI/FibreChannel can be made to work, but they increase complexity and points of failure.  By using local storage, you keep everything self-contained and you don't have to worry about competing for resources.
 
 ##### NIC
 You'll need at least two wired network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get good quality network card, especially for sniffing.  Most users report good experiences with Intel cards.
