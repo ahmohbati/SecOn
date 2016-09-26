@@ -7,6 +7,8 @@
 ```sudo service nsm start```
 
 #### Tuning / Miscellaneous
+- Check your sniffing interfaces to see if they have Receive Side Scaling (RSS) queues (you may need to reduce to 1): https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Packet_Capture
+
 - Are you monitoring network traffic that has VLAN tags?  If so, take a look at our [VLAN](VLAN-Traffic) page.
 
 - If you’re monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12), you should update your sensor configuration with the correct IP ranges. Sensor configuration files can be found in `/etc/nsm/$HOSTNAME-$INTERFACE/`. Modify either `snort.conf` or `suricata.yaml` (depending on which IDS engine you chose during `sosetup`) and update the `HOME_NET` variable.  (As of securityonion-setup - 20120912-0ubuntu0securityonion222, Setup should automatically ask you for HOME_NET and configure these for you.) You may also want to consider updating the `EXTERNAL_NET` variable.  If you're runnning prads (you're probably not), then update the `home_nets` variable in `prads.conf`. Then update Bro’s network configuration in `/opt/bro/etc/networks.cfg`.  Restart the sensor processes:<br>
