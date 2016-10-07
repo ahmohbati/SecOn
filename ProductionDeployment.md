@@ -50,9 +50,9 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 </li><li>Choose whether the host being configured will be Standalone, Server, or Sensor.  If deploying a distributed environment (a master server and one or more slave sensors), the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  So the first box should be configured using "Server" and the remaining boxes should be configured using "Sensor".<br>
 * Standalone<br>
       * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.<br>
-      * If you have multiple CPU cores available:<br>
-        * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
-        * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
+      * If you have multiple CPU cores available, the Best Practices option should automatically assign an equal number of IDS and Bro processes based on your number of CPU cores.  If instead of Best Practices you choose Custom, then:<br>
+        * you will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
+        * you will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
       * You’ll be asked which IDS ruleset you would like to use.<br>
       * You will then be prompted for user account information for Sguil, Squert, and ELSA.<br>
       * You’ll be prompted to proceed with making the changes to setup Security Onion.<br>
