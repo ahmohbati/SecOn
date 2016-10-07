@@ -74,9 +74,7 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
 </li><li>run through SETUP on the second SENSOR<br>
 </li><li>on the SERVER, remove the account from the sudo group, but leave the account active using the `sudo deluser sensor2 sudo` command<br>
 </li></ul></li></ul></li><li>You’ll be asked which network interface should be monitored.<br>
-</li><li>If you have multiple CPU cores available:<br>
-<ul><li>You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf`).<br>
-</li><li>You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the `lb_procs` variable in `/opt/bro/etc/node.cfg`).<br>
+</li><li>If you have multiple CPU cores available, the Best Practices option should automatically assign an equal number of IDS and Bro processes based on your number of CPU cores.  If instead of Best Practices you choose Custom, then you'll be prompted to designate how many IDS and Bro processes you would like to run. (These settings can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf` and the `lb_procs` variable in `/opt/bro/etc/node.cfg`, respectively).
 </ol>
 
 Proceed to [PostInstallation](PostInstallation).
