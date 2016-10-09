@@ -31,31 +31,21 @@ You should then reboot and run `soup` again to verify that it now says `All upda
 For example, if you installed your system using our older Security Onion 14.04 ISO images (14.04.3.1, 14.04.4.4.1, or 14.04.4.2), then you're running an interim HWE stack and you'll need to upgrade the HWE stack as follows.
 
 1. Run soup to ensure that all updates have been installed:
-```
-sudo soup
-```
+`sudo soup`
 
 1. If soup prompts to reboot, then do so.
 
 1. Run soup again to check the status of your HWE stack:
-```
-sudo soup
-```
+`sudo soup`
 
 1. If soup asks you to upgrade to a new HWE stack, then do the following.  Please note this command only applies to desktop versions of Ubuntu 14.04 (like our Security Onion ISO image) and NOT server versions.
-```
-sudo apt-get install --install-recommends linux-generic-lts-xenial xserver-xorg-core-lts-xenial xserver-xorg-lts-xenial xserver-xorg-video-all-lts-xenial xserver-xorg-input-all-lts-xenial libwayland-egl1-mesa-lts-xenial
-```
+`sudo apt-get install --install-recommends linux-generic-lts-xenial xserver-xorg-core-lts-xenial xserver-xorg-lts-xenial xserver-xorg-video-all-lts-xenial xserver-xorg-input-all-lts-xenial libwayland-egl1-mesa-lts-xenial`
 
 1. Reboot:
-```
-sudo reboot
-```
+`sudo reboot`
 
 1. Run soup again to check HWE status:
-```
-sudo soup
-```
+`sudo soup`
 
 1. It should now say "All updates have been installed." 
 
