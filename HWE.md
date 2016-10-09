@@ -7,7 +7,7 @@ If you installed your system using our older Security Onion 14.04 ISO images (14
 If you installed using our Security Onion 14.04.5.1 (or newer) ISO image, then it already includes the 16.04 Xenial HWE stack and should not require any HWE upgrades.
 
 ### Install updates first
-Older versions of `soup` didn't check the HWE stack, so our first step is to install all updates using [soup](Upgrade):
+Our first step is to install all updates using [soup](Upgrade):
 ```
 sudo soup
 ```
