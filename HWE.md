@@ -19,13 +19,13 @@ Now that all updates have been installed, run `soup` again to see if your HWE st
 sudo soup
 ```
 
-If it says at the very end `"All updates have been installed.`, then no further action is required and you can ignore the rest of this page.  If you got something other than that, then please continue reading!
+If it says at the very end `All updates have been installed`, then no further action is required and you can ignore the rest of this page.  If you got something other than that, then please continue reading!
 
 ### Upgrade HWE
 If `soup` says `Please upgrade your Hardware Enablement Stack (HWE)`, then you'll need to upgrade your HWE stack using the "Ubuntu 14.04 LTS - Trusty Tahr" instructions here:  
 https://wiki.ubuntu.com/Kernel/LTSEnablementStack
 
-You should then reboot and run `soup` again to verify that it now says `All updates have been installed.`.
+You should then reboot and run `soup` again to verify that it now says `All updates have been installed`.
 
 ### Example
 For example, if you installed your system using our older Security Onion 14.04 ISO images (14.04.3.1, 14.04.4.4.1, or 14.04.4.2), then you're running an interim HWE stack and you'll need to upgrade the HWE stack as follows:
