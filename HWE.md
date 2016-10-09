@@ -57,7 +57,7 @@ sudo reboot
 sudo soup
 ```
 
-1. It should now say "All updates have been installed." 
+1. It should now say `All updates have been installed`. 
 
 ### More information
 For more information, please see:  
