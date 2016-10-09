@@ -38,7 +38,7 @@ sudo soup
 # Next, run soup again to check the status of your HWE stack
 sudo soup
 
-# If soup asks you to upgrade to a new HWE stack, then do the following:
+# If soup asks you to upgrade to a new HWE stack, then do the following.  Please note this command only applies to desktop versions of Ubuntu 14.04 and NOT server versions:
 sudo apt-get install --install-recommends linux-generic-lts-xenial xserver-xorg-core-lts-xenial xserver-xorg-lts-xenial xserver-xorg-video-all-lts-xenial xserver-xorg-input-all-lts-xenial libwayland-egl1-mesa-lts-xenial
 
 # Reboot
