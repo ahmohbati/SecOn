@@ -1,8 +1,13 @@
 There may come a time when you need to disable a sensor interface, delete a sensor's configuration, or get rid of an entire sensor and its data altogether.  The steps below outline what is required to accomplish each objective. 
 
 #### Disable sensor interface
-* To disable a sensor interface, simply comment out the interface in `/etc/nsm/sensortab` and in `/opt/bro/etc/node.cfg` on the sensor box for which you wish to disable the interface.  
-* Restart NSM service(s) (`sudo service nsm restart`) and/or reboot to ensure changes have taken effect.
+To disable a sensor interface:
+* stop all sensor processes:  
+`sudo service nsm stop`
+* edit `/etc/nsm/sensortab` and comment out the sensor interface line
+* edit `/opt/bro/etc/node.cfg` and comment out the sensor interface stanza
+* start all sensor processes:  
+`sudo service nsm start`
 
 #### Delete sensor configuration
 * To delete the configuration for a sensor, run `/usr/sbin/nsm_sensor_del` on the sensor box for which you wish to delete the configuration.
