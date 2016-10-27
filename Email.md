@@ -1,10 +1,12 @@
 #### Setup now includes sosetup-email
-As of [securityonion-setup - 20120912-0ubuntu0securityonion222](http://blog.securityonion.net/2016/07/securityonion-setup-20120912.html), the Setup package now includes a script called so-email, which will automatically configure everything for you as described below.  Simply run the following command then follow the prompts:  
+As of [securityonion-setup - 20120912-0ubuntu0securityonion222](http://blog.securityonion.net/2016/07/securityonion-setup-20120912.html), the Setup package now includes a script called so-email, which will automatically configure automated server-side email for you as described below.  Simply run the following command then follow the prompts:  
 `sudo so-email`
 
 To automate email setup, copy and modify the example file located at `/usr/share/securityonion/so-email.conf`, then run `so-email` with the `-f` flag:<br> 
 
 `sudo so-email -f ~/so-email.conf`
+
+Please note that the Sguil client has its own email configuration (separate from the Sguil server) which can be modified in /etc/sguil/sguil.conf.
 
 #### Introduction ####
 
