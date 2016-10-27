@@ -7,7 +7,7 @@ To automate email setup, copy and modify the example file located at `/usr/share
 `sudo so-email -f ~/so-email.conf`
 
 #### Sguil client
-Please note that the Sguil client has its own email configuration (separate from the Sguil server) which can be modified in /etc/sguil/sguil.conf.
+Please note that the Sguil client has its own email configuration (separate from the Sguil server) which can be modified in `/etc/sguil/sguil.conf`.
 
 #### Introduction ####
 
