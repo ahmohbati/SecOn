@@ -56,6 +56,7 @@
   * [ELSA Query Tips](ELSAQueryTips)
   * [Custom ELSA Parsers](CustomELSAParsers)
   * [DNS Anomaly Detection script](DNSAnomalyDetection)
+  * [ICMP Anomaly Detection](ICMP-Anomaly-Detection)
   * [Connecting to Sguild](ConnectingtoSguil)
   * [Pcaps for Testing](Pcaps)
   * [FreeNX](FreeNX)
