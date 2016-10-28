@@ -1,4 +1,3 @@
-## ICMP Whitecap Rules
 
 At Security Onion Conference 2016, Eric Conrad shared some IDS rules for detecting unusual ICMP echo/replies and identifying C2 channels that may utilize ICMP tunneling for covert communication.  
 
