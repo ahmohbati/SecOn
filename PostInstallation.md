@@ -7,7 +7,7 @@
 ```sudo service nsm start```
 
 #### Tuning / Miscellaneous
-- Check your sniffing interfaces to see if they have Receive Side Scaling (RSS) queues (if so, you may need to reduce to 1): https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Packet_Capture
+- Check your sniffing interfaces to see if they have Receive Side Scaling (RSS) queues (if so, you may need to reduce to 1): http://suricata.readthedocs.io/en/latest/performance/packet-capture.html
 
 - Are you monitoring network traffic that has VLAN tags?  If so, take a look at our [VLAN](VLAN-Traffic) page.
 
