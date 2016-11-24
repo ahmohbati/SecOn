@@ -243,6 +243,20 @@ OR<br>
 The GeoIP CITY database is `not free` and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
 <a href='https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion'>https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion</a>
 <br>
+
+####Why does soup tell me I need a Secure Boot key?####
+
+Since Ubuntu kernel 4.4.0-20, the `EFI_SECURE_BOOT_SIG_ENFORCE` kernel configuration has been enabled. This prevents the loading of unsigned third party modules if UEFI Secure Boot is enabled.  
+
+An example of this can be found here:
+<br>
+https://groups.google.com/d/msg/security-onion/r64yl58KGJ4/uRedkKTBCAAJ
+
+If Secure Boot is enabled for your machine, you can disable it, following the steps found here:<br>
+https://wiki.ubuntu.com/UEFI/SecureBoot/DKMS
+<br>
+http://askubuntu.com/questions/762254/why-do-i-get-required-key-not-available-when-install-3rd-party-kernel-modules
+<br>
 <br>
 [back to top](#top)
 <br>
