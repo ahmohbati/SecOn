@@ -92,7 +92,40 @@ If you need to modify the values in /etc/salt/master or /etc/salt/minion, please
 ```
 Instead of modifying /etc/salt/master or /etc/salt/minion directly, please add your custom settings in /etc/salt/master.d/`*`.conf or /etc/salt/minion.d/`*`.conf, respectively.
 <br>
-<br>
+
+#### Changing Minion ID ####
+If you need to change the ID for a minion, do the following:
+
+On the minion machine:
+
+```
+# Stop salt-minion 
+sudo service salt-minion stop
+
+# Edit /etc/salt/minion_id, modifying the ID as necessary.
+
+# Start salt-minion 
+sudo service salt-minion start
+```
+On the master machine:
+```
+# Restart salt-master
+sudo service salt-master restart
+
+# List the salt keys
+sudo salt-key -L
+
+# Accept the new key for the modified minion
+sudo salt-key -A
+
+# Delete the old minion key 
+sudo salt-key -d OLD_MINION_NAME
+
+# Test the configuration -- minion should return "TRUE"
+sudo salt "MINION_NAME" test.ping
+
+```
+
 ### Salting an Existing Deployment ###
 
 #### Configure the Master Server first ####
