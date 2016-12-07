@@ -34,8 +34,7 @@ http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 [Proxy Configuration](Proxy)
 
 #### Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? ####
-Please see:
-http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
+Please see our [HWE](HWE) page.
 
 ####Why does my VMware image rename `eth0` to `eth1`?####
 Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:<br>
