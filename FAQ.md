@@ -49,6 +49,9 @@ If you have a 64-bit machine, use our 64-bit ISO image or use a 64-bit version o
 If you have a 32-bit machine, you'll need to use a 32-bit version of Ubuntu and then install the PAE kernel as described here:<br>
 <a href='https://help.ubuntu.com/community/EnablingPAE'><a href='https://help.ubuntu.com/community/EnablingPAE'>https://help.ubuntu.com/community/EnablingPAE</a></a>
 
+####Can I run Security Onion on Raspberry Pi or some other non-x86 box?
+No, we only support x86 and x86-64 architectures.  Please see the [hardware](https://github.com/Security-Onion-Solutions/security-onion/wiki/Hardware#32-bit-vs-64-bit) page.
+
 ####What's the difference between a `server` and a `sensor`?####
 **box**<br>
 Definition: A physical or virtual machine running the Security Onion operating system.<br>
