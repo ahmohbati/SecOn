@@ -101,3 +101,10 @@ https://github.com/criticalstack/brotop
 <br/><br/>
 For more information about Bro, please see:
 https://www.bro.org/
+
+#### /nsm/bro/spool/tmp
+
+If you find that /nsm/bro/spool/tmp contains lots of old crash files, you can clean them up with:
+```
+sudo su sguil -c '/opt/bro/bin/broctl cleanup --all'
+```
