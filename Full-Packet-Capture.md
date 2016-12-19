@@ -1,0 +1,1 @@
+Security Onion uses netsniff-ng to collect full packet capture.
