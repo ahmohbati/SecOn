@@ -18,7 +18,7 @@ http://blog.securityonion.net/2016/09/squert-development.html
 
 * The default view shows alerts from today.  To show older alerts, click "INTERVAL", then click the 2 right arrows, set your custom date, and click Squert's refresh button (two circular arrows).
 
-* Can pivot to full packet capture transcripts for TCP traffic.  To do this, click on the Event ID.
+* Can pivot to CapMe for full packet capture.  To do this, drill into an event and click on the Event ID.
 
 * Can pivot to ELSA to query Bro logs.  To do this, click an IP address, port, or signature, and then click ELSA.  In Security Onion 14.04, Squert pivots to ELSA using a relative hyperlink, so it should use the same hostname or IP address that you used to connect to Squert.  If you're still using Security Onion 12.04 and you need to change the IP address that Squert uses to pivot to ELSA, you can use the following code copied from /usr/bin/sosetup (replacing $IP with your actual IP address or hostname):
 ```
