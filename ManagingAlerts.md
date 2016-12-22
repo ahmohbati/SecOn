@@ -243,46 +243,7 @@ sudo nsm_sensor_ps-restart --only-snort-alert
 
 #### Autocategorize events ####
 The sguild server can be set to autocategorize events as it processes them.  This is a great way to have sguil process the events for us as it sees them, saving us from any laborious categorization.
-Our current Sguil packages have an AutoCat builder in the Sguil client and in the Squert web interface.  For older versions of Sguil, edit /etc/nsm/securityonion/autocat.conf on the sguild server.
-
-Please note the following instructions are for older versions of Sguil only.  If you're running the current version of Sguil you shouldn't use autocat.conf and should instead use the AutoCat builder in the Sguil client or Squert web interface.
-
-* edit /etc/nsm/securityonion/autocat.conf
-> > The autocat.conf file requires that you use the following format to identify events that you want categorized automatically.
-```
-   <erase time>||<sensorName>||<src_ip>||<src_port>||<dst_ip>||<dst_port>||<proto>||<sig msg>||<cat value>
-```
-* The final value in the rule is the categorization value.  Here is the table of categories.
-```
-    status_id   description                  long_desc                                   
-   -----------+----------------------------+--------------------------------------------
-            0   New                          Real Time Event                             
-            1   No Further Action Required   No Further Action Required                  
-            2   Escalated                    Escalated                                   
-           11   Category I                   Unauthorized Root Access                    
-           12   Category II                  Unauthorized User Access                    
-           13   Category III                 Attempted Unauthorized Access               
-           14   Category IV                  Successful Denial of Service Attack         
-           15   Category V                   Poor Security Practice or Policy Violation  
-           16   Category VI                  Reconnaissance/Probes/Scans                 
-           17   Category VII                 Virus Infection                             
-```
-* A sample entry that would autocategorize all events matching "GPL SNMP public access udp" as type 1 (No Further Action Necessary) would like the following.
-```
-   none||ANY||172.16.1.245||ANY||ANY||ANY||17||GPL SNMP public access udp||1
-```
-* However, it's if we were to put a little more work into it we could use autocategorization and retain use of that signature.
-* If we were interested in having only these end point conversations autocategorized we would have to create an entry for each pair of src\_ip and dst\_ip conversations.
-```
-   none||ANY||172.16.42.109||ANY||192.168.0.33||ANY||1||GPL SNMP public access udp||1
-   none||ANY||172.16.42.250||ANY||192.168.0.31||ANY||1||GPL SNMP public access udp||1
-   none||ANY||172.16.42.137||ANY||192.168.0.5||ANY||1||GPL SNMP public access udp||1
-   none||ANY||172.16.42.137||ANY||192.168.0.51||ANY||1||GPL SNMP public access udp||1
-```
-* restart the sguil server
-```
-   sudo /usr/sbin/nsm_server_ps-restart
-```
+Our current Sguil packages have an AutoCat builder in the Sguil client and in the Squert web interface.
 
 #### Why is pulledpork ignoring disabled rules in downloaded.rules ####
 If your syntax is correct, you are likely trying to disable a rule that has flowbits set. For a quick primer on flowbits see http://blog.snort.org/2011/05/resolving-flowbit-dependancies.html and section 3.6.10 of the Snort Manual http://www.snort.org/docs
