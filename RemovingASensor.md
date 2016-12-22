@@ -13,7 +13,7 @@ To disable a sensor interface:
 * To delete the configuration for a sensor, run `/usr/sbin/nsm_sensor_del` on the sensor box for which you wish to delete the configuration.
 
 #### Wipe sensor configuration and data
-* To completely wipe sensor configuration and data, run `/usr/bin/sosetup` on the sensor box for which you wish to wipe the data and configuration.
+* To completely wipe sensor configuration and data, run `sudo sosetup` on the sensor box for which you wish to wipe the data and configuration.
 
 #### Remove sensor reference from master server
 
