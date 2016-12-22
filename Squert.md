@@ -20,7 +20,7 @@ http://blog.securityonion.net/2016/09/squert-development.html
 
 * Can pivot to CapMe for full packet capture.  To do this, drill into an event and click on the Event ID.
 
-* Can pivot to ELSA to query Bro logs.  To do this, click an IP address, port, or signature, and then click ELSA.  In Security Onion 14.04, Squert pivots to ELSA using a relative hyperlink, so it should use the same hostname or IP address that you used to connect to Squert.  If you're still using Security Onion 12.04 and you need to change the IP address that Squert uses to pivot to ELSA, you can use the following code copied from /usr/bin/sosetup (replacing $IP with your actual IP address or hostname):
+* Can pivot to ELSA to query Bro logs.  To do this, click an IP address, port, or signature, and then click ELSA.  In Security Onion 14.04, Squert pivots to ELSA using a relative hyperlink, so it should use the same hostname or IP address that you used to connect to Squert.  If you're still using Security Onion 12.04 and you need to change the IP address that Squert uses to pivot to ELSA, you can use the following code copied from sosetup (replacing $IP with your actual IP address or hostname):
 ```
 # Pivot from Squert to ELSA
 URL="https://$IP:3154/?query_string=\"\${var}\"%20groupby:program"
