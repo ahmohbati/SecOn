@@ -6,7 +6,7 @@ sudo adduser mynewuseraccount
 ```
 
 #### Sguil ####
-Log into Sguil using the username/password you created in the Setup wizard..  
+Log into Sguil using the username/password you created in the Setup wizard.  
 
 You can add accounts as follows (please note that Sguil usernames must be alphanumeric): 
 ```
