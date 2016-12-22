@@ -61,7 +61,7 @@ When setup is finished you'll see several informative prompts providing you valu
     * disablesid.conf
     * dropsid.conf
     * modifysid.conf
-  * "Rules will be updated every day at 7:01 AM UTC. You can manually update them by running: /usr/bin/rule-update" - The rule-update script allows you to manually run PulledPork to update signatures, which is most useful when tuning  signatures by modifying the /etc/nsm/pulledpork .conf files.
+  * "Rules will be updated every day at 7:01 AM UTC. You can manually update them by running: rule-update" - The rule-update script allows you to manually run PulledPork to update signatures, which is most useful when tuning  signatures by modifying the /etc/nsm/pulledpork .conf files.
   * "Sensors can be tuned by modifying the files in: /etc/nsm/HOSTNAME-INTERFACE/" - There are multiple configuration files in this path:
     * sensor.conf - contains a number of variables that are used throughout the Security Onion network monitoring services, such as which interfaces are being monitored, paths to config files, and more.
 > Typically you'll only need to modify the following files if you are monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12).
