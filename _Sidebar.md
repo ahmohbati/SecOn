@@ -48,6 +48,7 @@
   * [Adjusting PF\_RING for traffic](PF_RING)
   * [MySQL Tuning](MySQLTuning)
   * [Adding a new disk](NewDisk)
+  * [High Performance Tuning](High-Performance-Tuning)
 
 ## Tricks and Tips ##
   * [Best Practices](Best-Practices)
