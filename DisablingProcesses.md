@@ -31,6 +31,17 @@ sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e 'update s
 sudo nsm_server_ps-start
 ```
 <br>
+#### Disabling `Xplico`
+Disable Xplico in /etc/nsm/securityonion.conf:
+```
+sudo sed -i 's|XPLICO_ENABLED=yes|XPLICO_ENABLED=no|g' /etc/nsm/securityonion.conf
+```
+
+(Optional) Remove Xplico:
+```
+sudo apt-get purge xplico
+```
+
 #### Disabling `Snorby`
 1. Disable Snorby in the Apache configuration:
 
