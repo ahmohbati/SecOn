@@ -392,7 +392,7 @@ sudo update-grub
 For more information, please see:<br>
 <a href='http://ubuntuforums.org/showthread.php?t=1690118'><a href='http://ubuntuforums.org/showthread.php?t=1690118'>http://ubuntuforums.org/showthread.php?t=1690118</a></a>
 
-In Security Onion 12.04, you can install our packages on top of Ubuntu Server (minimal installation, no GUI).
+If you're doing a new installation, you can avoid this altogether by installing our packages on top of Ubuntu Server (minimal installation, no GUI) instead of using the Security Onion ISO image.
 
 ####I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver?####
 <ol><li>Click Applications.<br>
