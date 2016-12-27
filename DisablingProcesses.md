@@ -41,7 +41,7 @@ sudo sed -i 's|XPLICO_ENABLED=yes|XPLICO_ENABLED=no|g' /etc/nsm/securityonion.co
 ```
 sudo apt-get purge xplico
 ```
-
+<br>
 #### Disabling `Snorby`
 1. Disable Snorby in the Apache configuration:
 
