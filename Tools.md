@@ -30,7 +30,7 @@ Security Onion would like to thank the following open-source projects for their 
 "dsniff is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.). arpspoof, dnsspoof, and macof facilitate the interception of network traffic normally unavailable to an attacker (e.g, due to layer-2 switching). sshmitm and webmitm implement active monkey-in-the-middle attacks against redirected SSH and HTTPS sessions by exploiting weak bindings in ad-hoc PKI."<br>
 <br>
 <h4>ELSA</h4>
-<a href='http://code.google.com/p/enterprise-log-search-and-archive/'>http://code.google.com/p/enterprise-log-search-and-archive/</a><br>
+<a href='https://github.com/mcholste/elsa'>https://github.com/mcholste/elsa</a><br>
 "ELSA is a centralized syslog framework built on Syslog-NG, MySQL, and Sphinx full-text search. It provides a fully asynchronous web-based query interface that normalizes logs and makes searching billions of them for arbitrary strings as easy as searching the web. It also includes tools for assigning permissions for viewing the logs as well as email based alerts, scheduled queries, and graphing."<br>
 <br>
 <h4>hping</h4>
