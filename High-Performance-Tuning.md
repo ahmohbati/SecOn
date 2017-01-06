@@ -8,5 +8,10 @@ Disable Bluetooth:
 sudo sh -c "echo 'manual' > /etc/init/bluetooth.override"
 ```
 
+Disable Avahi:
+```
+sudo sh -c "echo manual > /etc/init/avahi-daemon.override"
+```
+
 Consider adopting some of the suggestions from here:  
 https://github.com/pevma/SEPTun
