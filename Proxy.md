@@ -13,7 +13,17 @@ If you're going to run something using sudo, remember to use the "-i" option to 
 sudo -i rule-update
 ```
 
-For certain proxies (Bluecoat in particular), you may need to change from https to http in `/etc/nsm/pulledpork/pulledpork.conf`.  For more information, please see:<br>
+As of Pulledpork 0.7.2, you may need to pass the -W option to Pulledpork:
+```
+-W Where you want to work around the issue where some implementations of LWP do not work with pulledpork's proxy configuration.
+```
+
+If you find that you need this option, you can add the following to /etc/nsm/securityonion.conf:
+```
+PULLEDPORK_OPTIONS="-W"
+```
+
+For older versions of PulledPork and certain proxies (Bluecoat in particular), you may need to change from https to http in `/etc/nsm/pulledpork/pulledpork.conf`.  For more information, please see:<br>
 <br>
 [PulledPork Issue 154](https://code.google.com/archive/p/pulledpork/issues/154)
 
