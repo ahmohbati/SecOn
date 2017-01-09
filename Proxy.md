@@ -1,4 +1,4 @@
-#### What do I need to do if I'm behind a proxy? ####
+#### Adding proxy settings to /etc/environment
 
 Put your proxy server settings in `/etc/environment` like this:<br>
 ```
@@ -8,11 +8,14 @@ export ftp_proxy=https://server:port
 export PERL_LWP_ENV_PROXY=https://server:port
 export no_proxy="localhost,127.0.0.1"
 ```
+
+#### sudo
 If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
 ```
 sudo -i rule-update
 ```
 
+#### PulledPork
 As of [PulledPork 0.7.2](http://blog.securityonion.net/2017/01/pulledpork-rule-update-and-several.html), you may need to pass the -W option to Pulledpork:
 ```
 -W Where you want to work around the issue where some implementations of LWP do not work with pulledpork's proxy configuration.
