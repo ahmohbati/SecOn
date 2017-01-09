@@ -15,6 +15,9 @@ If you're going to run something using sudo, remember to use the "-i" option to 
 sudo -i rule-update
 ```
 
+Alternatively, see the `env_keep` option under the `sudo caveat` section of the following page:
+https://help.ubuntu.com/community/EnvironmentVariables
+
 #### PulledPork
 As of [PulledPork 0.7.2](http://blog.securityonion.net/2017/01/pulledpork-rule-update-and-several.html), you may need to pass the -W option to Pulledpork:
 ```
