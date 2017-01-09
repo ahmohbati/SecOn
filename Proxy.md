@@ -13,7 +13,7 @@ If you're going to run something using sudo, remember to use the "-i" option to 
 sudo -i rule-update
 ```
 
-As of Pulledpork 0.7.2, you may need to pass the -W option to Pulledpork:
+As of [PulledPork 0.7.2](http://blog.securityonion.net/2017/01/pulledpork-rule-update-and-several.html), you may need to pass the -W option to Pulledpork:
 ```
 -W Where you want to work around the issue where some implementations of LWP do not work with pulledpork's proxy configuration.
 ```
