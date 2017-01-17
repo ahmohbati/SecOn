@@ -18,6 +18,9 @@ this from occurring:<br/>
 `<white_list>desired_ip</white_list>`<br/>
 `</global>`
 
+#### Tuning OSSEC Rules
+You can add new rules and modify existing rules in /var/ossec/rules/local_rules.xml.
+
 #### Adding Agents ####
 
 The OSSEC agent is cross platform and you can download agents for Windows/Unix/Linux/FreeBSD from the OSSEC website.  Once you've installed the OSSEC agent on the host(s) to be monitored, then perform the steps defined here:
