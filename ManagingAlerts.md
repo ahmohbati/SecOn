@@ -142,7 +142,7 @@ There are multiple ways to handle overly productive signatures and we'll try to 
 
 
 #### Disable the sid ####
-Security Onion uses PulledPork (a perl script maintained by JJ Cummings) that downloads new signatures every night and processes them against a set list of user generated configurations.
+Security Onion uses [PulledPork](https://github.com/shirkdog/pulledpork) to download new signatures every night and process them against a set list of user generated configurations.
 
 In a Server/Slave Security Onion environment, you only need to change the configuration file on the server and the rule-update script will sync with the signatures from the Server.
 
