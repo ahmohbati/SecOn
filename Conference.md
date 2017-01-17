@@ -8,6 +8,10 @@ Users of Security Onion should definitely attend!  In addition, most talks provi
 The Twitter hashtag is #socAugusta:  
 https://twitter.com/search?q=socaugusta&src=typd
 
+### Security Onion Conference 2017
+This year's Security Onion Conference will be held in Augusta GA on Friday September 15 (please mark your calendar!).  This is the day before BSides Augusta, so you may want to plan on attending both:
+http://bsidesaugusta.org
+
 ### Security Onion Conference 2016
 
 [Pictures](http://blog.securityonion.net/2016/09/pictures-from-security-onion-conference.html)
