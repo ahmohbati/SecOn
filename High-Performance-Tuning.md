@@ -5,7 +5,7 @@ http://askubuntu.com/questions/16371/how-do-i-disable-x-at-boot-time-so-that-the
 
 Disable Bluetooth:
 ```
-sudo sh -c "echo 'manual' > /etc/init/bluetooth.override"
+sudo sh -c "echo manual > /etc/init/bluetooth.override"
 ```
 
 Disable Avahi:
