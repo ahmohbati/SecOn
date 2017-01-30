@@ -60,7 +60,7 @@ Dirt Cheap and Versatile:<br>
 Netgear GS105E (requires Windows app for config):  
 https://www.netgear.com/support/product/GS105E.aspx 
 
-Another flavor of low cost SPAN type tap:<br>
+low cost TAP that uses USB or Ethernet port:<br>
 http://www.midbittech.com 
 
 More exhaustive list of enterprise switches with port mirroring:<br>
