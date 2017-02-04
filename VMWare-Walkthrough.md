@@ -109,4 +109,4 @@ https://groups.google.com/forum/#!forum/security-onion
 
 ####Things to keep in mind
 
-* With the sniffing interface in "bridged" mode, you will be able to see all traffic to/from the host machine'a physical NIC.  If you would like to see **ALL** the traffic on your network, you will need a method of forwarding that traffic to the interface to which the virtual adapter is bridged.  This can be achieved by switch port mirroring (SPAN), or through the use of an (inline) tap.
+* With the sniffing interface in "bridged" mode, you will be able to see all traffic to/from the host machine's physical NIC.  If you would like to see **ALL** the traffic on your network, you will need a method of forwarding that traffic to the interface to which the virtual adapter is bridged.  This can be achieved by switch port mirroring (SPAN), or through the use of an (inline) tap.
