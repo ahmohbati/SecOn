@@ -9,7 +9,7 @@
   * [UTC and Time Zones](TimeZones)
   * [Services](Services)
   * [VirtualBox Walkthrough](IntroductionWalkthrough)
-  * VMWare Walkthrough](VMWare-Walkthrough)
+  * [VMWare Walkthrough](VMWare-Walkthrough)
   * [Videos](Videos)
   * [Architecture](Architecture)
   * [Conference](Conference)
