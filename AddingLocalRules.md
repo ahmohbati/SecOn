@@ -4,7 +4,7 @@ Adding local rules in Security Onion is a rather straightforward process.  Howev
 
 #### Steps ####
 
-* Open the `/etc/nsm/rules/local.rules` file using your favorite text editor.
+* Open the `/etc/nsm/rules/local.rules` file using your favorite text editor.  If this is a distributed deployment, edit local.rules on your master server and it will replicate to your sensors.
 * Let's add a simple rule that will alert on the detection of a string in a tcp session.
 ```
 alert tcp any any -> $HOME_NET 7789 (msg: "Vote for Security Onion Toolsmith Tool of 2011!"; reference: url,http://holisticinfosec.blogspot.com/2011/12/choose-2011-toolsmith-tool-of-year.html; content: "toolsmith"; flow:to_server; nocase; sid:9000547; rev:1)     
