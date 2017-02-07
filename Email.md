@@ -26,7 +26,7 @@ Alternatively, here are some instructions for the more complex `exim4`:<br>
 <pre><code>sudo apt-get -y install mailutils<br>
 sudo dpkg-reconfigure exim4-config<br>
 </code></pre>
-Once you've configured your mail server and verified that it can send email properly, you might want to create a daily cronjob to execute `/usr/bin/sostat` and email you the output:<br>
+Once you've configured your mail server and verified that it can send email properly, you might want to create a daily cronjob to execute `/usr/sbin/sostat` and email you the output:<br>
 <pre><code># /etc/cron.d/sostat<br>
 #<br>
 # crontab entry to run sostat and email its output<br>
