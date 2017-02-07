@@ -35,7 +35,7 @@ SHELL=/bin/sh<br>
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin<br>
 EMAIL=YourUsername@YourDomain.com<br>
 <br>
-01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat 2&gt;&amp;1 | mail -s "$HOSTNAME stats" $EMAIL<br>
+01 12    * * *   root    HOSTNAME=`hostname`; /usr/sbin/sostat 2&gt;&amp;1 | mail -s "$HOSTNAME stats" $EMAIL<br>
 <br>
 </code></pre>
 
