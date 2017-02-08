@@ -11,90 +11,42 @@ https://wiki.ubuntu.com/Lvm
 #### Method 2: Mount a separate drive to `/nsm`
 This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in `/nsm` to the new drive using something like this:
 
-Comment out the cron job in /etc/cron.d/nsm-watchdog
-
-Restart cron
-```
-sudo service cron restart
-```
-
-Stop all services
-```
-sudo service nsm stop
-sudo service syslog-ng stop
-sudo service apache2 stop
-sudo service mysql stop
-```
-
-Check for any ELSA perl processes which may need to be killed
-```
-ps aux |grep perl
-```
-
-Determine your new drive's path
-```
-sudo fdisk -l
-```
-
-Partition the new drive using fdisk or parted
-
-Format the new partition using mkfs
-
-Mount the new drive to a temporary location in the filesystem
-
-```
-sudo mount /dev/sdb2 /mnt
-```
-
-Copy the existing data from `/nsm` to the temporary location
-
-```
-sudo cp -av /nsm/* /mnt/
-```
-
-Unmount the new drive from the temporary location
-
-```
-sudo umount /mnt
-```
-
-Rename the existing `/nsm`
-
-```
-sudo mv /nsm /nsm-backup
-```
-
-Update `/etc/fstab` to mount the new drive to `/nsm`
-
-```
-sudo vi /etc/fstab
-```
-
-(You can use blkid to find your drive's UUID to write in /etc/fstab)
-
-```
-sudo blkid /dev/sdb2
-```
-Mount the new `/nsm`
-```
-sudo mount /nsm
-```
-
-Start all services
-
-```
-sudo service mysql start
-sudo service apache2 start
-sudo service syslog-ng start
-sudo service nsm start
-```
-Uncomment the cron job in /etc/cron.d/nsm-watchdog
-
-Restart cron
-```
-sudo service cron restart
-```
-
+1. Comment out the cron job in /etc/cron.d/nsm-watchdog
+1. Restart cron  
+`sudo service cron restart`
+1. Stop all services  
+`sudo service nsm stop`  
+`sudo service syslog-ng stop`  
+`sudo service apache2 stop`  
+`sudo service mysql stop`  
+1. Check for any ELSA perl processes which may need to be killed  
+`ps aux |grep perl`  
+1. Determine your new drive's path  
+`sudo fdisk -l`  
+1. Partition the new drive using fdisk or parted
+1. Format the new partition using mkfs
+1. Mount the new drive to a temporary location in the filesystem  
+`sudo mount /dev/sdb2 /mnt`  
+1. Copy the existing data from `/nsm` to the temporary location  
+`sudo cp -av /nsm/* /mnt/`
+1. Unmount the new drive from the temporary location  
+`sudo umount /mnt`
+1. Rename the existing `/nsm`  
+`sudo mv /nsm /nsm-backup`
+1. Update `/etc/fstab` to mount the new drive to `/nsm`  
+`sudo vi /etc/fstab`
+(You can use blkid to find your drive's UUID to write in /etc/fstab)  
+`sudo blkid /dev/sdb2`
+1. Mount the new `/nsm`  
+`sudo mount /nsm`
+1. Start all services  
+`sudo service mysql start`  
+`sudo service apache2 start`  
+`sudo service syslog-ng start`  
+`sudo service nsm start`  
+1. Uncomment the cron job in /etc/cron.d/nsm-watchdog
+1. Restart cron  
+`sudo service cron restart`
 
 #### Method 3: Make `/nsm` a symlink to the new logging location
 
