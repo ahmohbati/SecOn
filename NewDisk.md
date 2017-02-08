@@ -11,6 +11,13 @@ https://wiki.ubuntu.com/Lvm
 #### Method 2: Mount a separate drive to `/nsm`
 This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in `/nsm` to the new drive using something like this:
 
+Comment out the cron job in /etc/cron.d/nsm-watchdog
+
+Restart cron
+```
+sudo service cron restart
+```
+
 Stop all services
 ```
 sudo service nsm stop
@@ -28,6 +35,10 @@ Determine your new drive's path
 ```
 sudo fdisk -l
 ```
+
+Partition the new drive using fdisk or parted
+
+Format the new partition using mkfs
 
 Mount the new drive to a temporary location in the filesystem
 
@@ -76,6 +87,12 @@ sudo service mysql start
 sudo service apache2 start
 sudo service syslog-ng start
 sudo service nsm start
+```
+Uncomment the cron job in /etc/cron.d/nsm-watchdog
+
+Restart cron
+```
+sudo service cron restart
 ```
 
 
