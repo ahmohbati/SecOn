@@ -12,9 +12,16 @@ https://wiki.ubuntu.com/Lvm
 This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in `/nsm` to the new drive using something like this:
 
 Stop all services
-
 ```
 sudo service nsm stop
+sudo service syslog-ng stop
+sudo service apache2 stop
+sudo service mysql stop
+```
+
+Check for any ELSA perl processes which may need to be killed
+```
+ps aux |grep perl
 ```
 
 Determine your new drive's path
@@ -65,6 +72,9 @@ sudo mount /nsm
 Start all services
 
 ```
+sudo service mysql start
+sudo service apache2 start
+sudo service syslog-ng start
 sudo service nsm start
 ```
 
