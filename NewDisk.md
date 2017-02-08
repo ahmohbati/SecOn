@@ -34,7 +34,7 @@ This can be done in the Ubuntu installer, or after installation is complete. If 
 1. Rename the existing `/nsm`  
 `sudo mv /nsm /nsm-backup`
 1. Update `/etc/fstab` to mount the new drive to `/nsm`  
-`sudo vi /etc/fstab`
+`sudo vi /etc/fstab`  
 (You can use blkid to find your drive's UUID to write in /etc/fstab)  
 `sudo blkid /dev/sdb2`
 1. Mount the new `/nsm`  
