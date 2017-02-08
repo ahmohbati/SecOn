@@ -47,6 +47,10 @@ This can be done in the Ubuntu installer, or after installation is complete. If 
 1. Uncomment the cron job in /etc/cron.d/nsm-watchdog
 1. Restart cron  
 `sudo service cron restart`
+1. Test and verify that everything works
+1. Reboot  
+`sudo reboot`
+1. Test and verify that everything works
 
 #### Method 3: Make `/nsm` a symlink to the new logging location
 
