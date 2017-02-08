@@ -19,7 +19,7 @@ This can be done in the Ubuntu installer, or after installation is complete. If 
 `sudo service syslog-ng stop`  
 `sudo service apache2 stop`  
 `sudo service mysql stop`  
-1. Check for any ELSA perl processes which may need to be killed  
+1. Check for any ELSA perl processes which may need to be killed manually  
 `ps aux |grep perl`  
 1. Determine your new drive's path  
 `sudo fdisk -l`  
