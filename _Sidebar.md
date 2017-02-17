@@ -34,6 +34,7 @@
 ## Host Visibility ##
   * [OSSEC HIDS](OSSEC)
   * [Sysmon](Sysmon)
+  * [Autoruns](Autoruns)
   * [Syslog](Syslog)
 
 ## Customizing for your network ##
