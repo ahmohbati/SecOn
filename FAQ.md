@@ -119,6 +119,9 @@ https://securityonionsolutions.com
 <a name="errors"></a>
 ###Error messages
 ---
+#### Why does rule-update fail with Error 400 when running behind a proxy?
+Please see https://github.com/Security-Onion-Solutions/security-onion/wiki/Proxy#pulledpork.
+
 #### Why does rule-update fail with an error like "Error 404 when fetching s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz.md5"? ####
 The Snort Community ruleset has moved to a different URL.  You can run the following command to update the Snort Community URL in pulledpork.conf:
 ```
