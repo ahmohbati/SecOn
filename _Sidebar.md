@@ -33,6 +33,7 @@
 
 ## Host Visibility ##
   * [OSSEC HIDS](OSSEC)
+  * [Sysmon](Sysmon)
   * [Syslog](Syslog)
 
 ## Customizing for your network ##
