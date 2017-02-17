@@ -26,10 +26,12 @@
   * [CapME](CapMe)
   * [Snorby](Snorby)
 
-## Data Sources ##
+## Network Visibility ##
   * [NIDS](NIDS)
   * [Bro](Bro)
   * [Full Packet Capture](Full-Packet-Capture)
+
+## Host Visibility ##
   * [OSSEC HIDS](OSSEC)
   * [Syslog](Syslog)
 
