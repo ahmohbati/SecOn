@@ -1,5 +1,5 @@
 ### What is CapME?
-CapME allows you to:
+CapME is a web interface that allows you to:
 * view a pcap transcript rendered with tcpflow
 * view a pcap transcript rendered with [Bro](Bro) (especially helpful for dealing with gzip encoding)
 * download a pcap
