@@ -1,5 +1,5 @@
 #### Logs
-`/nsm/bro/logs`
+Bro logs are stored in `/nsm/bro/logs`.  They are consumed by [syslog-ng](syslog-ng) and stored in [ELSA](ELSA).
 
 Bro monitors your network traffic and creates logs, such as:  
 ##### conn.log
