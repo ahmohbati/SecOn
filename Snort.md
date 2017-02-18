@@ -15,5 +15,5 @@ If you need to troubleshoot Snort, check the Snort log file:
 (where HOSTNAME is your actual hostname, INTERFACE is your actual sniffing interface, and X represents the number of PF_RING instances)
 
 ### More Information
-For more information about Snort, please see:
+For more information about Snort, please see:  
 http://snort.org
