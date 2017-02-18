@@ -12,7 +12,7 @@ http://blog.securityonion.net/2016/09/squert-development.html
 
 * Gives you access to the following data types:
   * [NIDS](NIDS) alerts
-  * [HIDS](OSSEC HIDS) alerts
+  * [HIDS](OSSEC) alerts
   * Asset data from PRADS (if PRADS and pads_agent are enabled)
   * HTTP logs from Bro (if http_agent is enabled)
 
