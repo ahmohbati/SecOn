@@ -11,3 +11,10 @@ http://blog.securityonion.net/2016/08/new-elsa-packages-resolve-several-issues.h
 
 Execute autoruns and ar-normalize.ps1 as shown here:  
 https://github.com/defensivedepth/Pertinax/wiki/Reference%20Architecture
+
+### Downloads
+Download Autoruns here:  
+https://download.sysinternals.com/files/Autoruns.zip
+
+Download ar-normalize.ps1 here:  
+https://raw.githubusercontent.com/defensivedepth/Pertinax/master/normalize/ar-normalize.ps1
