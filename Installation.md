@@ -1,22 +1,21 @@
-#### Welcome to the Security Onion Installation Guide! ####
+### Welcome to the Security Onion Installation Guide!
 
 To install Security Onion, you're going to either install our Security Onion ISO image **or** install a standard Ubuntu 14.04 ISO image and then add our Security Onion PPA and packages.  **Please keep in mind that our PPA and packages are only compatible with Ubuntu 14.04**.
 
-#### ALWAYS verify the checksum of ANY downloaded ISO image ####
+### ALWAYS verify the checksum of ANY downloaded ISO image
 Regardless of whether you're downloading our Security Onion ISO image or whether you're starting with an Ubuntu 14.04 ISO image, you should ALWAYS verify the downloaded ISO image.
   * If downloading our Security Onion 14.04 ISO image, please verify using these instructions:  
 https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md  
   * If downloading an Ubuntu 14.04 ISO image, please verify using these instructions:  
 https://help.ubuntu.com/community/VerifyIsoHowto  
 
-#### Hardware ####
+### Hardware
 If you haven't already, please review the [Hardware](Hardware) page.
 
-#### UEFI ####
+### UEFI
 If you have a new machine with UEFI, please see:
 https://help.ubuntu.com/community/UEFI
-<br>
-<br>
+
 ### Choose your Installation Guide ###
 We have different Installation Guides to cover various use cases.  Please choose the appropriate Installation Guide for your use case.
 
