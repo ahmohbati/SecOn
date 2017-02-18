@@ -40,3 +40,7 @@ Many individuals require or prefer the ability to automatically deploy OSSEC age
 
 For more information, please see:
 https://github.com/binarydefense/auto-ossec
+
+### Downloads
+Download the Windows OSSEC agent here:  
+https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe
