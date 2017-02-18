@@ -10,7 +10,7 @@ You can configure Suricata via suricata.yaml:
 `/etc/nsm/HOSTNAME-INTERFACE/suricata.yaml`  
 (where HOSTNAME is your actual hostname and INTERFACE is your actual sniffing interface)
 
-### Log File
+### Logging
 If you need to troubleshoot Suricata, check the log file:  
 `/var/log/nsm/HOSTNAME-INTERFACE/suricata.log`  
 (where HOSTNAME is your actual hostname and INTERFACE is your actual sniffing interface)
