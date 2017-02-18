@@ -29,7 +29,7 @@
 ## Network Visibility ##
   * [NIDS](NIDS)
   * [Bro](Bro)
-  * [Full Packet Capture](netsniff‐ng)
+  * [Full Packet Capture](netsniff-ng)
 
 ## Host Visibility ##
   * [OSSEC HIDS](OSSEC)
