@@ -1,8 +1,8 @@
-### What is OSSEC?
+### Description
 From http://ossec.github.io/:
 > OSSEC watches it all, actively monitoring all aspects of system activity with file integrity monitoring, log monitoring, rootcheck, and process monitoring. 
 
-### How does Security Onion use OSSEC?
+### Security Onion Usage
 Security Onion uses OSSEC as a Host Intrusion Detection System (HIDS).  OSSEC is monitoring and defending Security Onion itself and you can add OSSEC agents to monitor other hosts on your network as well.
 
 Additionally, you may want to:
