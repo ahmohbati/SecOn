@@ -6,9 +6,12 @@ From http://netsniff-ng.org:
 Security Onion uses netsniff-ng to collect full packet capture.
 
 ### Where does netsniff-ng write to?
-netsniff-ng writes full packet capture in the form of pcap files to:
-/nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/YYYY-MM-DD/
-(where HOSTNAME is your actual hostname, INTERFACE is your actual sniffing interface, and YYYY-MM-DD is the year, month, and date the pcap was recorded)
+netsniff-ng writes full packet capture in the form of pcap files to:  
+/nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/YYYY-MM-DD/  
+where:  
+- HOSTNAME is your actual hostname
+- INTERFACE is your actual sniffing interface
+- YYYY-MM-DD is the year, month, and date the pcap was recorded
 
 ### Where can I find the netsniff-ng log file for troubleshooting? 
 /var/log/nsm/HOSTNAME-INTERFACE/netsniff-ng.log  
