@@ -4,7 +4,7 @@ http://www.squertproject.org/
 * Security Onion maintains its own fork of Squert:  
 http://blog.securityonion.net/2016/09/squert-development.html
 
-* PHP web interface to Sguil database
+* PHP web interface to [Sguil](Sguil) database
 
 * Works best with Chromium/Chrome browser
 
