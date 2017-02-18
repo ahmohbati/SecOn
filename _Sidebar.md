@@ -1,6 +1,5 @@
 ## Getting Started ##
   * [Introduction](IntroductionToSecurityOnion)
-  * [Tools](Tools)
   * [Hardware Requirements](Hardware)
   * [Release Notes](Security-Onion-14.04-Release-Notes)
   * [Download/Install](Installation)
@@ -82,3 +81,6 @@
 ## Known Issues / Roadmap ##
   * [Known Issues](https://github.com/Security-Onion-Solutions/security-onion/issues)
   * [Roadmap](Roadmap)
+
+## Other
+  * [Tools](Tools)
