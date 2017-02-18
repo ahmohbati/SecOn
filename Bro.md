@@ -1,4 +1,4 @@
-### What is Bro?
+### Description
 From https://www.bro.org/:
 > Bro is a powerful network analysis framework that is much different from the typical IDS you may know.  While focusing on network security monitoring, Bro provides a comprehensive platform for more general network traffic analysis as well. 
 
