@@ -7,7 +7,7 @@ Security Onion uses netsniff-ng to collect full packet capture in the form of pc
 
 ### Output
 netsniff-ng writes full packet capture in the form of pcap files to:  
-/nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/YYYY-MM-DD/  
+`/nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/YYYY-MM-DD/`  
 where:  
 - HOSTNAME is your actual hostname
 - INTERFACE is your actual sniffing interface
@@ -18,7 +18,7 @@ Besides accessing the pcaps in the directory shown above, you can also pivot to 
 
 ### Troubleshooting
 Check the netsniff-ng.log file in:  
-/var/log/nsm/HOSTNAME-INTERFACE/netsniff-ng.log  
+`/var/log/nsm/HOSTNAME-INTERFACE/netsniff-ng.log`  
 (where HOSTNAME is your actual hostname and INTERFACE is your actual sniffing interface)
 
 ### More Information
