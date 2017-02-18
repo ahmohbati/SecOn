@@ -1,4 +1,4 @@
-### What is Sguil?
+### Description
 From http://sguil.net:
 > Sguil (pronounced sgweel) is built by network security analysts for network security analysts. Sguil's main component is an intuitive GUI that provides access to realtime events, session data, and raw packet captures. Sguil facilitates the practice of Network Security Monitoring and event driven analysis.
 
