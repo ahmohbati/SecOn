@@ -27,6 +27,8 @@
 
 ## Network Visibility ##
   * [NIDS](NIDS)
+    * [Snort](Snort)
+    * [Suricata](Suricata)
   * [Bro](Bro)
   * [Full Packet Capture](netsniff-ng)
 
