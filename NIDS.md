@@ -1,4 +1,4 @@
-Security Onion gives you the option of either Snort or Suricata as your Network Intrusion Detection System.  We compile both of these with [PF_RING](PF_RING) to allow you to spin up multiple instances to handle more traffic.
+Security Onion gives you the option of either Snort or Suricata as your Network Intrusion Detection System (NIDS).  We compile both of these with [PF_RING](PF_RING) to allow you to spin up multiple instances to handle more traffic.
 
 NIDS alerts are visible in:
 - [Squert](Squert)
