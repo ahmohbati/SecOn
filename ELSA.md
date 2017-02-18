@@ -1,3 +1,7 @@
+### What is ELSA?
+From https://github.com/mcholste/elsa:
+> Enterprise Log Search and Archive (ELSA) is a three-tier log receiver, archiver, indexer, and web frontend for incoming syslog. It leverages syslog-ng's pattern-db parser for efficient log normalization and Sphinx full-text indexing for log searching. The logging backend scan be scaled to N nodes in a distributed system if a load balancer is placed in front of the incoming logs as a virtual IP address. The normalization process assigns each incoming log a class ID which is used, in conjuction with the log sender host and program for the basis of permissions. Users can be granted granular permissions for a given host, program, or class (or a combination therein). The permissions are whitelists or full access for each of the permissions components. That is, a user may be restricted to one or n given hosts but be able to query any program or class on those hosts.
+
 * Developed by Martin Holste:  
 https://github.com/mcholste/elsa  
 https://github.com/mcholste/elsa/wiki/Documentation
