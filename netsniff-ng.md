@@ -3,15 +3,18 @@ From http://netsniff-ng.org:
 > netsniff-ng is a free Linux networking toolkit, a Swiss army knife for your daily Linux network plumbing if you will.  Its gain of performance is reached by zero-copy mechanisms, so that on packet reception and transmission the kernel does not need to copy packets from kernel space to user space and vice versa.
 
 ### What does Security Onion use netsniff-ng for?
-Security Onion uses netsniff-ng to collect full packet capture.
+Security Onion uses netsniff-ng to collect full packet capture in the form of pcap files.
 
-### Where does netsniff-ng write to?
+### Where does netsniff-ng write these pcap files to?
 netsniff-ng writes full packet capture in the form of pcap files to:  
 /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/YYYY-MM-DD/  
 where:  
 - HOSTNAME is your actual hostname
 - INTERFACE is your actual sniffing interface
 - YYYY-MM-DD is the year, month, and date the pcap was recorded
+
+### How can I access these pcaps?
+Besides accessing the pcaps in the directory shown above, you can also pivot to full packet capture from [Sguil](Sguil) and [CapMe](CapMe).
 
 ### Where can I find the netsniff-ng log file for troubleshooting? 
 /var/log/nsm/HOSTNAME-INTERFACE/netsniff-ng.log  
