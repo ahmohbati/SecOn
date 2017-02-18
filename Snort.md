@@ -6,12 +6,12 @@ In Security Onion, we compile Snort with [PF_RING](PF_RING) to allow you to spin
 
 ### Configuration
 You can configure Snort via snort.conf:  
-/etc/nsm/HOSTNAME-INTERFACE/snort.conf  
+`/etc/nsm/HOSTNAME-INTERFACE/snort.conf`  
 (where HOSTNAME is your actual hostname and INTERFACE is your actual sniffing interface)
 
 ### Log File
 If you need to troubleshoot Snort, check the Snort log file:  
-/var/log/nsm/HOSTNAME-INTERFACE/snortu-X.log  
+`/var/log/nsm/HOSTNAME-INTERFACE/snortu-X.log`  
 (where HOSTNAME is your actual hostname, INTERFACE is your actual sniffing interface, and X represents the number of PF_RING instances)
 
 ### More Information
