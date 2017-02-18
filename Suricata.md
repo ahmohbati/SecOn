@@ -1,3 +1,7 @@
+### What is Suricata?
+From https://suricata-ids.org:
+> Suricata is a free and open source, mature, fast and robust network threat detection engine.  Suricata inspects the network traffic using a powerful and extensive rules and signature language, and has powerful Lua scripting support for detection of complex threats.
+
 We compile Suricata with [PF_RING](PF_RING) to allow you to spin up multiple workers to handle more traffic.
 
 Configuration:  
