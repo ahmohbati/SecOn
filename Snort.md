@@ -5,8 +5,8 @@ Configuration:
 (where HOSTNAME is your actual hostname and INTERFACE is your actual sniffing interface)
 
 Log file:  
-/var/log/nsm/snortu-X.log  
-(where X represents the number of PF_RING instances)
+/var/log/nsm/HOSTNAME-INTERFACE/snortu-X.log  
+(where HOSTNAME is your actual hostname, INTERFACE is your actual sniffing interface, and X represents the number of PF_RING instances)
 
 For more information about Snort, please see:
 http://snort.org
