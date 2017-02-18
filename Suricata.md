@@ -1,4 +1,4 @@
-We compile Suricata with [PF_RING](PF_RING) to allow you to spin up multiple instances to handle more traffic.
+We compile Suricata with [PF_RING](PF_RING) to allow you to spin up multiple workers to handle more traffic.
 
 Configuration:  
 /etc/nsm/HOSTNAME-INTERFACE/suricata.yaml  
