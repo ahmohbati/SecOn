@@ -2,7 +2,7 @@
 From http://netsniff-ng.org:
 > netsniff-ng is a free Linux networking toolkit, a Swiss army knife for your daily Linux network plumbing if you will.  Its gain of performance is reached by zero-copy mechanisms, so that on packet reception and transmission the kernel does not need to copy packets from kernel space to user space and vice versa.
 
-### Security Onion Usage
+### Usage
 Security Onion uses netsniff-ng to collect full packet capture in the form of pcap files.
 
 ### Output
