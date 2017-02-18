@@ -1,3 +1,9 @@
+#### How do I write custom ELSA parsers?
+
+https://github.com/mcholste/elsa/wiki/Documentation#AddingParsers
+
+http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.3-guides/en/syslog-ng-ose-v3.3-guide-admin-en/html/reference_patterndb_schemes.html
+
 #### Where do I put my custom ELSA parsers? ####
 Create a new subdirectory in `/etc/elsa/patterns.d/`, add your parsers to the new subdirectory, and then use `pdbtool` to merge the entire `/etc/elsa/patterns.d/` directory into `/opt/elsa/node/conf/patterndb.xml`.  For example:
 ```
@@ -19,12 +25,6 @@ sudo pdbtool merge -p /opt/elsa/node/conf/patterndb.xml --recursive -D /etc/elsa
 # Restart syslog-ng
 sudo service syslog-ng restart
 ```
-
-#### How do I write custom ELSA parsers? ####
-
-https://github.com/mcholste/elsa/wiki/Documentation#AddingParsers
-
-http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.3-guides/en/syslog-ng-ose-v3.3-guide-admin-en/html/reference_patterndb_schemes.html
 
 ##### Palo Alto default log format parser #####
 
