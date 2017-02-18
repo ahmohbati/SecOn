@@ -3,7 +3,7 @@ NIDS stands for Network Intrusion Detection System.  It is a means of monitoring
 
 Security Onion gives you the option of either [Snort](Snort) or [Suricata](Suricata) as your Network Intrusion Detection System (NIDS).  We compile both of these with [PF_RING](PF_RING) for higher performance.
 
-NIDS alerts are visible in:
+NIDS alerts from Snort/Suricata are visible in:
 - [Squert](Squert)
 - [ELSA](ELSA)
 - [Sguil](Sguil)
