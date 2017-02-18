@@ -10,7 +10,7 @@ https://digital-forensics.sans.org/community/papers/gcfa/sysmon-enrich-security-
 SwiftOnSecurity has a great sysmon config file to use as a starting point:  
 https://github.com/SwiftOnSecurity/sysmon-config/raw/master/sysmonconfig-export.xml
 
-Read more about it here:
+Read more about it here:  
 https://github.com/SwiftOnSecurity/sysmon-config
 
 You may also want to read this article for additional explanation:  
