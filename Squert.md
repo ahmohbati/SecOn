@@ -11,8 +11,8 @@ http://blog.securityonion.net/2016/09/squert-development.html
 * Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil
 
 * Gives you access to the following data types:
-  * NIDS alerts
-  * HIDS alerts
+  * [NIDS](NIDS) alerts
+  * [HIDS](OSSEC HIDS) alerts
   * Asset data from PRADS (if PRADS and pads_agent are enabled)
   * HTTP logs from Bro (if http_agent is enabled)
 
