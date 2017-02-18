@@ -24,7 +24,6 @@
   * [ELSA](ELSA)
   * [Sguil](Sguil)
   * [CapME](CapMe)
-  * [Snorby](Snorby)
 
 ## Network Visibility ##
   * [NIDS](NIDS)
