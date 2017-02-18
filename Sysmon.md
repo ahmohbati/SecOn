@@ -17,5 +17,5 @@ https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configur
 Download sysmon here:  
 https://download.sysinternals.com/files/Sysmon.zip
 
-Download sysmon config here:  
+Download SwiftOnSecurity's example sysmon config here:  
 https://github.com/SwiftOnSecurity/sysmon-config/raw/master/sysmonconfig-export.xml
