@@ -45,5 +45,5 @@ https://github.com/binarydefense/auto-ossec
 Download the Windows OSSEC agent here:  
 https://bintray.com/artifact/download/ossec/ossec-hids/ossec-agent-win32-2.8.3.exe
 
-Download the Linux/Unix agent here:
+Download the Linux/Unix agent here:  
 https://bintray.com/artifact/download/ossec/ossec-hids/ossec-hids-2.8.3.tar.gz
