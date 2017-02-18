@@ -1,17 +1,17 @@
-### What is syslog-ng?
+### Description
 From https://syslog-ng.org:
 > syslog-ng allows you to flexibly collect, parse, classify, and correlate logs from across your infrastructure and store or route them to log analysis tools.
 
-### How does Security Onion use syslog-ng?
+### Security Onion usage
 Security Onion uses syslog-ng as its primary syslog collector and to send logs to [ELSA](ELSA).
 
-### How do I configure syslog-ng?
+### Configuration
 syslog-ng's configuration file is located at `/etc/syslog-ng/syslog-ng.conf`
 
-### How do I send logs from Security Onion to other systems?
+### Sending Logs to Other Systems
 Syslog-ng can be integrated with [third-party systems](https://github.com/Security-Onion-Solutions/security-onion/wiki/ThirdPartyIntegration) to forward Bro, OSSEC, or IDS alerts.
 
-### Where do I go for more information about syslog-ng?
+### More Information
 For more information about syslog-ng, please see:  
 https://syslog-ng.org/
 
