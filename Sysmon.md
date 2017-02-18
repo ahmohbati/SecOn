@@ -3,3 +3,9 @@ From https://technet.microsoft.com/en-us/sysinternals/sysmon:
 
 Josh Brower did some great work integrating sysmon into Security Onion:  
 https://digital-forensics.sans.org/community/papers/gcfa/sysmon-enrich-security-onions-host-level-capabilities_10612
+
+SwiftOnSecurity has a great sysmon config file to use as a starting point:  
+https://github.com/SwiftOnSecurity/sysmon-config
+
+You may also want to read this article for additional explanation:  
+https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configuration-27d9719a89a8#.bgzhylmn8
