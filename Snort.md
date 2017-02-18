@@ -1,4 +1,7 @@
-We compile Snort with [PF_RING](PF_RING) to allow you to spin up multiple instances to handle more traffic.
+### What is Snort?
+Snort is a Network Intrusion Detection System (NIDS).  It sniffs network traffic and generates IDS alerts.
+
+In Security Onion, we compile Snort with [PF_RING](PF_RING) to allow you to spin up multiple instances to handle more traffic.
 
 Configuration:  
 /etc/nsm/HOSTNAME-INTERFACE/snort.conf  
