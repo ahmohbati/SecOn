@@ -7,6 +7,9 @@ Like most IT systems, Security Onion has databases and those databases don't lik
 Affordable and Effective: <br/>
 http://www.apc.com/shop/us/en/products/APC-Back-UPS-550/P-BE550G
 
+#### Standalone Deployments
+In a standalone deployment, you're running the master server components and the sensor components all on one box, so your hardware requirements will reflect that.
+
 #### Master server only
 In an enterprise distributed deployment, a master server should just be a master server and leave the sniffing and log collection to the separate sensor boxes.  In that scenario, a master server doesn't require nearly as much hardware as a sensor.  An enterprise master server should have 1-4 CPU cores, 8-16GB RAM, and 100GB to 1TB of disk space.  Many folks choose to host their master server in their VM farm since it has lower hardware requirements than sensors but needs higher reliability and availability.
 
