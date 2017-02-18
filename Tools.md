@@ -12,6 +12,7 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>Bro</h4>
 <a href='http://bro-ids.org/'><a href='http://bro-ids.org/'>http://bro-ids.org/</a></a><br>
 "Bro is a powerful network analysis framework that is much different from the typical IDS you may know."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Bro  
 <br>
 <h4>chaosreader</h4>
 <a href='http://chaosreader.sourceforge.net/'><a href='http://chaosreader.sourceforge.net/'>http://chaosreader.sourceforge.net/</a></a><br>
@@ -32,6 +33,7 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>ELSA</h4>
 <a href='https://github.com/mcholste/elsa'>https://github.com/mcholste/elsa</a><br>
 "ELSA is a centralized syslog framework built on Syslog-NG, MySQL, and Sphinx full-text search. It provides a fully asynchronous web-based query interface that normalizes logs and makes searching billions of them for arbitrary strings as easy as searching the web. It also includes tools for assigning permissions for viewing the logs as well as email based alerts, scheduled queries, and graphing."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA  
 <br>
 <h4>hping</h4>
 <a href='http://www.hping.org/'><a href='http://www.hping.org/'>http://www.hping.org/</a></a><br>
@@ -54,6 +56,7 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>netsniff-ng</h4>
 <a href='http://netsniff-ng.org/'><a href='http://netsniff-ng.org/'>http://netsniff-ng.org/</a></a><br>
 "netsniff-ng is a free, performant Linux networking toolkit."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/netsniff-ng  
 <br>
 <h4>NetworkMiner</h4>
 <a href='http://www.netresec.com/?page=NetworkMiner'><a href='http://www.netresec.com/?page=NetworkMiner'>http://www.netresec.com/?page=NetworkMiner</a></a><br>
@@ -66,6 +69,7 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>OSSEC</h4>
 <a href='http://www.ossec.net/'><a href='http://www.ossec.net/'>http://www.ossec.net/</a></a><br>
 "OSSEC is an Open Source Host-based Intrusion Detection System. It performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/OSSEC  
 <br>
 <h4>p0f</h4>
 <a href='http://lcamtuf.coredump.cx/p0f3/'><a href='http://lcamtuf.coredump.cx/p0f3/'>http://lcamtuf.coredump.cx/p0f3/</a></a><br>
@@ -82,6 +86,7 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>sguil</h4>
 <a href='http://sguil.sourceforge.net/'><a href='http://sguil.sourceforge.net/'>http://sguil.sourceforge.net/</a></a><br>
 "Sguil (pronounced sgweel) is built by network security analysts for network security analysts. Sguil's main component is an intuitive GUI that provides access to realtime events, session data, and raw packet captures. Sguil facilitates the practice of Network Security Monitoring and event driven analysis. The Sguil client is written in tcl/tk and can be run on any operating system that supports tcl/tk (including Linux, BSD, Solaris, MacOS, and Win32)."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Sguil  
 <br>
 <h4>Sniffit</h4>
 <a href='http://sniffit.sourceforge.net/'><a href='http://sniffit.sourceforge.net/'>http://sniffit.sourceforge.net/</a></a><br>
@@ -90,10 +95,12 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>Snort</h4>
 <a href='http://www.snort.org/'><a href='http://www.snort.org/'>http://www.snort.org/</a></a><br>
 "Snort® is an open source network intrusion prevention and detection system (IDS/IPS) developed by Sourcefire. Combining the benefits of signature, protocol, and anomaly-based inspection, Snort is the most widely deployed IDS/IPS technology worldwide. With millions of downloads and nearly 400,000 registered users, Snort has become the de facto standard for IPS."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Snort  
 <br>
 <h4>Squert</h4>
 <a href='http://www.squertproject.org/'><a href='http://www.squertproject.org/'>http://www.squertproject.org/</a></a><br>
 "Squert is a web application that is used to query and view event data stored in a Sguil database (typically IDS alert data). Squert is a visual tool that attempts to provide additional context to events through the use of metadata, time series representations and weighted and logically grouped result sets. The hope is that these views will prompt questions that otherwise may not have been asked."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Squert  
 <br>
 <h4>ssldump</h4>
 <a href='http://www.rtfm.com/ssldump/'><a href='http://www.rtfm.com/ssldump/'>http://www.rtfm.com/ssldump/</a></a><br>
@@ -106,6 +113,7 @@ Security Onion would like to thank the following open-source projects for their 
 <h4>Suricata</h4>
 <a href='http://www.openinfosecfoundation.org/index.php/download-suricata'><a href='http://www.openinfosecfoundation.org/index.php/download-suricata'>http://www.openinfosecfoundation.org/index.php/download-suricata</a></a><br>
 "The Suricata Engine is an Open Source Next Generation Intrusion Detection and Prevention Engine. This engine is not intended to just replace or emulate the existing tools in the industry, but will bring new ideas and technologies to the field."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Suricata  
 <br>
 <h4>tcpdump</h4>
 <a href='http://www.tcpdump.org/'><a href='http://www.tcpdump.org/'>http://www.tcpdump.org/</a></a><br>
@@ -150,3 +158,4 @@ Part of Snort, u2spewfoo converts unified2 files to text.<br>
 <h4>Xplico</h4>
 <a href='http://www.xplico.org/'><a href='http://www.xplico.org/'>http://www.xplico.org/</a></a><br>
 "The goal of Xplico is extract from an internet traffic capture the applications data contained.  For example, from a pcap file Xplico extracts each email (POP, IMAP, and SMTP protocols), all HTTP contents, each VoIP call (SIP), FTP, TFTP, and so on. Xplico isn’t a network protocol analyzer. Xplico is an open source Network Forensic Analysis Tool (NFAT)."<br>
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Xplico  
