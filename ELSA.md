@@ -2,7 +2,7 @@
 https://github.com/mcholste/elsa  
 https://github.com/mcholste/elsa/wiki/Documentation
 
-* Web interface for hunting through logs (Bro, Snort, OSSEC, syslog)
+* Web interface for hunting through logs ([Bro](Bro), [NIDS alerts](NIDS), [OSSEC](OSSEC), [syslog](syslog))
 
 * Works best with Chromium/Chrome browser
 
@@ -14,7 +14,7 @@ https://github.com/mcholste/elsa/wiki/Documentation
 
 * By default, ELSA searches the last 2 days worth of logs.  You can control this using the From and To fields.
 
-* Can pivot to CapME to access full packet capture.  For any log relating to TCP traffic that has timestamp; src ip; source port; destination ip; and destination port, you can click Info, Plugin, getPcap to pivot to CapMe.  Enter your username and password and CapMe will retrieve the pcap and render it as an ASCII transcript.  If ELSA doesn't show the getPcap plugin, then the log you were trying to pivot from didn't contain all of the fields listed above that are necessary to active the getPcap plugin.
+* Can pivot to [CapME](CapMe) to access full packet capture.  For any log relating to TCP traffic that has timestamp; src ip; source port; destination ip; and destination port, you can click Info, Plugin, getPcap to pivot to CapMe.  Enter your username and password and CapMe will retrieve the pcap and render it as an ASCII transcript.  If ELSA doesn't show the getPcap plugin, then the log you were trying to pivot from didn't contain all of the fields listed above that are necessary to active the getPcap plugin.
 
 * Very fast, very scalable (each sensor has its own mysql database and sphinx index)
 
