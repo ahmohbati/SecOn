@@ -1,4 +1,4 @@
-### What is ELSA?
+### Description
 From https://github.com/mcholste/elsa:
 > Enterprise Log Search and Archive (ELSA) is a three-tier log receiver, archiver, indexer, and web frontend for incoming syslog. It leverages syslog-ng's pattern-db parser for efficient log normalization and Sphinx full-text indexing for log searching. 
 
