@@ -1,11 +1,11 @@
 #### CapME ####
 CapME allows you to:
 * view a pcap transcript rendered with tcpflow
-* view a pcap transcript rendered with Bro (especially helpful for dealing with gzip encoding)
+* view a pcap transcript rendered with [Bro](Bro) (especially helpful for dealing with gzip encoding)
 * download a pcap
 
 #### Pivoting to CapME ####
-Our Setup script automatically configures ELSA to be able to pivot to CapME for full transcripts.  
+Our Setup script automatically configures [ELSA](ELSA) to be able to pivot to CapME for full transcripts.  
 
 As of securityonion-squert - 20141015-0ubuntu0securityonion15 (released on 6/6/2016), Squert can now pivot to CapME as well.  For more information, please see:
 http://blog.securityonion.net/2016/06/new-capme-and-squert-packages-resolve.html
