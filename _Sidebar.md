@@ -18,7 +18,7 @@
   * [Hardware Enablement (HWE)](HWE)
   * [Upgrading from 12.04 to 14.04](Upgrading-from-12.04-to-14.04)
 
-## Interfaces ##
+## Analyst Tools ##
   * [Squert](Squert)
   * [ELSA](ELSA)
   * [Sguil](Sguil)
