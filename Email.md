@@ -73,6 +73,11 @@ Then restart OSSEC:<br>
 <pre><code>sudo service ossec-hids-server restart<br>
 </code></pre>
 
+You can specify the severity of an event for which OSSEC will send email alerts by specifying an appropriate value for `email_alert_level` in `/var/ossec/etc/ossec.conf`.
+
+You can also find an explanation of the alert levels, here:   
+http://ossec-docs.readthedocs.io/en/latest/manual/rules-decoders/rule-levels.html
+
 ####How do I configure ELSA to send emails?####
 Add your email address to the user_info table of the securityonion_db database (replacing FIRSTLAST@YOURDOMAIN.COM with your actual email address and FIRSTLAST with your Sguil/ELSA username):
 ```
