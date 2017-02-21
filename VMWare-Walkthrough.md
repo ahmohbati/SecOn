@@ -1,11 +1,13 @@
-####This tutorial was written to address setting up Security Onion 14.04 in VMWare Workstation Pro 12 (although this should be similar for most VMWare installations).###
+###Overview
+This tutorial was written to address setting up Security Onion 14.04 in VMWare Workstation Pro 12 (although this should be similar for most VMWare installations).
 
 If you don't have VMWare Workstation, you could also use VMWare Player, found here:
 
 http://www.vmware.com/products/player/playerpro-evaluation.html  
 
 
-####Follow the steps below to setup a standalone machine in Evaluation Mode:#####
+###Installation
+Follow the steps below to setup a standalone machine in Evaluation Mode:
   1. Obtain and verify the latest Security Onion ISO, found here:  
 https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md
   1. From VMWare, select File >> New Virtual Machine.
@@ -38,13 +40,13 @@ https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_IS
   1. (Optional) Adjust display settings >> Terminal Icons, Settings >> Display > Choose and confirm resolution.   
 
 
-#### Soup
+###Soup
 
   1. Before running Setup, ensure you run "soup" to ensure you have the latest updates:
    1. Enter terminal and type the following: `sudo soup -y`.
    1. You may be prompted to reboot.  If so, reboot, and continue to the next step.
 
-#### Setup: Phase 1
+###Setup: Phase 1
 
   1. Click the Security Onion "Setup" icon on the desktop.
   1. You will be prompted to enter an administrative password (same one you defined during the install).  Enter it here and click "OK".
@@ -57,7 +59,7 @@ https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_IS
   1. Setup will present a summary of the changes to be made to the interface configuration.  If correct, click "Yes, make changes!".
   1. Set up will ask to reboot so that changes to the configuration can be completed.  Click "Yes, reboot!".  
 
-#### Setup: Phase 2
+###Setup: Phase 2
 
    1. After the machine reboots, click the Security Onion 'Setup" icon.
    1. You will be prompted to enter an administrative password (same one you defined during the install).  Enter it here and click "OK".
@@ -68,9 +70,9 @@ https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_IS
    1. Setup will ask what username and password you would like to configure to access Sguil, Squert, and ELSA.  Enter the username and password, and verify the password, clicking "OK" at each prompt.
    1. Setup will present you with a summary of changes to be made upon confirmation.  If you are satisfied with the presented changes, click "Yes, proceed with the changes!".  
 
-####Relax!
+###Post-Installation
 
-It's all over -- now that wasn't so bad, was it?  After setup is complete, you should be presented with several dialogs, offering suggestions and useful information, such as:
+After setup is complete, you should be presented with several dialogs, offering suggestions and useful information, such as:
 
 * Setup log - can be found in /var/log/nsm/sosetup.log.
 * IDS Alerts can be found in Sguil, Squert, and ELSA.  
@@ -91,22 +93,22 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Bro
 * Rules can be modified by Pulledpork through the use of the files in /etc/nsm/pulledpork/.
 * Rules are updated every morning, however, you can manually update them by running "sudo rule-update".
 * More information about managing alerts/rules can be found here:  
-https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts
+https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts   
 https://github.com/Security-Onion-Solutions/security-onion/wiki/AddingLocalRules
 
 * Sensors can be tuned by modifying the files in /etc/nsm/[hostname-interface].
 
 * NOTE: The local firewall (ufw) is locked down by default to only allow connections to port 22.  You can run "sudo so-allow" to add exceptions for analysts, ossec agents, etc.  
-See the following for more information:
+See the following for more information:   
 https://github.com/Security-Onion-Solutions/security-onion/wiki/Firewall
 
 * For more information, consult the FAQ or the wiki:  
 https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ  
 https://github.com/Security-Onion-Solutions/security-onion/wiki
 
-* Questions or problems can be submitted to the mailing list:
+* Questions or problems can be submitted to the mailing list:   
 https://groups.google.com/forum/#!forum/security-onion
 
 ####Things to keep in mind
 
-* With the sniffing interface in "bridged" mode, you will be able to see all traffic to/from the host machine's physical NIC.  If you would like to see **ALL** the traffic on your network, you will need a method of forwarding that traffic to the interface to which the virtual adapter is bridged.  This can be achieved by switch port mirroring (SPAN), or through the use of an (inline) tap.
+* With the sniffing interface in "bridged" mode, you will be able to see all traffic to/from the host machine's physical NIC.  If you would like to see **ALL** the traffic on your network, you will need a method of forwarding that traffic to the interface to which the virtual adapter is bridged.  This can be achieved by switch port mirroring (SPAN), or through the use of a [tap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Hardware#enterprise-tap-solutions).
