@@ -21,5 +21,5 @@ Download SwiftOnSecurity's example sysmon config here:
 https://github.com/SwiftOnSecurity/sysmon-config/raw/master/sysmonconfig-export.xml
 
 ### More Information
-How to Go from Responding to Hunting with Sysinternals Sysmon:
+How to Go from Responding to Hunting with Sysinternals Sysmon:  
 https://onedrive.live.com/view.aspx?resid=D026B4699190F1E6!2843&ithint=file%2cpptx&app=PowerPoint&authkey=!AMvCRTKB_V1J5ow
