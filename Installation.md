@@ -16,6 +16,9 @@ If you haven't already, please review the [Hardware](Hardware) page.
 If you have a new machine with UEFI, please see:
 https://help.ubuntu.com/community/UEFI
 
+### Language
+Please note that we only support the English language at this time.
+
 ### Choose your Installation Guide ###
 We have different Installation Guides to cover various use cases.  Please choose the appropriate Installation Guide for your use case.
 
