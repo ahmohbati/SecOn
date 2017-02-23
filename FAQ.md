@@ -19,6 +19,9 @@
 #### What's the recommended procedure for installing Security Onion? ####
 [Installation Procedure](Installation)
 
+#### Why does the installer crash when selecting a non-English language?
+We only support the English language at this time.
+
 #### Why can't I see the Continue button on the Keyboard Layout screen of the installer?
 The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right like this:  
 https://launchpadlibrarian.net/207213663/Screenshot_wilyi386deskmanual_2015-05-22_13%3A05%3A41.png  
