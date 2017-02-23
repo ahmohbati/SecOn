@@ -20,7 +20,8 @@
 [Installation Procedure](Installation)
 
 #### Why does the installer crash when selecting a non-English language?
-We only support the English language at this time.
+We only support the English language at this time:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Installation#language
 
 #### Why can't I see the Continue button on the Keyboard Layout screen of the installer?
 The Keyboard Layout screen may be larger than your screen resolution and so the Continue button may be off the screen to the right like this:  
