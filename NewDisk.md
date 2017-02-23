@@ -37,7 +37,7 @@ This can be done in the Ubuntu installer, or after installation is complete. If 
 `sudo vi /etc/fstab`  
 (You can use blkid to find your drive's UUID to write in /etc/fstab)  
 `sudo blkid /dev/sdb2`
-1. Re-Create nsm directory after it was renamed  
+1. Re-create nsm directory after it was renamed  
 `mkdir /nsm`
 1. Mount the new `/nsm`  
 `sudo mount /nsm`
