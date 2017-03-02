@@ -11,7 +11,7 @@ http://blog.securityonion.net/2016/09/squert-development.html
 Squert is a PHP web interface to the [Sguil](Sguil) database and works best with Chromium/Chrome browsers.
 
 ### Authentication
-Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil
+Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil.
 
 ### Data Types
 Squert gives you access to the following data types:
