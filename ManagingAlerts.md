@@ -123,7 +123,7 @@ We can gather a little more information by using a query that also returns the d
 ```
 
 #### Identifying rule categories ####
-Both the Snort VRT and the Emerging Threats rulesets come with a large number of rules enabled (over 15,000 by default).  You should only run the rules necessary for your environment.  So you may want to disable entire categories of rules that don't apply to you.  Run the following command to get a listing of categories and the number of rules in each:
+Both the Snort Subscriber (Talos) and the Emerging Threats rulesets come with a large number of rules enabled (over 15,000 by default).  You should only run the rules necessary for your environment.  So you may want to disable entire categories of rules that don't apply to you.  Run the following command to get a listing of categories and the number of rules in each:
 ```
 cut -d\" -f2 /etc/nsm/rules/downloaded.rules | awk '{print $1, $2}'|sort |uniq -c |sort -nr
 ```
