@@ -2,15 +2,13 @@
 From http://www.squertproject.org/:
 > Squert is a web application that is used to query and view event data stored in a Sguil database (typically IDS alert data). Squert is a visual tool that attempts to provide additional context to events through the use of metadata, time series representations and weighted and logically grouped result sets. The hope is that these views will prompt questions that otherwise may not have been asked. 
 
-* Originally developed by Paul Halliday:  
+Squert was originally developed by Paul Halliday:  
 http://www.squertproject.org/
 
-* Security Onion maintains its own fork of Squert:  
+Security Onion maintains its own fork of Squert:  
 http://blog.securityonion.net/2016/09/squert-development.html
 
-* PHP web interface to [Sguil](Sguil) database
-
-* Works best with Chromium/Chrome browser
+Squert is a PHP web interface to [Sguil](Sguil) database and works best with Chromium/Chrome browsers.
 
 ### Authentication
 Squert authenticates against the Sguil user database, so you should be able to login to Squert using the same username/password you use to login to Sguil
