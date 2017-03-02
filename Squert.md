@@ -20,7 +20,8 @@ Squert gives you access to the following data types:
   * Asset data from PRADS (if PRADS and pads_agent are enabled)
   * HTTP logs from Bro (if http_agent is enabled)
 
-* The default view shows alerts from today.  To show older alerts, click "INTERVAL", then click the 2 right arrows, set your custom date, and click Squert's refresh button (two circular arrows).
+### Time Interval
+The default view shows alerts from today.  To show older alerts, click "INTERVAL", then click the 2 right arrows, set your custom date, and click Squert's refresh button (two circular arrows).
 
 ### Pivoting to Full Packet Capture
 Squert can pivot to [CapMe](CapMe) for full packet capture.  To do this, drill into an event and click on the Event ID.
