@@ -11,7 +11,8 @@ Install Security Onion on the master server box.  Run Setup and configure networ
 Install Security Onion on one or more sensor boxes and then on each one:  run Setup, configure network interfaces, reboot, run Setup choose Production Mode, and then choose Sensor.
 
 ### Analyst VM
-Install Security Onion in a VM on your local desktop or laptop.  Do NOT run Setup.  Launch the Sguil client and connect to sguild on your Production Master Server.  Launch the web browser and connect to Squert or ELSA on your Production Master Server.
+Install Security Onion in a VM on your local desktop or laptop.  Do NOT run Setup.  Launch the Sguil client and connect to sguild on your Production Master Server.  Launch the web browser and connect to Squert or ELSA on your Production Master Server.  For more information, please see:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/ConnectingtoSguil#directly-connecting-to-sguild-remotely
 
 ### Sensor sending logs to SIEM
 [Sending logs to SIEM](ThirdPartyIntegration)
