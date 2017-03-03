@@ -26,4 +26,7 @@ For more information, please see:
 https://github.com/Security-Onion-Solutions/security-onion/wiki/ConnectingtoSguil#directly-connecting-to-sguild-remotely
 
 ### Sensor sending logs to SIEM
+Install Security Onion on a sensor box and then configure it to send logs to your SIEM.
+
+For more information, please see:  
 [Sending logs to SIEM](ThirdPartyIntegration)
