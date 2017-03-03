@@ -1,5 +1,6 @@
 ## Getting Started ##
   * [Introduction](IntroductionToSecurityOnion)
+  * [Use Cases](Use-Cases)
   * [Hardware Requirements](Hardware)
   * [Release Notes](Security-Onion-14.04-Release-Notes)
   * [Download/Install](Installation)
