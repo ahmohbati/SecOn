@@ -59,7 +59,7 @@ See:
   https://groups.google.com/d/topic/enterprise-log-search-and-archive/Z-6YrCD_FkU/discussion
 
 ### Why does ELSA periodically show "undefined" instead of the number of logs in the upper right?
-This can happen with the default Apache MaxConnectionsPerChild setting of 0.  Try setting the following in /etc/apache2/mods-available/mpm_prefork.conf:
+This can happen with the default Apache MaxConnectionsPerChild setting of 0.  Our Setup script should automatically set this to 2, but if you upgraded from an older version you may be missing this setting.  Try setting the following in /etc/apache2/mods-available/mpm_prefork.conf:
 ```
 MaxConnectionsPerChild 2
 ```
