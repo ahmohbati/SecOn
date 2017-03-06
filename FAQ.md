@@ -572,19 +572,23 @@ If the Squert map is not showing the country for IPs, try running the following:
 <pre><code>sudo /usr/bin/php -e /var/www/so/squert/.inc/ip2c.php 0'/<br>
 </code></pre>
 
-####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?####
+####Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct?
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: <a href='https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion'>https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion</a>
 
-####Why do I get segfaults when booting on VMware ESX?####
+####Why does ELSA periodically show undefined instead of the number of logs in the upper right corner?
+https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA#why-does-elsa-periodically-show-undefined-instead-of-the-number-of-logs-in-the-upper-right
+
+
+####Why do I get segfaults when booting on VMware ESX?
 This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
 <a href='http://ubuntuforums.org/showthread.php?t=1674759'>http://ubuntuforums.org/showthread.php?t=1674759</a><br>
 <a href='https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422'>https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422</a><br>
 
-####Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically?####
+####Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically?
 All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
 <a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'><a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'>http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a></a>
 
-####How do I run `ntop` on Security Onion?####
+####How do I run `ntop` on Security Onion?
 [Deploying NtopNG](DeployingNtopng)
 
 ####How do I open rar files?
@@ -594,7 +598,7 @@ sudo apt-get update
 sudo apt-get install unrar
 ````
 
-####How do I perform "X" in Ubuntu?####
+####How do I perform "X" in Ubuntu?
 Security Onion is based on Ubuntu, but we don't provide community support for the Ubuntu OS itself.  If you have questions about Ubuntu, you should check the Ubuntu website, forums, and Google.
 <br>
 <br>
