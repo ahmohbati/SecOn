@@ -26,7 +26,7 @@ https://github.com/mcholste/elsa/wiki/Documentation
 ELSA can pivot to [CapME](CapMe) to access full packet capture.  For any log relating to TCP traffic that has timestamp; src ip; source port; destination ip; and destination port, you can click Info, Plugin, getPcap to pivot to CapMe.  Enter your username and password and CapMe will retrieve the pcap and render it as an ASCII transcript.  If ELSA doesn't show the getPcap plugin, then the log you were trying to pivot from didn't contain all of the fields listed above that are necessary to active the getPcap plugin.
 
 ### CLI
-You can use the command-line version of ELSA as follows (replacing example.com with your desired search criteria):
+You can query ELSA from the command line by querying the ELSA API.  One option would be to pass your query to our cli.sh script (replacing example.com with your desired search criteria):
 ```
 sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" 
 ```
@@ -34,6 +34,9 @@ The output is in JSON, so you might want to pipe the results into `jq`:
 ```
 sh /opt/elsa/contrib/securityonion/contrib/cli.sh "example.com" | jq '.'
 ```
+
+Another option would be Mike McDargh's Powershell script:  
+http://dropinthebuckit.azurewebsites.net/?author=11
 
 ### Large number of Perl processes
 See: [Why does sostat show high load/CPU usage and large number of Perl processes?](https://github.com/Security-Onion-Solutions/security-onion/wiki/FAQ#why-does-sostat-show-high-loadcpu-usage-and-large-number-of-perl-processes) 
