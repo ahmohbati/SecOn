@@ -14,7 +14,7 @@ Hit the "Start" button with your new virtual machine selected and after a few se
 
 There are two things we need to do once our virtual machine boots up on it's own for the first time to prepare for Security Onion setup: install all Ubuntu/SO updates and install VirtualBox Guest Additions (or VMware Tools if you're using VMware). Go ahead and login with the username and password  you created during the install and double-click the "Terminal Emulator" icon on the desktop. Now that we have a command prompt, type:
 ```
-sudo apt-get update -y && sudo apt-get dist-upgrade && sudo reboot
+sudo soup
 ```
 You'll be asked to enter your password since we're executing a "sudo" command. By default, "root" access is disabled in Ubuntu. The "sudo" command allows authorized users, like system administrators, to execute commands that would otherwise require root access without having to know the root password. It is similar to how recent versions of Microsoft Windows may prompt you to confirm administrative actions, when installing new applications for example. The command we execute tells Linux: update the package and repository listings with root access without prompting me to tell you yes & again with root access upgrade this Linux distribution with the latest patches & again with root access, reboot. Patching will take a few minutes on a fresh installation and when it's done the system will restart. When the system comes back up, log in again and open another terminal window.
 
