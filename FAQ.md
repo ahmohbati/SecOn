@@ -383,13 +383,13 @@ https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22
 
 https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 
-#### How do I change the fonts in the Sguil client? ####
+#### How do I change the fonts in the Sguil client?
 In the Sguil client, click the `File` menu and then go to `Change Font`.  You can change both the Standard and Fixed fonts.
 
-#### Can I be alerted when an interface stops receiving traffic? ####
+#### Can I be alerted when an interface stops receiving traffic?
 [Interface stops receiving traffic](SensorStopsSeeingTraffic)
 
-####How do I boot Security Onion to text mode (CLI instead of GUI)?####
+#### How do I boot Security Onion to text mode (CLI instead of GUI)?
 In `/etc/default/grub`, change this line:
 ````
 GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"
@@ -407,14 +407,14 @@ For more information, please see:<br>
 
 If you're doing a new installation, you can avoid this altogether by installing our packages on top of Ubuntu Server (minimal installation, no GUI) instead of using the Security Onion ISO image.
 
-#### I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver? ####
+#### I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver?
 <ol><li>Click Applications.<br>
 </li><li>Click Settings.<br>
 </li><li>Click Screensaver.<br>
 </li><li>Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver" or "Blank Screen Only".<br>
 </li><li>Close the Screensaver Preferences window.<br></li></ol>
 
-#### How do I access Xplico with a hostname instead of IP address? ####
+#### How do I access Xplico with a hostname instead of IP address?
 From Gianluca Costa:<br>
 <br>
 Xplico has embedded (in its PHP code) a Http-proxy, this proxy is used to show the web pages, emulating, for example, the original cache of the user.<br>
@@ -430,7 +430,7 @@ To change this behavior you must modify the PHP code:<br>
 <a name="sostat"></a>
 ###`sostat` output
 ---
-#### Why does `sostat` show a high number of `ELSA Buffers in Queue`? ####
+#### Why does `sostat` show a high number of `ELSA Buffers in Queue`?
 There are usually 2 main reasons for this:
 
 - low on RAM<br>
@@ -465,7 +465,7 @@ sudo service nsm start
 ```
 Also see <https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion>.
 
-#### What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`? ####
+#### What does it mean if `sostat` show a high number of `Sguil Uncategorized Events`?
 
 `Sguild` has to load uncategorized events into memory when it starts and it won't accept connections until that's complete.<br>
 You can either:<br>
@@ -517,57 +517,35 @@ Also see: https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.
 <a name="miscellaneous"></a>
 ### Miscellaneous
 ---
-#### Where can I find interesting pcaps to replay? ####
+#### Where can I find interesting pcaps to replay?
 [Pcaps](Pcaps)
 
-#### Should I backup my Security Onion box? ####
+#### Should I backup my Security Onion box?
 Network Security Monitoring as a whole is considered "best effort". It is not a "mission critical" resource like a file server or web server.  Since we're dealing with "big data" (potentially terabytes of full packet capture), backups would be prohibitively expensive.  Most organizations don't do any backups and instead just rebuild boxes when necessary.
 
-#### How can I add and test local rules? ####
+#### How can I add and test local rules?
 [Adding local rules and testing them with scapy](AddingLocalRules)
 
-#### Where can I get the source code? ####
+#### Where can I get the source code?
 You can download the full source code for any of our packages like this:<br>
 <pre><code>apt-get source PACKAGE-NAME<br>
 </code></pre>
 where `PACKAGE-NAME` is usually something like `securityonion-snort`.  Here's a list of all of our packages:<br>
 <a href='https://launchpad.net/~securityonion/+archive/stable'>https://launchpad.net/~securityonion/+archive/stable</a>
 
-#### How do I get ELSA to display bar charts? ####
+#### How do I get ELSA to display bar charts?
 In the new Security Onion 14.04, ELSA should display bar charts automatically.  In the old Security Onion 12.04, 
 ELSA's bar charts required flash, so one option would be to replace Chromium with <a href='http://www.google.com/chrome/'>Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:<br>
 <pre><code>sudo update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
 </code></pre>
 
-#### How can I remote control my Security Onion box? ####
+#### How can I remote control my Security Onion box?
 A few options:<br>
 <ul><li>"ssh -X" - any program started in the SSH session will be displayed on your local desktop (requires a local X server)<br>
 </li><li><a href='http://www.xrdp.org/'>xrdp</a> - sudo apt-get install xrdp - requires an rdp client<br>
 </li><li>You can use <a href='https://github.com/Security-Onion-Solutions/security-onion/wiki/FreeNX'>FreeNX</a> but we don't recommend or support it</li></ul>
 
-#### Why does the Snorby dashboard show all zeroes? ####
-Please do the following:<br>
-<ul><li>click "More Options"<br>
-</li><li>click "Force Cache Update"<br>
-</li><li>Dashboard will display "Current caching"<br>
-</li><li>once that disappears, then refresh the Dashboard page</li></ul>
-
-If that doesn't help, try rebooting.<br>
-<br>
-If that still doesn't help, please see:<br>
-<a href='https://github.com/Snorby/snorby/issues/340'>https://github.com/Snorby/snorby/issues/340</a>
-
-#### Why isn't Snorby showing GeoIP data properly? ####
-Try forcing the GeoIP job to run by doing the following.  First, open the Rails console:<br>
-<pre><code>cd /opt/snorby/<br>
-sudo RAILS_ENV=production bundle exec rails c<br>
-</code></pre>
-In the Rails console, initiate the GeoIP job:<br>
-<pre><code>Snorby::Jobs::GeoipUpdatedbJob.new(true).perform<br>
-quit<br>
-</code></pre>
-
-#### Why isn't Squert showing GeoIP data properly? ####
+#### Why isn't Squert showing GeoIP data properly?
 If the Squert map is not showing the country for IPs, try running the following:<br>
 <pre><code>sudo /usr/bin/php -e /var/www/so/squert/.inc/ip2c.php 0'/<br>
 </code></pre>
@@ -578,17 +556,12 @@ Could be due to clocks not matching between ELSA log node and ELSA web interface
 #### Why does ELSA periodically show undefined instead of the number of logs in the upper right corner?
 https://github.com/Security-Onion-Solutions/security-onion/wiki/ELSA#why-does-elsa-periodically-show-undefined-instead-of-the-number-of-logs-in-the-upper-right
 
-
 #### Why do I get segfaults when booting on VMware ESX?
 This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
 <a href='http://ubuntuforums.org/showthread.php?t=1674759'>http://ubuntuforums.org/showthread.php?t=1674759</a><br>
 <a href='https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422'>https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422</a><br>
 
-#### Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically?
-All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
-<a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'><a href='http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html'>http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a></a>
-
-#### How do I run `ntop` on Security Onion?
+#### How do I run `ntopng` on Security Onion?
 [Deploying NtopNG](DeployingNtopng)
 
 #### How do I open rar files?
