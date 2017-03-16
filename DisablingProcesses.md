@@ -17,7 +17,9 @@ to prevent `http_agent` from restarting the next time the NSM scripts are run.  
 ```
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 ```
+
 <br>
+
 #### Sguil Agent ####
 If you use the Sguil client and want to remove the disabled agent from Sguil's `Agent Status` tab, then stop `sguild`, set the sensor's `active` field to `N` in the database, and then restart `sguild`:
 ```
@@ -30,7 +32,9 @@ sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e 'update s
 # Restart sguild
 sudo nsm_server_ps-start
 ```
+
 <br>
+
 #### Disabling `Xplico`
 Disable Xplico in /etc/nsm/securityonion.conf:
 ```
@@ -41,7 +45,9 @@ sudo sed -i 's|XPLICO_ENABLED=yes|XPLICO_ENABLED=no|g' /etc/nsm/securityonion.co
 ```
 sudo apt-get purge xplico
 ```
+
 <br>
+
 #### Disabling `Snorby`
 1. Disable Snorby in the Apache configuration:
 
@@ -57,9 +63,8 @@ sudo apt-get purge xplico
     
 1. Prevent Snorby worker from starting on boot by setting `SNORBY_ENABLED=no` in `/etc/nsm/securityonion.conf`.
 1. Comment out the output database line in all `barnyard2.conf` files on ALL sensors:
-
     ```
-  sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
+    sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
     ```
     
 1. Restart barnyard2 on all sensors:
@@ -67,7 +72,7 @@ sudo apt-get purge xplico
     ```
     sudo nsm_sensor_ps-restart --only-barnyard2
     ```
-<br>
+
 <br>
 
 #### Disabling `OSSEC`
