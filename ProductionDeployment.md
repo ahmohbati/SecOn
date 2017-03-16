@@ -58,15 +58,21 @@ Otherwise, if you are remote and logged in over ssh, you can run CLI-only Setup 
           * SERVER<br>
             * run through sosetup, choosing Production Mode and choosing Server only (no sniffing)<br>
           * FIRST SENSOR - username sensor1<br>
-            * create an account on the SERVER called sensor1 using the `sudo adduser sensor1` command<br>
-            * add the new account to the sudo group using the `sudo adduser sensor1 sudo` command<br>
+            * create an account on the SERVER called sensor1:<br>
+`sudo adduser sensor1`
+            * add the new account to the sudo group:<br>
+`sudo adduser sensor1 sudo`
             * run through sosetup on the SENSOR<br>
-            * on the SERVER, remove the account from the sudo group using the `sudo deluser sensor1 sudo` command (but leave the account active)<br>
+            * on the SERVER, remove the account from the sudo group (but leave the account active):<br>
+`sudo deluser sensor1 sudo`
           * SECOND SENSOR - username sensor2<br>
-            * create a second account on the SERVER and add it to the sudo group using the `sudo adduser sensor2` command<br>
-            * add the new account to the sudo group using the `sudo adduser sensor2 sudo` command<br>
+            * create a second account on the SERVER and add it to the sudo group:<br>
+`sudo adduser sensor2`
+            * add the new account to the sudo group:<br>
+`sudo adduser sensor2 sudo`
             * run through SETUP on the second SENSOR<br>
-            * on the SERVER, remove the account from the sudo group using the `sudo deluser sensor2 sudo` command (but leave the account active)<br>
+            * on the SERVER, remove the account from the sudo group (but leave the account active):<br>
+`sudo deluser sensor2 sudo`
         * You’ll be asked which network interface should be monitored.<br>
         * If you have multiple CPU cores available, the Best Practices option should automatically assign an equal number of IDS and Bro processes based on your number of CPU cores.  If instead of Best Practices you choose Custom, then you'll be prompted to designate how many IDS and Bro processes you would like to run. (These settings can be modified later by changing the `IDS_LB_PROCS` variable in `/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf` and the `lb_procs` variable in `/opt/bro/etc/node.cfg`, respectively).
 
