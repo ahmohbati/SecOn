@@ -9,7 +9,7 @@ Security Onion uses syslog-ng as its primary syslog collector and to send logs t
 syslog-ng's configuration file is located at `/etc/syslog-ng/syslog-ng.conf`
 
 ### Forwarding
-You can configure syslog-ng to forward Bro/OSSEC/IDS logs to [third-party systems](ThirdPartyIntegration).
+You can configure syslog-ng to forward Bro / OSSEC / IDS logs to [third-party systems](ThirdPartyIntegration).
 
 ### More Information
 For more information about syslog-ng, please see:  
