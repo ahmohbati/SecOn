@@ -3,11 +3,11 @@
 If you have multiple CPU cores, Setup will automatically ask you how many PF\_RING instances you'd like for Snort/Suricata (IDS engine processes) and Bro and will tell you how to adjust after the fact.  As of securityonion-setup - 20120912-0ubuntu0securityonion201, Setup should analyze your system and recommend a certain number of PF_RING instances:  
 http://blog.securityonion.net/2016/03/securityonion-setup-20120912.html
 
-#### Tuning ####
+#### Tuning
 
 If you want to change the number of PF\_RING instances after running Setup, you can do the following.
 
-#### Snort/Suricata ####
+#### Snort/Suricata
 
   * Stop sensor processes:
 ```
@@ -24,7 +24,7 @@ of Snort (using PF\_RING), barnyard2, and snort\_agent.<br>
 If running Suricata, the script automatically copies $IDS_LB_PROCS into<br>
 suricata.yaml and then Suricata spins up the PF_RING instances itself.<br>
 <br>
-#### Bro ####
+#### Bro
 For Bro, you would do the following:<br>
 <ul><li>Stop bro:<br>
 <pre><code>sudo nsm_sensor_ps-stop --only-bro<br>
@@ -34,7 +34,7 @@ For Bro, you would do the following:<br>
 <pre><code>sudo nsm_sensor_ps-start --only-bro<br>
 </code></pre></li></ul>
 
-####Slots####
+#### Slots
 If you've already run Setup and want to modify min_num_slots, you can manually create/edit <code>/etc/modprobe.d/pf_ring.conf</code>.  
 
 For example, to increase min_num_slots to 65534, do the following:<br><br>
@@ -44,5 +44,5 @@ For example, to increase min_num_slots to 65534, do the following:<br><br>
 <code>sudo rmmod pf_ring</code><br>
 <code>sudo nsm_sensor_ps-start</code>
 
-#### Updating ####
+#### Updating
 Please see the [Upgrade](Upgrade) page for notes on updating the PF_RING kernel module.
