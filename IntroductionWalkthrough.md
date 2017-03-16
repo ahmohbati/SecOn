@@ -18,15 +18,7 @@ sudo apt-get update -y && sudo apt-get dist-upgrade && sudo reboot
 ```
 You'll be asked to enter your password since we're executing a "sudo" command. By default, "root" access is disabled in Ubuntu. The "sudo" command allows authorized users, like system administrators, to execute commands that would otherwise require root access without having to know the root password. It is similar to how recent versions of Microsoft Windows may prompt you to confirm administrative actions, when installing new applications for example. The command we execute tells Linux: update the package and repository listings with root access without prompting me to tell you yes & again with root access upgrade this Linux distribution with the latest patches & again with root access, reboot. Patching will take a few minutes on a fresh installation and when it's done the system will restart. When the system comes back up, log in again and open another terminal window.
 
-At the top of your virtual machine window you'll notice menu items for VirtualBox. Click on your virtual machine window, then on the menu click "Devices" then "Install Guest Additions..." Doing so will mount the VirtualBox guest additions CD on your virtual machine and it will open the folder showing you the files now available. Click on your terminal  window and type "cd /media/VBOX" then hit the 
-
-&lt;tab&gt;
-
- key to autofill the folder name and 
-
-&lt;enter&gt;
-
- to change to that directory. To install the Guest Additions type:
+At the top of your virtual machine window you'll notice menu items for VirtualBox. Click on your virtual machine window, then on the menu click "Devices" then "Install Guest Additions..." Doing so will mount the VirtualBox guest additions CD on your virtual machine and it will open the folder showing you the files now available. Click on your terminal  window and type "cd /media/VBOX" then press the Tab key key to autofill the folder name and press Enter to change to that directory. To install the Guest Additions type:
 ```
 sudo ./VBoxLinuxAdditions.run
 ```
