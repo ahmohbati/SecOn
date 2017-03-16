@@ -389,10 +389,8 @@ Xplico has embedded (in its PHP code) a Http-proxy, this proxy is used to show t
 By default the XI url must be an IP address (wiki: <a href='http://wiki.xplico.org/doku.php?id=interface#browser'>http://wiki.xplico.org/doku.php?id=interface#browser</a> ), the only exception to this rule is the url <a href='http://demo.xplico.org'>http://demo.xplico.org</a> (for obvious reasons).<br>
 If you use as url a name (not an ip) then XI give you a blank page, because XI searches your url in the decoded data.<br>
 <br>
-To change this behavior you must modify the PHP code:<br>
-<blockquote>- file /opt/xplico/xi/cake/dispatcher.php<br>
-- replace demo.xplico.org with your host name (used in the url)<br></blockquote>
-<br>
+To change this behavior you must modify the PHP code.  Edit /opt/xplico/xi/cake/dispatcher.php and change  demo.xplico.org to your host name (used in the url).
+
 [back to top](#top)
 <br>
 <a name="sostat"></a>
