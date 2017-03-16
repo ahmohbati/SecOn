@@ -1,7 +1,7 @@
 #### 32-bit vs 64-bit ####
 Security Onion is designed for x86 and x86-64 architectures.  All of our packages are available in both 32-bit and 64-bit versions, but 64-bit is highly recommended due to the increased performance.  Our Security Onion ISO image is a 64-bit ISO image.
 
-####UPS
+#### UPS
 Like most IT systems, Security Onion has databases and those databases don't like power outages or other ungraceful shutdowns.  To avoid power outages and having to manually repair databases, please consider a UPS.
 
 Affordable and Effective: <br/>
