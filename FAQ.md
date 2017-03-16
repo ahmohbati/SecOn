@@ -66,7 +66,7 @@ No, we only support x86 and x86-64 architectures.  Please see the [hardware](htt
 Definition: A physical or virtual machine running the Security Onion operating system.<br>
 <br>
 **server** <br>
-Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and snorby.  The server is also responsible for ruleset management.<br>
+Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and optionally ELSA.  The server is also responsible for ruleset management.<br>
 Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to `securityonion`.<br>
 Configuration files: `/etc/nsm/securityonion/`<br>
 Controlled by:  `/usr/sbin/nsm_server` <br>
@@ -93,10 +93,7 @@ Example: A machine named `sensor1` having sensors `sensor1-eth0` and `sensor1-et
 <a name="passwords"></a>
 ### Users / Passwords
 ---
-#### What is the password for `root/mysql/Sguil/Squert/Snorby/ELSA`? ####
-[Passwords](Passwords)
-
-#### I've forgotten my Snorby password.  How do I reset it? ####
+#### What is the password for `root/mysql/Sguil/Squert/ELSA`? ####
 [Passwords](Passwords)
 
 #### How do I add a new user account for logging into Sguil/Squert/ELSA? ####
@@ -178,17 +175,6 @@ sudo nsm_server_ps-start<br>
 For more information, please see:<br>
 <a href='http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F'><a href='http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F'>http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a></a><br>
 
-#### Why does the Snorby worker fail with "ERROR: Process ID out of range."? ####
-The root cause is that the Snorby worker got into a failed state with the `/opt/snorby/tmp/pids/delayed_job.pid` file being empty. Snorby reads in the contents of this pid file and if it's empty, it results in `ERROR: Process ID out of range.`.  Removing the empty pid file allows Snorby to start correctly.<br>
-<pre><code>sudo mv /opt/snorby/tmp/pids/delayed_job.pid /tmp/<br>
-sudo reboot<br>
-</code></pre>
-For more info, please see:<br>
-<a href='https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion'>https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion</a>
-
-We now delete the pid file at boot by default, so you should just be able to reboot to resolve this issue:<br>
-<a href='http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html'>http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html</a>
-
 #### Barnyard2 is failing with an error like "ERROR: sguil: Expected Confirm 13324 and got: Failed to insert 13324: mysqlexec/db server: Duplicate entry '9-13324' for key 'PRIMARY'".  How do I fix this? ####
 
 Sometimes, just restarting Barnyard will clear this up:<br>
@@ -209,18 +195,6 @@ sudo nsm_sensor_ps-restart --only-barnyard2<br>
 If that still doesn't fix it, you may have to perform MySQL surgery on the database `securityonion_db` as described in the Sguil FAQ:<br>
 <a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'><a href='http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error'>http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a></a>
 <br>
-#### Why does `rule-update` show barnyard2 errors? ####
-
-`rule-update` now runs `barnyard2` to update Snorby's reference table:
-
-http://blog.securityonion.net/2014/06/new-barnyard2-nsm-rule-update-and.html
-
-Since barnyard2 isn't processing any actual unified2 data, it outputs the following errors:
-```
-ERROR: Unable to open directory '' (No such file or directory)
-ERROR: Unable to find the next spool file!
-```
-This is normal.
 
 #### Why do I get the following error when starting Sguil? ####
 <pre><code>Application initialization failed: no display name and no $DISPLAY environment variable<br>
@@ -361,14 +335,8 @@ Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are 
 #### I disabled some Sguil agents but they still appear in Sguil's `Agent Status` tab. ####
 [Disabling Processes](DisablingProcesses#Sguil_Agent)
 
-#### How do I disable `Snorby`? ####
-[Disabling Processes](DisablingProcesses#disabling-snorby)
-
 #### Where do I put my custom ELSA parsers? ####
 [CustomELSAParsers](CustomELSAParsers)
-
-#### How do I wipe the Snorby database? ####
-[Wiping Snorby database](WipingSnorby)
 
 #### What can I do to decrease the size of my `securityonion_db` (sguild) MySQL database? ####
 You can lower the `DAYSTOKEEP` setting in `/etc/nsm/securityonion.conf`.<br>
@@ -428,7 +396,7 @@ To change this behavior you must modify the PHP code:<br>
 [back to top](#top)
 <br>
 <a name="sostat"></a>
-###`sostat` output
+### `sostat` output
 ---
 #### Why does `sostat` show a high number of `ELSA Buffers in Queue`?
 There are usually 2 main reasons for this:
