@@ -31,14 +31,14 @@ At this point, without running the Security Onion setup script, you have a fully
 When you're logged in again, double-click the "Setup" icon on the desktop to begin Security Onion setup. You'll first be prompted for your password then asked to confirm that you want to continue with the installation. Choose "Yes, Continue!" and you'll be asked if you would like to configure /etc/network/interfaces now. You'll first be asked "Which network interface should be the management interface?" Choose "eth0" and you'll then be asked whether to use static or DHCP IP addressing, with static being highly recommended. When installing a production server or sensor you should make sure to use static IP addressing, but for our client VM we can use DHCP if static addressing isn't available or the VM is going to change networks. Just be aware that IP address changes can cause issues with some of the Security Onion agents, so if you have a test VM using DHCP, you may need to re-run the Security Onion setup. If you can assign a static IP, choose static and you'll be asked to provide the IP address, gateway, netmask, broadcast address and DNS servers. You'll then be asked to configure the monitor interface. Choose "Yes, configure monitor interfaces" then choose "eth1" and click OK. Once you've made your network selections, click "Yes, make changes and reboot!"
 
 Log back in and double-click the "Setup" icon again. Security Onion setup will detect that we've already configured the network interfaces, so choose "Yes, skip network configuration!" when prompted. You'll next be asked whether you want to install Security Onion using "Advanced Setup" or "Quick Setup." For this purpose, we'll use "Quick Setup" which will automatically configure most of your system to monitor one network interface. You'll first be asked "Which network interface should snort listen on?" Choose "eth1." You'll then be prompted for usernames and passwords for Sguil, Squert, ELSA and Snorby and whether or not you want to enable ELSA and that's it. "Advanced Setup" lets you specify whether the Security Onion instance will be running as a Server, Sensor or in Standalone mode, which IDS engine you'd prefer (Snort or Suricata), how many CPU cores you want to assign to Snort/Suricata and Bro IDS, which Snort/Suricata rule set you want to use, your username/passwords and whether you want to install ELSA. When you're done, click "Yes, proceed with the changes!" and Security Onion Setup will do the following:
-> Set the OS timezone to UTC;
-> Delete any existing NSM data/configuration;
-> Create a Sguil server and user;
-> Create a Snorby user;
-> Configure Snort and Bro to monitor interface eth0;
-> Run a single IDS process per interface;
-> Run a single Bro process per interface; and
-> Configure ELSA as both a Log Node and Web Node.
+* Set the OS timezone to UTC;
+* Delete any existing NSM data/configuration;
+* Create a Sguil server and user;
+* Create a Snorby user;
+* Configure Snort and Bro to monitor interface eth0;
+* Run a single IDS process per interface;
+* Run a single Bro process per interface; and
+* Configure ELSA as both a Log Node and Web Node.
 It will take a minute for the setup to complete, but trust me it's a lot less time than it would take if you didn't have Security Onion guiding the way.
 
 When setup is finished you'll see several informative prompts providing you valuable information about your new Security Onion host, which we'll cover here in more detail as a future reference.
@@ -56,7 +56,7 @@ When setup is finished you'll see several informative prompts providing you valu
   * "Rules will be updated every day at 7:01 AM UTC. You can manually update them by running: rule-update" - The rule-update script allows you to manually run PulledPork to update signatures, which is most useful when tuning  signatures by modifying the /etc/nsm/pulledpork .conf files.
   * "Sensors can be tuned by modifying the files in: /etc/nsm/HOSTNAME-INTERFACE/" - There are multiple configuration files in this path:
     * sensor.conf - contains a number of variables that are used throughout the Security Onion network monitoring services, such as which interfaces are being monitored, paths to config files, and more.
-> Typically you'll only need to modify the following files if you are monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12).
+* Typically you'll only need to modify the following files if you are monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12).
     * snort.conf - configuration file used to define variables and configuration settings specific to Snort.
     * suricata.yaml - configuration file used to define variables and configuration settings specific to Suricata.
     * sancp.conf - configuration file used to define variables and configuration settings specific to SANCP.
@@ -76,10 +76,9 @@ A useful script to provide performance and health status of your Security Onion 
 
 If everything looks ok, we can quickly test Sguil and Snort/Suricata detections. Double-click the Sguil icon on the desktop and enter your Sguil username and password (created during the Security Onion Setup). You'll be prompted to choose which network(s) to monitor:  the monitored network interface(s) and/or OSSEC events. Choose "Select All" then "Start SGUIL" and the Sguil client will load. You might already have some events showing up, but just to confirm type "curl http://testmyids.com" in a terminal window and you should see an event appear in Sguil for "GPL ATTACK\_RESPONSE id check returned root."
 
-Security Onion includes a number of useful links on the desktop in addition to the Security Onion application menu which provides access to man pages for tools included in Security Onion. The "README" icon on the desktop is a good starting point and will open https://localhost in a web browser with local links to Squert, Snorby, ELSA, and Xplico and external links to additional useful Security Onion information. Sguil, Squert and ELSA all share the same username/password, while Snorby uses e-mail addresses for usernames. Here's a brief description of the primary tools available in Security Onion for security monitoring:
+Security Onion includes a number of useful links on the desktop in addition to the Security Onion application menu which provides access to man pages for tools included in Security Onion. The "README" icon on the desktop is a good starting point and will open https://localhost in a web browser with local links to Squert and ELSA and external links to additional useful Security Onion information. Sguil, Squert and ELSA all share the same username/password. Here's a brief description of the primary tools available in Security Onion for security monitoring:
   * Sguil (http://sguil.sourceforge.net/) - THE analyst console for security monitoring. There isn't a more powerful and capable solution available for event analysis, correlation and review.
   * Squert (http://www.squertproject.org/) - A web interface to query and view Sguil event data that was designed to supplement Sguil by providing additional context around events.
-  * Snorby (https://github.com/snorby/snorby) - A slick and effective Ruby on Rails app for monitoring  Snort/Suricata IDS events.
   * ELSA (http://code.google.com/p/enterprise-log-search-and-archive/) - Enterprise Log Search and Archive is a distributed log archive system similar to Splunk and allows for event searching and visualization of all the log data Security Onion consumes, including OSSEC, Snort/Suricata, and most importantly, Bro IDS.
 
 If you want to take some time to experiment with the tools, Security Onion includes some sample packet capture files we can replay to generate event data. I highly recommend physically disabling the network connection from your host operating system prior to replaying the packets. Since we're using a VM, simply unplugging the physical network connection or disabling wireless on the host system where your VM is running will work. We will be replaying samples of live traffic, some of which are malicious, so use caution. The samples provided are available in /opt/samples/ and once we're disconnected from the network, we can replay them by opening up a terminal and typing:
