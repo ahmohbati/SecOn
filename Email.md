@@ -13,7 +13,7 @@ Please note that the Sguil client has its own email configuration (separate from
 
 This page describes how to configure email for alerting and reporting.  Applications such as Sguil and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script and from Bro.
 
-####How do I configure the OS itself to send emails?####
+#### How do I configure the OS itself to send emails?
 Install and configure your favorite mail server.  Depending on your needs, this could be something simple like `nullmailer` (recommended) or something more complex like `exim4`.<br>
 <br>
 Here are some `nullmailer` instructions provided by Michael Iverson:<br>
@@ -43,7 +43,7 @@ If you don't already have the `mail` utility, you can try installing:<br>
 <pre><code>sudo apt-get install mailutils<br>
 </code></pre>
 
-#### How do I configure Sguil to send alerts via email?<br>####
+#### How do I configure Sguil to send alerts via email?
 Modify `/etc/nsm/securityonion/sguild.email` (on the master server) as needed and restart sguild:
 ```
 sudo nsm_server_ps-restart
@@ -59,7 +59,7 @@ You may want to install a local mail relay on your master server, configure it t
 
 **Please note**: Sguil will only send email alerts for what is considers *new* events. Ensure you classify events within the Sguil console, or consider [creating an Autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to automatically classify them if you prefer to receive emails for all instances of an alert.  Otherwise, you may not receive alerts as intended.
 
-####How do I configure OSSEC to send emails?####
+#### How do I configure OSSEC to send emails?
 Modify `/var/ossec/etc/ossec.conf` as follows:<br>
 <pre><code>  &lt;global&gt;<br>
     &lt;email_notification&gt;yes&lt;/email_notification&gt;<br>
@@ -78,7 +78,7 @@ You can specify the severity of an event for which OSSEC will send email alerts 
 You can also find an explanation of the alert levels, here:   
 http://ossec-docs.readthedocs.io/en/latest/manual/rules-decoders/rule-levels.html
 
-####How do I configure ELSA to send emails?####
+#### How do I configure ELSA to send emails?
 Add your email address to the user_info table of the securityonion_db database (replacing FIRSTLAST@YOURDOMAIN.COM with your actual email address and FIRSTLAST with your Sguil/ELSA username):
 ```
 sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "update user_info set email='FIRSTLAST@YOURDOMAIN.COM' where username='FIRSTLAST';"
@@ -98,9 +98,7 @@ You can then have ELSA send an email alert by doing the following:
 * click "Alert or Schedule"
 * choose your parameters and click the Submit button
 
-
-
-####How do I configure Bro to send emails?####
+#### How do I configure Bro to send emails?
 Edit `/opt/bro/etc/broctl.cfg` and set the following:<br>
 <pre><code>MailTo = YourUsername@YourDomain.com<br>
 sendmail = /usr/sbin/sendmail<br>
@@ -122,5 +120,5 @@ You may want to receive emails for Bro notices.  To do that, add the following t
 Also see:<br>
 <a href='http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/006418.html'>http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/006418.html</a>
 
-####How can I get an email alert when my sensor stops seeing traffic?####
+#### How can I get an email alert when my sensor stops seeing traffic?
 If you configured OSSEC or Bro as shown above, they should automatically do this for you.  Another option can be found on the [SensorStopsSeeingTraffic](SensorStopsSeeingTraffic) page.
