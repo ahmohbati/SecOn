@@ -11,17 +11,17 @@ Additionally, UTC comes in quite handy when you have sensors in different time z
 
 Squert and ELSA allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert allows you to change your timezone.
 
-####How do I change the timezone for Ubuntu?####
+#### How do I change the timezone for Ubuntu?
 When you run our Setup wizard, it should automatically set your timezone to UTC.  If you've already run Setup and then manually changed your timezone to non-UTC and would like to switch back to UTC, you can execute ```sudo dpkg-reconfigure tzdata```. Scroll to the bottom of the Continents list and select `None of the above`. In the second list, select `UTC`. (http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt)
 
-####How do I change the timezone in Squert?####
+#### How do I change the timezone in Squert?
 * click the time interval (labeled INTERVAL)
 * on the right side, click the two arrows pointing right
 * de-select UTC
 * set your timezone offset (labeled TZ OFFSET)
 * click the "save TZ" button
 
-####Why are the timestamps in ELSA not in UTC?####
+#### Why are the timestamps in ELSA not in UTC?
 
 By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC/GMT by configuring the use_utc setting in your ELSA Preferences panel.<br>
 <br>
