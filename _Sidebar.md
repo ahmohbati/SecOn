@@ -68,7 +68,6 @@
   * [ICMP Anomaly Detection](ICMP-Anomaly-Detection)
   * [Connecting to Sguild](ConnectingtoSguil)
   * [Pcaps for Testing](Pcaps)
-  * [FreeNX](FreeNX)
   * [Installing NtopNG](DeployingNtopng)
   * [Removing a Sensor](RemovingASensor)
   * [Airgapped Networks](Airgapped-Networks)
