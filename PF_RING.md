@@ -15,10 +15,9 @@ If you want to change the number of PF\_RING instances after running Setup, you 
   * Start sensor processes:<br>
 `sudo nsm_sensor_ps-start`
 
-If running Snort, the script automatically spawns $IDS\_LB\_PROCS instances
-of Snort (using PF\_RING), barnyard2, and snort\_agent.<br>
-If running Suricata, the script automatically copies $IDS_LB_PROCS into<br>
-suricata.yaml and then Suricata spins up the PF_RING instances itself.<br>
+If running Snort, the script automatically spawns $IDS\_LB\_PROCS instances of Snort (using PF\_RING), barnyard2, and snort\_agent.
+
+If running Suricata, the script automatically copies $IDS_LB_PROCS into suricata.yaml and then Suricata spins up the PF_RING instances itself.
 
 #### Bro
 For Bro, you would do the following:<br>
