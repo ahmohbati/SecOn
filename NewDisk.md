@@ -58,119 +58,72 @@ This can be done in the Ubuntu installer, or after installation is complete. If 
 
 If you do this, you'll need to do something like the following to avoid AppArmor issues:
 
-Stop all services
+Stop all services:<br>
+`sudo service nsm stop`
 
-```
-sudo service nsm stop
-```
+Copy existing data from `/nsm` to new mount point:<br>
+`sudo cp -av /nsm/* /mnt/nsm`
 
-Copy existing data from `/nsm` to new mount point
+Rename existing `/nsm`:<br>
+`sudo mv /nsm /nsm-backup`
 
-```
-sudo cp -av /nsm/* /mnt/nsm
-```
+Make `/nsm` a symlink to the new logging location:<br>
+`sudo ln -s /mnt/nsm /nsm`
 
-Rename existing `/nsm`
+Go to `/etc/apparmor.d/local/`:<br>
+`cd /etc/apparmor.d/local/`
 
-```
-sudo mv /nsm /nsm-backup
-```
+Edit `usr.sbin.mysqld`, copy the `/nsm` line(s), and change `/nsm` to the new location:<br>
+`sudo vi usr.sbin.mysqld`
 
-Make `/nsm` a symlink to the new logging location
+Edit `usr.sbin.tcpdump`, copy the `/nsm` line(s), and change `/nsm` to the new location:<br>
+`sudo vi usr.sbin.tcpdump`
 
-```
-sudo ln -s /mnt/nsm /nsm
-```
+Restart apparmor:<br>
+`sudo service apparmor restart`
 
-Go to `/etc/apparmor.d/local/`
+Start all services:<br>
+`sudo service nsm start`
 
-```
-cd /etc/apparmor.d/local/
-```
+#### Moving the MySQL Databases
 
-Edit `usr.sbin.mysqld`, copy the `/nsm` line(s), and change `/nsm` to the new location
-
-```
-sudo vi usr.sbin.mysqld
-```
-
-Edit `usr.sbin.tcpdump`, copy the `/nsm` line(s), and change `/nsm` to the new location
-
-```
-sudo vi usr.sbin.tcpdump
-```
-
-Restart apparmor
-
-```
-sudo service apparmor restart
-```
-
-Start all services
-
-```
-sudo service nsm start
-```
-<br>
-#### Moving the MySQL Databases ####
-
-#### Synopsis: ####
+#### Synopsis:
 
 In this article I’m going to show how you can move the MySQL databases containing all of your important alert and event data to another place. I will be moving the databases to a large external drive I have mounted as `/nsm`, though, any other location will do.
 
-#### Procedure: ####
+#### Procedure:
 
 The MySQL databases are stored under `/var/lib/mysql`. We will need to move this folder
 and its sub-contents to the destination location. First, we must stop all processes that may
-be writing or using the databases.
-
-```
-sudo service nsm stop
-sudo service mysql stop
-sudo service sphinxsearch stop
-```
+be writing or using the databases.<br>
+`sudo service nsm stop`<br>
+`sudo service mysql stop`<br>
+`sudo service sphinxsearch stop`<br>
 
 Now, we need to make sure all other nsm-related processes are stopped. To double-check,
 run `lsof` on the nsm mount point to list any processes that have open file descriptors. Kill everything,
-or nearly everything, that comes up in the list.
-
-```
-lsof /nsm
-```
+or nearly everything, that comes up in the list.<br>
+`lsof /nsm`
 
 Next, let’s copy the data over to the new location leaving the original intact. You can use `cp` or `rsync`
 or another similar tool but be sure to preserve permissions ( -p ) and copy recursively ( -r ). Both
-examples are listed below, choose one:
+examples are listed below, choose one:<br>
+`sudo cp -rp /var/lib/mysql /nsm`<br>
+`sudo rsync -avpr var/lib/mysql /nsm`
 
-```
-sudo cp -rp /var/lib/mysql /nsm
-sudo rsync -avpr var/lib/mysql /nsm
-```
+Once that’s finished, rename or backup the original just in case something goes wrong.<br>
+`sudo mv /var/lib/mysql /var/lib/mysql.bak`
 
-Once that’s finished, rename or backup the original just in case something goes wrong.
-
-```
-sudo mv /var/lib/mysql /var/lib/mysql.bak
-```
-
-Next, create a symbolic link from `/var/lib/mysql` to the new location:
-
-```
-sudo ln -s /nsm/mysql /var/lib/mysql
-```
+Next, create a symbolic link from `/var/lib/mysql` to the new location:<br>
+`sudo ln -s /nsm/mysql /var/lib/mysql`
 
 Ubuntu uses AppArmor to add an additional layer of security to running applications.
 We must tell apparmor about the new mysql database locations otherwise it will prevent
-the system from using it.
+the system from using it.<br>
+`sudo service apparmor stop`
 
-```
-sudo service apparmor stop
-```
-
-Edit `/etc/apparmor.d/usr.sbin.mysqld` to reflect the following patch which adds the new location:
-```
-sudo vim /etc/apparmor.d/usr.sbin.mysqld
-```
+Edit `/etc/apparmor.d/usr.sbin.mysqld` to reflect the following patch which adds the new location:<br>
+`sudo vim /etc/apparmor.d/usr.sbin.mysqld`
 
 ```
 --- a/apparmor.d/usr.sbin.mysqld
@@ -189,11 +142,8 @@ sudo vim /etc/apparmor.d/usr.sbin.mysqld
 /etc/mysql/conf.d/* r,
 ```
 
-Finally, start all the processes back up.
-
-```
-sudo service apparmor start
-sudo service mysql start
-sudo service sphinxsearch start
-sudo service nsm start
-```
+Finally, start all the processes back up.<br>
+`sudo service apparmor start`<br>
+`sudo service mysql start`<br>
+`sudo service sphinxsearch start`<br>
+`sudo service nsm start`
