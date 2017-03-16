@@ -19,26 +19,25 @@ If running Snort, the script automatically spawns $IDS\_LB\_PROCS instances
 of Snort (using PF\_RING), barnyard2, and snort\_agent.<br>
 If running Suricata, the script automatically copies $IDS_LB_PROCS into<br>
 suricata.yaml and then Suricata spins up the PF_RING instances itself.<br>
-<br>
+
 #### Bro
 For Bro, you would do the following:<br>
-<ul><li>Stop bro:<br>
-<pre><code>sudo nsm_sensor_ps-stop --only-bro<br>
-</code></pre>
-</li><li>Edit <code>/opt/bro/etc/node.cfg</code> and change the <code>lb_procs</code> variable to the desired number of cores.<br>
-</li><li>Start bro:<br>
-<pre><code>sudo nsm_sensor_ps-start --only-bro<br>
-</code></pre></li></ul>
+* Stop bro:<br>
+`sudo nsm_sensor_ps-stop --only-bro`
+* Edit <code>/opt/bro/etc/node.cfg</code> and change the <code>lb_procs</code> variable to the desired number of cores.<br>
+* Start bro:<br>
+`sudo nsm_sensor_ps-start --only-bro`
 
 #### Slots
 If you've already run Setup and want to modify min_num_slots, you can manually create/edit <code>/etc/modprobe.d/pf_ring.conf</code>.  
 
 For example, to increase min_num_slots to 65534, do the following:<br><br>
-<code>echo "options pf_ring transparent_mode=0 min_num_slots=65534" | sudo tee /etc/modprobe.d/pf_ring.conf</code>
-<br><br>After creating/editing <code>/etc/modprobe.d/pf_ring.conf</code>, you'll need to reload the PF_RING module as follows (or just reboot):<br><br>
-<code>sudo nsm_sensor_ps-stop</code><br>
-<code>sudo rmmod pf_ring</code><br>
-<code>sudo nsm_sensor_ps-start</code>
+`echo "options pf_ring transparent_mode=0 min_num_slots=65534" | sudo tee /etc/modprobe.d/pf_ring.conf`
+
+After creating/editing `/etc/modprobe.d/pf_ring.conf`, you'll need to reload the PF_RING module as follows (or just reboot):<br>
+`sudo nsm_sensor_ps-stop`
+`sudo rmmod pf_ring`<br>
+`sudo nsm_sensor_ps-start`
 
 #### Updating
 Please see the [Upgrade](Upgrade) page for notes on updating the PF_RING kernel module.
