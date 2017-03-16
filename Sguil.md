@@ -22,16 +22,27 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/Passwords#sguil
   * session data from PRADS (if PRADS and sancp_agent are enabled)
   * asset data from PRADS (if PRADS and pads_agent are enabled)
   * HTTP logs from Bro (if http_agent is enabled)
+### Pivot
+* pivot to transcript/Wireshark/NetworkMiner by right-clicking the Alert ID.
+* automatically pivot to ASCII transcript by middle-clicking the Alert ID.
+* pivot to ELSA by right-clicking an IP address and choosing "ELSA IP Lookup".
+
+### Management 
+* It is important to ensure events displayed in Sguil are regularly classified, or else it could cause problems with the Sguil database. Consider creating an [autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to assist with this.
+
+* [Configure Sguil alert email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
+
+* [Configure retention for Sguil alerts](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#sguil-days-to-keep)
 
 ### Customize (Sguil client)
-
+* resize columns by right-clicking on the column heading in the Sguil client.
+* change fonts by clicking File --> Change Font from within the Sguil client.
 * Sguil client settings are stored in `/etc/sguil/sguil.conf`:
-  * You can enable "Show Rule", "Show Packet Data", and "Display Detail" (respectively) by setting the following (also see https://groups.google.com/d/topic/security-onion/MJaAlxgpMvU/discussion):
-  ```
-set SHOWRULE 1
-set PACKETINFO 1
-set DISPLAY_GENERIC 1
-  ```
+  * You can enable "Show Rule", "Show Packet Data", and "Display Detail" (respectively) by setting the following (also see https://groups.google.com/d/topic/security-onion/MJaAlxgpMvU/discussion):<br>
+`set SHOWRULE 1`<br>
+`set PACKETINFO 1`<br>
+`set DISPLAY_GENERIC 1`
+
   * You can separate realtime alerts into separate panes, based on severity level, by editing `/etc/sguil/sguil.conf` as follows:
 
   ```
@@ -48,17 +59,5 @@ set DISPLAY_GENERIC 1
     set RTPANE_PRIORITY(1) "2 3"  
     set RTPANE_PRIORITY(2) "4 5"   
   ```
-* resize columns by right-clicking on the column heading in the Sguil client.
-* change fonts by clicking File --> Change Font from within the Sguil client.
 
-### Pivot
-* pivot to transcript/Wireshark/NetworkMiner by right-clicking the Alert ID.
-* automatically pivot to ASCII transcript by middle-clicking the Alert ID.
-* pivot to ELSA by right-clicking an IP address and choosing "ELSA IP Lookup".
 
-### Management 
-* It is important to ensure events displayed in Sguil are regularly classified, or else it could cause problems with the Sguil database. Consider creating an [autocat rule](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#autocategorize-events) to assist with this.
-
-* [Configure Sguil alert email notification(s)](https://github.com/Security-Onion-Solutions/security-onion/wiki/Email#how-do-i-configure-sguil-to-send-alerts-via-email)
-
-* [Configure retention for Sguil alerts](https://github.com/Security-Onion-Solutions/security-onion/wiki/ManagingAlerts#sguil-days-to-keep)
