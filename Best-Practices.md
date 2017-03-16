@@ -2,7 +2,7 @@ Security Onion 14.04 comes with the option to implement what is considered a set
 
 **The below sections assume that you already have these services installed, and provide advice on how to disable them in your deployment.**
 
-Disable any unnecessary services.  First, Snorby should be disabled since it is now considered unmaintained:
+Disable any unnecessary services.  First, Snorby should be disabled since it is now considered unmaintained:<br>
 https://github.com/Security-Onion-Solutions/security-onion/wiki/DisablingProcesses#disabling-snorby
 
 In addition, most folks will want to disable the following services:
