@@ -25,6 +25,7 @@
   * [Sguil](Sguil)
   * [CapME](CapMe)
   * [Xplico](Xplico)
+  * [Kibana](Kibana)
 
 ## Network Visibility ##
   * [NIDS](NIDS)
