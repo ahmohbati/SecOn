@@ -253,7 +253,7 @@ http://askubuntu.com/questions/762254/why-do-i-get-required-key-not-available-wh
 ### IPS/IDS engines
 ---
 #### I'm currently running `Snort`.  How do I switch to `Suricata`? ####
-First, please note that, if you're running the Snort Talos ruleset, Snort Shared Object rules will not load in Suricata.  Most folks who choose the Suricata engine choose to run the Emerging Threats ruleset.
+Please note that, if you're running the Snort Talos ruleset, Snort Shared Object rules will not load in Suricata.  Most folks who choose the Suricata engine choose to run the Emerging Threats ruleset.
 <pre><code>sudo nsm_sensor_ps-stop<br>
 sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf<br>
 sudo rule-update <br>
