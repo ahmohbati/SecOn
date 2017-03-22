@@ -26,7 +26,7 @@ If sostat report packet loss in netsniff-ng, you may want to consider one or mor
 * increase PCAP_RING_SIZE
 * set PCAP_OPTIONS to "--mmap" to enable memory-mapped IO
 
-Both of these options require more RAM.
+Please note that both of these options will cause netsniff-ng to consume more RAM.
 
 ### More Information
 For more information about netsniff-ng, please see:  
