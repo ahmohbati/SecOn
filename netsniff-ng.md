@@ -21,6 +21,12 @@ Check the netsniff-ng.log file in:
 `/var/log/nsm/HOSTNAME-INTERFACE/netsniff-ng.log`  
 (where HOSTNAME is your actual hostname and INTERFACE is your actual sniffing interface)
 
+### Tuning
+If sostat report packet loss in netsniff-ng, you may want to consider one or more of the following options in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf:
+* increase PCAP_RING_SIZE
+* set PCAP_OPTIONS to "--mmap" to enable memory-mapped IO
+Both of these options require more RAM.
+
 ### More Information
 For more information about netsniff-ng, please see:  
 http://netsniff-ng.org/
