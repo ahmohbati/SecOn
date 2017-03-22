@@ -25,6 +25,7 @@ Check the netsniff-ng.log file in:
 If sostat report packet loss in netsniff-ng, you may want to consider one or more of the following options in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf:
 * increase PCAP_RING_SIZE
 * set PCAP_OPTIONS to "--mmap" to enable memory-mapped IO
+
 Both of these options require more RAM.
 
 ### More Information
