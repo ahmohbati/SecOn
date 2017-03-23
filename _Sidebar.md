@@ -47,6 +47,7 @@
   * [Email Configuration](Email)
   * [Integrating with other systems](ThirdPartyIntegration)
   * [Changing IP Addresses](ChangingIPAddress)
+  * [NTP](NTP)
 
 ## Tuning ##
   * [Managing Alerts](ManagingAlerts)
