@@ -12,8 +12,7 @@ server 3.ubuntu.pool.ntp.org
 ```
 
 ### Modifying
-You may want to change this to use your preferred NTP provider.  For more information, please see:
-
+You may want to change this to use your preferred NTP provider.  For more information, please see:  
 https://help.ubuntu.com/lts/serverguide/NTP.html
 
 ### IDS Alerts
