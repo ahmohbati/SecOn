@@ -1,5 +1,5 @@
 ### Overview
-Ubuntu configures its NTP service to pull time updates from the NTP Pool Project.  From `/etc/ntp.conf`:
+Ubuntu configures its NTP service to pull time updates from the NTP Pool Project and from ntp.ubuntu.com.  From `/etc/ntp.conf`:
 
 ```
 # Use servers from the NTP Pool Project. Approved by Ubuntu Technical Board
