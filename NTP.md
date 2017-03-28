@@ -9,6 +9,9 @@ server 0.ubuntu.pool.ntp.org
 server 1.ubuntu.pool.ntp.org
 server 2.ubuntu.pool.ntp.org
 server 3.ubuntu.pool.ntp.org
+
+# Use Ubuntu's ntp server as a fallback.
+server ntp.ubuntu.com
 ```
 
 ### Modifying
