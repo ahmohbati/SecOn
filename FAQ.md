@@ -483,6 +483,9 @@ Also see: https://groups.google.com/forum/#!searchin/security-onion/elsa$20cron.
 #### Where can I find interesting pcaps to replay?
 [Pcaps](Pcaps)
 
+#### Why is Security Onion connecting to an IP address on the Internet over port 123?
+[NTP](NTP)
+
 #### Should I backup my Security Onion box?
 Network Security Monitoring as a whole is considered "best effort". It is not a "mission critical" resource like a file server or web server.  Since we're dealing with "big data" (potentially terabytes of full packet capture), backups would be prohibitively expensive.  Most organizations don't do any backups and instead just rebuild boxes when necessary.
 
