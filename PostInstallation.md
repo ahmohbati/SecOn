@@ -44,6 +44,8 @@
 
 - *Optional:* exclude unnecessary traffic from your monitoring using [BPF](BPF).<br>
 
+- *Optional:* configure Ubuntu to use your preferred [NTP](NTP) server.<br>
+
 - *Optional:* add new Sguil user accounts with the following:<br>
 `sudo nsm_server_user-add`
 
