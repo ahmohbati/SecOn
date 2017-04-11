@@ -3,7 +3,7 @@ Many folks ask how they can use Security Onion to monitor and defend their cloud
 
 **Warning! This cloud client is considered experimental!  USE AT YOUR OWN RISK!**
 
-This guide was written for Security Onion 12.04 and is currently being updated to work with Security Onion 14.04.  It may not be fully functional until it is fully updated.
+This guide was [originally written for Security Onion 12.04](CloudClient12.04) and has been updated for Security Onion 14.04, but hasn't been heavily tested yet.
 
 #### Traffic Flow and NIC offloading functions
 The cloud client uses `daemonlogger` or `netsniff-ng` to copy all packets from eth0 to tap0 (OpenVPN).  OpenVPN transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.  This guide will walk you through disabling NIC offloading functions on eth0 and br0 via `/etc/network/interfaces` and tap0 via `/etc/openvpn/up.sh`.
