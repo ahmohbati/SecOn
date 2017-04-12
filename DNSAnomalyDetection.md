@@ -1,5 +1,7 @@
 Dr. Johannes Ullrich of the SANS Internet Storm Center posted a <a href='http://isc.sans.edu/diary.html?storyid=13918'>great DNS Anomaly Detection script</a> based on the query logs coming from his DNS server.  We can do the same thing with Bro's dns.log (where Bro captures all the DNS queries it sees on the network).
 
+Please note that this script is only intended for standalone machines and will not work properly on distributed deployments.
+
 ```
 #!/bin/bash
 
