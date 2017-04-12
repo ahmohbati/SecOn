@@ -81,6 +81,7 @@
   * [Passwords](Passwords)
   * [Mailing Lists](MailingLists)
   * [Help Wanted](TeamMembers)
+  * [Security](Security)
 
 ## Known Issues / Roadmap ##
   * [Known Issues](https://github.com/Security-Onion-Solutions/security-onion/issues)
