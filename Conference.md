@@ -9,8 +9,29 @@ The Twitter hashtag is #socAugusta:
 https://twitter.com/search?q=socaugusta&src=typd
 
 ### Security Onion Conference 2017
-This year's Security Onion Conference will be held in Augusta GA on Friday September 15, 2017 (please mark your calendar!).  This is the day before [BSides Augusta](http://bsidesaugusta.org), so you may want to plan on attending both.  Registration will open in a few months.
+This year's Security Onion Conference will be held in Augusta GA on Friday September 15, 2017 (please mark your calendar!).  Registration will open in June.
 
+#### CFP
+Want to speak at Security Onion Conference? We want to hear from you!
+
+How are you...  
+...using Security Onion to fight evil?  
+...handling lots of traffic using Security Onion?  
+...integrating Security Onion with other technologies?  
+...automating common tasks with your own scripts?  
+
+Each talk should be 30 minutes with an additional 10 minutes for questions.
+
+https://securityonion.net/cfp
+
+#### Schedule
+* April 14 - CFP Open
+* June 5 - CFP Closed
+* June 29 - Speakers selected and notified
+* June 30 - Registration Opens
+* September 11-14 - [Security Onion 4-day training in Augusta](https://www.eventbrite.com/e/security-onion-4-day-training-class-augusta-ga-september-2017-registration-31725554989)
+* September 15 - Security Onion Conference
+* September 16 - [BSides Augusta](http://bsidesaugusta.org)
 
 ### Security Onion Conference 2016
 
