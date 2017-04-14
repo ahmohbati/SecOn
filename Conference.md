@@ -26,7 +26,7 @@ Submit your talk here:
 https://securityonion.net/cfp
 
 #### Schedule
-* April 14 - CFP Open
+* April 14 - CFP open
 * June 5 - CFP closes
 * June 29 - Speakers selected and notified
 * June 29 - Registration opens
