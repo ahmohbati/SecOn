@@ -27,9 +27,9 @@ https://securityonion.net/cfp
 
 #### Schedule
 * April 14 - CFP Open
-* June 5 - CFP Closed
+* June 5 - CFP closes
 * June 29 - Speakers selected and notified
-* June 30 - Registration Opens
+* June 29 - Registration opens
 * September 11-14 - [Security Onion 4-day training in Augusta](https://www.eventbrite.com/e/security-onion-4-day-training-class-augusta-ga-september-2017-registration-31725554989)
 * September 15 - Security Onion Conference
 * September 16 - [BSides Augusta](http://bsidesaugusta.org)
