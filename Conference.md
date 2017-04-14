@@ -1,5 +1,5 @@
 ### Location
-Our annual Security Onion Conference is hosted in beautiful Augusta GA at Augusta University.
+Our annual Security Onion Conference is hosted in beautiful Augusta, GA at Augusta University.
 
 ### Who should attend Security Onion Conference?
 Users of Security Onion should definitely attend!  In addition, most talks provide value beyond just Security Onion, so folks generally interested in IDS, NSM, Log Management, Hunting, and Blue Teaming should consider Security Onion Conference as well.
@@ -9,7 +9,7 @@ The Twitter hashtag is #socAugusta:
 https://twitter.com/search?q=socaugusta&src=typd
 
 ### Security Onion Conference 2017
-This year's Security Onion Conference will be held in Augusta GA on Friday September 15, 2017 (please mark your calendar!).  Registration will open in June.
+This year's Security Onion Conference will be held in Augusta, GA on Friday, September 15, 2017 (please mark your calendar!).  Registration will open in June.
 
 #### CFP
 Want to speak at Security Onion Conference? We want to hear from you!
