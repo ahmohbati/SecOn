@@ -22,6 +22,7 @@ How are you...
 
 Each talk should be 30 minutes with an additional 10 minutes for questions.
 
+Submit your talk here:
 https://securityonion.net/cfp
 
 #### Schedule
