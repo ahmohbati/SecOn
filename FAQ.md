@@ -36,7 +36,7 @@ https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1458039
 [Updating](Upgrade)
 
 #### I recently updated `barnyard` and now I'm not getting any `Snort` alerts. ####
-Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like `Returned signature_id is not equal to updated signature_id`.  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called `so-snorby-fix-sigs` and included it in the `rule-update` package.  If you're running the Snort engine with the VRT ruleset, please run `so-snorby-fix-sigs` and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
+Some users running the Snort engine with the Snort Subscriber (Talos) ruleset are experiencing barnyard2 failing with errors like `Returned signature_id is not equal to updated signature_id`.  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called `so-snorby-fix-sigs` and included it in the `rule-update` package.  If you're running the Snort engine with the Snort Subscriber (Talos) ruleset, please run `so-snorby-fix-sigs` and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
 
 http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 
@@ -206,7 +206,7 @@ See http://www.tcltk.com/iwidgets/ for more info.<br>
 This is related to [this](#tclheldback) question.  See [tcl](tcl).
 
 #### Why does Snort segfault every day at 7:01 AM? ####
-7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
+7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the Snort Subscriber (Talos) ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the Snort Subscriber (Talos) ruleset and updating the SO rules:<br>
 <a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'><a href='https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion'>https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a></a><br>
 After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.
 
