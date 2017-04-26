@@ -63,7 +63,7 @@ As you can see, Bro log data can provide a wealth of information to the analyst,
 * You can add your own Intel to `/opt/bro/share/bro/intel/intel.dat`.
     * When editing `/opt/bro/share/intel/intel.dat`, ensure there are no leading/trailing spaces or lines, and that only (single) tabs are used as field delimiters.  
     * If you experience an error, or do not notice `/nsm/bro/logs/current/intel.log` being generated, try having a look in `/nsm/bro/logs/current/reporter.log` for clues.
-    * You may also want to restart Bro after making changes, by running the following command: <br/>`sudo nsm_sensor_ps-restart -only-bro`. 
+    * You may also want to restart Bro after making changes, by running the following command: <br/>`sudo nsm_sensor_ps-restart --only-bro`. 
 * To install and configure the Critical Stack Intel Client for use with Bro, please see:
 
 https://github.com/Security-Onion-Solutions/security-onion/wiki/CriticalStackIntelClient
